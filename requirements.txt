@@ -1,10 +1,10 @@
-sphinx==1.6.5
+sphinx
 sphinx_bootstrap_theme
 sphinx_pangeo_theme
 jupyter
 ipython
-nbconvert==5.4.1
+nbconvert
 nbsphinx
-doctr>=1.6.3
+doctr
 sphinx-copybutton
 sphinxcontrib-srclinks
