@@ -18,7 +18,7 @@ jobs:
           persist-credentials: false
       - name: Update Submodules
         # do we want to make this optional?
-        run: git submodule update --recursive --remote
+        run: git submodule update --init --recursive --remote
       - uses: actions/setup-python@v1
         with:
           python-version: '3.8'
