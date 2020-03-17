@@ -10,7 +10,7 @@ env:
   global:
     - HV_DOC_HTML='true'
     - secure: "WnbqWltx6fmVhOMYB6KYkmxQdjighuWsQZMcsMUULoD10iknCFA2Yn+P8sP0j7l2qd9jDzpSx963wO3+pE3LVszH2SHqdkuuZ+a7x8Us5SwdSuLp1hW7SF4tebECz2vNKlvUmFQ9upaAF3I7q9ipJw6tsPmQR2R8OLSAE59WD5U4w5YXFBqehazXWVcO77mF26B4ujTUkx9M0DRaygKCc4XZ8sTrhuhveN0E+xvpGoULlPZArnp3xUZ4+T/qfCMsmMTLsQBO4CHzPkL0/l/Lh+PtBkKQ2Lhu0TfQw1RgLU+ZWnbKRJdhbH3RhGj93KvOF/urfUduJ6eKodVCCSHapDt4eDUSiYjGIE2N74kTYn4fLsYLcmukwXhlR3tUUcd2oXv6KzyWLtPDVczr6c+VG5ZQZhRGzU3Ka+cKIdLGSc7mXfnXRJO3Qr1BYw83TILoZzT6J1ga2DHMQrzpxm1G5kUsBl9lV+N3wdvtW2a8WD4UvwnFJBh2OCMipyjHFqZchCmy0CG4wUCld+1CCv/5TIKZkDHJ+9JH9roD27LCtUJopnS+1/CipmUv5wbjwXG3oqkykLyGObU0OMIPnH+iqXI6uIjusQShlltHgFvCT/kpO7emTzpyI1a3OwY6jDeO7DjOEz3TRMnPbskPyGi3ssrpmk7oJoGePJ7/0kJ2Dnw="
-    
+
 stages:
   - name: build
     if: branch != master
@@ -24,15 +24,6 @@ jobs:
     - &build
       stage: build
       install:
-        - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-        - bash miniconda.sh -b -p $HOME/miniconda
-        - export PATH="$HOME/miniconda/bin:$PATH"
-        - hash -r
-        - conda config --set always_yes yes --set changeps1 no
-        # Useful for debugging any issues with conda
-        - conda info -a
-        - conda create -q -n docs-environment -c conda-forge python=$TRAVIS_PYTHON_VERSION
-        - source activate docs-environment
         - pip install -r requirements.txt
       script:
         - set -e
