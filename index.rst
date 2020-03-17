@@ -1,9 +1,8 @@
 Pangeo Gallery
 ==============
 
-
-
 .. toctree::
+   :glob:
    :maxdepth: 2
 
-   repos/*/index
+   repos/*/Readme
