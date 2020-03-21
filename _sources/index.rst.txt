@@ -5,4 +5,4 @@ Pangeo Gallery
    :glob:
    :maxdepth: 2
 
-   repos/*/Readme
+   repos/*/*/Readme
