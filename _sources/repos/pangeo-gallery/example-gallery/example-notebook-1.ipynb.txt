@@ -4,7 +4,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# Test Pangeo Gallery"
+    "# Test Pangeo Gallery 2"
    ]
   },
   {
@@ -16,7 +16,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Today's date and time: 2020-03-21 21:43:26.868529\n"
+      "Today's date and time: 2020-03-21 21:47:27.277798\n"
      ]
     }
    ],
@@ -35,7 +35,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "jupyter-binder-2dexamples-2drequirements-2d82l82lbe\n"
+      "jupyter-binder-2dexamples-2drequirements-2dy3q9qte2\n"
      ]
     }
    ],
