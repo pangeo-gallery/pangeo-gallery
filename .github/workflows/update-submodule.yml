@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Add or Update Submodule
         # TODO: verify that the submodule points to the right place
-        run: >
+        run: |
           cd repos
           if [[ -d $SUBMODULE_REPO ]]; then
               git submodule init $SUBMODULE_REPO
