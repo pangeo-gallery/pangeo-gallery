@@ -29,7 +29,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Binderbot update submodule" -a
-      - name: Issue PR to Gallery Repo
+      - name: Create PR
         uses: repo-sync/pull-request@v2
         with:
           pr_title: "Update ${{ github.event.client_payload.repo }} submodule"
