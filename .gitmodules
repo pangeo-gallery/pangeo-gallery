@@ -1,4 +1,4 @@
-[submodule "repos/example-gallery"]
-	path = repos/example-gallery
+[submodule "repos/pangeo-gallery/example-gallery"]
+	path = repos/pangeo-gallery/example-gallery
 	url = https://github.com/pangeo-gallery/example-gallery.git
 	branch = binderbot-built
