@@ -8,9 +8,8 @@ on:
   pull_request:
     branches:
       - master
-  on:
-    repository_dispatch:
-      types: [update-gallery]
+  repository_dispatch:
+    types: [update-gallery]
       
 jobs:
   build-and-deploy:
