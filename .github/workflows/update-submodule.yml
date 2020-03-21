@@ -1,0 +1,37 @@
+name: Repository Dispatch
+on:
+  repository_dispatch:
+    types: [update-gallery]
+
+env:
+  SUBMODULE_REPO: ${{ github.event.client_payload.repo }}
+  SUBMODULE_BRANCH: ${{ github.event.client_payload.branch }}
+
+jobs:
+  update-submodule:
+    name: Update Gallery
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v2
+      - name: Add or Update Submodule
+        # TODO: verify that the submodule points to the right place
+        run: >
+          cd repos
+          if [[ -d $SUBMODULE_REPO ]]; then
+              git submodule init $SUBMODULE_REPO
+              git submodule update --remote $SUBMODULE_REPO
+          else
+              git submodule add -b $SUBMODULE_BRANCH "https://github.com/$GITHUB_REPOSITORY.git" $SUBMODULE_REPO
+          fi
+      - name: Commit Submodule Update
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Binderbot update submodule" -a
+      - name: Issue PR to Gallery Repo
+        uses: repo-sync/pull-request@v2
+        with:
+          pr_title: "Update ${{ github.event.client_payload.repo }} submodule"
+          pr_body: ":crown: *An automated PR*"  # Full markdown support, requires pr_title to be set
+          github_token: ${{ secrets.GITHUB_TOKEN }}
