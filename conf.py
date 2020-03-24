@@ -39,7 +39,7 @@ extensions = [
 nbsphinx_timeout = 600
 nbsphinx_execute = "never"
 # not working yet
-# nbsphinx_prolog = """
+#nbsphinx_prolog = """
 # {% set docname = env.doc2path(env.docname, base=None) %}
 # {% set fullname = env.doc2path(env.docname) %}
 # {% set basename = fullname | replace(docname, "") %}
@@ -124,9 +124,7 @@ html_static_path = ['_static']
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
 html_sidebars = {
     'index': [],
-     '**': [
-          'localtoc.html',
-     ]
+     '**': []
 }
 
 
@@ -204,7 +202,8 @@ def rstjinja(app, docname, source):
 def setup(app):
     # basic CSS
     app.connect("source-read", rstjinja)
-    app.add_stylesheet("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    app.add_stylesheet("https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css")
+    app.add_stylesheet("pangeo-gallery.css")
 
 
 import yaml
