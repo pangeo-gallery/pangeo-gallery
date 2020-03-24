@@ -38,14 +38,20 @@ extensions = [
 
 nbsphinx_timeout = 600
 nbsphinx_execute = "never"
-nbsphinx_prolog = """
-{% set docname = env.doc2path(env.docname, base=None) %}
-
-You can run this notebook in a `live session <https://mybinder.org/v2/gh/pydata/xarray/doc/examples/master?urlpath=lab/tree/doc/{{ docname }}>`_ |Binder| or view it `on Github <https://github.com/pydata/xarray/blob/master/doc/{{ docname }}>`_.
-
-.. |Binder| image:: https://mybinder.org/badge.svg
-   :target: https://mybinder.org/v2/gh/pydata/xarray/master?urlpath=lab/tree/doc/{{ docname }}
-"""
+# not working yet
+# nbsphinx_prolog = """
+# {% set docname = env.doc2path(env.docname, base=None) %}
+# {% set fullname = env.doc2path(env.docname) %}
+# {% set basename = fullname | replace(docname, "") %}
+# {% set repo = repos | first %}
+#
+# Launch |Binder| or view `on Github <https://github.com/{{ repo.repo_path }}/blob/master/{{ docname }}>`_.
+#
+# .. |Binder| image:: https://mybinder.org/badge.svg
+#    :alt: Launch Binder
+#    :target: {{ repo.binder_url }}/v2/gh/{{ repo.binder_repo }}/master/?urlpath=git-pull?repo=https://github.com/{{ repo_data.path }}
+#
+# """
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -210,7 +216,7 @@ repos = glob.glob('repos/*/*')
 for repo in repos:
     with open(os.path.join(repo, 'pangeo-gallery.yaml')) as f:
         repo_conf = yaml.load(f, Loader=yaml.FullLoader)
-    repo['path'] = repo.lstrip('repos').lstrip('/')
+    repo_conf['path'] = repo.lstrip('repos').lstrip('/')
     repo_data[repo] = repo_conf
 
 print(repo_data)

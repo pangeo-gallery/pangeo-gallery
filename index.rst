@@ -19,13 +19,13 @@ Pangeo Gallery
           <p> {{ repo_data.description }}
           </p>
 
-.. image:: https://github.com/{{ repo.path }}/workflows/Binderbot/badge.svg
+.. image:: https://github.com/{{ repo_data.path }}/workflows/Binderbot/badge.svg
    :alt: Binderbot Build Status
-   :target: https://github.com/{{ repo.path }}/actions?query=workflow%3ABinderbot
+   :target: https://github.com/{{ repo_data.path }}/actions?query=workflow%3ABinderbot
 
 .. image:: https://mybinder.org/badge_logo.svg
    :alt: Launch Binder
-   :target: {{ repo.binder_url }}/v2/gh/{{ repo.binder_repo }}/master/?urlpath=git-pull?repo=https://github.com/{{ repo.path }}
+   :target: {{ repo.binder_url }}/v2/gh/{{ repo.binder_repo }}/master/?urlpath=git-pull?repo=https://github.com/{{ repo_data.path }}
 
 .. toctree::
    :glob:
