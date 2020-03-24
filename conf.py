@@ -208,9 +208,9 @@ import os
 repo_data = {}
 repos = glob.glob('repos/*/*')
 for repo in repos:
-    repo_name = repo.lstrip('repos').lstrip('/')
     with open(os.path.join(repo, 'pangeo-gallery.yaml')) as f:
         repo_conf = yaml.load(f, Loader=yaml.FullLoader)
+    repo['path'] = repo.lstrip('repos').lstrip('/')
     repo_data[repo] = repo_conf
 
 print(repo_data)
