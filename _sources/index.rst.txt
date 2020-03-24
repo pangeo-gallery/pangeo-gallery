@@ -25,20 +25,20 @@ Pangeo Gallery
             <a href="https://github.com/{{ repo_data.path }}/actions?query=workflow%3ABinderbot"><img alt="BinderBot" src="https://github.com/{{ repo_data.path }}/workflows/Binderbot/badge.svg?logo=github&style=flat-square" /></a>
             <a href="{{ repo.binder_url }}/v2/gh/{{ repo.binder_repo }}/master/?urlpath=git-pull?repo=https://github.com/{{ repo_data.path }}"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
           </div>
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :titlesonly:
-   :caption: {{ repo_data.name }} Notebooks
-
-   {{ repo }}/*
-
-
-.. raw:: html
-
          </div>
         </div>
        {% endfor %}
       </div>
     </div>
+
+
+
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+   :titlesonly:
+
+   {% for repo, repo_data in repos.items() %}
+   {{ repo }}/index
+   {% endfor %}
