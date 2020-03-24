@@ -16,7 +16,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Today's date and time: 2020-03-21 21:47:29.336458\n"
+      "Today's date and time: 2020-03-24 03:45:40.104527\n"
      ]
     }
    ],
@@ -35,7 +35,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "jupyter-binder-2dexamples-2drequirements-2dy3q9qte2\n"
+      "jupyter-binder-2dexamples-2drequirements-2dh31arj2o\n"
      ]
     }
    ],
