@@ -34,6 +34,7 @@ import sphinx_pangeo_theme
 extensions = [
     'nbsphinx',
     'sphinx.ext.mathjax',
+    'sphinxcontrib.fulltoc'
 ]
 
 nbsphinx_timeout = 600
@@ -124,7 +125,7 @@ html_static_path = ['_static']
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
 html_sidebars = {
     'index': [],
-     '**': []
+     '**': ['sidebartoc.html']
 }
 
 
