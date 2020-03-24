@@ -8,3 +8,4 @@ nbsphinx
 doctr
 sphinx-copybutton
 sphinxcontrib-srclinks
+sphinxcontrib-fulltoc
