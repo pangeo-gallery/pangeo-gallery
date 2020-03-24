@@ -197,4 +197,24 @@ def rstjinja(app, docname, source):
 # https://pypi.python.org/pypi/sphinx-bootstrap-theme/
 def setup(app):
     # basic CSS
+    app.connect("source-read", rstjinja)
     app.add_stylesheet("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+
+
+import yaml
+import glob
+import os
+
+repo_data = {}
+repos = glob.glob('repos/*/*')
+for repo in repos:
+    repo_name = repo.lstrip('repos').lstrip('/')
+    with open(os.path.join(repo, 'pangeo-gallery.yaml')) as f:
+        repo_conf = yaml.load(f, Loader=yaml.FullLoader)
+    repo_data[repo] = repo_conf
+
+print(repo_data)
+
+html_context = {
+    'repos': repo_data
+}
