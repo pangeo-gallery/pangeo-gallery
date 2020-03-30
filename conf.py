@@ -40,17 +40,16 @@ extensions = [
 nbsphinx_timeout = 600
 nbsphinx_execute = "never"
 # not working yet
-#nbsphinx_prolog = """
+# nbsphinx_prolog = """
 # {% set docname = env.doc2path(env.docname, base=None) %}
-# {% set fullname = env.doc2path(env.docname) %}
-# {% set basename = fullname | replace(docname, "") %}
-# {% set repo = repos | first %}
+# {% set basename = 'repos/pangeo-gallery/example-gallery' %}
+# {% set repo_data = env.config.html_context.repos[basename] %}
 #
-# Launch |Binder| or view `on Github <https://github.com/{{ repo.repo_path }}/blob/master/{{ docname }}>`_.
+# Launch |Binder| or view `on Github <https://github.com/{{ repo_data.path }}/blob/master/{{ env.docname }}>`_.
 #
 # .. |Binder| image:: https://mybinder.org/badge.svg
 #    :alt: Launch Binder
-#    :target: {{ repo.binder_url }}/v2/gh/{{ repo.binder_repo }}/master/?urlpath=git-pull?repo=https://github.com/{{ repo_data.path }}
+#    :target: {{ repo_data.binder_url }}/v2/gh/{{ repo_data.binder_repo }}/master/?urlpath=git-pull?repo=https://github.com/{{ repo_data.path }}
 #
 # """
 
@@ -125,7 +124,8 @@ html_static_path = ['_static']
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
 html_sidebars = {
     'index': [],
-     '**': ['sidebartoc.html']
+     'repos/**/index': ['sidebartoc.html'],
+     'repos/*/*/*': ['nbsidebar.html']
 }
 
 
@@ -214,7 +214,7 @@ import os
 repo_data = {}
 repos = glob.glob('repos/*/*')
 for repo in repos:
-    with open(os.path.join(repo, 'pangeo-gallery.yaml')) as f:
+    with open(os.path.join(repo, 'binder-gallery.yaml')) as f:
         repo_conf = yaml.load(f, Loader=yaml.FullLoader)
     repo_conf['path'] = repo.lstrip('repos').lstrip('/')
     repo_data[repo] = repo_conf
