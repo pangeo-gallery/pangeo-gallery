@@ -11,10 +11,9 @@ If you're interested in contributing an new gallery, please see the
 .. raw:: html
 
     <div class="row">
-       <div class="col-xs-12 col-sm-6">
-       {% for repo, repo_data in repos.items() %}
-         {% set repo_only = repo.split('/')[-1] %}
-
+      {% for repo, repo_data in repos.items() %}
+      {% set repo_only = repo.split('/')[-1] %}
+       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail">
 
 .. image:: {{ repo }}/thumbnail.png
@@ -36,8 +35,8 @@ If you're interested in contributing an new gallery, please see the
           </div>
          </div>
         </div>
-       {% endfor %}
-      </div>
+       </div>
+      {% endfor %}
     </div>
 
 

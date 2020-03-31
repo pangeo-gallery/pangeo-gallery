@@ -2,3 +2,7 @@
 	path = repos/pangeo-gallery/example-gallery
 	url = https://github.com/pangeo-gallery/example-gallery.git
 	branch = binderbot-built
+[submodule "repos/pangeo-gallery/physical-oceanography"]
+	path = repos/pangeo-gallery/physical-oceanography
+	url = https://github.com/pangeo-gallery/physical-oceanography.git
+	branch = binderbot-built
