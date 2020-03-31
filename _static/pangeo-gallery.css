@@ -1,3 +1,7 @@
+div.body {
+  max-width: 100%;
+}
+
 .badges img {
   display: inline !important;
 }

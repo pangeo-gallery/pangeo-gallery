@@ -14,6 +14,7 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Contributor Guide" href="contributing.html" />
@@ -57,6 +58,10 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="repos/pangeo-gallery/physical-oceanography/01_sea-surface-height.html">Sea Surface Altimetry Data Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="repos/pangeo-gallery/example-gallery/index.html">Example Gallery</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="repos/pangeo-gallery/example-gallery/01_example-notebook.html">Test Pangeo Gallery 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="repos/pangeo-gallery/example-gallery/02_example-dask.html">Test Dask Gateway</a></li>
@@ -76,6 +81,7 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a></li>
 <li class="toctree-l1"><a class="reference internal" href="repos/pangeo-gallery/example-gallery/index.html">Example Gallery</a></li>
 </ul>
 </ul>
@@ -117,11 +123,28 @@ Each gallery is hosted in a standalone GitHub repository.
 If you’re interested in contributing an new gallery, please see the
 <a class="reference internal" href="contributing.html"><span class="doc">Contributor Guide</span></a>.</p>
 <div class="row">
-   <div class="col-xs-12 col-sm-6">
 
 
+   <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="thumbnail"><a class="reference external image-reference" href="repos/pangeo-gallery/physical-oceanography"><img alt="_images/thumbnail.png" src="_images/thumbnail.png" /></a>
+  <div class="caption">
+   <h2>Physical Oceanography</h2>
+   <!-- <a class="btn btn-primary" href="https://github.com/pangeo-gallery/physical-oceanography" role="button"><i class="fa fa-github fa-lg"></i> &nbsp; pangeo-gallery/physical-oceanography</a> -->
+   <p> Examples of how to use Xarray, Dask, and Holoviews to load, process, and visualize cloud-based ocean data. Datasets include satellite observations (sea-surface height) and ocean model output (POP, MOM6).
+   </p>
+   <div class="badges">
+     <img alt="License" src="https://img.shields.io/github/license/pangeo-gallery/physical-oceanography?style=flat-square" />
+     <a href="https://github.com/pangeo-gallery/physical-oceanography"><img alt="GitHub" src="https://img.shields.io/github/last-commit/pangeo-gallery/physical-oceanography/binderbot-built?logo=github&style=flat-square" /></a>
+     <a href="https://github.com/pangeo-gallery/physical-oceanography/actions?query=workflow%3ABinderbot"><img alt="BinderBot" src="https://github.com/pangeo-gallery/physical-oceanography/workflows/Binderbot/badge.svg?logo=github&style=flat-square" /></a>
+     <a href="https://binder.pangeo.io/v2/gh/pangeo-gallery/default-binder/master/?urlpath=git-pull?repo=https://github.com/pangeo-gallery/physical-oceanography%26amp%3Burlpath=lab/tree/physical-oceanography"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
+   </div>
+  </div>
+ </div>
+</div>
 
-    <div class="thumbnail"><a class="reference external image-reference" href="repos/pangeo-gallery/example-gallery"><img alt="_images/thumbnail.png" src="_images/thumbnail.png" /></a>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+ <div class="thumbnail"><a class="reference external image-reference" href="repos/pangeo-gallery/example-gallery"><img alt="_images/thumbnail1.png" src="_images/thumbnail1.png" /></a>
      <div class="caption">
       <h2>Example Gallery</h2>
       <!-- <a class="btn btn-primary" href="https://github.com/pangeo-gallery/example-gallery" role="button"><i class="fa fa-github fa-lg"></i> &nbsp; pangeo-gallery/example-gallery</a> -->
@@ -135,8 +158,8 @@ If you’re interested in contributing an new gallery, please see the
       </div>
      </div>
     </div>
+   </div>
 
-  </div>
 </div><div class="toctree-wrapper compound">
 </div>
 </div>
