@@ -5,7 +5,7 @@ Welcome to the Pangeo Gallery website. This site allows you to browse different
 Pangeo use cases. The site is organized into galleries, listed below,
 containing one or more notebooks.
 Each gallery is hosted in a standalone GitHub repository.
-If you're interested in contributing an new gallery, please see the
+If you're interested in contributing a new gallery, please see the
 :doc:`contributing`.
 
 .. raw:: html

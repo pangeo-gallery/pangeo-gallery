@@ -32,7 +32,6 @@ To create a new gallery, you will need to create a new repo following the
 - Remove the dummy content and add your content.
 - Update the ``binder-build.yaml`` configuration file.
 - Add a custom ``thumbnail.png``, a 200 x 200 px image which represents the gallery contents.
-- Add the ``REPO_DISPATCH_TOKEN`` secret. (**TODO**: how do we share this securely?)
 
 You also need to add your repo as a submodule to the Pangeo gallery repo, located at
 https://github.com/pangeo-gallery/pangeo-gallery.
