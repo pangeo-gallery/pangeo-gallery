@@ -16,7 +16,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Today's date and time: 2020-03-30 19:59:09.207573\n"
+      "Today's date and time: 2020-04-01 19:50:32.984666\n"
      ]
     }
    ],
@@ -35,7 +35,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "jupyter-pangeo-2dgallery-2ddefault-2dbinder-2dfdi0fyqe\n"
+      "jupyter-pangeo-2dgallery-2ddefault-2dbinder-2d5u9y0kjs\n"
      ]
     }
    ],
@@ -68,7 +68,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.8.2"
+   "version": "3.7.6"
   }
  },
  "nbformat": 4,
