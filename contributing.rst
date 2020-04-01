@@ -33,6 +33,14 @@ To create a new gallery, you will need to create a new repo following the
 - Update the ``binder-build.yaml`` configuration file.
 - Add a custom ``thumbnail.png``, a 200 x 200 px image which represents the gallery contents.
 
+Now push your changes, e.g.::
+
+    git push origin
+
+At this point, a GitHub Action will execute your notebooks on the binder.
+Click the "Actions" button on your repository page or navigate to ``/actions``,
+and wait for the build to finish.
+
 You also need to add your repo as a submodule to the Pangeo gallery repo, located at
 https://github.com/pangeo-gallery/pangeo-gallery.
 
