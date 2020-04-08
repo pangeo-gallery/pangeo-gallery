@@ -90,7 +90,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['README.rst', '_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -110,7 +110,10 @@ html_theme = 'pangeo'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'navbar_sidebarrel': False,
+    'navbar_pagenav': False
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -127,6 +130,9 @@ html_sidebars = {
      'repos/**/index': ['sidebartoc.html'],
      'repos/*/*/**': ['nbsidebar.html']
 }
+
+
+
 
 
 # -- Options for HTMLHelp output ------------------------------------------
