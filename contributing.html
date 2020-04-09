@@ -149,6 +149,13 @@ Since every gallery is a GitHub repository, you can contribute by
 <li><p>Update the <code class="docutils literal notranslate"><span class="pre">binder-build.yaml</span></code> configuration file.</p></li>
 <li><p>Add a custom <code class="docutils literal notranslate"><span class="pre">thumbnail.png</span></code>, a 200 x 200 px image which represents the gallery contents.</p></li>
 </ul>
+<p>Now push your changes, e.g.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span>
+</pre></div>
+</div>
+<p>At this point, a GitHub Action will execute your notebooks on the binder.
+Click the “Actions” button on your repository page or navigate to <code class="docutils literal notranslate"><span class="pre">/actions</span></code>,
+and wait for the build to finish.</p>
 <p>You also need to add your repo as a submodule to the Pangeo gallery repo, located at
 <a class="reference external" href="https://github.com/pangeo-gallery/pangeo-gallery">https://github.com/pangeo-gallery/pangeo-gallery</a>.</p>
 <ul>
@@ -238,7 +245,7 @@ not be changed.</p></td>
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0.<br/>
     </p>
   </div>
 </footer>
