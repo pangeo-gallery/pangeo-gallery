@@ -7,6 +7,6 @@
 	url = https://github.com/pangeo-gallery/physical-oceanography.git
 	branch = binderbot-built
 [submodule "repos/pangeo-gallery/esip-gallery"]
-	path = repos/pangeo-gallery/esip-gallery
+	path = repos/rsignell-usgs/esip-gallery
 	url = https://github.com/rsignell-usgs/esip-gallery.git
 	branch = binderbot-built
