@@ -15,3 +15,7 @@
 	path = repos/NCAR/cesm-lens-aws
 	url = https://github.com/NCAR/cesm-lens-aws.git
 	branch = binderbot-built
+[submodule "repos/TomAugspurger/pangeo-dask-gateway"]
+	path = repos/TomAugspurger/pangeo-dask-gateway
+	url = https://github.com/TomAugspurger/pangeo-dask-gateway.git
+	branch = binderbot-built
