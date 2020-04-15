@@ -40,7 +40,7 @@ Notebooks
    :maxdepth: 1
    :titlesonly:
 
-   *
+   **
 """
 
 def write_template(dirname):
