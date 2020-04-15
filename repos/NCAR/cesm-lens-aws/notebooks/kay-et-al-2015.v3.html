@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Introduction &#8212; Pangeo Gallery  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pangeo-gallery.css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/language_data.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../../index.html">
+            <span><img src="../../../../_static/small_e_reversed_24px.png"></span>
+          Pangeo Gallery</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Gallery for CESM LENS on AWS</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rsignell-usgs/esip-gallery/index.html">ESIP Gallery</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../rsignell-usgs/esip-gallery/01_hurricane_ike_water_levels.html">Hurricane Ike Maximum Water Levels</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../pangeo-gallery/physical-oceanography/01_sea-surface-height.html">Sea Surface Altimetry Data Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pangeo-gallery/example-gallery/index.html">Example Gallery</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../pangeo-gallery/example-gallery/01_example-notebook.html">Test Pangeo Gallery 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pangeo-gallery/example-gallery/02_example-dask.html">Test Dask Gateway</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Gallery for CESM LENS on AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rsignell-usgs/esip-gallery/index.html">ESIP Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pangeo-gallery/example-gallery/index.html">Example Gallery</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+            
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    min-width: 5ex;
+    padding-top: 0.3rem;
+    padding-right: 0.3rem;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 0.3rem;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+</style>
+<div class="section" id="Introduction">
+<h1>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h1>
+<p>This Jupyter Notebook demonstrates how one might use the NCAR Community Earth System Model (CESM) Large Ensemble (LENS) data hosted on AWS S3 (<a class="reference external" href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a>). The notebook shows how to reproduce figures 2 and 4 from the Kay et al. (2015) paper describing the CESM LENS dataset (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>)</p>
+<p>This resource is intended to be helpful for people not familiar with elements of the <a class="reference external" href="https://pangeo.io">Pangeo</a> framework including Jupyter Notebooks, <a class="reference external" href="http://xarray.pydata.org/">Xarray</a>, and <a class="reference external" href="https://zarr.readthedocs.io/">Zarr</a> data format, or with the original paper, so it includes additional explanation.</p>
+<p>Notebook version 3.3 (2019 Dec 19)</p>
+<div class="section" id="Set-up-environment">
+<h2>Set up environment<a class="headerlink" href="#Set-up-environment" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Display output of plots directly in Notebook</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+
+<span class="c1"># Silence dask.distributed logs</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;distributed.utils_perf&quot;</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">dask.config</span>
+<span class="n">dask</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">set</span><span class="p">({</span><span class="s1">&#39;distributed.logging.distributed&#39;</span><span class="p">:</span> <span class="s1">&#39;error&#39;</span><span class="p">})</span>
+
+<span class="kn">import</span> <span class="nn">intake</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Create-and-Connect-to-Dask-Distributed-Cluster">
+<h2>Create and Connect to Dask Distributed Cluster<a class="headerlink" href="#Create-and-Connect-to-Dask-Distributed-Cluster" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Create cluster</span>
+<span class="kn">from</span> <span class="nn">dask_kubernetes</span> <span class="kn">import</span> <span class="n">KubeCluster</span>
+<span class="kn">from</span> <span class="nn">dask.distributed</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="n">cluster</span> <span class="o">=</span> <span class="n">KubeCluster</span><span class="p">()</span>
+<span class="n">cluster</span><span class="o">.</span><span class="n">adapt</span><span class="p">(</span><span class="n">minimum</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">maximum</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">wait_count</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+<span class="c1"># Connect to cluster</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">cluster</span><span class="p">)</span>
+<span class="c1"># Display cluster dashboard URL</span>
+<span class="n">cluster</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "eba04386450e4eb7878eeb6e1bd005ea", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<p>☝️ Link to scheduler dashboard will appear above.</p>
+</div>
+<div class="section" id="Load-data-into-xarray-from-a-catalog-using-intake-esm">
+<h2>Load data into xarray from a catalog using intake-esm<a class="headerlink" href="#Load-data-into-xarray-from-a-catalog-using-intake-esm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/notebooks/tutorial.html">Intake-esm Documentation</a></p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Open collection description file</span>
+<span class="n">intakeEsmUrl</span> <span class="o">=</span> <span class="s1">&#39;https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.json&#39;</span>
+<span class="n">col</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_esm_datastore</span><span class="p">(</span><span class="n">intakeEsmUrl</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">col</span><span class="o">.</span><span class="n">_col_data</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">])</span> <span class="c1">#Description of collection</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Catalog file:&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">.</span><span class="n">_col_data</span><span class="p">[</span><span class="s1">&#39;catalog_file&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="c1">#Summary of collection structure</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+This is an ESM collection for CESM1 Large Ensemble Zarr dataset publicly available on Amazon S3 (us-west-2 region)
+Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.csv
+aws-cesm1-le-ESM Collection with 302 entries:
+        &gt; 5 component(s)
+
+        &gt; 5 frequency(s)
+
+        &gt; 6 experiment(s)
+
+        &gt; 54 variable(s)
+
+        &gt; 302 path(s)
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Show expanded version of collection structure with details</span>
+<span class="kn">import</span> <span class="nn">pprint</span>
+<span class="n">uniques</span> <span class="o">=</span> <span class="n">col</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;component&quot;</span><span class="p">,</span> <span class="s2">&quot;frequency&quot;</span><span class="p">,</span> <span class="s2">&quot;experiment&quot;</span><span class="p">,</span> <span class="s2">&quot;variable&quot;</span><span class="p">])</span>
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">uniques</span><span class="p">,</span> <span class="n">compact</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{   &#39;component&#39;: {   &#39;count&#39;: 5,
+                     &#39;values&#39;: [&#39;atm&#39;, &#39;ice_nh&#39;, &#39;ice_sh&#39;, &#39;lnd&#39;, &#39;ocn&#39;]},
+    &#39;experiment&#39;: {   &#39;count&#39;: 6,
+                      &#39;values&#39;: [   &#39;20C&#39;, &#39;RCP85&#39;, &#39;CTRL&#39;, &#39;CTRL_AMIP&#39;,
+                                    &#39;CTRL_SLAB_OCN&#39;, &#39;HIST&#39;]},
+    &#39;frequency&#39;: {   &#39;count&#39;: 5,
+                     &#39;values&#39;: [   &#39;daily&#39;, &#39;hourly6-1990-2005&#39;,
+                                   &#39;hourly6-2026-2035&#39;, &#39;hourly6-2071-2080&#39;,
+                                   &#39;monthly&#39;]},
+    &#39;variable&#39;: {   &#39;count&#39;: 54,
+                    &#39;values&#39;: [   &#39;FLNS&#39;, &#39;FLNSC&#39;, &#39;FLUT&#39;, &#39;FSNS&#39;, &#39;FSNSC&#39;,
+                                  &#39;FSNTOA&#39;, &#39;ICEFRAC&#39;, &#39;LHFLX&#39;, &#39;PRECL&#39;,
+                                  &#39;PRECSC&#39;, &#39;PRECSL&#39;, &#39;PRECT&#39;, &#39;PRECTMX&#39;, &#39;PSL&#39;,
+                                  &#39;Q850&#39;, &#39;SHFLX&#39;, &#39;TMQ&#39;, &#39;TREFHT&#39;, &#39;TREFHTMN&#39;,
+                                  &#39;TREFHTMX&#39;, &#39;TS&#39;, &#39;UBOT&#39;, &#39;WSPDSRFAV&#39;, &#39;Z500&#39;,
+                                  &#39;PS&#39;, &#39;Q&#39;, &#39;QREFHT&#39;, &#39;T&#39;, &#39;U&#39;, &#39;V&#39;, &#39;Z3&#39;,
+                                  &#39;PRECC&#39;, &#39;aice_d&#39;, &#39;hi_d&#39;, &#39;aice&#39;, &#39;hi&#39;,
+                                  &#39;FSNO&#39;, &#39;H2OSNO&#39;, &#39;QRUNOFF&#39;, &#39;RAIN&#39;, &#39;SNOW&#39;,
+                                  &#39;SOILWATER_10CM&#39;, &#39;SOILLIQ&#39;, &#39;SALT&#39;, &#39;SFWF&#39;,
+                                  &#39;SHF&#39;, &#39;SSH&#39;, &#39;SST&#39;, &#39;TEMP&#39;, &#39;UVEL&#39;, &#39;VNS&#39;,
+                                  &#39;VNT&#39;, &#39;VVEL&#39;, &#39;WVEL&#39;]}}
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Show the first few lines of the catalog</span>
+<span class="n">col</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>component</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS....</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FLNSC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNSC...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FLUT</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLUT....</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FSNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNS....</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FSNSC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNSC...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FSNTOA</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNTO...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>ICEFRAC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-ICEFR...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>LHFLX</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-LHFLX...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>PRECL</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECL...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>PRECSC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECS...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Optional: inspect the collection object</span>
+<span class="c1">#import inspect</span>
+<span class="c1">#inspect.getmembers(col)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Extract-data-needed-to-construct-Figure-2-of-Kay-et-al.-paper">
+<h2>Extract data needed to construct Figure 2 of Kay et al. paper<a class="headerlink" href="#Extract-data-needed-to-construct-Figure-2-of-Kay-et-al.-paper" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Search the catalog to find the desired data, in this case the reference height temperature</span>
+<span class="c1"># of the atmosphere, at daily time resolution, for the Historical, 20th Century, and RCP8.5 (IPCC</span>
+<span class="c1"># Representative Concentration Pathway 8.5) experiments</span>
+<span class="n">col_subset</span> <span class="o">=</span> <span class="n">col</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">frequency</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;daily&quot;</span><span class="p">,</span> <span class="s2">&quot;monthly&quot;</span><span class="p">],</span> <span class="n">component</span><span class="o">=</span><span class="s2">&quot;atm&quot;</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="s2">&quot;TREFHT&quot;</span><span class="p">,</span>
+                        <span class="n">experiment</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;20C&quot;</span><span class="p">,</span> <span class="s2">&quot;RCP85&quot;</span><span class="p">,</span> <span class="s2">&quot;HIST&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data subset:&quot;</span><span class="p">)</span>
+<span class="n">col_subset</span><span class="o">.</span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Data subset:
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>component</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>TREFHT</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-TREFH...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>atm</td>
+      <td>daily</td>
+      <td>RCP85</td>
+      <td>TREFHT</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-TRE...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>atm</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>TREFHT</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-TRE...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>atm</td>
+      <td>monthly</td>
+      <td>HIST</td>
+      <td>TREFHT</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-TR...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>atm</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>TREFHT</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-T...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Load catalog entries for subset into a dictionary of xarray datasets</span>
+<span class="n">dsets</span> <span class="o">=</span> <span class="n">col_subset</span><span class="o">.</span><span class="n">to_dataset_dict</span><span class="p">(</span><span class="n">zarr_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;consolidated&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span> <span class="n">storage_options</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;anon&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Dataset dictionary keys:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">dsets</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Progress: |███████████████████████████████████████████████████████████████████████████████| 100.0%
+
+--&gt; The keys in the returned dictionary of datasets are constructed as follows:
+        &#39;component.experiment.frequency&#39;
+
+--&gt; There are 5 group(s)
+
+Dataset dictionary keys:
+ dict_keys([&#39;atm.20C.monthly&#39;, &#39;atm.HIST.monthly&#39;, &#39;atm.RCP85.monthly&#39;, &#39;atm.RCP85.daily&#39;, &#39;atm.20C.daily&#39;])
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Define Xarray datasets corresponding to the three experiments</span>
+<span class="n">ds_HIST</span> <span class="o">=</span> <span class="n">dsets</span><span class="p">[</span><span class="s1">&#39;atm.HIST.monthly&#39;</span><span class="p">]</span>
+<span class="n">ds_20C</span> <span class="o">=</span> <span class="n">dsets</span><span class="p">[</span><span class="s1">&#39;atm.20C.daily&#39;</span><span class="p">]</span>
+<span class="n">ds_RCP85</span> <span class="o">=</span> <span class="n">dsets</span><span class="p">[</span><span class="s1">&#39;atm.RCP85.daily&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Use Dask.Distributed utility function to display size of each dataset</span>
+<span class="kn">from</span> <span class="nn">distributed.utils</span> <span class="kn">import</span> <span class="n">format_bytes</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;Historical:&quot;</span><span class="p">,</span> <span class="n">format_bytes</span><span class="p">(</span><span class="n">ds_HIST</span><span class="o">.</span><span class="n">nbytes</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;20th Century:&quot;</span><span class="p">,</span> <span class="n">format_bytes</span><span class="p">(</span><span class="n">ds_20C</span><span class="o">.</span><span class="n">nbytes</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;RCP8.5:&quot;</span><span class="p">,</span> <span class="n">format_bytes</span><span class="p">(</span><span class="n">ds_RCP85</span><span class="o">.</span><span class="n">nbytes</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+ Historical: 186.12 MB
+ 20th Century: 277.72 GB
+ RCP8.5: 306.79 GB
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Extract the Reference Height Temperature data variable</span>
+<span class="n">t_hist</span> <span class="o">=</span> <span class="n">ds_HIST</span><span class="p">[</span><span class="s2">&quot;TREFHT&quot;</span><span class="p">]</span>
+<span class="n">t_20c</span> <span class="o">=</span> <span class="n">ds_20C</span><span class="p">[</span><span class="s2">&quot;TREFHT&quot;</span><span class="p">]</span>
+<span class="n">t_rcp</span> <span class="o">=</span> <span class="n">ds_RCP85</span><span class="p">[</span><span class="s2">&quot;TREFHT&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Description of 20C data:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">t_20c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Description of 20C data:
+ &lt;xarray.DataArray &#39;TREFHT&#39; (member_id: 40, time: 31390, lat: 192, lon: 288)&gt;
+dask.array&lt;zarr, shape=(40, 31390, 192, 288), dtype=float32, chunksize=(2, 365, 192, 288), chunktype=numpy.ndarray&gt;
+Coordinates:
+  * lat        (lat) float64 -90.0 -89.06 -88.12 -87.17 ... 88.12 89.06 90.0
+  * lon        (lon) float64 0.0 1.25 2.5 3.75 5.0 ... 355.0 356.2 357.5 358.8
+  * member_id  (member_id) int64 1 2 3 4 5 6 7 8 ... 34 35 101 102 103 104 105
+  * time       (time) object 1920-01-01 00:00:00 ... 2005-12-31 00:00:00
+Attributes:
+    cell_methods:  time: mean
+    long_name:     Reference height temperature
+    units:         K
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># The global surface temperature anomaly was computed relative to the 1961-90 base period</span>
+<span class="c1"># in the Kay et al. paper, so extract that time slice</span>
+<span class="n">t_ref</span> <span class="o">=</span> <span class="n">t_20c</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="s2">&quot;1961&quot;</span><span class="p">,</span> <span class="s2">&quot;1990&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Read-grid-cell-areas">
+<h2>Read grid cell areas<a class="headerlink" href="#Read-grid-cell-areas" title="Permalink to this headline">¶</a></h2>
+<p>Cell size varies with latitude, so this must be accounted for when computing the global mean.</p>
+<p>Note: Each Zarr store includes area values and other ancillary information in addition to the actual data. A possible optimization to reduce data size would be to extract the duplicated information into separate objects.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">cell_area</span> <span class="o">=</span> <span class="n">ds_20C</span><span class="o">.</span><span class="n">area</span>
+<span class="n">total_area</span> <span class="o">=</span> <span class="n">cell_area</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">cell_area</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.DataArray &#x27;area&#x27; (lat: 192, lon: 288)&gt;
+dask.array&lt;zarr, shape=(192, 288), dtype=float32, chunksize=(192, 288), chunktype=numpy.ndarray&gt;
+Coordinates:
+  * lat      (lat) float64 -90.0 -89.06 -88.12 -87.17 ... 87.17 88.12 89.06 90.0
+  * lon      (lon) float64 0.0 1.25 2.5 3.75 5.0 ... 355.0 356.2 357.5 358.8
+Attributes:
+    long_name:      Grid-Cell Area
+    standard_name:  cell_area
+    units:          m2</pre></div>
+</div>
+</div>
+<div class="section" id="Define-Weighted-Means">
+<h2>Define Weighted Means<a class="headerlink" href="#Define-Weighted-Means" title="Permalink to this headline">¶</a></h2>
+<p>Note: resample(time=”AS”) does an Annual resampling based on Start of calendar year. See documentation for <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#dateoffset-objects">Pandas resampling options</a></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">t_ref_ts</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">t_ref</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;AS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span> <span class="o">*</span> <span class="n">cell_area</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+    <span class="o">/</span> <span class="n">total_area</span>
+<span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="s2">&quot;member_id&quot;</span><span class="p">))</span>
+
+<span class="n">t_hist_ts</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">t_hist</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;AS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span> <span class="o">*</span> <span class="n">cell_area</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+<span class="p">)</span> <span class="o">/</span> <span class="n">total_area</span>
+
+<span class="n">t_20c_ts</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">t_20c</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;AS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span> <span class="o">*</span> <span class="n">cell_area</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+<span class="p">)</span> <span class="o">/</span> <span class="n">total_area</span>
+
+<span class="n">t_rcp_ts</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">(</span><span class="n">t_rcp</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;AS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span> <span class="o">*</span> <span class="n">cell_area</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span>
+<span class="p">)</span> <span class="o">/</span> <span class="n">total_area</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Read-data-and-compute-means">
+<h2>Read data and compute means<a class="headerlink" href="#Read-data-and-compute-means" title="Permalink to this headline">¶</a></h2>
+<p>Note: Pangeo’s “lazy execution” philosophy means that until this point we have not actually read the bulk of the data. These steps take a while to complete, so we include the Notebook “cell magic” directive %%time to display elapsed and CPU times after computation.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">%%time</span>
+<span class="n">t_ref_mean</span> <span class="o">=</span> <span class="n">t_ref_ts</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="n">t_ref_mean</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+CPU times: user 12.3 s, sys: 907 ms, total: 13.2 s
+Wall time: 6min 23s
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.DataArray ()&gt;
+array(286.38766, dtype=float32)</pre></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">%%time</span>
+<span class="n">t_hist_ts_df</span> <span class="o">=</span> <span class="n">t_hist_ts</span><span class="o">.</span><span class="n">to_series</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+<span class="n">t_hist_ts_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+CPU times: user 747 ms, sys: 36.4 ms, total: 784 ms
+Wall time: 5.67 s
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+time
+1850-01-01 00:00:00    286.372620
+1851-01-01 00:00:00    286.280853
+1852-01-01 00:00:00    286.260742
+1853-01-01 00:00:00    286.218781
+1854-01-01 00:00:00    286.159119
+dtype: float32
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">%%time</span>
+<span class="n">t_20c_ts_df</span> <span class="o">=</span> <span class="n">t_20c_ts</span><span class="o">.</span><span class="n">to_series</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+<span class="n">t_20c_ts_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+CPU times: user 25.5 s, sys: 1.01 s, total: 26.5 s
+Wall time: 1min 53s
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>member_id</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>...</th>
+      <th>31</th>
+      <th>32</th>
+      <th>33</th>
+      <th>34</th>
+      <th>35</th>
+      <th>101</th>
+      <th>102</th>
+      <th>103</th>
+      <th>104</th>
+      <th>105</th>
+    </tr>
+    <tr>
+      <th>time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1920-01-01 00:00:00</th>
+      <td>286.311310</td>
+      <td>286.346710</td>
+      <td>286.283875</td>
+      <td>286.363983</td>
+      <td>286.328400</td>
+      <td>286.373444</td>
+      <td>286.386017</td>
+      <td>286.302185</td>
+      <td>286.374878</td>
+      <td>286.348358</td>
+      <td>...</td>
+      <td>286.243469</td>
+      <td>286.283783</td>
+      <td>286.173859</td>
+      <td>286.309509</td>
+      <td>286.296234</td>
+      <td>286.341064</td>
+      <td>286.341187</td>
+      <td>286.376831</td>
+      <td>286.321167</td>
+      <td>286.254822</td>
+    </tr>
+    <tr>
+      <th>1921-01-01 00:00:00</th>
+      <td>286.250641</td>
+      <td>286.198181</td>
+      <td>286.287292</td>
+      <td>286.390564</td>
+      <td>286.309204</td>
+      <td>286.334229</td>
+      <td>286.311310</td>
+      <td>286.300232</td>
+      <td>286.315857</td>
+      <td>286.305603</td>
+      <td>...</td>
+      <td>286.179413</td>
+      <td>286.315674</td>
+      <td>286.075104</td>
+      <td>286.295990</td>
+      <td>286.318085</td>
+      <td>286.375275</td>
+      <td>286.246063</td>
+      <td>286.356201</td>
+      <td>286.492523</td>
+      <td>286.224274</td>
+    </tr>
+    <tr>
+      <th>1922-01-01 00:00:00</th>
+      <td>286.293488</td>
+      <td>286.296356</td>
+      <td>286.265686</td>
+      <td>286.336517</td>
+      <td>286.293579</td>
+      <td>286.220093</td>
+      <td>286.010773</td>
+      <td>286.195099</td>
+      <td>286.205170</td>
+      <td>286.396545</td>
+      <td>...</td>
+      <td>286.142365</td>
+      <td>286.316254</td>
+      <td>286.140167</td>
+      <td>286.293549</td>
+      <td>286.327972</td>
+      <td>286.142365</td>
+      <td>286.412598</td>
+      <td>286.369232</td>
+      <td>286.503418</td>
+      <td>286.282074</td>
+    </tr>
+    <tr>
+      <th>1923-01-01 00:00:00</th>
+      <td>286.329163</td>
+      <td>286.322662</td>
+      <td>286.251099</td>
+      <td>286.322723</td>
+      <td>286.237457</td>
+      <td>286.152069</td>
+      <td>286.066040</td>
+      <td>286.204498</td>
+      <td>286.271454</td>
+      <td>286.292236</td>
+      <td>...</td>
+      <td>286.168762</td>
+      <td>286.300781</td>
+      <td>286.095490</td>
+      <td>286.116302</td>
+      <td>286.227905</td>
+      <td>286.226440</td>
+      <td>286.512909</td>
+      <td>286.381348</td>
+      <td>286.215302</td>
+      <td>286.396332</td>
+    </tr>
+    <tr>
+      <th>1924-01-01 00:00:00</th>
+      <td>286.307465</td>
+      <td>286.237366</td>
+      <td>286.148895</td>
+      <td>286.311890</td>
+      <td>286.361694</td>
+      <td>286.185974</td>
+      <td>286.248352</td>
+      <td>286.288177</td>
+      <td>286.330444</td>
+      <td>286.411835</td>
+      <td>...</td>
+      <td>286.143066</td>
+      <td>286.287079</td>
+      <td>286.234100</td>
+      <td>286.199890</td>
+      <td>286.252777</td>
+      <td>286.322815</td>
+      <td>286.256165</td>
+      <td>286.221588</td>
+      <td>286.247437</td>
+      <td>286.422028</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 40 columns</p>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">%%time</span>
+<span class="n">t_rcp_ts_df</span> <span class="o">=</span> <span class="n">t_rcp_ts</span><span class="o">.</span><span class="n">to_series</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+<span class="n">t_rcp_ts_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+CPU times: user 23.6 s, sys: 917 ms, total: 24.5 s
+Wall time: 57.7 s
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>member_id</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>...</th>
+      <th>31</th>
+      <th>32</th>
+      <th>33</th>
+      <th>34</th>
+      <th>35</th>
+      <th>101</th>
+      <th>102</th>
+      <th>103</th>
+      <th>104</th>
+      <th>105</th>
+    </tr>
+    <tr>
+      <th>time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2006-01-01 00:00:00</th>
+      <td>286.764832</td>
+      <td>286.960358</td>
+      <td>286.679230</td>
+      <td>286.793152</td>
+      <td>286.754547</td>
+      <td>287.022339</td>
+      <td>286.850464</td>
+      <td>287.089844</td>
+      <td>286.960022</td>
+      <td>286.775787</td>
+      <td>...</td>
+      <td>286.866089</td>
+      <td>286.925049</td>
+      <td>286.663971</td>
+      <td>286.955414</td>
+      <td>286.712524</td>
+      <td>287.115601</td>
+      <td>286.863556</td>
+      <td>286.881683</td>
+      <td>287.308411</td>
+      <td>287.030334</td>
+    </tr>
+    <tr>
+      <th>2007-01-01 00:00:00</th>
+      <td>287.073792</td>
+      <td>286.908539</td>
+      <td>286.808746</td>
+      <td>286.998901</td>
+      <td>286.841675</td>
+      <td>286.993042</td>
+      <td>286.914124</td>
+      <td>286.938965</td>
+      <td>286.933563</td>
+      <td>286.675385</td>
+      <td>...</td>
+      <td>286.804108</td>
+      <td>286.849548</td>
+      <td>286.628204</td>
+      <td>287.010529</td>
+      <td>286.811523</td>
+      <td>287.187225</td>
+      <td>286.862823</td>
+      <td>287.008240</td>
+      <td>287.222534</td>
+      <td>287.239044</td>
+    </tr>
+    <tr>
+      <th>2008-01-01 00:00:00</th>
+      <td>287.104095</td>
+      <td>286.815033</td>
+      <td>286.995056</td>
+      <td>287.081543</td>
+      <td>287.100708</td>
+      <td>286.960510</td>
+      <td>286.854706</td>
+      <td>286.878937</td>
+      <td>287.062927</td>
+      <td>286.702454</td>
+      <td>...</td>
+      <td>286.825653</td>
+      <td>286.844086</td>
+      <td>286.811859</td>
+      <td>286.803741</td>
+      <td>286.956635</td>
+      <td>287.080994</td>
+      <td>286.930084</td>
+      <td>286.945801</td>
+      <td>287.087128</td>
+      <td>287.157745</td>
+    </tr>
+    <tr>
+      <th>2009-01-01 00:00:00</th>
+      <td>286.984497</td>
+      <td>287.059418</td>
+      <td>287.010498</td>
+      <td>287.144745</td>
+      <td>286.948700</td>
+      <td>287.092316</td>
+      <td>286.888458</td>
+      <td>287.050964</td>
+      <td>287.138428</td>
+      <td>286.890839</td>
+      <td>...</td>
+      <td>286.785797</td>
+      <td>286.876556</td>
+      <td>286.953094</td>
+      <td>287.060364</td>
+      <td>287.056885</td>
+      <td>287.124908</td>
+      <td>287.005615</td>
+      <td>287.083984</td>
+      <td>287.254211</td>
+      <td>287.060730</td>
+    </tr>
+    <tr>
+      <th>2010-01-01 00:00:00</th>
+      <td>286.991821</td>
+      <td>287.102295</td>
+      <td>286.988159</td>
+      <td>286.875183</td>
+      <td>286.954407</td>
+      <td>287.121796</td>
+      <td>286.938843</td>
+      <td>287.116211</td>
+      <td>286.957245</td>
+      <td>287.049622</td>
+      <td>...</td>
+      <td>286.937317</td>
+      <td>286.928284</td>
+      <td>286.980499</td>
+      <td>287.118713</td>
+      <td>287.178040</td>
+      <td>287.030212</td>
+      <td>287.114716</td>
+      <td>287.083038</td>
+      <td>287.256927</td>
+      <td>287.066528</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 40 columns</p>
+</div></div>
+</div>
+</div>
+<div class="section" id="Get-Observations-for-Figure-2-(HadCRUT4;-Morice-et-al.-2012)">
+<h2>Get Observations for Figure 2 (HadCRUT4; Morice et al. 2012)<a class="headerlink" href="#Get-Observations-for-Figure-2-(HadCRUT4;-Morice-et-al.-2012)" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Observational time series data for comparison with ensemble average</span>
+<span class="n">obsDataURL</span> <span class="o">=</span> <span class="s2">&quot;https://www.esrl.noaa.gov/psd/thredds/dodsC/Datasets/cru/hadcrut4/air.mon.anom.median.nc&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">obsDataURL</span><span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.Dataset&gt;
+Dimensions:    (lat: 36, lon: 72, nbnds: 2, time: 2042)
+Coordinates:
+  * lat        (lat) float32 87.5 82.5 77.5 72.5 ... -72.5 -77.5 -82.5 -87.5
+  * lon        (lon) float32 -177.5 -172.5 -167.5 -162.5 ... 167.5 172.5 177.5
+  * time       (time) datetime64[ns] 1850-01-01 1850-02-01 ... 2020-02-01
+Dimensions without coordinates: nbnds
+Data variables:
+    time_bnds  (time, nbnds) datetime64[ns] 1850-01-01 1850-01-31 ... 2020-02-28
+    air        (time, lat, lon) float32 nan nan nan nan nan ... nan nan nan nan
+Attributes:
+    platform:                        Surface
+    title:                           HADCRUT4 Combined Air Temperature/SST An...
+    history:                         Originally created at NOAA/ESRL PSD by C...
+    Conventions:                     CF-1.0
+    Comment:                         This dataset supersedes V3
+    Source:                          Obtained from http://hadobs.metoffice.co...
+    version:                         4.2.0
+    dataset_title:                   HadCRUT4
+    References:                      https://www.psl.noaa.gov/data/gridded/da...
+    DODS_EXTRA.Unlimited_Dimension:  time</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Obs mean: weight by days in each month</strong></p></li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">weighted_temporal_mean</span><span class="p">(</span><span class="n">ds</span><span class="p">):</span>
+    <span class="n">time_bound_diff</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">time_bnds</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;nbnds&quot;</span><span class="p">)[:,</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">wgts</span> <span class="o">=</span> <span class="n">time_bound_diff</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.year&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">time_bound_diff</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span>
+        <span class="s2">&quot;time.year&quot;</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">xr</span><span class="o">.</span><span class="n">ALL_DIMS</span><span class="p">)</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">assert_allclose</span><span class="p">(</span><span class="n">wgts</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.year&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">xr</span><span class="o">.</span><span class="n">ALL_DIMS</span><span class="p">),</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">obs</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="s2">&quot;air&quot;</span><span class="p">]</span>
+    <span class="n">cond</span> <span class="o">=</span> <span class="n">obs</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span>
+    <span class="n">ones</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">cond</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">obs_sum</span> <span class="o">=</span> <span class="p">(</span><span class="n">obs</span> <span class="o">*</span> <span class="n">wgts</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;AS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+    <span class="n">ones_out</span> <span class="o">=</span> <span class="p">(</span><span class="n">ones</span> <span class="o">*</span> <span class="n">wgts</span><span class="p">)</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;AS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+    <span class="n">obs_s</span> <span class="o">=</span> <span class="p">(</span><span class="n">obs_sum</span> <span class="o">/</span> <span class="n">ones_out</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">to_series</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">obs_s</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p><strong>Limit Observations to 20th Century</strong></p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">obs_s</span> <span class="o">=</span> <span class="n">weighted_temporal_mean</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
+<span class="n">obs_s</span> <span class="o">=</span> <span class="n">obs_s</span><span class="p">[</span><span class="s1">&#39;1920&#39;</span><span class="p">:]</span>
+<span class="n">obs_s</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+time
+1920-01-01   -0.262006
+1921-01-01   -0.195891
+1922-01-01   -0.301986
+1923-01-01   -0.269062
+1924-01-01   -0.292857
+Freq: AS-JAN, dtype: float64
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">all_ts_anom</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">t_20c_ts_df</span><span class="p">,</span> <span class="n">t_rcp_ts_df</span><span class="p">])</span> <span class="o">-</span> <span class="n">t_ref_mean</span><span class="o">.</span><span class="n">data</span>
+<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span><span class="o">.</span><span class="n">year</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">all_ts_anom</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+<span class="n">obs_years</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span><span class="o">.</span><span class="n">year</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">obs_s</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Combine ensemble member 1 data from historical and 20th century experiments</span>
+<span class="n">hist_anom</span> <span class="o">=</span> <span class="n">t_hist_ts_df</span> <span class="o">-</span> <span class="n">t_ref_mean</span><span class="o">.</span><span class="n">data</span>
+<span class="n">member1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">hist_anom</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">all_ts_anom</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]],</span> <span class="n">verify_integrity</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">member1_years</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span><span class="o">.</span><span class="n">year</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">member1</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Figure-2:-Global-surface-temperature-anomaly-(1961-90-base-period)-for-individual-ensemble-members,-and-observations">
+<h2>Figure 2: Global surface temperature anomaly (1961-90 base period) for individual ensemble members, and observations<a class="headerlink" href="#Figure-2:-Global-surface-temperature-anomaly-(1961-90-base-period)-for-individual-ensemble-members,-and-observations" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s2">&quot;out&quot;</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">grid_alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">years</span><span class="p">,</span> <span class="n">all_ts_anom</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">obs_years</span><span class="p">,</span> <span class="n">obs_s</span><span class="p">[</span><span class="s1">&#39;1920&#39;</span><span class="p">:],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">member1_years</span><span class="p">,</span> <span class="n">member1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">0.35</span><span class="p">,</span>
+    <span class="mf">0.4</span><span class="p">,</span>
+    <span class="s2">&quot;observations&quot;</span><span class="p">,</span>
+    <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+    <span class="n">horizontalalignment</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+    <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">0.35</span><span class="p">,</span>
+    <span class="mf">0.33</span><span class="p">,</span>
+    <span class="s2">&quot;members 2-40&quot;</span><span class="p">,</span>
+    <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+    <span class="n">horizontalalignment</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+    <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">0.05</span><span class="p">,</span>
+    <span class="mf">0.2</span><span class="p">,</span>
+    <span class="s2">&quot;member 1&quot;</span><span class="p">,</span>
+    <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+    <span class="n">horizontalalignment</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+    <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="mi">1850</span><span class="p">,</span> <span class="mi">1920</span><span class="p">,</span> <span class="mi">1950</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2050</span><span class="p">,</span> <span class="mi">2100</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">1850</span><span class="p">,</span> <span class="mi">2100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Global Surface</span><span class="se">\n</span><span class="s2">Temperature Anomaly (K)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_38_0.png" src="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_38_0.png" />
+</div>
+</div>
+<p>Figure will appear above when ready. Compare with Fig.2 of Kay et al. 2015 (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>)</p>
+</div>
+<div class="section" id="Compute-Linear-Trend-for-Winter-Seasons">
+<h2>Compute Linear Trend for Winter Seasons<a class="headerlink" href="#Compute-Linear-Trend-for-Winter-Seasons" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">linear_trend</span><span class="p">(</span><span class="n">da</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">):</span>
+    <span class="n">da_chunk</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">chunk</span><span class="p">({</span><span class="n">dim</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">})</span>
+    <span class="n">trend</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">apply_ufunc</span><span class="p">(</span>
+        <span class="n">calc_slope</span><span class="p">,</span>
+        <span class="n">da_chunk</span><span class="p">,</span>
+        <span class="n">vectorize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">input_core_dims</span><span class="o">=</span><span class="p">[[</span><span class="n">dim</span><span class="p">]],</span>
+        <span class="n">output_core_dims</span><span class="o">=</span><span class="p">[[]],</span>
+        <span class="n">output_dtypes</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">],</span>
+        <span class="n">dask</span><span class="o">=</span><span class="s2">&quot;parallelized&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">trend</span>
+
+
+<span class="k">def</span> <span class="nf">calc_slope</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;ufunc to be used by linear_trend&quot;&quot;&quot;</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+
+    <span class="c1"># drop missing values (NaNs) from x and y</span>
+    <span class="n">finite_indexes</span> <span class="o">=</span> <span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">slope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span> <span class="k">if</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">finite_indexes</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">else</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">finite_indexes</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">finite_indexes</span><span class="p">],</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">slope</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Compute-ensemble-trends">
+<h3>Compute ensemble trends<a class="headerlink" href="#Compute-ensemble-trends" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">t</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">t_20c</span><span class="p">,</span> <span class="n">t_rcp</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="n">seasons</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="s2">&quot;1979&quot;</span><span class="p">,</span> <span class="s2">&quot;2012&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;QS-DEC&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="c1"># Include only full seasons from 1979 and 2012</span>
+<span class="n">seasons</span> <span class="o">=</span> <span class="n">seasons</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="s2">&quot;1979&quot;</span><span class="p">,</span> <span class="s2">&quot;2012&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">winter_seasons</span> <span class="o">=</span> <span class="n">seasons</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span>
+    <span class="n">time</span><span class="o">=</span><span class="n">seasons</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">seasons</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span> <span class="o">==</span> <span class="mi">12</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">winter_trends</span> <span class="o">=</span> <span class="n">linear_trend</span><span class="p">(</span>
+    <span class="n">winter_seasons</span><span class="o">.</span><span class="n">chunk</span><span class="p">({</span><span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">})</span>
+<span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">()</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">winter_seasons</span><span class="o">.</span><span class="n">time</span><span class="p">)</span>
+
+<span class="c1"># Compute ensemble mean from the first 30 members</span>
+<span class="n">winter_trends_mean</span> <span class="o">=</span> <span class="n">winter_trends</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">member_id</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;member_id&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Make sure that we have 34 seasons</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">winter_seasons</span><span class="o">.</span><span class="n">time</span><span class="p">)</span> <span class="o">==</span> <span class="mi">34</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Get-Observations-for-Figure-4-(NASA-GISS-GisTemp)">
+<h3>Get Observations for Figure 4 (NASA GISS GisTemp)<a class="headerlink" href="#Get-Observations-for-Figure-4-(NASA-GISS-GisTemp)" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Observational time series data for comparison with ensemble average</span>
+<span class="c1"># NASA GISS Surface Temperature Analysis, https://data.giss.nasa.gov/gistemp/</span>
+<span class="n">obsDataURL</span> <span class="o">=</span> <span class="s2">&quot;https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Download, unzip, and load file</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;wget &quot;</span> <span class="o">+</span> <span class="n">obsDataURL</span><span class="p">)</span>
+
+<span class="n">obsDataFileName</span> <span class="o">=</span> <span class="n">obsDataURL</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;gunzip &quot;</span> <span class="o">+</span> <span class="n">obsDataFileName</span><span class="p">)</span>
+
+<span class="n">obsDataFileName</span> <span class="o">=</span> <span class="n">obsDataFileName</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">obsDataFileName</span><span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.Dataset&gt;
+Dimensions:      (lat: 90, lon: 180, nv: 2, time: 1683)
+Coordinates:
+  * lat          (lat) float32 -89.0 -87.0 -85.0 -83.0 ... 83.0 85.0 87.0 89.0
+  * lon          (lon) float32 -179.0 -177.0 -175.0 -173.0 ... 175.0 177.0 179.0
+  * time         (time) datetime64[ns] 1880-01-15 1880-02-15 ... 2020-03-15
+Dimensions without coordinates: nv
+Data variables:
+    time_bnds    (time, nv) datetime64[ns] 1880-01-01 1880-02-01 ... 2020-04-01
+    tempanomaly  (time, lat, lon) float32 nan nan nan nan ... 3.01 3.01 3.01
+Attributes:
+    title:        GISTEMP Surface Temperature Analysis
+    institution:  NASA Goddard Institute for Space Studies
+    source:       http://data.giss.nasa.gov/gistemp/
+    Conventions:  CF-1.6
+    history:      Created 2020-04-13 16:23:33 by SBBX_to_nc 2.0 - ILAND=1200,...</pre></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Remap longitude range from [-180, 180] to [0, 360] for plotting purposes</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">assign_coords</span><span class="p">(</span><span class="n">lon</span><span class="o">=</span><span class="p">((</span><span class="n">ds</span><span class="o">.</span><span class="n">lon</span> <span class="o">+</span> <span class="mi">360</span><span class="p">)</span> <span class="o">%</span> <span class="mi">360</span><span class="p">))</span><span class="o">.</span><span class="n">sortby</span><span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">)</span>
+<span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.Dataset&gt;
+Dimensions:      (lat: 90, lon: 180, nv: 2, time: 1683)
+Coordinates:
+  * lat          (lat) float32 -89.0 -87.0 -85.0 -83.0 ... 83.0 85.0 87.0 89.0
+  * lon          (lon) float32 1.0 3.0 5.0 7.0 9.0 ... 353.0 355.0 357.0 359.0
+  * time         (time) datetime64[ns] 1880-01-15 1880-02-15 ... 2020-03-15
+Dimensions without coordinates: nv
+Data variables:
+    time_bnds    (time, nv) datetime64[ns] 1880-01-01 1880-02-01 ... 2020-04-01
+    tempanomaly  (time, lat, lon) float32 nan nan nan nan ... 3.01 3.01 3.01
+Attributes:
+    title:        GISTEMP Surface Temperature Analysis
+    institution:  NASA Goddard Institute for Space Studies
+    source:       http://data.giss.nasa.gov/gistemp/
+    Conventions:  CF-1.6
+    history:      Created 2020-04-13 16:23:33 by SBBX_to_nc 2.0 - ILAND=1200,...</pre></div>
+</div>
+</div>
+<div class="section" id="Compute-observed-trends">
+<h3>Compute observed trends<a class="headerlink" href="#Compute-observed-trends" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">obs_seasons</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="s2">&quot;1979&quot;</span><span class="p">,</span> <span class="s2">&quot;2012&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;QS-DEC&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="c1"># Include only full seasons from 1979 through 2012</span>
+<span class="n">obs_seasons</span> <span class="o">=</span> <span class="n">obs_seasons</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="s2">&quot;1979&quot;</span><span class="p">,</span> <span class="s2">&quot;2012&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+
+<span class="c1"># Compute observed winter trends</span>
+<span class="n">obs_winter_seasons</span> <span class="o">=</span> <span class="n">obs_seasons</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span>
+    <span class="n">time</span><span class="o">=</span><span class="n">obs_seasons</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">obs_seasons</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span> <span class="o">==</span> <span class="mi">12</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">obs_winter_seasons</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.Dataset&gt;
+Dimensions:      (lat: 90, lon: 180, time: 34)
+Coordinates:
+  * time         (time) datetime64[ns] 1979-12-01 1980-12-01 ... 2012-12-01
+  * lat          (lat) float32 -89.0 -87.0 -85.0 -83.0 ... 83.0 85.0 87.0 89.0
+  * lon          (lon) float32 1.0 3.0 5.0 7.0 9.0 ... 353.0 355.0 357.0 359.0
+Data variables:
+    tempanomaly  (time, lat, lon) float32 0.5333333 0.5333333 ... 7.48 7.48</pre></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">obs_winter_trends</span> <span class="o">=</span> <span class="n">linear_trend</span><span class="p">(</span>
+    <span class="n">obs_winter_seasons</span><span class="o">.</span><span class="n">chunk</span><span class="p">({</span><span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;time&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">})</span>
+<span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">()</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">obs_winter_seasons</span><span class="o">.</span><span class="n">time</span><span class="p">)</span>
+<span class="n">obs_winter_trends</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.Dataset&gt;
+Dimensions:      (lat: 90, lon: 180)
+Coordinates:
+  * lon          (lon) float32 1.0 3.0 5.0 7.0 9.0 ... 353.0 355.0 357.0 359.0
+  * lat          (lat) float32 -89.0 -87.0 -85.0 -83.0 ... 83.0 85.0 87.0 89.0
+Data variables:
+    tempanomaly  (lat, lon) float64 1.309 1.309 1.309 ... 5.695 5.695 5.695</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Figure-4:-Global-maps-of-historical-(1979---2012)-boreal-winter-(DJF)-surface-air-trends">
+<h2>Figure 4: Global maps of historical (1979 - 2012) boreal winter (DJF) surface air trends<a class="headerlink" href="#Figure-4:-Global-maps-of-historical-(1979---2012)-boreal-winter-(DJF)-surface-air-trends" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">cmaps</span>  <span class="c1"># for NCL colormaps</span>
+<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">contour_levels</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="n">color_map</span> <span class="o">=</span> <span class="n">cmaps</span><span class="o">.</span><span class="n">ncl_default</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">make_map_plot</span><span class="p">(</span><span class="n">nplot_rows</span><span class="p">,</span> <span class="n">nplot_cols</span><span class="p">,</span> <span class="n">plot_index</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">plot_label</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Create a single map subplot. &quot;&quot;&quot;</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">nplot_rows</span><span class="p">,</span> <span class="n">nplot_cols</span><span class="p">,</span> <span class="n">plot_index</span><span class="p">,</span> <span class="n">projection</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">Robinson</span><span class="p">(</span><span class="n">central_longitude</span> <span class="o">=</span> <span class="mi">180</span><span class="p">))</span>
+    <span class="n">cplot</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">lons</span><span class="p">,</span> <span class="n">lats</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span>
+                         <span class="n">levels</span> <span class="o">=</span> <span class="n">contour_levels</span><span class="p">,</span>
+                         <span class="n">cmap</span> <span class="o">=</span> <span class="n">color_map</span><span class="p">,</span>
+                         <span class="n">extend</span> <span class="o">=</span> <span class="s1">&#39;both&#39;</span><span class="p">,</span>
+                         <span class="n">transform</span> <span class="o">=</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">coastlines</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">plot_label</span><span class="p">,</span> <span class="n">fontSize</span> <span class="o">=</span> <span class="mi">14</span><span class="p">,</span> <span class="n">transform</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cplot</span><span class="p">,</span> <span class="n">ax</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Generate plot (may take a while as many individual maps are generated)</span>
+<span class="n">numPlotRows</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">numPlotCols</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">figWidth</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">figHeight</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">numPlotRows</span><span class="p">,</span> <span class="n">numPlotCols</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">figWidth</span><span class="p">,</span><span class="n">figHeight</span><span class="p">))</span>
+
+<span class="n">lats</span> <span class="o">=</span> <span class="n">winter_trends</span><span class="o">.</span><span class="n">lat</span>
+<span class="n">lons</span> <span class="o">=</span> <span class="n">winter_trends</span><span class="o">.</span><span class="n">lon</span>
+
+<span class="c1"># Create ensemble member plots</span>
+<span class="k">for</span> <span class="n">ensemble_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
+    <span class="n">plot_data</span> <span class="o">=</span> <span class="n">winter_trends</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">member_id</span> <span class="o">=</span> <span class="n">ensemble_index</span><span class="p">)</span>
+    <span class="n">plot_index</span> <span class="o">=</span> <span class="n">ensemble_index</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">plot_label</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">plot_index</span><span class="p">)</span>
+    <span class="n">plotRow</span> <span class="o">=</span> <span class="n">ensemble_index</span> <span class="o">//</span> <span class="n">numPlotCols</span>
+    <span class="n">plotCol</span> <span class="o">=</span> <span class="n">ensemble_index</span> <span class="o">%</span> <span class="n">numPlotCols</span>
+    <span class="c1"># Retain axes objects for figure colorbar</span>
+    <span class="n">cplot</span><span class="p">,</span> <span class="n">axs</span><span class="p">[</span><span class="n">plotRow</span><span class="p">,</span> <span class="n">plotCol</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_map_plot</span><span class="p">(</span><span class="n">numPlotRows</span><span class="p">,</span> <span class="n">numPlotCols</span><span class="p">,</span> <span class="n">plot_index</span><span class="p">,</span> <span class="n">plot_data</span><span class="p">,</span> <span class="n">plot_label</span><span class="p">)</span>
+
+<span class="c1"># Create plots for the ensemble mean, observations, and a figure color bar.</span>
+<span class="n">cplot</span><span class="p">,</span> <span class="n">axs</span><span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_map_plot</span><span class="p">(</span><span class="n">numPlotRows</span><span class="p">,</span> <span class="n">numPlotCols</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="n">winter_trends_mean</span><span class="p">,</span> <span class="s1">&#39;EM&#39;</span><span class="p">)</span>
+
+<span class="n">lats</span> <span class="o">=</span> <span class="n">obs_winter_trends</span><span class="o">.</span><span class="n">lat</span>
+<span class="n">lons</span> <span class="o">=</span> <span class="n">obs_winter_trends</span><span class="o">.</span><span class="n">lon</span>
+<span class="n">cplot</span><span class="p">,</span> <span class="n">axs</span><span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">make_map_plot</span><span class="p">(</span><span class="n">numPlotRows</span><span class="p">,</span> <span class="n">numPlotCols</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">obs_winter_trends</span><span class="o">.</span><span class="n">tempanomaly</span><span class="p">,</span> <span class="s1">&#39;OBS&#39;</span><span class="p">)</span>
+
+<span class="n">cbar</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">cplot</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axs</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="n">shrink</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">,</span> <span class="n">pad</span> <span class="o">=</span> <span class="mf">0.02</span><span class="p">)</span>
+<span class="n">cbar</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;1979-2012 DJF surface air temperature trends (K/34 years)&#39;</span><span class="p">,</span> <span class="n">fontSize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">cbar</span><span class="o">.</span><span class="n">set_ticks</span><span class="p">(</span><span class="n">contour_levels</span><span class="p">)</span>
+<span class="n">cbar</span><span class="o">.</span><span class="n">set_ticklabels</span><span class="p">(</span><span class="n">contour_levels</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_56_0.png" src="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_56_0.png" />
+</div>
+</div>
+<p>Figure will appear above when ready. Compare with Fig. 4 of Kay et al. 2015 (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>).</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Gracefully destroy/close our cluster</span>
+<span class="n">client</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">cluster</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"0408734f6b3048a990c7ffff16627402": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "07a586848faf47e0a07ae10fbc2bb033": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_82bcfd35e17942ebb11e21900f22bc97", "placeholder": "\u200b", "style": "IPY_MODEL_c02e60c75e374035ac9f475f1b6c5603", "value": "<h2>KubeCluster</h2>"}}, "0ef0f45841e241cc99e45057d4bb9559": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": "150px", "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0f4897134ea14760acd5ab4aa744e40a": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "1535dd77447a4a32920a4502f6ab95a2": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_4d805d14bf0f4e11b3fc1ff51d9609ba", "placeholder": "\u200b", "style": "IPY_MODEL_51ae5f2970764ee4ad84af4d516e7adb", "value": "<p><b>Dashboard: </b><a href=\"/user/ncar-cesm-lens-aws-eon8xiit/proxy/8787/status\" target=\"_blank\">/user/ncar-cesm-lens-aws-eon8xiit/proxy/8787/status</a></p>\n"}}, "1b5c95504d8d4301aad516fc5a24fa4f": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_0ef0f45841e241cc99e45057d4bb9559", "placeholder": "\u200b", "style": "IPY_MODEL_bc750c8c89ad4cbb959875124da7948c", "value": "\n<div>\n  <style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n  </style>\n  <table style=\"text-align: right;\">\n    <tr> <th>Workers</th> <td>0</td></tr>\n    <tr> <th>Cores</th> <td>0</td></tr>\n    <tr> <th>Memory</th> <td>0 B</td></tr>\n  </table>\n</div>\n"}}, "283720b341c94975920ec96f5239eb9a": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "IntTextModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "Minimum", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f3cc48b3397a4065a096670bdebf21f7", "step": 1, "style": "IPY_MODEL_afbca679ead34dd5aeac6beff2cfd07c", "value": 0}}, "3566149db229458eb55adf80a006ec7c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_283720b341c94975920ec96f5239eb9a", "IPY_MODEL_b79108fa66a14ea6a58025c35f281bb7", "IPY_MODEL_370e47de8ddc4967a2788f84f24a87f9"], "layout": "IPY_MODEL_4e02473713304a69a957962c0f2da453"}}, "370e47de8ddc4967a2788f84f24a87f9": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ButtonModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Adapt", "disabled": false, "icon": "", "layout": "IPY_MODEL_f3cc48b3397a4065a096670bdebf21f7", "style": "IPY_MODEL_523f365ba5364b91be5443d601d3ea2c", "tooltip": ""}}, "4d805d14bf0f4e11b3fc1ff51d9609ba": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4e02473713304a69a957962c0f2da453": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "51ae5f2970764ee4ad84af4d516e7adb": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "523f365ba5364b91be5443d601d3ea2c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ButtonStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "545022c039334ad1a54da5d2590d25a3": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "AccordionModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "AccordionModel", "_titles": {"0": "Manual Scaling", "1": "Adaptive Scaling"}, "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "AccordionView", "box_style": "", "children": ["IPY_MODEL_700227f60947406b8fad7d17ccf56afb", "IPY_MODEL_3566149db229458eb55adf80a006ec7c"], "layout": "IPY_MODEL_5f42e1c4ee114b56b36110e395f9bd5c", "selected_index": null}}, "567dcc5108d545bd9edd2a1e2978cb50": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ButtonStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "5d5e1c43516448bc8d5ef4b41fbb3aba": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ButtonModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Scale", "disabled": false, "icon": "", "layout": "IPY_MODEL_f3cc48b3397a4065a096670bdebf21f7", "style": "IPY_MODEL_567dcc5108d545bd9edd2a1e2978cb50", "tooltip": ""}}, "5f42e1c4ee114b56b36110e395f9bd5c": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": "500px", "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "6c8502095bfc41f9a90846477b406bcd": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "700227f60947406b8fad7d17ccf56afb": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_fb68080502f94172b2eb483e4301900c", "IPY_MODEL_5d5e1c43516448bc8d5ef4b41fbb3aba"], "layout": "IPY_MODEL_ef03e0205def444fa5fd0d2c42b72922"}}, "812d5dd36e2f41a6b21ddf539197e75c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_1b5c95504d8d4301aad516fc5a24fa4f", "IPY_MODEL_545022c039334ad1a54da5d2590d25a3"], "layout": "IPY_MODEL_6c8502095bfc41f9a90846477b406bcd"}}, "82bcfd35e17942ebb11e21900f22bc97": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "afbca679ead34dd5aeac6beff2cfd07c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "b79108fa66a14ea6a58025c35f281bb7": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "IntTextModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "Maximum", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f3cc48b3397a4065a096670bdebf21f7", "step": 1, "style": "IPY_MODEL_0408734f6b3048a990c7ffff16627402", "value": 0}}, "bc750c8c89ad4cbb959875124da7948c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "c02e60c75e374035ac9f475f1b6c5603": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "dc62464f4fe841579c93bfb01f89f327": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "eba04386450e4eb7878eeb6e1bd005ea": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "VBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_07a586848faf47e0a07ae10fbc2bb033", "IPY_MODEL_812d5dd36e2f41a6b21ddf539197e75c", "IPY_MODEL_1535dd77447a4a32920a4502f6ab95a2"], "layout": "IPY_MODEL_dc62464f4fe841579c93bfb01f89f327"}}, "ef03e0205def444fa5fd0d2c42b72922": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f3cc48b3397a4065a096670bdebf21f7": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "150px"}}, "fb68080502f94172b2eb483e4301900c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "IntTextModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "Workers", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f3cc48b3397a4065a096670bdebf21f7", "step": 1, "style": "IPY_MODEL_0f4897134ea14760acd5ab4aa744e40a", "value": 0}}}, "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Pangeo Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
