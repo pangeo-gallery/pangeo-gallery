@@ -10,3 +10,8 @@
 	path = repos/rsignell-usgs/esip-gallery
 	url = https://github.com/rsignell-usgs/esip-gallery.git
 	branch = binderbot-built
+
+[submodule "repos/NCAR/cesm-lens-aws"]
+	path = repos/NCAR/cesm-lens-aws
+	url = https://github.com/NCAR/cesm-lens-aws.git
+	branch = binderbot-built
