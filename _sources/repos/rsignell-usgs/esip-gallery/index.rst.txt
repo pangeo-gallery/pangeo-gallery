@@ -37,4 +37,4 @@ Notebooks
    :maxdepth: 1
    :titlesonly:
 
-   *
+   **
