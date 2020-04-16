@@ -125,7 +125,7 @@ html_static_path = ['_static']
 html_sidebars = {
     'index': [],
      'repos/**/index': ['sidebartoc.html'],
-     'repos/*/*/*': ['nbsidebar.html']
+     'repos/*/*/**': ['nbsidebar.html']
 }
 
 

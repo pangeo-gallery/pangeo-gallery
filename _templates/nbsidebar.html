@@ -1,5 +1,5 @@
 {% set nbname = sourcename.split('/')[-1] | replace('.txt', '') %}
-{% set org_and_repo = pagename.split('/')[:-1] | join('/') %}
+{% set org_and_repo = pagename.split('/')[:3] | join('/') %}
 {% set repo = pagename.split('/')[-2]  %}
 {% set repo_data = repos[org_and_repo] %}
 
