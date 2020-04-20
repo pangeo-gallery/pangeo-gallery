@@ -193,11 +193,16 @@ def rstjinja(app, docname, source):
     # Make sure we're outputting HTML
     if app.builder.format != 'html':
         return
-    src = source[0]
-    rendered = app.builder.templates.render_string(
-        src, app.config.html_context
-    )
-    source[0] = rendered
+    # we don't want to render any jinja templates for notebooks
+    # but it is hard to tell whether a document is a notebook or note based
+    # on DOCNAME alone (suffix is stripped)
+    # as a best guess, we only render templates on pages named index
+    if  docname.endswith('index'):
+        src = source[0]
+        rendered = app.builder.templates.render_string(
+            src, app.config.html_context
+        )
+        source[0] = rendered
 
 # https://pypi.python.org/pypi/sphinx-bootstrap-theme/
 def setup(app):
@@ -218,8 +223,6 @@ for repo in repos:
         repo_conf = yaml.load(f, Loader=yaml.FullLoader)
     repo_conf['path'] = repo.lstrip('repos').lstrip('/')
     repo_data[repo] = repo_conf
-
-print(repo_data)
 
 html_context = {
     'repos': repo_data
