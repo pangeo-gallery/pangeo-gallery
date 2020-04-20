@@ -5,7 +5,7 @@
    "metadata": {},
    "source": [
     "# Hurricane Ike Maximum Water Levels\n",
-    "Compute maximum water levels during Hurricane Ike on a 9 million node triangular mesh storm surge model.  Visualize the results using [HoloViz](https://holoviz.org/) TriMesh rendering with Datashader. "
+    "Compute maximum water levels during Hurricane Ike on a 9 million node triangular mesh ADCIRC storm surge model.  Visualize the results using [HoloViz](https://holoviz.org/) TriMesh rendering with Datashader. "
    ]
   },
   {
