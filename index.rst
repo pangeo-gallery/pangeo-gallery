@@ -1,3 +1,6 @@
+Pangeo Gallery
+==============
+
 Welcome to the Pangeo Gallery website. This site allows you to browse different
 Pangeo use cases. The site is organized into galleries, listed below,
 containing one or more notebooks.
