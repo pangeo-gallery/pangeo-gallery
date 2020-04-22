@@ -223,7 +223,7 @@ import glob
 import os
 
 repo_data = {}
-repos = glob.glob('repos/*/*')
+repos = sorted(glob.glob('repos/*/*'))
 for repo in repos:
     with open(os.path.join(repo, 'binder-gallery.yaml')) as f:
         repo_conf = yaml.load(f, Loader=yaml.FullLoader)
