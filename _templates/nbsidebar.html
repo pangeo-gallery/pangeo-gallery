@@ -3,9 +3,9 @@
 {% set repo = pagename.split('/')[-2]  %}
 {% set repo_data = repos[org_and_repo] %}
 
-<p><i class="fa fa-github fa-lg"></i> <a target="_blank" href="https://github.com/{{ repo_data.path }}/blob/master/{{ nbname }}">{{ repo_data.path }}/{{ nbname }}</a></p>
 
-<div class="badges">
+<div class="badges" id="sidebar-header">
+  <p><i class="fa fa-github fa-lg"></i> <a target="_blank" href="https://github.com/{{ repo_data.path }}/blob/master/{{ nbname }}">{{ repo_data.path }}/{{ nbname }}</a></p>
   <a target="_blank" href="{{ repo_data.binder_url }}/v2/gh/{{ repo_data.binder_repo }}/master/?urlpath=git-pull?repo=https://github.com/{{ repo_data.path }}%26amp%3Burlpath=lab/tree/{{ repo }}/{{ nbname }}%3Fautodecode"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
 </div>
 

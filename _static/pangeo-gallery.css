@@ -5,3 +5,19 @@ div.body {
 .badges img {
   display: inline !important;
 }
+
+
+nav#pangeo-breadcrumb ol.breadcrumb {
+    margin-bottom: 0px;
+    background-color: transparent;
+    padding: 14px 15px;
+}
+
+nav#pangeo-breadcrumb ol.breadcrumb a {
+    color: white;
+}
+
+div#sidebar-header {
+  padding: 5px 20px 20px 15px;
+  border-bottom: 1px solid #999;
+}
