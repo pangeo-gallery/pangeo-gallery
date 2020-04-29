@@ -37,11 +37,11 @@ jobs:
               body: issue_reply
             })
             // Create Pull request and reference originating issue
-            const message = `Adding [${gallery_repo}](${repo_url}) to the Pangeo Gallery as it was requested in #${context.issue.number}`
+            const message = `Adding [${gallery_repo}](${repo_url}) to the Pangeo Gallery as requested in #${context.issue.number}`
             github.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Integrating ${gallery_repo} with Pangeo Gallery`,
+              title: `Integrate ${gallery_repo} with Pangeo Gallery`,
               head: gallery_repo,
               base: 'master',
               body: message
