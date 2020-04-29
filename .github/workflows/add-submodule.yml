@@ -26,7 +26,7 @@ jobs:
           script: |
             const fs = require('fs')
             const payload = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'))
-            const gallery_repo = payload.issue.body.split(' ')[1]
+            const gallery_repo = payload.issue.body.split('/add-submodule')[1].trim()
             const repo_url = `https://github.com/${gallery_repo}.git`
             const issue_reply = `👋 Thanks for integrating [${gallery_repo}](${repo_url}) repo with Pangeo Gallery!`
             // Send a reply message to the issue
