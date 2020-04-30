@@ -1,0 +1,48 @@
+name: Add Git Submodule
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-submodule-from-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Add repo as submodule and commit changes
+        run: |
+          python .github/workflows/scripts/add_submodule.py
+
+      - name: Create PR
+        uses: actions/github-script@0.9.0
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const fs = require('fs')
+            const payload = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'))
+            const gallery_repo = payload.issue.body.split('/add-submodule')[1].trim()
+            const repo_url = `https://github.com/${gallery_repo}.git`
+            const issue_reply = `👋 Thanks for integrating [${gallery_repo}](${repo_url}) repo with Pangeo Gallery!`
+            // Send a reply message to the issue
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: issue_reply
+            })
+            // Create Pull request and reference originating issue
+            const message = `Adding [${gallery_repo}](${repo_url}) to the Pangeo Gallery as requested in #${context.issue.number}`
+            github.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Integrate ${gallery_repo} with Pangeo Gallery`,
+              head: gallery_repo,
+              base: 'master',
+              body: message
+              })
