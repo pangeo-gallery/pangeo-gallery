@@ -19,3 +19,7 @@
 	path = repos/TomAugspurger/pangeo-dask-gateway
 	url = https://github.com/TomAugspurger/pangeo-dask-gateway.git
 	branch = binderbot-built
+[submodule "repos/pangeo-gallery/cmip6"]
+	path = repos/pangeo-gallery/cmip6
+	url = https://github.com/pangeo-gallery/cmip6.git
+	branch = binderbot-built
