@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pangeo Tutorial Galler &#8212; Pangeo Gallery  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Dask" href="dask.html" />
+    <link rel="prev" title="Using Dask Gateway" href="../../TomAugspurger/pangeo-dask-gateway/using-dask-gateway.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../../index.html">
+          <span><img src="../../../_static/small_e_reversed_24px.png"></span>
+        Pangeo Gallery</a>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+      <li>
+      <nav id="pangeo-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        
+          <li class="breadcrumb-item active"><a href="#">Pangeo Tutorial Galler</a></li>
+        
+        </ol>
+      </nav>
+      </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NCAR/cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../TomAugspurger/pangeo-dask-gateway/index.html">Pangeo &amp; Dask Gateway.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pangeo Tutorial Galler</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dask.html">Dask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geopandas.html">Geopandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intake.html">Intake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xarray.html">Xarray</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/cmip6/index.html">CMIP6 Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/example-gallery/index.html">Example Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rabernat/earthcube2020_cloud_storage/index.html">Cloud Storage Benachmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rsignell-usgs/esip-gallery/index.html">ESIP Gallery</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <div class="section" id="pangeo-tutorial-galler">
+<h1>Pangeo Tutorial Galler<a class="headerlink" href="#pangeo-tutorial-galler" title="Permalink to this headline">¶</a></h1>
+<pre><i class="fa fa-github fa-lg"></i> <a href="https://github.com/pangeo-data/pangeo-tutorial-gallery">pangeo-data/pangeo-tutorial-gallery</a></pre><div class="badges">
+  <img alt="License" src="https://img.shields.io/github/license/pangeo-data/pangeo-tutorial-gallery?style=flat-square" />
+  <a href="https://github.com/pangeo-data/pangeo-tutorial-gallery"><img alt="GitHub" src="https://img.shields.io/github/last-commit/pangeo-data/pangeo-tutorial-gallery/binderbot-built?logo=github&style=flat-square" /></a>
+  <a href="https://github.com/pangeo-data/pangeo-tutorial-gallery/actions?query=workflow%3ABinderbot"><img alt="BinderBot" src="https://github.com/pangeo-data/pangeo-tutorial-gallery/workflows/Binderbot/badge.svg?logo=github&style=flat-square" /></a>
+  <a href="https://aws-uswest2-binder.pangeo.io//v2/gh/pangeo-data/pangeo-tutorial-gallery/binder-env?urlpath=git-pull?repo=https://github.com/pangeo-data/pangeo-tutorial-gallery%26amp%3Burlpath=lab/tree/pangeo-tutorial-gallery"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
+</div><div class="section" id="thumbnail-image">
+<h2>Thumbnail Image<a class="headerlink" href="#thumbnail-image" title="Permalink to this headline">¶</a></h2>
+<img alt="Thumbnail" src="../../../_images/thumbnail2.png" />
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>An gallery of notebooks to introduce the Pangeo software stack.</p>
+</div>
+<div class="section" id="notebooks">
+<h2>Notebooks<a class="headerlink" href="#notebooks" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dask.html">Dask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geopandas.html">Geopandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intake.html">Intake</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xarray.html">Xarray</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Pangeo Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
