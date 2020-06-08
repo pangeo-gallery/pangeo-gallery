@@ -27,3 +27,7 @@
 	path = repos/rabernat/earthcube2020_cloud_storage
 	url = https://github.com/rabernat/earthcube2020_cloud_storage.git
 	branch = binderbot-built
+[submodule "repos/pangeo-data/pangeo-tutorial-gallery"]
+	path = repos/pangeo-data/pangeo-tutorial-gallery
+	url = https://github.com/pangeo-data/pangeo-tutorial-gallery.git
+	branch = binderbot-built
