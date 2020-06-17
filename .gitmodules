@@ -23,10 +23,6 @@
 	path = repos/pangeo-gallery/cmip6
 	url = https://github.com/pangeo-gallery/cmip6.git
 	branch = binderbot-built
-[submodule "repos/rabernat/earthcube2020_cloud_storage"]
-	path = repos/rabernat/earthcube2020_cloud_storage
-	url = https://github.com/rabernat/earthcube2020_cloud_storage.git
-	branch = binderbot-built
 [submodule "repos/pangeo-data/pangeo-tutorial-gallery"]
 	path = repos/pangeo-data/pangeo-tutorial-gallery
 	url = https://github.com/pangeo-data/pangeo-tutorial-gallery.git
