@@ -27,3 +27,7 @@
 	path = repos/pangeo-data/pangeo-tutorial-gallery
 	url = https://github.com/pangeo-data/pangeo-tutorial-gallery.git
 	branch = binderbot-built
+[submodule "repos/earthcube2020/ec20_abernathey_etal"]
+	path = repos/earthcube2020/ec20_abernathey_etal
+	url = https://github.com/earthcube2020/ec20_abernathey_etal.git
+	branch = binderbot-built
