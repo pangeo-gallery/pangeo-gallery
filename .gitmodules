@@ -31,3 +31,7 @@
 	path = repos/earthcube2020/ec20_abernathey_etal
 	url = https://github.com/earthcube2020/ec20_abernathey_etal.git
 	branch = binderbot-built
+[submodule "repos/pangeo-data/landsat-8-tutorial-gallery"]
+	path = repos/pangeo-data/landsat-8-tutorial-gallery
+	url = https://github.com/pangeo-data/landsat-8-tutorial-gallery.git
+	branch = binderbot-built
