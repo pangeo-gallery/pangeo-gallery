@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landsat-8 on AWS &#8212; Pangeo Gallery  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Pangeo Tutorial Gallery" href="../pangeo-tutorial-gallery/index.html" />
+    <link rel="prev" title="Landsat 8 Tutorial" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../../index.html">
+          <span><img src="../../../_static/small_e_reversed_24px.png"></span>
+        Pangeo Gallery</a>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+      <li>
+      <nav id="pangeo-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Landsat 8 Tutorial</a></li>
+        
+          <li class="breadcrumb-item active"><a href="#">Landsat-8 on AWS</a></li>
+        
+        </ol>
+      </nav>
+      </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+
+
+
+
+
+<div class="badges" id="sidebar-header">
+  <p><i class="fa fa-github fa-lg"></i> <a target="_blank" href="https://github.com/pangeo-data/landsat-8-tutorial-gallery/blob/master/landsat8.ipynb">pangeo-data/landsat-8-tutorial-gallery/landsat8.ipynb</a></p>
+  <a target="_blank" href="https://aws-uswest2-binder.pangeo.io//v2/gh/pangeo-data/landsat-8-tutorial-gallery/master/?urlpath=git-pull?repo=https://github.com/pangeo-data/landsat-8-tutorial-gallery%26amp%3Burlpath=lab/tree/landsat-8-tutorial-gallery/landsat8.ipynb%3Fautodecode"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
+</div>
+
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NCAR/cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../TomAugspurger/pangeo-dask-gateway/index.html">Pangeo &amp; Dask Gateway.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../earthcube2020/ec20_abernathey_etal/index.html">Cloud Storage Benchmarks</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Landsat 8 Tutorial</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Landsat-8 on AWS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Dask-Gateway-Cluster">Dask-Gateway Cluster</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pangeo-tutorial-gallery/index.html">Pangeo Tutorial Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/cmip6/index.html">CMIP6 Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/example-gallery/index.html">Example Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rsignell-usgs/esip-gallery/index.html">ESIP Gallery</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+</style>
+<div class="section" id="Landsat-8-on-AWS">
+<h1>Landsat-8 on AWS<a class="headerlink" href="#Landsat-8-on-AWS" title="Permalink to this headline">¶</a></h1>
+<div class="alert-info"><div class="section" id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>teaching:</strong> 30 minutes</p></li>
+<li><p><strong>exercises:</strong> 0</p></li>
+<li><p><strong>questions:</strong></p>
+<ul>
+<li><p>How can I find, anaylize, and visualize a large set of Landsat-8 imagery on AWS?</p></li>
+</ul>
+</li>
+</ul>
+</div><p>We will examine raster images from the <a class="reference external" href="https://www.usgs.gov/land-resources/nli/landsat">Landsat-8 instrument</a>. The Landsat program is the longest-running civilian satellite imagery program, with the first satellite launched in 1972 by the US Geological Survey. Landsat 8 is the latest satellite in this program, and was launched in 2013. Landsat observations are processed into “scenes”, each of which is approximately 183 km x 170 km, with a spatial resolution of 30 meters and a temporal
+resolution of 16 days. The duration of the landsat program makes it an attractive source of medium-scale imagery for land surface change analyses.</p>
+<p>This notebook is a simplified update of a <a class="reference external" href="https://medium.com/pangeo/cloud-native-geoprocessing-of-earth-observation-satellite-data-with-pangeo-997692d91ca2">blog post written in October 2018</a></p>
+<div class="section" id="Table-of-contents">
+<h3>Table of contents<a class="headerlink" href="#Table-of-contents" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="#Sat-search">**Sat-search**</a></p></li>
+<li><p><a class="reference external" href="#Holoviz">**Holoviz visualization**</a></p></li>
+<li><p><a class="reference external" href="#Rasterio-and-xarray">**Rasterio and xarray**</a></p></li>
+</ol>
+</div>
+<div class="section" id="Finding-data-on-the-Cloud">
+<h3>Finding data on the Cloud<a class="headerlink" href="#Finding-data-on-the-Cloud" title="Permalink to this headline">¶</a></h3>
+<p>Finding geospatial data on the Cloud has been difficult until recent years. Earth scientists are accustomed to going to specific portals to find data, for example <a class="reference external" href="https://search.earthdata.nasa.gov">NASA’s Earthdata Search</a>, ESA’s Copernicus Hub (<a class="reference external" href="https://scihub.copernicus.eu">https://scihub.copernicus.eu</a>), USGS National Map (<a class="reference external" href="https://www.usgs.gov/core-science-systems/national-geospatial-program/national-map">https://www.usgs.gov/core-science-systems/national-geospatial-program/national-map</a>). AWS has had a registry of open datasets stored on AWS for many years now
+<a class="reference external" href="https://aws.amazon.com/opendata/public-datasets/">https://aws.amazon.com/opendata/public-datasets/</a>. Earth-science specific data is also listed here - <a class="reference external" href="https://aws.amazon.com/earth/">https://aws.amazon.com/earth/</a>. But what if you want to search for Landsat8 data over an area of interest? Browsing through lists of files is cumbersome.</p>
+<p>An effort is underway to make geospatial data on the Cloud more easy to discover by having a bare-bones web-friendly and search-friendly metadata catalog standard: The SpatioTemporal Asset Catalog (STAC). Once the standard is set, many tools can co-exist to build upon it. For example <a class="reference external" href="https://www.element84.com/earth-search/">https://www.element84.com/earth-search/</a> allows us to programmatically and visually search for data on AWS! Here we will use the <a class="reference external" href="https://github.com/sat-utils/sat-search">satsearch Python library</a> for searching
+Landsat8 on AWS. Note you could also search for Sentinel2</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># if a library is missing from the base environment, install with one of these options:</span>
+<span class="c1">#!pip install sat-search==0.2.2</span>
+<span class="c1">#!conda install sat-search=0.2.2 -c conda-forge -y</span>
+<span class="kn">import</span> <span class="nn">satsearch</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">satsearch</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">wa_bbox</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Polygon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">[</span>
+        <span class="p">[</span>
+          <span class="o">-</span><span class="mf">124.71679687499999</span><span class="p">,</span>
+          <span class="mf">45.47554027158593</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="o">-</span><span class="mf">116.78466796875</span><span class="p">,</span>
+          <span class="mf">45.47554027158593</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="o">-</span><span class="mf">116.78466796875</span><span class="p">,</span>
+          <span class="mf">48.93693495409401</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="o">-</span><span class="mf">124.71679687499999</span><span class="p">,</span>
+          <span class="mf">48.93693495409401</span>
+        <span class="p">],</span>
+        <span class="p">[</span>
+          <span class="o">-</span><span class="mf">124.71679687499999</span><span class="p">,</span>
+          <span class="mf">45.47554027158593</span>
+        <span class="p">]</span>
+      <span class="p">]</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">from</span> <span class="nn">shapely.geometry</span> <span class="kn">import</span> <span class="n">Polygon</span>
+<span class="n">polygon</span> <span class="o">=</span> <span class="n">Polygon</span><span class="p">(</span><span class="n">wa_bbox</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">][</span><span class="s2">&quot;coordinates&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">gfa</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">([</span><span class="n">polygon</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">])</span>
+<span class="n">gfa</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">properties</span> <span class="o">=</span>  <span class="p">[</span><span class="s2">&quot;landsat:tier=T1&quot;</span><span class="p">]</span>
+<span class="n">bbox</span> <span class="o">=</span> <span class="p">(</span><span class="n">gfa</span><span class="o">.</span><span class="n">bounds</span><span class="o">.</span><span class="n">minx</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">gfa</span><span class="o">.</span><span class="n">bounds</span><span class="o">.</span><span class="n">miny</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">gfa</span><span class="o">.</span><span class="n">bounds</span><span class="o">.</span><span class="n">maxx</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">gfa</span><span class="o">.</span><span class="n">bounds</span><span class="o">.</span><span class="n">maxy</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1">#(west, south, east, north)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">satsearch</span><span class="o">.</span><span class="n">Search</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">collection</span><span class="o">=</span><span class="s1">&#39;landsat-8-l1&#39;</span><span class="p">,</span>
+                        <span class="n">bbox</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span>
+                        <span class="n">sort</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&lt;datetime&#39;</span><span class="p">],</span> <span class="c1">#earliest scene first</span>
+                        <span class="nb">property</span><span class="o">=</span><span class="n">properties</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> items&#39;</span> <span class="o">%</span> <span class="n">results</span><span class="o">.</span><span class="n">found</span><span class="p">())</span>
+<span class="n">items</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="n">items</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;set.geojson&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Remember that it is easy to load geojson with geopandas!</span>
+<span class="n">gf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;set.geojson&#39;</span><span class="p">)</span>
+<span class="n">gf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Plot search AOI and frames on a map using Holoviz Libraries</span>
+<span class="kn">import</span> <span class="nn">geoviews</span> <span class="k">as</span> <span class="nn">gv</span>
+<span class="kn">import</span> <span class="nn">hvplot.xarray</span>
+<span class="kn">import</span> <span class="nn">hvplot.pandas</span>
+
+<span class="n">cols</span> <span class="o">=</span> <span class="n">gf</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;eo:row&#39;</span><span class="p">,</span><span class="s1">&#39;eo:column&#39;</span><span class="p">,</span><span class="s1">&#39;geometry&#39;</span><span class="p">)]</span>
+<span class="n">aoi</span> <span class="o">=</span> <span class="n">gfa</span><span class="o">.</span><span class="n">hvplot</span><span class="p">(</span><span class="n">geo</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">fill_color</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">footprints</span> <span class="o">=</span> <span class="n">cols</span><span class="o">.</span><span class="n">hvplot</span><span class="p">(</span><span class="n">geo</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">hover_cols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;eo:row&#39;</span><span class="p">,</span><span class="s1">&#39;eo:column&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Landsat 8 T1&#39;</span><span class="p">)</span>
+<span class="n">tiles</span> <span class="o">=</span> <span class="n">gv</span><span class="o">.</span><span class="n">tile_sources</span><span class="o">.</span><span class="n">CartoEco</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">gv</span><span class="o">.</span><span class="n">tile_sources</span><span class="o">.</span><span class="n">StamenLabels</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="s1">&#39;annotation&#39;</span><span class="p">)</span>
+<span class="n">tiles</span> <span class="o">*</span> <span class="n">footprints</span> <span class="o">*</span> <span class="n">aoi</span> <span class="o">*</span>  <span class="n">labels</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Let&#39;s adjust our query and  just work with imagery from a particular path and row for starters</span>
+<span class="n">properties</span> <span class="o">=</span>  <span class="p">[</span><span class="s2">&quot;eo:row=027&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;eo:column=047&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;landsat:tier=T1&quot;</span><span class="p">]</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">satsearch</span><span class="o">.</span><span class="n">Search</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">collection</span><span class="o">=</span><span class="s1">&#39;landsat-8-l1&#39;</span><span class="p">,</span>
+                        <span class="n">sort</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&lt;datetime&#39;</span><span class="p">],</span> <span class="c1">#earliest scene first</span>
+                        <span class="nb">property</span><span class="o">=</span><span class="n">properties</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> items&#39;</span> <span class="o">%</span> <span class="n">results</span><span class="o">.</span><span class="n">found</span><span class="p">())</span>
+<span class="n">items</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="n">items</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;subset.geojson&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Remember that it is easy to load geojson with geopandas!</span>
+<span class="n">gf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;subset.geojson&#39;</span><span class="p">)</span>
+<span class="n">gf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Hack for neat display of band information</span>
+<span class="kn">import</span> <span class="nn">ast</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">band_info</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">gf</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;eo:bands&#39;</span><span class="p">]))</span>
+<span class="n">band_info</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ipywidgets">
+<h3>ipywidgets<a class="headerlink" href="#ipywidgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/">ipywidgets</a> provide another convenient approach to custom visualizations. The function below allows us to browse through all the image thumbnails for a group of images (more specifically a specific Landsat8 path and row).</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+
+<span class="k">def</span> <span class="nf">browse_images</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">view_image</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;id=</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="se">\t</span><span class="s2">date=</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">datetime</span><span class="si">}</span><span class="se">\t</span><span class="s2">cloud%=</span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;eo:cloud_cover&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">asset</span><span class="p">(</span><span class="s1">&#39;thumbnail&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]))</span>
+
+    <span class="n">interact</span><span class="p">(</span><span class="n">view_image</span><span class="p">,</span> <span class="n">i</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">browse_images</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="Intac-STAC">
+<h2>Intac-STAC<a class="headerlink" href="#Intac-STAC" title="Permalink to this headline">¶</a></h2>
+<p>the intake-stac library allows us to easily load these scenes described with STAC metadata into xarray DataArrays! NOTE this library is very new and will likely undergo changes in the near future. <a class="reference external" href="https://github.com/pangeo-data/intake-stac">https://github.com/pangeo-data/intake-stac</a></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">intake</span>
+<span class="kn">import</span> <span class="nn">intake_stac</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">intake</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">intake_stac</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1">#catalog = intake.open_stac_item_collection(results.items())</span>
+<span class="n">catalog</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_stac_item_collection</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">list</span><span class="p">(</span><span class="n">catalog</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sceneid</span> <span class="o">=</span> <span class="s1">&#39;LC80470272019096&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">catalog</span><span class="p">[</span><span class="n">sceneid</span><span class="p">])</span>
+<span class="c1">#catalog[sceneid].metadata</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># These are the bands or assets available to us</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">catalog</span><span class="p">[</span><span class="n">sceneid</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">catalog</span><span class="p">[</span><span class="n">sceneid</span><span class="p">][</span><span class="s1">&#39;B2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">metadata</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Let&#39;s work with this in xarray</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="n">xr</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">display_style</span><span class="o">=</span><span class="s2">&quot;html&quot;</span><span class="p">)</span>
+
+<span class="n">item</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="n">sceneid</span><span class="p">]</span>
+<span class="n">da</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;B2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>
+<span class="n">da</span><span class="o">.</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Dask-Chunks-and-Cloud-Optimized-Geotiffs">
+<h3>Dask Chunks and Cloud Optimized Geotiffs<a class="headerlink" href="#Dask-Chunks-and-Cloud-Optimized-Geotiffs" title="Permalink to this headline">¶</a></h3>
+<p>Since we didn’t specify chunk sizes, everything is read as one chunk. When we load larger sets of imagery we can change these chunk sizes to use dask. It’s best to align dask chunks with the way image chunks (typically called “tiles” are stored on disk or cloud storage buckets. The landsat data is stored on AWS S3 in a tiled Geotiff format where tiles are 512x512, so we should pick som multiple of that, and typically aim for chunksizes of ~100Mb (although this is subjective). You can read more
+about dask chunks here: <a class="reference external" href="https://docs.dask.org/en/latest/array-best-practices.html">https://docs.dask.org/en/latest/array-best-practices.html</a></p>
+<p>Also check out this documentation about the Cloud-optimized Geotiff format, it is an excellent choice for putting satellite raster data on Cloud storage: <a class="reference external" href="https://www.cogeo.org/">https://www.cogeo.org/</a></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">da</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">B2</span><span class="p">(</span><span class="n">chunks</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">band</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2048</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">2048</span><span class="p">))</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>
+<span class="n">da</span><span class="o">.</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Let&#39;s load all the bands into an xarray dataset!</span>
+<span class="c1"># Actually stick to bands that have the same Ground Sample Distance for simplicity</span>
+<span class="n">bands</span> <span class="o">=</span> <span class="n">band_info</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;gsd == 30&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">common_name</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="n">bands</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">stacked</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">stack_bands</span><span class="p">(</span><span class="n">bands</span><span class="p">)</span>
+<span class="n">da</span> <span class="o">=</span> <span class="n">stacked</span><span class="p">(</span><span class="n">chunks</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">band</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2048</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">2048</span><span class="p">))</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>
+<span class="n">da</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">da</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">groupby</span><span class="o">=</span><span class="s1">&#39;band&#39;</span><span class="p">,</span> <span class="n">rasterize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dynamic</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;magma&#39;</span><span class="p">)</span>
+<span class="c1"># NOTE: exercise - convert 0 values to nans, and use a logarithmic color scale</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># If we want we can convert this to an xarray dataset, with variable names corresponding to common names</span>
+<span class="c1">#ds = da.dim</span>
+<span class="n">da</span><span class="p">[</span><span class="s1">&#39;band&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bands</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">to_dataset</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;band&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dataset size: [Gb]&#39;</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">nbytes</span><span class="o">/</span><span class="mf">1e9</span><span class="p">)</span>
+<span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="Dask-Gateway-Cluster">
+<h1>Dask-Gateway Cluster<a class="headerlink" href="#Dask-Gateway-Cluster" title="Permalink to this headline">¶</a></h1>
+<p>If we don’t specify a specific cluster, dask will use the cores on the machine we are running our notebook on instead, lets connect to a Dask-Gateway cluster. You can read more about this cluster at <a class="reference external" href="https://gateway.dask.org/">https://gateway.dask.org/</a> .</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># First let&#39;s construct a large dataset with all the scenes in our search so that we</span>
+<span class="c1"># have a time dimension</span>
+<span class="c1"># Loop through geopandas geodataframe (each row is a STAC ITEM)</span>
+
+<span class="n">datasets</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">item</span> <span class="ow">in</span> <span class="n">gf</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">datetime</span><span class="p">)</span>
+    <span class="n">stacked</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">id</span><span class="p">]</span><span class="o">.</span><span class="n">stack_bands</span><span class="p">(</span><span class="n">bands</span><span class="p">)</span>
+    <span class="n">da</span> <span class="o">=</span> <span class="n">stacked</span><span class="p">(</span><span class="n">chunks</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">band</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2048</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">2048</span><span class="p">))</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>
+    <span class="n">da</span><span class="p">[</span><span class="s1">&#39;band&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bands</span> <span class="c1"># use common names</span>
+    <span class="n">da</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">datetime</span><span class="p">)])</span>
+    <span class="n">ds</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">to_dataset</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;band&#39;</span><span class="p">)</span>
+    <span class="n">datasets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">DS</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dataset size: [Gb]&#39;</span><span class="p">,</span> <span class="n">DS</span><span class="o">.</span><span class="n">nbytes</span><span class="o">/</span><span class="mf">1e9</span><span class="p">)</span>
+<span class="n">DS</span>
+</pre></div>
+</div>
+</div>
+<p>We’ll calculate the classic NDVI index with all our data</p>
+<p>NOTE that you should be using Landsat ARD data (<a class="reference external" href="https://www.usgs.gov/land-resources/nli/landsat/us-landsat-analysis-ready-data">https://www.usgs.gov/land-resources/nli/landsat/us-landsat-analysis-ready-data</a>) for this with atmospheric corrections! this is just to illustrate the intuitive syntax of xarray</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">NDVI</span> <span class="o">=</span> <span class="p">(</span><span class="n">DS</span><span class="p">[</span><span class="s1">&#39;nir&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">DS</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">DS</span><span class="p">[</span><span class="s1">&#39;nir&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">DS</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">])</span>
+<span class="n">NDVI</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">NDVI</span><span class="o">.</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">dask_gateway</span> <span class="kn">import</span> <span class="n">GatewayCluster</span>
+<span class="kn">from</span> <span class="nn">dask.distributed</span> <span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">cluster</span> <span class="o">=</span> <span class="n">GatewayCluster</span><span class="p">()</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">get_client</span><span class="p">()</span>
+<span class="n">cluster</span><span class="o">.</span><span class="n">adapt</span><span class="p">(</span><span class="n">minimum</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">maximum</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">cluster</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="A-note-on-distributed-versus-local-memory">
+<h2>A note on distributed versus local memory<a class="headerlink" href="#A-note-on-distributed-versus-local-memory" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1">#ndvi_my_memory = NDVI.compute() # NOTE: will end up with 5Gb of memory on local notebook</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1">#ndvi_distributed_memory = NDVI.persist() #computed data stays on the cluster</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Plotting pulls data from distributed cluster memory on-demand</span>
+<span class="n">NDVI</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">groupby</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">rasterize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dynamic</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;greens&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Grab a subset and save as a netcdf file</span>
+<span class="n">sub</span> <span class="o">=</span> <span class="n">NDVI</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mf">4.5e5</span><span class="p">,</span><span class="mf">5.0e5</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mf">5.25e6</span><span class="p">,</span><span class="mf">5.2e6</span><span class="p">))</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">])</span>
+<span class="n">sub</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">rasterize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dynamic</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;greens&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">myda</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span> <span class="c1">#pull subset to local memory first, some formats allow distributed writing too</span>
+<span class="n">myda</span><span class="o">.</span><span class="n">to_netcdf</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;myndvi.nc&#39;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;h5netcdf&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">round_trip</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataarray</span><span class="p">(</span><span class="s1">&#39;myndvi.nc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">round_trip</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">cluster</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Pangeo Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
