@@ -10,7 +10,7 @@ Conda environment.
 Galleries are "built" using `binderbot <https://github.com/pangeo-gallery/binderbot>`_.
 Binderbot takes all the notebooks in the gallery, executes them inside binder,
 and saves the output to a dedicated branch within the repo.
-Each gallery contains a configuration file called ``binder-build.yaml``,
+Each gallery contains a configuration file called ``binder-gallery.yaml``,
 which specifies the details of the binder configuration.
 It also provides a basic description of the gallery contents.
 
@@ -30,7 +30,7 @@ To create a new gallery, you will need to create a new repo following the
 
 - Click the big green button to create a new repository following the template.
 - Remove the dummy content and add your content.
-- Update the ``binder-build.yaml`` configuration file.
+- Update the ``binder-gallery.yaml`` configuration file.
 - Add a custom ``thumbnail.png``, a 200 x 200 px image which represents the gallery contents.
 
 Now push your changes, e.g.::
@@ -58,7 +58,7 @@ https://github.com/pangeo-gallery/pangeo-gallery.
 Config File Specification
 -------------------------
 
-All example galleries must contain a file called ``binder-build.yaml``.
+All example galleries must contain a file called ``binder-gallery.yaml``.
 An example file is shown below::
 
   ---
@@ -75,7 +75,7 @@ An example file is shown below::
 
 The fields are defined as follows.
 
-.. list-table:: binder-build.yaml
+.. list-table:: binder-gallery.yaml
    :widths: 25 75
    :header-rows: 1
 
