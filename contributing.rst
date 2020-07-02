@@ -39,7 +39,12 @@ Now push your changes, e.g.::
 
 At this point, a GitHub Action will execute your notebooks on the binder.
 Click the "Actions" button on your repository page or navigate to ``/actions``,
-and wait for the build to finish.
+and wait for the build to finish. The build may fail to complete before the repo is 
+added as a submodule to ``pangeo-gallery``. Once you set that up below, you can click 
+the most recent failed "Binderbot Build" in the Actions list, click "Binderbot Build" 
+in the left sidebar, then click "Re-run jobs" in near the top right of the page. This 
+will run the GitHub Action again. Alternatively, you can push another commit to your 
+notebook content and the action should automatically run again.
 
 You also need to add your repo as a submodule to the Pangeo gallery repo, located at
 https://github.com/pangeo-gallery/pangeo-gallery. There are two ways to do this.
