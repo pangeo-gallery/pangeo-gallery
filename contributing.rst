@@ -42,7 +42,14 @@ Click the "Actions" button on your repository page or navigate to ``/actions``,
 and wait for the build to finish.
 
 You also need to add your repo as a submodule to the Pangeo gallery repo, located at
-https://github.com/pangeo-gallery/pangeo-gallery.
+https://github.com/pangeo-gallery/pangeo-gallery. There are two ways to do this.
+
+
+#. Add a submodule via git and do the work yourself
+#. Add a submodule via a GitHub issue and let the CI system do the work
+
+Add a submodule via git
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Fork the gallery repo.
 - Clone your fork.
@@ -54,6 +61,21 @@ https://github.com/pangeo-gallery/pangeo-gallery.
     repos/pangeo-gallery/example-gallery
 
 - Commit and make a PR to the upstream gallery repo.
+
+Add a submodule via a GitHub issue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Go to the `pangeo-gallery repo <https://github.com/pangeo-gallery/pangeo-gallery>`_
+- Go to the Issues section and make a new issue
+- The only text in the issue comment should be::
+
+  /add-submodule <binder_repo>
+
+``<binder_repo>`` will match the entry in the ``binder-gallery.yaml`` file described below.
+
+Sometimes, the GitHub Action to add your repo as a submodule will fail. We can work with 
+you to identify and fix issues. Sometimes, making a new issue in the same way as above 
+is necessary to correctly reload new settings from your gallery repo.
 
 Config File Specification
 -------------------------
