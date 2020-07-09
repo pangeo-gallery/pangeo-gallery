@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dask &#8212; Pangeo Gallery  documentation</title>
+    <title>Dask Tutorial &#8212; Pangeo Gallery  documentation</title>
     <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
@@ -20,7 +20,7 @@
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Geopandas" href="geopandas.html" />
+    <link rel="next" title="Geopandas Tutorial" href="geopandas.html" />
     <link rel="prev" title="Pangeo Tutorial Gallery" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -53,7 +53,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Pangeo Tutorial Gallery</a></li>
         
-          <li class="breadcrumb-item active"><a href="#">Dask</a></li>
+          <li class="breadcrumb-item active"><a href="#">Dask Tutorial</a></li>
         
         </ol>
       </nav>
@@ -75,7 +75,7 @@
 
 <div class="badges" id="sidebar-header">
   <p><i class="fa fa-github fa-lg"></i> <a target="_blank" href="https://github.com/pangeo-data/pangeo-tutorial-gallery/blob/master/dask.ipynb">pangeo-data/pangeo-tutorial-gallery/dask.ipynb</a></p>
-  <a target="_blank" href="https://aws-uswest2-binder.pangeo.io/v2/gh/pangeo-data/pangeo-tutorial-gallery/master/?urlpath=git-pull?repo=https://github.com/pangeo-data/pangeo-tutorial-gallery%26amp%3Burlpath=lab/tree/pangeo-tutorial-gallery/dask.ipynb%3Fautodecode"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
+  <a target="_blank" href="https://mybinder.org/v2/gh/pangeo-data/pangeo-tutorial-gallery/master/?urlpath=git-pull?repo=https://github.com/pangeo-data/pangeo-tutorial-gallery%26amp%3Burlpath=lab/tree/pangeo-tutorial-gallery/dask.ipynb%3Fautodecode"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
 </div>
 
 <ul class="current">
@@ -85,10 +85,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../earthcube2020/ec20_abernathey_etal/index.html">Cloud Storage Benchmarks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../landsat-8-tutorial-gallery/index.html">Landsat 8 Tutorial</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Pangeo Tutorial Gallery</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Dask</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geopandas.html">Geopandas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intake.html">Intake</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xarray.html">Xarray</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dask Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geopandas.html">Geopandas Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intake.html">Intake Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xarray.html">Xarray Tutorial</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/cmip6/index.html">CMIP6 Gallery</a></li>
@@ -334,8 +334,8 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Dask">
-<h1>Dask<a class="headerlink" href="#Dask" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Dask-Tutorial">
+<h1>Dask Tutorial<a class="headerlink" href="#Dask-Tutorial" title="Permalink to this headline">¶</a></h1>
 <div class="alert-info"><div class="section" id="Overview">
 <h2>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -395,15 +395,15 @@ that each get allocated CPU and RAM. The dask scheduling system maps jobs to eac
 <td style="vertical-align: top; border: 0px solid white">
 <h3 style="text-align: left;">Client</h3>
 <ul style="text-align: left; list-style: none; margin: 0; padding: 0;">
-  <li><b>Scheduler: </b>tcp://127.0.0.1:34931</li>
-  <li><b>Dashboard: </b><a href='/user/pangeo-data-pan-utorial-gallery-3arjlwq8/proxy/8787/status' target='_blank'>/user/pangeo-data-pan-utorial-gallery-3arjlwq8/proxy/8787/status</a></li>
+  <li><b>Scheduler: </b>tcp://127.0.0.1:45935</li>
+  <li><b>Dashboard: </b><a href='/user/pangeo-data-pan-utorial-gallery-ootv4hp3/proxy/8787/status' target='_blank'>/user/pangeo-data-pan-utorial-gallery-ootv4hp3/proxy/8787/status</a></li>
 </ul>
 </td>
 <td style="vertical-align: top; border: 0px solid white">
 <h3 style="text-align: left;">Cluster</h3>
 <ul style="text-align: left; list-style:none; margin: 0; padding: 0;">
-  <li><b>Workers: </b>4</li>
-  <li><b>Cores: </b>4</li>
+  <li><b>Workers: </b>2</li>
+  <li><b>Cores: </b>2</li>
   <li><b>Memory: </b>8.59 GB</li>
 </ul>
 </td>
@@ -1647,7 +1647,7 @@ array([[1., 1., 1., ..., 1., 1., 1.],
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[&lt;matplotlib.lines.Line2D at 0x7faae98d9050&gt;]
+[&lt;matplotlib.lines.Line2D at 0x7fbd05d4c5d0&gt;]
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1705,7 +1705,7 @@ array([[1., 1., 1., ..., 1., 1., 1.],
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-CPU times: user 7.62 ms, sys: 2.47 ms, total: 10.1 ms
+CPU times: user 20.4 ms, sys: 3.98 ms, total: 24.4 ms
 Wall time: 401 ms
 </pre></div></div>
 </div>
@@ -1754,8 +1754,8 @@ Wall time: 401 ms
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-CPU times: user 306 µs, sys: 20 µs, total: 326 µs
-Wall time: 279 µs
+CPU times: user 1.49 ms, sys: 125 µs, total: 1.61 ms
+Wall time: 1.37 ms
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1764,7 +1764,7 @@ Wall time: 279 µs
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Delayed(&#39;add-126145de-65b4-4519-b9ca-1488bf88c98c&#39;)
+Delayed(&#39;add-6d23683e-7734-4a48-95d8-d6c5c3c6cb3b&#39;)
 </pre></div></div>
 </div>
 </div>
@@ -1806,8 +1806,8 @@ Delayed(&#39;add-126145de-65b4-4519-b9ca-1488bf88c98c&#39;)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-CPU times: user 16.9 ms, sys: 590 µs, total: 17.5 ms
-Wall time: 312 ms
+CPU times: user 40.2 ms, sys: 424 µs, total: 40.7 ms
+Wall time: 334 ms
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1845,8 +1845,8 @@ Wall time: 312 ms
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-CPU times: user 44.7 ms, sys: 4.01 ms, total: 48.7 ms
-Wall time: 44.8 ms
+CPU times: user 224 ms, sys: 60.5 ms, total: 285 ms
+Wall time: 274 ms
 </pre></div></div>
 </div>
 </div>
@@ -1866,7 +1866,7 @@ Wall time: 44.8 ms
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
     </p>
   </div>
 </footer>
