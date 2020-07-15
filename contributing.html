@@ -77,7 +77,7 @@ Conda environment.</p>
 <p>Galleries are “built” using <a class="reference external" href="https://github.com/pangeo-gallery/binderbot">binderbot</a>.
 Binderbot takes all the notebooks in the gallery, executes them inside binder,
 and saves the output to a dedicated branch within the repo.
-Each gallery contains a configuration file called <code class="docutils literal notranslate"><span class="pre">binder-build.yaml</span></code>,
+Each gallery contains a configuration file called <code class="docutils literal notranslate"><span class="pre">binder-gallery.yaml</span></code>,
 which specifies the details of the binder configuration.
 It also provides a basic description of the gallery contents.</p>
 <div class="section" id="contributing-to-an-existing-gallery">
@@ -94,7 +94,7 @@ Since every gallery is a GitHub repository, you can contribute by
 <ul class="simple">
 <li><p>Click the big green button to create a new repository following the template.</p></li>
 <li><p>Remove the dummy content and add your content.</p></li>
-<li><p>Update the <code class="docutils literal notranslate"><span class="pre">binder-build.yaml</span></code> configuration file.</p></li>
+<li><p>Update the <code class="docutils literal notranslate"><span class="pre">binder-gallery.yaml</span></code> configuration file.</p></li>
 <li><p>Add a custom <code class="docutils literal notranslate"><span class="pre">thumbnail.png</span></code>, a 200 x 200 px image which represents the gallery contents.</p></li>
 </ul>
 <p>Now push your changes, e.g.:</p>
@@ -103,9 +103,20 @@ Since every gallery is a GitHub repository, you can contribute by
 </div>
 <p>At this point, a GitHub Action will execute your notebooks on the binder.
 Click the “Actions” button on your repository page or navigate to <code class="docutils literal notranslate"><span class="pre">/actions</span></code>,
-and wait for the build to finish.</p>
+and wait for the build to finish. The build may fail to complete before the repo is
+added as a submodule to <code class="docutils literal notranslate"><span class="pre">pangeo-gallery</span></code>. Once you set that up below, you can click
+the most recent failed “Binderbot Build” in the Actions list, click “Binderbot Build”
+in the left sidebar, then click “Re-run jobs” in near the top right of the page. This
+will run the GitHub Action again. Alternatively, you can push another commit to your
+notebook content and the action should automatically run again.</p>
 <p>You also need to add your repo as a submodule to the Pangeo gallery repo, located at
-<a class="reference external" href="https://github.com/pangeo-gallery/pangeo-gallery">https://github.com/pangeo-gallery/pangeo-gallery</a>.</p>
+<a class="reference external" href="https://github.com/pangeo-gallery/pangeo-gallery">https://github.com/pangeo-gallery/pangeo-gallery</a>. There are two ways to do this.</p>
+<ol class="arabic simple">
+<li><p>Add a submodule via git and do the work yourself</p></li>
+<li><p>Add a submodule via a GitHub issue and let the CI system do the work</p></li>
+</ol>
+<div class="section" id="add-a-submodule-via-git">
+<h3>Add a submodule via git<a class="headerlink" href="#add-a-submodule-via-git" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p>Fork the gallery repo.</p></li>
 <li><p>Clone your fork.</p></li>
@@ -120,9 +131,26 @@ and wait for the build to finish.</p>
 <li><p>Commit and make a PR to the upstream gallery repo.</p></li>
 </ul>
 </div>
+<div class="section" id="add-a-submodule-via-a-github-issue">
+<h3>Add a submodule via a GitHub issue<a class="headerlink" href="#add-a-submodule-via-a-github-issue" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Go to the <a class="reference external" href="https://github.com/pangeo-gallery/pangeo-gallery">pangeo-gallery repo</a></p></li>
+<li><p>Go to the Issues section and make a new issue</p></li>
+<li><p>The only text in the issue comment should be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">add</span><span class="o">-</span><span class="n">submodule</span> <span class="o">&lt;</span><span class="n">binder_repo</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;binder_repo&gt;</span></code> will match the entry in the <code class="docutils literal notranslate"><span class="pre">binder-gallery.yaml</span></code> file described below.</p>
+<p>Sometimes, the GitHub Action to add your repo as a submodule will fail. We can work with
+you to identify and fix issues. Sometimes, making a new issue in the same way as above
+is necessary to correctly reload new settings from your gallery repo.</p>
+</div>
+</div>
 <div class="section" id="config-file-specification">
 <h2>Config File Specification<a class="headerlink" href="#config-file-specification" title="Permalink to this headline">¶</a></h2>
-<p>All example galleries must contain a file called <code class="docutils literal notranslate"><span class="pre">binder-build.yaml</span></code>.
+<p>All example galleries must contain a file called <code class="docutils literal notranslate"><span class="pre">binder-gallery.yaml</span></code>.
 An example file is shown below:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
 <span class="n">name</span><span class="p">:</span> <span class="n">Example</span> <span class="n">Gallery</span>
@@ -138,7 +166,7 @@ An example file is shown below:</p>
 </div>
 <p>The fields are defined as follows.</p>
 <table class="colwidths-given docutils align-default" id="id1">
-<caption><span class="caption-text">binder-build.yaml</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">binder-gallery.yaml</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 75%" />

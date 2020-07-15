@@ -10,7 +10,7 @@ Conda environment.
 Galleries are "built" using `binderbot <https://github.com/pangeo-gallery/binderbot>`_.
 Binderbot takes all the notebooks in the gallery, executes them inside binder,
 and saves the output to a dedicated branch within the repo.
-Each gallery contains a configuration file called ``binder-build.yaml``,
+Each gallery contains a configuration file called ``binder-gallery.yaml``,
 which specifies the details of the binder configuration.
 It also provides a basic description of the gallery contents.
 
@@ -30,7 +30,7 @@ To create a new gallery, you will need to create a new repo following the
 
 - Click the big green button to create a new repository following the template.
 - Remove the dummy content and add your content.
-- Update the ``binder-build.yaml`` configuration file.
+- Update the ``binder-gallery.yaml`` configuration file.
 - Add a custom ``thumbnail.png``, a 200 x 200 px image which represents the gallery contents.
 
 Now push your changes, e.g.::
@@ -39,10 +39,22 @@ Now push your changes, e.g.::
 
 At this point, a GitHub Action will execute your notebooks on the binder.
 Click the "Actions" button on your repository page or navigate to ``/actions``,
-and wait for the build to finish.
+and wait for the build to finish. The build may fail to complete before the repo is 
+added as a submodule to ``pangeo-gallery``. Once you set that up below, you can click 
+the most recent failed "Binderbot Build" in the Actions list, click "Binderbot Build" 
+in the left sidebar, then click "Re-run jobs" in near the top right of the page. This 
+will run the GitHub Action again. Alternatively, you can push another commit to your 
+notebook content and the action should automatically run again.
 
 You also need to add your repo as a submodule to the Pangeo gallery repo, located at
-https://github.com/pangeo-gallery/pangeo-gallery.
+https://github.com/pangeo-gallery/pangeo-gallery. There are two ways to do this.
+
+
+#. Add a submodule via git and do the work yourself
+#. Add a submodule via a GitHub issue and let the CI system do the work
+
+Add a submodule via git
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Fork the gallery repo.
 - Clone your fork.
@@ -55,10 +67,25 @@ https://github.com/pangeo-gallery/pangeo-gallery.
 
 - Commit and make a PR to the upstream gallery repo.
 
+Add a submodule via a GitHub issue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Go to the `pangeo-gallery repo <https://github.com/pangeo-gallery/pangeo-gallery>`_
+- Go to the Issues section and make a new issue
+- The only text in the issue comment should be::
+
+  /add-submodule <binder_repo>
+
+``<binder_repo>`` will match the entry in the ``binder-gallery.yaml`` file described below.
+
+Sometimes, the GitHub Action to add your repo as a submodule will fail. We can work with 
+you to identify and fix issues. Sometimes, making a new issue in the same way as above 
+is necessary to correctly reload new settings from your gallery repo.
+
 Config File Specification
 -------------------------
 
-All example galleries must contain a file called ``binder-build.yaml``.
+All example galleries must contain a file called ``binder-gallery.yaml``.
 An example file is shown below::
 
   ---
@@ -75,7 +102,7 @@ An example file is shown below::
 
 The fields are defined as follows.
 
-.. list-table:: binder-build.yaml
+.. list-table:: binder-gallery.yaml
    :widths: 25 75
    :header-rows: 1
 
