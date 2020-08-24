@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enhanced Intake-ESM Catalog Demo &#8212; Pangeo Gallery  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pangeo-style.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -389,7 +389,7 @@ div.rendered_html tbody tr:hover {
 <div class="highlight"><pre>
 This is an ESM collection for CESM1 Large Ensemble Zarr dataset publicly available on Amazon S3 (us-west-2 region)
 Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.csv
-&lt;aws-cesm1-le catalog with 27 dataset(s) from 365 asset(s)&gt;
+&lt;aws-cesm1-le catalog with 56 dataset(s) from 409 asset(s)&gt;
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -409,26 +409,22 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 {&#39;component&#39;: {&#39;count&#39;: 5, &#39;values&#39;: [&#39;atm&#39;, &#39;ice_nh&#39;, &#39;ice_sh&#39;, &#39;lnd&#39;, &#39;ocn&#39;]},
- &#39;experiment&#39;: {&#39;count&#39;: 6,
-                &#39;values&#39;: [&#39;20C&#39;, &#39;CTRL&#39;, &#39;CTRL_AMIP&#39;, &#39;CTRL_SLAB_OCN&#39;, &#39;HIST&#39;,
-                           &#39;RCP85&#39;]},
- &#39;frequency&#39;: {&#39;count&#39;: 5,
+ &#39;experiment&#39;: {&#39;count&#39;: 4, &#39;values&#39;: [&#39;20C&#39;, &#39;CTRL&#39;, &#39;HIST&#39;, &#39;RCP85&#39;]},
+ &#39;frequency&#39;: {&#39;count&#39;: 6,
                &#39;values&#39;: [&#39;daily&#39;, &#39;hourly6-1990-2005&#39;, &#39;hourly6-2026-2035&#39;,
-                          &#39;hourly6-2071-2080&#39;, &#39;monthly&#39;]},
- &#39;variable&#39;: {&#39;count&#39;: 75,
+                          &#39;hourly6-2071-2080&#39;, &#39;monthly&#39;, &#39;static&#39;]},
+ &#39;variable&#39;: {&#39;count&#39;: 65,
               &#39;values&#39;: [&#39;DIC&#39;, &#39;DOC&#39;, &#39;FLNS&#39;, &#39;FLNSC&#39;, &#39;FLUT&#39;, &#39;FSNO&#39;, &#39;FSNS&#39;,
                          &#39;FSNSC&#39;, &#39;FSNTOA&#39;, &#39;FW&#39;, &#39;H2OSNO&#39;, &#39;HMXL&#39;, &#39;ICEFRAC&#39;,
                          &#39;LHFLX&#39;, &#39;O2&#39;, &#39;PD&#39;, &#39;PRECC&#39;, &#39;PRECL&#39;, &#39;PRECSC&#39;,
-                         &#39;PRECSL&#39;, &#39;PRECT&#39;, &#39;PRECTMX&#39;, &#39;PS&#39;, &#39;PSL&#39;, &#39;Q&#39;, &#39;Q850&#39;,
-                         &#39;QFLUX&#39;, &#39;QREFHT&#39;, &#39;QRUNOFF&#39;, &#39;QSW_HBL&#39;, &#39;QSW_HTP&#39;,
-                         &#39;RAIN&#39;, &#39;RESID_S&#39;, &#39;RESID_T&#39;, &#39;SALT&#39;, &#39;SFWF&#39;,
+                         &#39;PRECSL&#39;, &#39;PSL&#39;, &#39;Q&#39;, &#39;QFLUX&#39;, &#39;QRUNOFF&#39;, &#39;QSW_HBL&#39;,
+                         &#39;QSW_HTP&#39;, &#39;RAIN&#39;, &#39;RESID_S&#39;, &#39;SALT&#39;, &#39;SFWF&#39;,
                          &#39;SFWF_WRST&#39;, &#39;SHF&#39;, &#39;SHFLX&#39;, &#39;SHF_QSW&#39;, &#39;SNOW&#39;,
                          &#39;SOILLIQ&#39;, &#39;SOILWATER_10CM&#39;, &#39;SSH&#39;, &#39;SST&#39;, &#39;T&#39;, &#39;TAUX&#39;,
                          &#39;TAUX2&#39;, &#39;TAUY&#39;, &#39;TAUY2&#39;, &#39;TEMP&#39;, &#39;TMQ&#39;, &#39;TREFHT&#39;,
-                         &#39;TREFHTMN&#39;, &#39;TREFHTMX&#39;, &#39;TS&#39;, &#39;U&#39;, &#39;UBOT&#39;, &#39;UES&#39;,
-                         &#39;UET&#39;, &#39;UVEL&#39;, &#39;V&#39;, &#39;VNS&#39;, &#39;VNT&#39;, &#39;VVEL&#39;, &#39;WSPDSRFAV&#39;,
-                         &#39;WTS&#39;, &#39;WTT&#39;, &#39;WVEL&#39;, &#39;Z3&#39;, &#39;Z500&#39;, &#39;aice&#39;, &#39;aice_d&#39;,
-                         &#39;hi&#39;, &#39;hi_d&#39;]}}
+                         &#39;TREFHTMN&#39;, &#39;TREFHTMX&#39;, &#39;TS&#39;, &#39;U&#39;, &#39;UES&#39;, &#39;UET&#39;,
+                         &#39;UVEL&#39;, &#39;VNS&#39;, &#39;VNT&#39;, &#39;VVEL&#39;, &#39;WTS&#39;, &#39;WTT&#39;, &#39;WVEL&#39;,
+                         &#39;Z3&#39;, &#39;aice&#39;, &#39;aice_d&#39;, &#39;hi&#39;, &#39;hi_d&#39;]}}
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -465,6 +461,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <th>experiment</th>
       <th>variable</th>
       <th>path</th>
+      <th>variable_long_name</th>
+      <th>dim_per_tstep</th>
+      <th>start</th>
+      <th>end</th>
     </tr>
   </thead>
   <tbody>
@@ -474,6 +474,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -481,6 +485,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FLNSC</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNSC.zarr</td>
+      <td>clearsky net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -488,6 +496,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FLUT</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLUT.zarr</td>
+      <td>upwelling longwave flux at top of model</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -495,6 +507,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FSNS</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNS.zarr</td>
+      <td>net solar flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -502,6 +518,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FSNSC</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNSC.zarr</td>
+      <td>clearsky net solar flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -509,6 +529,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FSNTOA</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNTOA.zarr</td>
+      <td>net solar flux at top of atmosphere</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -516,6 +540,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>ICEFRAC</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-ICEFRAC.zarr</td>
+      <td>fraction of sfc area covered by sea-ice</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -523,6 +551,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>LHFLX</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-LHFLX.zarr</td>
+      <td>surface latent heat flux</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -530,6 +562,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>PRECL</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECL.zarr</td>
+      <td>large-scale (stable) precipitation rate (liq + ice)</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -537,6 +573,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>PRECSC</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSC.zarr</td>
+      <td>convective snow rate (water equivalent)</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
     </tr>
   </tbody>
 </table></div>
@@ -570,6 +610,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <th>experiment</th>
       <th>variable</th>
       <th>path</th>
+      <th>variable_long_name</th>
+      <th>dim_per_tstep</th>
+      <th>start</th>
+      <th>end</th>
     </tr>
   </thead>
   <tbody>
@@ -579,6 +623,32 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>CTRL</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>0402-01-01 12:00:00</td>
+      <td>2200-12-31 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>HIST</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>1.0</td>
+      <td>1850-01-01 00:00:00</td>
+      <td>1919-12-31 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -586,6 +656,43 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>RCP85</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2006-01-01 12:00:00</td>
+      <td>2100-12-31 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>hourly6-1990-2005</td>
+      <td>20C</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1990-01-01 00:00:00</td>
+      <td>2006-01-01 00:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>hourly6-2026-2035</td>
+      <td>RCP85</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2026-01-01 00:00:00</td>
+      <td>2036-01-01 00:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>hourly6-2071-2080</td>
+      <td>RCP85</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2071-01-01 00:00:00</td>
+      <td>2081-01-01 00:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -593,6 +700,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>20C</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-16 12:00:00</td>
+      <td>2005-12-16 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -600,20 +711,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>CTRL</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLNS.zarr</td>
-    </tr>
-    <tr>
-      <td>atm</td>
-      <td>monthly</td>
-      <td>CTRL_AMIP</td>
-      <td>FLNS</td>
-      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FLNS.zarr</td>
-    </tr>
-    <tr>
-      <td>atm</td>
-      <td>monthly</td>
-      <td>CTRL_SLAB_OCN</td>
-      <td>FLNS</td>
-      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>0400-01-16 12:00:00</td>
+      <td>2200-12-16 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -621,6 +722,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>HIST</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>1.0</td>
+      <td>1850-01-16 12:00:00</td>
+      <td>1919-12-16 12:00:00</td>
     </tr>
     <tr>
       <td>atm</td>
@@ -628,6 +733,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>RCP85</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2006-01-16 12:00:00</td>
+      <td>2100-12-16 12:00:00</td>
     </tr>
   </tbody>
 </table></div>
@@ -657,6 +766,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <th>experiment</th>
       <th>variable</th>
       <th>path</th>
+      <th>variable_long_name</th>
+      <th>dim_per_tstep</th>
+      <th>start</th>
+      <th>end</th>
     </tr>
   </thead>
   <tbody>
@@ -666,6 +779,10 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
       <td>RCP85</td>
       <td>FLNS</td>
       <td>s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2006-01-01 12:00:00</td>
+      <td>2100-12-31 12:00:00</td>
     </tr>
   </tbody>
 </table></div>
@@ -2304,7 +2421,7 @@ Zonal wind
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>
