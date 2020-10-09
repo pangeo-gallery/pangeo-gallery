@@ -19,7 +19,6 @@ jobs:
           ref: ${{ github.event.client_payload.pull_request.head.ref }}
 
       - id: message
-        uses: actions/checkout@v2
         run: echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
 
       - name: Update Submodules
