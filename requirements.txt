@@ -9,3 +9,4 @@ doctr
 sphinx-copybutton
 sphinxcontrib-srclinks
 sphinxcontrib-fulltoc
+git+https://github.com/pangeo-gallery/binderbot
