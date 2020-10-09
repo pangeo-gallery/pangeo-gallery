@@ -1,12 +1,14 @@
 # Runs all galleries against staging
 name: Test Staging
 on:
-  repository_dispatch:
-    types: [test-staging-command]
+  pull_request:
+    branches:
+      - master
 
 jobs:
   test-staging:
     runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'test-staging')"
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -19,11 +21,11 @@ jobs:
         run: git submodule update --init --recursive --remote
 
       # Commit submodule updates to the PR branch
-      - name: Commit condalock files to PR
+      - name: Commit gallery submodules
         run: |
           git config --global user.name 'pangeo-bot'
           git config --global user.email 'pangeo-bot@users.noreply.github.com'
-          git commit -a --allow-empty -m "[pangeo-bot] updated all submodules"
+          git commit -a --allow-empty -m "updated all submodules [test-staging]"
           git push
 
       - uses: actions/setup-python@v1
