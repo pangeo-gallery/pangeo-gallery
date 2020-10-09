@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --global user.name 'pangeo-bot'
           git config --global user.email 'pangeo-bot@users.noreply.github.com'
-          git commit -a --allow-empty -m "updated all submodules\n\ntest-staging"
+          git commit -a --allow-empty -m "[test-staging] updated all submodules\n\ntest-staging"
           git push
 
       - uses: actions/setup-python@v1
