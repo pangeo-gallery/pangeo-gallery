@@ -15,37 +15,28 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     # TODO: If GitHub gives access to the commit message in PRs, this gets easier.
-    # if: "!contains(github.event.head_commit.message, 'test-staging')"
     steps:
       - uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
           persist-credentials: false
 
-      - id: message
-        run: echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
-
       - name: Update Submodules
         # do we want to make this optional?
         run: git submodule update --init --recursive --remote
-        if: "!contains(steps.message.outputs.message, 'test-staging')"
       - uses: actions/setup-python@v1
-        if: "!contains(steps.message.outputs.message, 'test-staging')"
         with:
           python-version: '3.8'
           architecture: 'x64'
       - name: Install Dependencies
-        if: "!contains(steps.message.outputs.message, 'test-staging')"
         run: |
           sudo apt-get install pandoc
           pip install -r requirements.txt
       - name: Preprocess Repos and Generate Indexes
-        if: "!contains(steps.message.outputs.message, 'test-staging')"
         run: python build_repo_index_pages.py
       - name: Build Sphinx HTML
-        if: "!contains(steps.message.outputs.message, 'test-staging')"
         run: make html
       - name: Deploy 🚀
-        if: "github.ref == 'refs/heads/master' && !contains(steps.message.outputs.message, 'test-staging')"
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
