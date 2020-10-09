@@ -22,8 +22,6 @@ jobs:
           persist-credentials: false
 
       - id: message
-        if: "!contains(steps.message.outputs.message, 'test-staging')"
-        uses: actions/checkout@v2
         run: echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
 
       - name: Update Submodules
