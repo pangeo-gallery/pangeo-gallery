@@ -1,8 +1,9 @@
 # Runs all galleries against staging
 name: Test Staging
 on:
-  repository_dispatch:
-    types: [test-staging-command]
+  pull_request:
+    branches:
+      - master
 
 jobs:
   test-staging:
@@ -17,11 +18,21 @@ jobs:
           repository: ${{ github.event.client_payload.pull_request.head.repo.full_name }}
           ref: ${{ github.event.client_payload.pull_request.head.ref }}
 
+      - name: get commit message
+        run: |
+           echo ::set-env name=commitmsg::$(git log --format=%B -n 1 ${{ github.event.after }})
+
+      - name: step1
+        if: contains( env.commitmsg , 'test-staging' )
+        run: echo hello
+
       - name: Update Submodules
+        if: contains( env.commitmsg , 'test-staging' )
         run: git submodule update --init --recursive --remote
 
       # Commit submodule updates to the PR branch
       - name: Commit gallery submodules
+        if: contains( env.commitmsg , 'test-staging' )
         run: |
           git config --global user.name 'pangeo-bot'
           git config --global user.email 'pangeo-bot@users.noreply.github.com'
@@ -29,13 +40,17 @@ jobs:
           git push
 
       - uses: actions/setup-python@v1
+        if: contains( env.commitmsg , 'test-staging' )
         with:
           python-version: '3.8'
           architecture: 'x64'
+
       - name: Install Dependencies
+        if: contains( env.commitmsg , 'test-staging' )
         run: |
           pip install -r requirements.txt
 
       - name: Run staging
+        if: contains( env.commitmsg , 'test-staging' )
         run: |
           python .github/workflows/scripts/run_staging.py
