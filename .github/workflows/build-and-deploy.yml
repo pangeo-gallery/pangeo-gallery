@@ -26,26 +26,26 @@ jobs:
 
       - name: Update Submodules
         # do we want to make this optional?
-        if: !contains( env.commitmsg , 'test-staging' )
+        if: "!contains( env.commitmsg , 'test-staging' )"
         run: git submodule update --init --recursive --remote
       - uses: actions/setup-python@v1
-        if: !contains( env.commitmsg , 'test-staging' )
+        if: "!contains( env.commitmsg , 'test-staging' )"
         with:
           python-version: '3.8'
           architecture: 'x64'
       - name: Install Dependencies
-        if: !contains( env.commitmsg , 'test-staging' )
+        if: "!contains( env.commitmsg , 'test-staging' )"
         run: |
           sudo apt-get install pandoc
           pip install -r requirements.txt
       - name: Preprocess Repos and Generate Indexes
-        if: !contains( env.commitmsg , 'test-staging' )
+        if: "!contains( env.commitmsg , 'test-staging' )"
         run: python build_repo_index_pages.py
       - name: Build Sphinx HTML
-        if: !contains( env.commitmsg , 'test-staging' )
+        if: "!contains( env.commitmsg , 'test-staging' )"
         run: make html
       - name: Deploy 🚀
-        if: github.ref == 'refs/heads/master' && !contains( env.commitmsg , 'test-staging' )
+        if: (github.ref == 'refs/heads/master') && (!contains( env.commitmsg , 'test-staging' ))
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
