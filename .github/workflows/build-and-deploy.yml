@@ -26,6 +26,9 @@ jobs:
       - name: step1
         if: contains( env.commitmsg , 'test-staging' )
         run: echo hello
+      - name: step2
+        if: "!contains( env.commitmsg , 'test-staging' )"
+        run: echo hello
 
       - name: Update Submodules
         # do we want to make this optional?
