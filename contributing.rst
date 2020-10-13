@@ -127,3 +127,22 @@ The fields are defined as follows.
      - Used by GitHub workflow to determine where to push the output of the
        binderbot built notebooks. Default (``binderbot-built``) should probably
        not be changed.
+
+Testing Binder Updates
+----------------------
+
+This collection of executable notebooks provides a natural test case for pangeo's
+infrastructure. We can test updates to Pangeo's binders by submitting a pull
+request here with the text ``test-staging``
+
+.. code-block:: console
+
+   $ git checkout -b test-staging
+   $ git commit --allow-empty -m 'test staging'
+   $ git push -u origin
+
+Once that pull request is opened, the script in ``.github/workflows/scripts/run_staging.py``
+is run. That will run the latest versions of each notebook against
+
+1. The staging binder deployment (e.g. https://staging.binder.pangeo.io/)
+2. The staging Docker image (e.g. https://github.com/pangeo-gallery/default-binder/tree/staging)
