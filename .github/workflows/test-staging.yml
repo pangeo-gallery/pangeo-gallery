@@ -14,9 +14,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PANGEOBOT_TOKEN }}
-          repository: ${{ github.event.client_payload.pull_request.head.repo.full_name }}
-          ref: ${{ github.event.client_payload.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
       - name: get commit message
@@ -28,15 +26,6 @@ jobs:
       - name: Update Submodules
         if: contains( env.COMMIT_MESSAGE , 'test-staging' )
         run: git submodule update --init --recursive --remote
-
-      # Commit submodule updates to the PR branch
-      - name: Commit gallery submodules
-        if: contains( env.COMMIT_MESSAGE , 'test-staging' )
-        run: |
-          git config --global user.name 'pangeo-bot'
-          git config --global user.email 'pangeo-bot@users.noreply.github.com'
-          git commit -a --allow-empty -m "[test-staging] updated all submodules\n\ntest-staging"
-          git push
 
       - uses: actions/setup-python@v1
         if: contains( env.COMMIT_MESSAGE , 'test-staging' )
