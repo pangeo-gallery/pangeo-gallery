@@ -17,22 +17,21 @@ jobs:
           token: ${{ secrets.PANGEOBOT_TOKEN }}
           repository: ${{ github.event.client_payload.pull_request.head.repo.full_name }}
           ref: ${{ github.event.client_payload.pull_request.head.ref }}
+          fetch-depth: 0
 
       - name: get commit message
         run: |
-           echo "commitmsg=$(git log --format=%B -n 1 ${{ github.event.after }})" >> $GITHUB_ENV
-
-      - name: step1
-        if: contains( env.commitmsg , 'test-staging' )
-        run: echo hello
+           echo 'COMMIT_MESSAGE<<EOF' >> $GITHUB_ENV
+           echo "$(git log --format=%B -n 1 ${{ github.event.after }})" >> $GITHUB_ENV
+           echo 'EOF' >> $GITHUB_ENV
 
       - name: Update Submodules
-        if: contains( env.commitmsg , 'test-staging' )
+        if: contains( env.COMMIT_MESSAGE , 'test-staging' )
         run: git submodule update --init --recursive --remote
 
       # Commit submodule updates to the PR branch
       - name: Commit gallery submodules
-        if: contains( env.commitmsg , 'test-staging' )
+        if: contains( env.COMMIT_MESSAGE , 'test-staging' )
         run: |
           git config --global user.name 'pangeo-bot'
           git config --global user.email 'pangeo-bot@users.noreply.github.com'
@@ -40,17 +39,17 @@ jobs:
           git push
 
       - uses: actions/setup-python@v1
-        if: contains( env.commitmsg , 'test-staging' )
+        if: contains( env.COMMIT_MESSAGE , 'test-staging' )
         with:
           python-version: '3.8'
           architecture: 'x64'
 
       - name: Install Dependencies
-        if: contains( env.commitmsg , 'test-staging' )
+        if: contains( env.COMMIT_MESSAGE , 'test-staging' )
         run: |
           pip install -r requirements.txt
 
       - name: Run staging
-        if: contains( env.commitmsg , 'test-staging' )
+        if: contains( env.COMMIT_MESSAGE , 'test-staging' )
         run: |
           python .github/workflows/scripts/run_staging.py
