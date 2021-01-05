@@ -12,10 +12,10 @@
    "execution_count": 1,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T01:11:13.981230Z",
-     "iopub.status.busy": "2021-01-05T01:11:13.980151Z",
-     "iopub.status.idle": "2021-01-05T01:11:13.984827Z",
-     "shell.execute_reply": "2021-01-05T01:11:13.984151Z"
+     "iopub.execute_input": "2021-01-05T01:42:01.229073Z",
+     "iopub.status.busy": "2021-01-05T01:42:01.228389Z",
+     "iopub.status.idle": "2021-01-05T01:42:01.233395Z",
+     "shell.execute_reply": "2021-01-05T01:42:01.232667Z"
     }
    },
    "outputs": [
@@ -23,7 +23,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Today's date and time: 2021-01-05 01:11:13.978322\n"
+      "Today's date and time: 2021-01-05 01:42:01.226993\n"
      ]
     }
    ],
@@ -38,10 +38,10 @@
    "execution_count": 2,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T01:11:13.990469Z",
-     "iopub.status.busy": "2021-01-05T01:11:13.989452Z",
-     "iopub.status.idle": "2021-01-05T01:11:13.994257Z",
-     "shell.execute_reply": "2021-01-05T01:11:13.993147Z"
+     "iopub.execute_input": "2021-01-05T01:42:01.238418Z",
+     "iopub.status.busy": "2021-01-05T01:42:01.237806Z",
+     "iopub.status.idle": "2021-01-05T01:42:01.242352Z",
+     "shell.execute_reply": "2021-01-05T01:42:01.241725Z"
     }
    },
    "outputs": [
@@ -49,7 +49,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "jupyter-pangeo-2dgallery-2ddefault-2dbinder-2d86vtlvh4\n"
+      "jupyter-pangeo-2dgallery-2ddefault-2dbinder-2dijxkqk4i\n"
      ]
     }
    ],
