@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEMO Example &#8212; Pangeo Gallery  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="MITgcm ECCOv4 Example" href="01_eccov4.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../../index.html">
+          <span><img src="../../../_static/small_e_reversed_24px.png"></span>
+        Pangeo Gallery</a>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+      <li>
+      <nav id="pangeo-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Gallery for XGCM Examples and Usecases</a></li>
+        
+          <li class="breadcrumb-item active"><a href="#">NEMO Example</a></li>
+        
+        </ol>
+      </nav>
+      </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+
+
+
+
+
+<div class="badges" id="sidebar-header">
+  <p><i class="fa fa-github fa-lg"></i> <a target="_blank" href="https://github.com/xgcm/xgcm-examples/blob/master/04_nemo_idealized.ipynb">xgcm/xgcm-examples/04_nemo_idealized.ipynb</a></p>
+  <a target="_blank" href="https://binder.pangeo.io/v2/gh/pangeo-gallery/default-binder/53de928/?urlpath=git-pull?repo=https://github.com/xgcm/xgcm-examples%26amp%3Burlpath=lab/tree/xgcm-examples/04_nemo_idealized.ipynb%3Fautodecode"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
+</div>
+
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NCAR/cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../TomAugspurger/pangeo-dask-gateway/index.html">Pangeo &amp; Dask Gateway.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../earthcube2020/ec20_abernathey_etal/index.html">Cloud Storage Benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-data/landsat-8-tutorial-gallery/index.html">Landsat 8 Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-data/pangeo-tutorial-gallery/index.html">Pangeo Tutorial Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/cmip6/index.html">CMIP6 Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/example-gallery/index.html">Example Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rsignell-usgs/esip-gallery/index.html">ESIP Gallery</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gallery for XGCM Examples and Usecases</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_eccov4.html">MITgcm ECCOv4 Example</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">NEMO Example</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    /*background: #f5f5f5;*/
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+</style>
+<div class="section" id="NEMO-Example">
+<h1>NEMO Example<a class="headerlink" href="#NEMO-Example" title="Permalink to this headline">¶</a></h1>
+<p>For this example, the NEMO output files have already been saved as netCDF with the right coordinate names. The <a class="reference external" href="https://github.com/willirath/xorca">xorca</a> package is designed to open NEMO datasets so they are understandable by xgcm. The <a class="reference external" href="https://github.com/rcaneill/xnemogcm">xnemogcm</a> does a similar work on idealized configurations.</p>
+<p>Below are some example of how to make calculations using xgcm.</p>
+<p>First we import xarray and xgcm:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">xgcm</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Now we open the NEMO example dataset, from the BASIN configuration. The <em>ds</em> dataset contains the variables data (e.g. temperature, velocities) while the <em>domcfg</em> dataset contains the grid data (position, scale factor, etc).</p>
+<p>We get a dataset produced for the purpose of this documentation <a class="reference external" href="https://doi.org/10.5281/zenodo.3736803"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.3736803.svg" /></a>. In this dataset, we have not outputed the vertical scale factors in the <em>file_def_nemo-oce.xml</em> to save space. In a real case, the scale factors need to be saved to use properly the “thickness weighted” variables. The <em>domcfg</em> dataset has also been filtered to remove many unused variables in this notebook (e.g. <em>umask</em>).</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># download the data</span>
+<span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://zenodo.org/record/3736803/files/&#39;</span>
+<span class="n">file_name_domcfg</span> <span class="o">=</span> <span class="s1">&#39;xnemogcm.domcfg.nc&#39;</span>
+<span class="k">with</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span> <span class="o">+</span> <span class="n">file_name_domcfg</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name_domcfg</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copyfileobj</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">out_file</span><span class="p">)</span>
+<span class="n">file_name_basin</span> <span class="o">=</span> <span class="s1">&#39;xnemogcm.nemo.nc&#39;</span>
+<span class="k">with</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span> <span class="o">+</span> <span class="n">file_name_basin</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name_basin</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copyfileobj</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">out_file</span><span class="p">)</span>
+
+<span class="c1"># open the data</span>
+<span class="n">domcfg</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">file_name_domcfg</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">file_name_basin</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Add the vertical scale factors to <em>ds</em> (output of the model in real cases):</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">points</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">points</span><span class="p">:</span>
+    <span class="n">ds</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;e3</span><span class="si">{</span><span class="n">point</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">domcfg</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;e3</span><span class="si">{</span><span class="n">point</span><span class="si">}</span><span class="s2">_0&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> domcfg </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">domcfg</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> ds </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">ds</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+ domcfg
+ &lt;xarray.Dataset&gt;
+Dimensions:    (x_c: 20, x_f: 20, y_c: 40, y_f: 40, z_c: 36, z_f: 36)
+Coordinates:
+  * x_c        (x_c) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+  * y_c        (y_c) int64 0 1 2 3 4 5 6 7 8 9 ... 30 31 32 33 34 35 36 37 38 39
+  * x_f        (x_f) float64 0.5 1.5 2.5 3.5 4.5 ... 15.5 16.5 17.5 18.5 19.5
+  * y_f        (y_f) float64 0.5 1.5 2.5 3.5 4.5 ... 35.5 36.5 37.5 38.5 39.5
+  * z_c        (z_c) float32 5.0 15.0 25.0 35.0 ... 3379.915 3786.7092 4219.6006
+  * z_f        (z_f) float32 4.5 14.5 24.5 34.5 ... 3379.415 3786.2092 4219.1006
+Data variables:
+    glamt      (y_c, x_c) float64 ...
+    glamf      (y_f, x_f) float64 ...
+    gphit      (y_c, x_c) float64 ...
+    gphif      (y_f, x_f) float64 ...
+    e1t        (y_c, x_c) float64 ...
+    e1u        (y_c, x_f) float64 ...
+    e1v        (y_f, x_c) float64 ...
+    e1f        (y_f, x_f) float64 ...
+    e2t        (y_c, x_c) float64 ...
+    e2u        (y_c, x_f) float64 ...
+    e2v        (y_f, x_c) float64 ...
+    e2f        (y_f, x_f) float64 ...
+    e3t_0      (z_c, y_c, x_c) float64 ...
+    e3u_0      (z_c, y_c, x_f) float64 ...
+    e3v_0      (z_c, y_f, x_c) float64 ...
+    e3f_0      (z_c, y_f, x_f) float64 ...
+    e3w_0      (z_f, y_c, x_c) float64 ...
+    ht_0       (y_c, x_c) float64 ...
+    fmaskutil  (y_f, x_f) float64 ...
+Attributes:
+    DOMAIN_number_total:     1
+    DOMAIN_number:           1
+    DOMAIN_dimensions_ids:   [1 2]
+    DOMAIN_size_global:      [20 40]
+    DOMAIN_size_local:       [20 40]
+    DOMAIN_position_first:   [1 1]
+    DOMAIN_position_last:    [20 40]
+    DOMAIN_halo_size_start:  [0 0]
+    DOMAIN_halo_size_end:    [0 0]
+    DOMAIN_type:             BOX
+    nn_cfg:                  2
+    cn_cfg:                  BASIN
+
+ ds
+ &lt;xarray.Dataset&gt;
+Dimensions:        (axis_nbounds: 2, t: 1, x_c: 20, x_f: 20, y_c: 40, y_f: 40, z_c: 36, z_f: 36)
+Coordinates:
+  * z_f            (z_f) float32 4.5 14.5 24.5 ... 3379.415 3786.2092 4219.1006
+  * t              (t) object 1050-07-01 00:00:00
+  * x_c            (x_c) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+  * y_c            (y_c) int64 0 1 2 3 4 5 6 7 8 ... 31 32 33 34 35 36 37 38 39
+  * z_c            (z_c) float32 5.0 15.0 25.0 ... 3379.915 3786.7092 4219.6006
+  * x_f            (x_f) float64 0.5 1.5 2.5 3.5 4.5 ... 16.5 17.5 18.5 19.5
+  * y_f            (y_f) float64 0.5 1.5 2.5 3.5 4.5 ... 36.5 37.5 38.5 39.5
+Dimensions without coordinates: axis_nbounds
+Data variables:
+    depthw_bounds  (z_f, axis_nbounds) float32 ...
+    t_bounds       (t, axis_nbounds) object ...
+    woce           (t, z_f, y_c, x_c) float64 ...
+    deptht_bounds  (z_c, axis_nbounds) float32 ...
+    thetao         (t, z_c, y_c, x_c) float64 ...
+    so             (t, z_c, y_c, x_c) float64 ...
+    tos            (t, y_c, x_c) float64 ...
+    zos            (t, y_c, x_c) float64 ...
+    depthu_bounds  (z_c, axis_nbounds) float32 ...
+    uos            (t, y_c, x_f) float64 ...
+    uo             (t, z_c, y_c, x_f) float64 ...
+    depthv_bounds  (z_c, axis_nbounds) float32 ...
+    vos            (t, y_f, x_c) float64 ...
+    vo             (t, z_c, y_f, x_c) float64 ...
+    e3t            (z_c, y_c, x_c) float64 ...
+    e3u            (z_c, y_c, x_f) float64 ...
+    e3v            (z_c, y_f, x_c) float64 ...
+    e3f            (z_c, y_f, x_f) float64 ...
+    e3w            (z_f, y_c, x_c) float64 ...
+Attributes:
+    name:         NEMO dataset
+    description:  Ocean grid variables, set on the proper positions
+    title:        Ocean grid variables
+</pre></div></div>
+</div>
+<p>In the coordinates, the *_c* suffix means <em>center</em> while the *_f* suffix means <em>face</em>. Thus the (x_c, y_c, z_c) point is the T point, the (x_c, y_f, z_c) is the V point, etc.</p>
+<div class="section" id="Geometry-of-the-basin">
+<h2>Geometry of the basin<a class="headerlink" href="#Geometry-of-the-basin" title="Permalink to this headline">¶</a></h2>
+<p>The geometry of the simulation is a closed basin, with a bottom bathymetry, going from 2000 m at the coasts, to 4000 m in the interior of the basin. Terrain following coordinates are used and the free surface is linear (fixed vertical levels). A 2 degrees Mercator grid is used.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">domcfg</span><span class="o">.</span><span class="n">glamt</span><span class="p">,</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">gphit</span><span class="p">,</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">ht_0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;matplotlib.colorbar.Colorbar at 0x7f7a8971c820&gt;
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_9_1.png" src="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_9_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="Creating-the-grid-object">
+<h2>Creating the grid object<a class="headerlink" href="#Creating-the-grid-object" title="Permalink to this headline">¶</a></h2>
+<p>Next we create a <code class="docutils literal notranslate"><span class="pre">Grid</span></code> object from the dataset. All the axes are here non-periodic. The <code class="docutils literal notranslate"><span class="pre">metrics</span></code> dict contains the scale factors.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">,):</span> <span class="p">[</span><span class="s1">&#39;e1t&#39;</span><span class="p">,</span> <span class="s1">&#39;e1u&#39;</span><span class="p">,</span> <span class="s1">&#39;e1v&#39;</span><span class="p">,</span> <span class="s1">&#39;e1f&#39;</span><span class="p">],</span> <span class="c1"># X distances</span>
+    <span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">,):</span> <span class="p">[</span><span class="s1">&#39;e2t&#39;</span><span class="p">,</span> <span class="s1">&#39;e2u&#39;</span><span class="p">,</span> <span class="s1">&#39;e2v&#39;</span><span class="p">,</span> <span class="s1">&#39;e2f&#39;</span><span class="p">],</span> <span class="c1"># Y distances</span>
+    <span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">,):</span> <span class="p">[</span><span class="s1">&#39;e3t_0&#39;</span><span class="p">,</span> <span class="s1">&#39;e3u_0&#39;</span><span class="p">,</span> <span class="s1">&#39;e3v_0&#39;</span><span class="p">,</span> <span class="s1">&#39;e3f_0&#39;</span><span class="p">,</span> <span class="s1">&#39;e3w_0&#39;</span><span class="p">],</span> <span class="c1"># Z distances</span>
+    <span class="c1">#(&#39;X&#39;, &#39;Y&#39;): [] # Areas TODO</span>
+<span class="p">}</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">xgcm</span><span class="o">.</span><span class="n">Grid</span><span class="p">(</span><span class="n">domcfg</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="n">metrics</span><span class="p">,</span> <span class="n">periodic</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;xgcm.Grid&gt;
+X Axis (not periodic, boundary=None):
+  * center   x_c --&gt; right
+  * right    x_f --&gt; center
+Z Axis (not periodic, boundary=None):
+  * center   z_c --&gt; left
+  * left     z_f --&gt; center
+Y Axis (not periodic, boundary=None):
+  * center   y_c --&gt; right
+  * right    y_f --&gt; center
+</pre></div></div>
+</div>
+<p>We see that xgcm identified three different axes: X (longitude), Y (latitude), Z (depth).</p>
+</div>
+<div class="section" id="Computation-examples">
+<h2>Computation examples<a class="headerlink" href="#Computation-examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Horizontal-gradient-of-SST">
+<h3>Horizontal gradient of SST<a class="headerlink" href="#Horizontal-gradient-of-SST" title="Permalink to this headline">¶</a></h3>
+<p>We will compute the horizontal component of the gradient of SST in the longitude direction as a first example to understand the logic behind the xgcm grids.</p>
+<p>We want to compute <span class="math notranslate nohighlight">\(\frac{\partial SST}{\partial x}\)</span>. The SST is the variable <code class="docutils literal notranslate"><span class="pre">tos</span></code> (Temperature Ocean Surface) in our dataset.</p>
+<p>In discrete form, using the NEMO notation, the derivative becomes [1]</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial SST}{\partial x} = \frac{1}{e_{1u}} \delta_{i+1/2} SST
+= \frac{1}{e_{1u}} (SST_{i+1} - SST_i) \ .\]</div>
+<p>The last T point is an earth point here, such as the 2 last U points: we set up the <code class="docutils literal notranslate"><span class="pre">boundary</span></code> argument to ‘fill’ and the fill value to zero (this value does not play an important role here, as we fill earth points).</p>
+<p>The gradient is first computed with the <code class="docutils literal notranslate"><span class="pre">diff</span></code> function and then with the <code class="docutils literal notranslate"><span class="pre">derivative</span></code> function, the result is the same as the <code class="docutils literal notranslate"><span class="pre">derivative</span></code> function is aware of which scale factor to use.</p>
+<hr><p>[1] NEMO book v4.0.1, pp 22</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">grad_T_lon0</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">tos</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">/</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">e1u</span>
+<span class="n">grad_T_lon1</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">derivative</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">tos</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grad_T_lon1</span><span class="o">.</span><span class="n">coords</span><span class="p">)</span>
+<span class="p">(</span><span class="n">grad_T_lon0</span> <span class="o">==</span> <span class="n">grad_T_lon1</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Coordinates:
+  * t        (t) object 1050-07-01 00:00:00
+  * y_c      (y_c) int64 0 1 2 3 4 5 6 7 8 9 ... 30 31 32 33 34 35 36 37 38 39
+  * x_f      (x_f) float64 0.5 1.5 2.5 3.5 4.5 5.5 ... 15.5 16.5 17.5 18.5 19.5
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: none;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt, dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;
+array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-1f0c496d-e169-4e0b-b39c-3798723c3136' class='xr-array-in' type='checkbox' checked><label for='section-1f0c496d-e169-4e0b-b39c-3798723c3136' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-dfa9af19-52a4-45bf-92d6-fe5c52ba950c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-dfa9af19-52a4-45bf-92d6-fe5c52ba950c' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-66877613-5994-4b43-a44f-2cc235d684d8' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-66877613-5994-4b43-a44f-2cc235d684d8' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
+</div>
+<p>As expected the result of the 2 operations is the same. The position of the derivative is now on the U point.</p>
+</div>
+<div class="section" id="Divergence-Calculation">
+<h3>Divergence Calculation<a class="headerlink" href="#Divergence-Calculation" title="Permalink to this headline">¶</a></h3>
+<p>Here we show how to calculate the divergence of the flow. The precise details of how to do this calculation are highly model- and configuration-dependent (e.g. free-surface vs. rigid lid, etc.) In this example, the flow is incompressible, without precipitations or evaporation, with a linear free surface, satisfying the continuity equation</p>
+<div class="math notranslate nohighlight">
+\[\vec{\nabla} \cdot \vec{u} =
+ \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}
+ + \frac{\partial w}{\partial z} = 0 \ .\]</div>
+<p>In non-linear free surface, the divergence of <span class="math notranslate nohighlight">\(\vec{u}\)</span> is not 0 anymore, it is linked to the time variation of the <span class="math notranslate nohighlight">\(e_{3}\)</span> scale factors.</p>
+<p>In discrete form, using NEMO notation, the equation becomes [1]</p>
+<div class="math notranslate nohighlight">
+\[\vec{\nabla} \cdot \vec{u} = \frac{1}{e_{1t}e_{2t}e_{3t}} \left[
+ \delta_i(u \cdot e_{2u} \cdot e_{3u})
+ + \delta_j(v \cdot e_{1v} \cdot e_{3v}) \right]
+ + \frac{1}{e_{3t}} \delta_k(w)  \ .\]</div>
+<p>The equation for the divergence calculation could be simplified due to the geometry of our basin, but we will keep it in the general form.</p>
+<hr><p>[1] NEMO book v4.0.1, pp 22</p>
+<div class="section" id="3d-flow">
+<h4>3d flow<a class="headerlink" href="#3d-flow" title="Permalink to this headline">¶</a></h4>
+<p>We can’t use the <code class="docutils literal notranslate"><span class="pre">grid.derivative</span></code> function for <em>w</em> even if this is a simple vertical derivative: xgcm does not use the temporaly varying scale factors but the <em>domcfg.e3t_0</em> initial vertical scale factors. In this simple linear free surface case, the scale factors don’t vary in time, but we will use here a more general approach.</p>
+<p>For <em>u</em> and <em>v</em> we use the <code class="docutils literal notranslate"><span class="pre">grid.diff</span></code> as this is not a simple derivative, even if the horizontal scale factors are fixed in time in any case. The first T point along x is an earth point, we can use a ‘fill’ <code class="docutils literal notranslate"><span class="pre">boundary</span></code> with a 0 <code class="docutils literal notranslate"><span class="pre">fill_value</span></code>. The same argument applies along y and z.</p>
+<p>⚠ We need to use a negative sign for the vertical derivative, as the k-axis increases with depth.</p>
+<p>⚠ If the model is ran without linear free surface the e3 scale factors are not constant in time, we need to take the e3 from <em>ds</em> and not from <em>domcfg</em>. The data are are “thickness weighted”. To stay general, we use here the e3 scale factors from <em>ds</em>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">bd</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;boundary&#39;</span><span class="p">:</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="s1">&#39;fill_value&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+
+<span class="n">div_uv</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">uo</span> <span class="o">*</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">e2u</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">e3u</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">domcfg</span><span class="o">.</span><span class="n">e1t</span> <span class="o">*</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">e2t</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">)</span> \
+    <span class="o">+</span> <span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">vo</span> <span class="o">*</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">e1v</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">e3v</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">domcfg</span><span class="o">.</span><span class="n">e1t</span> <span class="o">*</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">e2t</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">)</span>
+
+<span class="n">div_w</span> <span class="o">=</span> <span class="o">-</span> <span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">woce</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">)</span> <span class="o">/</span> <span class="n">ds</span><span class="o">.</span><span class="n">e3t</span>
+
+<span class="n">div_uvw</span> <span class="o">=</span> <span class="n">div_uv</span> <span class="o">+</span> <span class="n">div_w</span>
+<span class="n">div_uvw</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: none;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt, dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;
+array(5.44218669e-19)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-82286d4d-3d3c-40ae-90d0-98587886625b' class='xr-array-in' type='checkbox' checked><label for='section-82286d4d-3d3c-40ae-90d0-98587886625b' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>5.442e-19</span></div><div class='xr-array-data'><pre>array(5.44218669e-19)</pre></div></div></li><li class='xr-section-item'><input id='section-7e8a1fe4-a9b7-4c51-b927-06c7a8cadf40' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7e8a1fe4-a9b7-4c51-b927-06c7a8cadf40' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-69fe6292-c11a-49a6-a2dd-e681603c8a94' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-69fe6292-c11a-49a6-a2dd-e681603c8a94' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
+</div>
+<p>As expected the divergence of the flow is zero (if we neglect the truncation error).</p>
+</div>
+<div class="section" id="Vertical-velocity">
+<h4>Vertical velocity<a class="headerlink" href="#Vertical-velocity" title="Permalink to this headline">¶</a></h4>
+<p>In NEMO the vertical velocity is computed from the divergence of the horizontal velocity. In non-linear free surface, the vertical velocity can’t be computed offline because it also takes the time variations of the vertical scale factors into account. However, we are using here a linear free surface, so that</p>
+<div class="math notranslate nohighlight">
+\[w(z) = \int_{bottom}^z \vec{\nabla}_h \cdot \vec{u} \, \text{d}z'
+= \int_{surf}^z \vec{\nabla}_h \cdot \vec{u} \, \text{d}z' - \int_{surf}^{bottom} \vec{\nabla}_h \cdot \vec{u} \, \text{d}z' \ .\]</div>
+<p>This is written in discrete form</p>
+<div class="math notranslate nohighlight">
+\[w(n) = \sum_0^n \left(\vec{\nabla}_h \cdot \vec{u}(k)\right)  e_{3t}(k)
+- \sum_0^{n_{bot}} \left(\vec{\nabla}_h \cdot \vec{u}(k)\right)  e_{3t}(k) \ .\]</div>
+<p>We use the <code class="docutils literal notranslate"><span class="pre">grid.cumsum</span></code> to perform the integration, and then we remove the total integral. This is shown here with 2 methods that give the same numerical result, however the first method runs faster.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">w</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">cumsum</span><span class="p">((</span><span class="n">div_uv</span><span class="o">*</span><span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># integral from top</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">w</span> <span class="o">-</span> <span class="n">w</span><span class="o">.</span><span class="n">isel</span><span class="p">({</span><span class="s1">&#39;z_f&#39;</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">})</span> <span class="c1"># now from bot</span>
+
+<span class="n">w_alt</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">cumsum</span><span class="p">((</span><span class="n">div_uv</span><span class="o">*</span><span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">div_uv</span><span class="o">*</span><span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;z_c&#39;</span><span class="p">)</span>
+
+<span class="p">(</span><span class="n">w</span> <span class="o">==</span> <span class="n">w_alt</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: none;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt, dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;
+array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-388b24de-7d2f-45b2-a71f-daadb7d5ae56' class='xr-array-in' type='checkbox' checked><label for='section-388b24de-7d2f-45b2-a71f-daadb7d5ae56' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-ecfe34e7-b080-43c8-92f8-bbe85b26f826' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ecfe34e7-b080-43c8-92f8-bbe85b26f826' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-1b2b517d-848c-4da7-8356-bff0e100a886' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-1b2b517d-848c-4da7-8356-bff0e100a886' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
+</div>
+<p>Remark: the first method runs faster, indeed we perfom only once the integral.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">w1</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">div_uv</span><span class="p">,</span> <span class="n">ds</span><span class="p">):</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">cumsum</span><span class="p">((</span><span class="n">div_uv</span><span class="o">*</span><span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># integral from top</span>
+    <span class="k">return</span> <span class="n">w</span> <span class="o">-</span> <span class="n">w</span><span class="o">.</span><span class="n">isel</span><span class="p">({</span><span class="s1">&#39;z_f&#39;</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">})</span> <span class="c1"># now from bot</span>
+
+<span class="k">def</span> <span class="nf">w2</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">div_uv</span><span class="p">,</span> <span class="n">ds</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">grid</span><span class="o">.</span><span class="n">cumsum</span><span class="p">((</span><span class="n">div_uv</span><span class="o">*</span><span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">div_uv</span><span class="o">*</span><span class="n">ds</span><span class="o">.</span><span class="n">e3t</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;z_c&#39;</span><span class="p">)</span>
+
+<span class="o">%</span><span class="k">timeit</span> w1(grid, div_uv, ds)
+<span class="o">%</span><span class="k">timeit</span> w2(grid, div_uv, ds)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+4.1 ms ± 119 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+6.03 ms ± 70.9 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</pre></div></div>
+</div>
+<p>We now compare the computed vertical velocity with the one outputed by the model, at the bottom of the uper grid cell.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">woce</span><span class="o">.</span><span class="n">isel</span><span class="p">({</span><span class="s1">&#39;z_f&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">w</span><span class="o">.</span><span class="n">isel</span><span class="p">({</span><span class="s1">&#39;z_f&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;matplotlib.collections.QuadMesh at 0x7f7a8021f370&gt;
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_25_1.png" src="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_25_1.png" />
+</div>
+</div>
+<p>The 2 fields look similar, which is confirmed by computing the difference.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">abs</span><span class="p">((</span><span class="n">w</span> <span class="o">-</span> <span class="n">ds</span><span class="o">.</span><span class="n">woce</span><span class="p">))</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
+<defs>
+<symbol id="icon-database" viewBox="0 0 32 32">
+<path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+<path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+<path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+</symbol>
+<symbol id="icon-file-text2" viewBox="0 0 32 32">
+<path d="M28.681 7.159c-0.694-0.947-1.662-2.053-2.724-3.116s-2.169-2.030-3.116-2.724c-1.612-1.182-2.393-1.319-2.841-1.319h-15.5c-1.378 0-2.5 1.121-2.5 2.5v27c0 1.378 1.122 2.5 2.5 2.5h23c1.378 0 2.5-1.122 2.5-2.5v-19.5c0-0.448-0.137-1.23-1.319-2.841zM24.543 5.457c0.959 0.959 1.712 1.825 2.268 2.543h-4.811v-4.811c0.718 0.556 1.584 1.309 2.543 2.268zM28 29.5c0 0.271-0.229 0.5-0.5 0.5h-23c-0.271 0-0.5-0.229-0.5-0.5v-27c0-0.271 0.229-0.5 0.5-0.5 0 0 15.499-0 15.5 0v7c0 0.552 0.448 1 1 1h7v19.5z"></path>
+<path d="M23 26h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 22h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+<path d="M23 18h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
+</symbol>
+</defs>
+</svg>
+<style>/* CSS stylesheet for displaying xarray objects in jupyterlab.
+ *
+ */
+
+:root {
+  --xr-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+  --xr-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+  --xr-font-color3: var(--jp-content-font-color3, rgba(0, 0, 0, 0.38));
+  --xr-border-color: var(--jp-border-color2, #e0e0e0);
+  --xr-disabled-color: var(--jp-layout-color3, #bdbdbd);
+  --xr-background-color: var(--jp-layout-color0, white);
+  --xr-background-color-row-even: var(--jp-layout-color1, white);
+  --xr-background-color-row-odd: var(--jp-layout-color2, #eeeeee);
+}
+
+html[theme=dark],
+body.vscode-dark {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+.xr-wrap {
+  display: block;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.xr-text-repr-fallback {
+  /* fallback to plain text repr when CSS is not injected (untrusted notebook) */
+  display: none;
+}
+
+.xr-header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+  border-bottom: solid 1px var(--xr-border-color);
+}
+
+.xr-header > div,
+.xr-header > ul {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xr-obj-type,
+.xr-array-name {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.xr-obj-type {
+  color: var(--xr-font-color2);
+}
+
+.xr-sections {
+  padding-left: 0 !important;
+  display: grid;
+  grid-template-columns: 150px auto auto 1fr 20px 20px;
+}
+
+.xr-section-item {
+  display: contents;
+}
+
+.xr-section-item input {
+  display: none;
+}
+
+.xr-section-item input + label {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-item input:enabled + label {
+  cursor: pointer;
+  color: var(--xr-font-color2);
+}
+
+.xr-section-item input:enabled + label:hover {
+  color: var(--xr-font-color0);
+}
+
+.xr-section-summary {
+  grid-column: 1;
+  color: var(--xr-font-color2);
+  font-weight: 500;
+}
+
+.xr-section-summary > span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+.xr-section-summary-in:disabled + label {
+  color: var(--xr-font-color2);
+}
+
+.xr-section-summary-in + label:before {
+  display: inline-block;
+  content: '►';
+  font-size: 11px;
+  width: 15px;
+  text-align: center;
+}
+
+.xr-section-summary-in:disabled + label:before {
+  color: var(--xr-disabled-color);
+}
+
+.xr-section-summary-in:checked + label:before {
+  content: '▼';
+}
+
+.xr-section-summary-in:checked + label > span {
+  display: none;
+}
+
+.xr-section-summary,
+.xr-section-inline-details {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.xr-section-inline-details {
+  grid-column: 2 / -1;
+}
+
+.xr-section-details {
+  display: none;
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.xr-section-summary-in:checked ~ .xr-section-details {
+  display: contents;
+}
+
+.xr-array-wrap {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.xr-array-wrap > label {
+  grid-column: 1;
+  vertical-align: top;
+}
+
+.xr-preview {
+  color: var(--xr-font-color3);
+}
+
+.xr-array-preview,
+.xr-array-data {
+  padding: 0 5px !important;
+  grid-column: 2;
+}
+
+.xr-array-data,
+.xr-array-in:checked ~ .xr-array-preview {
+  display: none;
+}
+
+.xr-array-in:checked ~ .xr-array-data,
+.xr-array-preview {
+  display: inline-block;
+}
+
+.xr-dim-list {
+  display: inline-block !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.xr-dim-list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.xr-dim-list:before {
+  content: '(';
+}
+
+.xr-dim-list:after {
+  content: ')';
+}
+
+.xr-dim-list li:not(:last-child):after {
+  content: ',';
+  padding-right: 5px;
+}
+
+.xr-has-index {
+  font-weight: bold;
+}
+
+.xr-var-list,
+.xr-var-item {
+  display: contents;
+}
+
+.xr-var-item > div,
+.xr-var-item label,
+.xr-var-item > .xr-var-name span {
+  background-color: var(--xr-background-color-row-even);
+  margin-bottom: 0;
+}
+
+.xr-var-item > .xr-var-name:hover span {
+  padding-right: 5px;
+}
+
+.xr-var-list > li:nth-child(odd) > div,
+.xr-var-list > li:nth-child(odd) > label,
+.xr-var-list > li:nth-child(odd) > .xr-var-name span {
+  background-color: var(--xr-background-color-row-odd);
+}
+
+.xr-var-name {
+  grid-column: 1;
+}
+
+.xr-var-dims {
+  grid-column: 2;
+}
+
+.xr-var-dtype {
+  grid-column: 3;
+  text-align: right;
+  color: var(--xr-font-color2);
+}
+
+.xr-var-preview {
+  grid-column: 4;
+}
+
+.xr-var-name,
+.xr-var-dims,
+.xr-var-dtype,
+.xr-preview,
+.xr-attrs dt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.xr-var-name:hover,
+.xr-var-dims:hover,
+.xr-var-dtype:hover,
+.xr-attrs dt:hover {
+  overflow: visible;
+  width: auto;
+  z-index: 1;
+}
+
+.xr-var-attrs,
+.xr-var-data {
+  display: none;
+  background-color: var(--xr-background-color) !important;
+  padding-bottom: 5px !important;
+}
+
+.xr-var-attrs-in:checked ~ .xr-var-attrs,
+.xr-var-data-in:checked ~ .xr-var-data {
+  display: block;
+}
+
+.xr-var-data > table {
+  float: right;
+}
+
+.xr-var-name span,
+.xr-var-data,
+.xr-attrs {
+  padding-left: 25px !important;
+}
+
+.xr-attrs,
+.xr-var-attrs,
+.xr-var-data {
+  grid-column: 1 / -1;
+}
+
+dl.xr-attrs {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 125px auto;
+}
+
+.xr-attrs dt, dd {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+}
+
+.xr-attrs dt {
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.xr-attrs dt:hover span {
+  display: inline-block;
+  background: var(--xr-background-color);
+  padding-right: 10px;
+}
+
+.xr-attrs dd {
+  grid-column: 2;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.xr-icon-database,
+.xr-icon-file-text2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1.5em !important;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;
+array(2.07489191e-17)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-301144de-81a2-45f3-9edf-cdf6f7a80bc9' class='xr-array-in' type='checkbox' checked><label for='section-301144de-81a2-45f3-9edf-cdf6f7a80bc9' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>2.075e-17</span></div><div class='xr-array-data'><pre>array(2.07489191e-17)</pre></div></div></li><li class='xr-section-item'><input id='section-a3d8ea74-0bde-4a94-85ea-54b3efa8d058' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a3d8ea74-0bde-4a94-85ea-54b3efa8d058' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-efbb9b00-5565-4e6b-a107-a1fc8c3ded5e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-efbb9b00-5565-4e6b-a107-a1fc8c3ded5e' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Vorticity">
+<h3>Vorticity<a class="headerlink" href="#Vorticity" title="Permalink to this headline">¶</a></h3>
+<p>Here we compute more derived quantities from the velocity field.</p>
+<p>The vertical component of the vorticity is a fundamental quantity of interest in ocean circulation theory. It is defined as</p>
+<div class="math notranslate nohighlight">
+\[\zeta = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} \ .\]</div>
+<p>The NEMO discretization is [1]</p>
+<div class="math notranslate nohighlight">
+\[\zeta = \frac{1}{e_{1f} e_{2f}} \left[\delta_{i+1/2}(v \cdot e_{2v}) - \delta_{j+1/2}(u \cdot e_{1u}) \right]\]</div>
+<hr><p>[1] NEMO book v4.0.1, pp 22</p>
+<hr><p>In xgcm, we calculate this quantity as</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">zeta</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">domcfg</span><span class="o">.</span><span class="n">e1f</span><span class="o">*</span><span class="n">domcfg</span><span class="o">.</span><span class="n">e2f</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">vo</span><span class="o">*</span><span class="n">domcfg</span><span class="o">.</span><span class="n">e2v</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">)</span> <span class="o">-</span> <span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">uo</span><span class="o">*</span><span class="n">domcfg</span><span class="o">.</span><span class="n">e1u</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">))</span> <span class="o">*</span> <span class="n">domcfg</span><span class="o">.</span><span class="n">fmaskutil</span>
+<span class="n">zeta</span><span class="o">.</span><span class="n">coords</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Coordinates:
+  * x_f      (x_f) float64 0.5 1.5 2.5 3.5 4.5 5.5 ... 15.5 16.5 17.5 18.5 19.5
+  * y_f      (y_f) float64 0.5 1.5 2.5 3.5 4.5 5.5 ... 35.5 36.5 37.5 38.5 39.5
+  * t        (t) object 1050-07-01 00:00:00
+  * z_c      (z_c) float32 5.0 15.0 25.0 35.0 ... 3379.915 3786.7092 4219.6006
+</pre></div></div>
+</div>
+<p><span class="math notranslate nohighlight">\(\zeta\)</span> is located in the F point (<em>x_f</em>, <em>y_f</em>).</p>
+<p>We plot the vertical integral of this quantity, i.e. the barotropic vorticity:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">zeta_bt</span> <span class="o">=</span> <span class="p">(</span><span class="n">zeta</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">e3f</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;z_c&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span>
+    <span class="n">domcfg</span><span class="o">.</span><span class="n">glamf</span><span class="p">,</span>
+    <span class="n">domcfg</span><span class="o">.</span><span class="n">gphif</span><span class="p">,</span>
+    <span class="n">zeta_bt</span><span class="o">.</span><span class="n">isel</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">}),</span>
+    <span class="n">levels</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="nb">abs</span><span class="p">(</span><span class="n">zeta_bt</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="nb">abs</span><span class="p">(</span><span class="n">zeta_bt</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="mi">21</span><span class="p">),</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;RdBu_r&#39;</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;matplotlib.colorbar.Colorbar at 0x7f7a801c60d0&gt;
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_31_1.png" src="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_31_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="Barotropic-Transport-Streamfunction">
+<h3>Barotropic Transport Streamfunction<a class="headerlink" href="#Barotropic-Transport-Streamfunction" title="Permalink to this headline">¶</a></h3>
+<p>We can use the barotropic velocity to calcuate the barotropic transport streamfunction, defined via</p>
+<div class="math notranslate nohighlight">
+\[u_{bt} = - \frac{\partial \Psi}{\partial y} \ , \ \ v_{bt} = \frac{\partial \Psi}{\partial x} \ .\]</div>
+<div class="math notranslate nohighlight">
+\[\Psi(x,y) = \int_0^x \int_{bottom}^{surface} v_{bt}(x,y) \, \text{d}z \, \text{d}x\]</div>
+<p>We calculate this by integrating <span class="math notranslate nohighlight">\(v_{bt}\)</span> along the X axis using the grid object’s <code class="docutils literal notranslate"><span class="pre">cumint</span></code> method:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">psi</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">cumint</span><span class="p">((</span><span class="n">ds</span><span class="o">.</span><span class="n">vo</span><span class="o">*</span><span class="n">ds</span><span class="o">.</span><span class="n">e3v</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s1">&#39;z_c&#39;</span><span class="p">),</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e-6</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">psi</span><span class="o">.</span><span class="n">coords</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span>
+    <span class="n">domcfg</span><span class="o">.</span><span class="n">glamf</span><span class="p">,</span>
+    <span class="n">domcfg</span><span class="o">.</span><span class="n">gphif</span><span class="p">,</span>
+    <span class="n">psi</span><span class="o">.</span><span class="n">isel</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">}),</span>
+    <span class="n">levels</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;RdBu_r&#39;</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Psi barotropic [Sv]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Coordinates:
+  * t        (t) object 1050-07-01 00:00:00
+  * y_f      (y_f) float64 0.5 1.5 2.5 3.5 4.5 5.5 ... 35.5 36.5 37.5 38.5 39.5
+  * x_f      (x_f) float64 0.5 1.5 2.5 3.5 4.5 5.5 ... 15.5 16.5 17.5 18.5 19.5
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+(0.0, 60.0)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_33_2.png" src="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_33_2.png" />
+</div>
+</div>
+<p>By construction, <span class="math notranslate nohighlight">\(\psi\)</span> is 0 at the western boundary.</p>
+</div>
+<div class="section" id="Kinetic-Energy">
+<h3>Kinetic Energy<a class="headerlink" href="#Kinetic-Energy" title="Permalink to this headline">¶</a></h3>
+<p>Finally, we plot the surface kinetic energy <span class="math notranslate nohighlight">\(1/2 (u^2 + v^2)\)</span> by interpoloting both quantities the cell center point.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># an example of calculating kinetic energy</span>
+<span class="n">ke</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">interp</span><span class="p">((</span><span class="n">ds</span><span class="o">.</span><span class="n">uo</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">)</span> <span class="o">+</span> <span class="n">grid</span><span class="o">.</span><span class="n">interp</span><span class="p">((</span><span class="n">ds</span><span class="o">.</span><span class="n">vo</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">bd</span><span class="p">))</span>
+<span class="n">ke</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;matplotlib.collections.QuadMesh at 0x7f7a896e8910&gt;
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_36_1.png" src="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_36_1.png" />
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Pangeo Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
