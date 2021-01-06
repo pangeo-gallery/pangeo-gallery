@@ -18,10 +18,10 @@
    "execution_count": 1,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:19:42.345165Z",
-     "iopub.status.busy": "2021-01-05T02:19:42.344546Z",
-     "iopub.status.idle": "2021-01-05T02:19:51.246107Z",
-     "shell.execute_reply": "2021-01-05T02:19:51.245453Z"
+     "iopub.execute_input": "2021-01-06T15:13:45.932540Z",
+     "iopub.status.busy": "2021-01-06T15:13:45.931567Z",
+     "iopub.status.idle": "2021-01-06T15:13:55.338501Z",
+     "shell.execute_reply": "2021-01-06T15:13:55.339055Z"
     }
    },
    "outputs": [],
@@ -50,10 +50,10 @@
    "execution_count": 2,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:19:51.261134Z",
-     "iopub.status.busy": "2021-01-05T02:19:51.260498Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.106930Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.107456Z"
+     "iopub.execute_input": "2021-01-06T15:13:55.356147Z",
+     "iopub.status.busy": "2021-01-06T15:13:55.355407Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.044679Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.043908Z"
     }
    },
    "outputs": [],
@@ -87,10 +87,10 @@
    "execution_count": 3,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.125257Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.124620Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.127767Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.127203Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.062782Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.061925Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.065224Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.064658Z"
     }
    },
    "outputs": [],
@@ -105,10 +105,10 @@
    "execution_count": 4,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.148211Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.147119Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.151476Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.150886Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.077080Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.070614Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.089247Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.088723Z"
     }
    },
    "outputs": [
@@ -226,17 +226,17 @@
    "execution_count": 5,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.173367Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.171138Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.451436Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.450798Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.112573Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.111896Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.410191Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.409629Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.colorbar.Colorbar at 0x7f7a8971c820>"
+       "<matplotlib.colorbar.Colorbar at 0x7fc84b961790>"
       ]
      },
      "execution_count": 1,
@@ -277,10 +277,10 @@
    "execution_count": 6,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.462000Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.461372Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.464857Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.464190Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.421214Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.420305Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.425050Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.424353Z"
     }
    },
    "outputs": [
@@ -356,10 +356,10 @@
    "execution_count": 7,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.474093Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.473445Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.489676Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.489092Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.432417Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.431406Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.451589Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.450905Z"
     }
    },
    "outputs": [
@@ -727,7 +727,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-1f0c496d-e169-4e0b-b39c-3798723c3136' class='xr-array-in' type='checkbox' checked><label for='section-1f0c496d-e169-4e0b-b39c-3798723c3136' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-dfa9af19-52a4-45bf-92d6-fe5c52ba950c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-dfa9af19-52a4-45bf-92d6-fe5c52ba950c' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-66877613-5994-4b43-a44f-2cc235d684d8' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-66877613-5994-4b43-a44f-2cc235d684d8' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-6f7f5ee2-3720-444e-9c0c-b84598111cdf' class='xr-array-in' type='checkbox' checked><label for='section-6f7f5ee2-3720-444e-9c0c-b84598111cdf' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-2a3be000-81f9-48b7-a6f0-a0b645271db7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-2a3be000-81f9-48b7-a6f0-a0b645271db7' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-cd6c1c31-5d4b-401f-bfb6-be7890156d94' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-cd6c1c31-5d4b-401f-bfb6-be7890156d94' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -806,10 +806,10 @@
    "execution_count": 8,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.498967Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.498304Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.536370Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.535751Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.461458Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.460337Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.496728Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.496008Z"
     }
    },
    "outputs": [
@@ -1167,7 +1167,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(5.44218669e-19)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-82286d4d-3d3c-40ae-90d0-98587886625b' class='xr-array-in' type='checkbox' checked><label for='section-82286d4d-3d3c-40ae-90d0-98587886625b' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>5.442e-19</span></div><div class='xr-array-data'><pre>array(5.44218669e-19)</pre></div></div></li><li class='xr-section-item'><input id='section-7e8a1fe4-a9b7-4c51-b927-06c7a8cadf40' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7e8a1fe4-a9b7-4c51-b927-06c7a8cadf40' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-69fe6292-c11a-49a6-a2dd-e681603c8a94' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-69fe6292-c11a-49a6-a2dd-e681603c8a94' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(5.44218669e-19)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-66356c00-6371-4c2c-8fef-e752fa5368c9' class='xr-array-in' type='checkbox' checked><label for='section-66356c00-6371-4c2c-8fef-e752fa5368c9' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>5.442e-19</span></div><div class='xr-array-data'><pre>array(5.44218669e-19)</pre></div></div></li><li class='xr-section-item'><input id='section-5f17c181-318c-4960-ae66-38e4a40c3902' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5f17c181-318c-4960-ae66-38e4a40c3902' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-0dfc68a7-ebff-43e9-99c2-cdaef02eca8c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0dfc68a7-ebff-43e9-99c2-cdaef02eca8c' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1230,10 +1230,10 @@
    "execution_count": 9,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.544886Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.543817Z",
-     "iopub.status.idle": "2021-01-05T02:20:09.565658Z",
-     "shell.execute_reply": "2021-01-05T02:20:09.564930Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.503801Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.503117Z",
+     "iopub.status.idle": "2021-01-06T15:13:59.520443Z",
+     "shell.execute_reply": "2021-01-06T15:13:59.519802Z"
     }
    },
    "outputs": [
@@ -1591,7 +1591,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-388b24de-7d2f-45b2-a71f-daadb7d5ae56' class='xr-array-in' type='checkbox' checked><label for='section-388b24de-7d2f-45b2-a71f-daadb7d5ae56' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-ecfe34e7-b080-43c8-92f8-bbe85b26f826' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ecfe34e7-b080-43c8-92f8-bbe85b26f826' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-1b2b517d-848c-4da7-8356-bff0e100a886' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-1b2b517d-848c-4da7-8356-bff0e100a886' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-18393a86-aba6-4a31-901f-f732106c6039' class='xr-array-in' type='checkbox' checked><label for='section-18393a86-aba6-4a31-901f-f732106c6039' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-3839eea1-55f3-4517-90c3-289eeb2c5295' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-3839eea1-55f3-4517-90c3-289eeb2c5295' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-37273cef-76fe-4a7f-a419-f02b70dcb69e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-37273cef-76fe-4a7f-a419-f02b70dcb69e' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1624,10 +1624,10 @@
    "execution_count": 10,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:09.580193Z",
-     "iopub.status.busy": "2021-01-05T02:20:09.574151Z",
-     "iopub.status.idle": "2021-01-05T02:20:17.815148Z",
-     "shell.execute_reply": "2021-01-05T02:20:17.814472Z"
+     "iopub.execute_input": "2021-01-06T15:13:59.531709Z",
+     "iopub.status.busy": "2021-01-06T15:13:59.531029Z",
+     "iopub.status.idle": "2021-01-06T15:14:07.876793Z",
+     "shell.execute_reply": "2021-01-06T15:14:07.877320Z"
     }
    },
    "outputs": [
@@ -1635,14 +1635,14 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "4.1 ms ± 119 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
+      "4.17 ms ± 110 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "6.03 ms ± 70.9 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
+      "6.09 ms ± 36.1 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
      ]
     }
    ],
@@ -1670,17 +1670,17 @@
    "execution_count": 11,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:17.858936Z",
-     "iopub.status.busy": "2021-01-05T02:20:17.856073Z",
-     "iopub.status.idle": "2021-01-05T02:20:18.324861Z",
-     "shell.execute_reply": "2021-01-05T02:20:18.324177Z"
+     "iopub.execute_input": "2021-01-06T15:14:07.900886Z",
+     "iopub.status.busy": "2021-01-06T15:14:07.898251Z",
+     "iopub.status.idle": "2021-01-06T15:14:08.401650Z",
+     "shell.execute_reply": "2021-01-06T15:14:08.400871Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7f7a8021f370>"
+       "<matplotlib.collections.QuadMesh at 0x7fc841d742b0>"
       ]
      },
      "execution_count": 1,
@@ -1718,10 +1718,10 @@
    "execution_count": 12,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:18.331471Z",
-     "iopub.status.busy": "2021-01-05T02:20:18.330807Z",
-     "iopub.status.idle": "2021-01-05T02:20:18.338320Z",
-     "shell.execute_reply": "2021-01-05T02:20:18.337739Z"
+     "iopub.execute_input": "2021-01-06T15:14:08.408924Z",
+     "iopub.status.busy": "2021-01-06T15:14:08.407893Z",
+     "iopub.status.idle": "2021-01-06T15:14:08.416251Z",
+     "shell.execute_reply": "2021-01-06T15:14:08.415744Z"
     }
    },
    "outputs": [
@@ -2079,7 +2079,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(2.07489191e-17)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-301144de-81a2-45f3-9edf-cdf6f7a80bc9' class='xr-array-in' type='checkbox' checked><label for='section-301144de-81a2-45f3-9edf-cdf6f7a80bc9' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>2.075e-17</span></div><div class='xr-array-data'><pre>array(2.07489191e-17)</pre></div></div></li><li class='xr-section-item'><input id='section-a3d8ea74-0bde-4a94-85ea-54b3efa8d058' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a3d8ea74-0bde-4a94-85ea-54b3efa8d058' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-efbb9b00-5565-4e6b-a107-a1fc8c3ded5e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-efbb9b00-5565-4e6b-a107-a1fc8c3ded5e' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(2.07489191e-17)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-196c3019-325e-4f4c-bc80-e2030bcef4de' class='xr-array-in' type='checkbox' checked><label for='section-196c3019-325e-4f4c-bc80-e2030bcef4de' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>2.075e-17</span></div><div class='xr-array-data'><pre>array(2.07489191e-17)</pre></div></div></li><li class='xr-section-item'><input id='section-372d755f-757e-482e-bade-ab2a84618e65' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-372d755f-757e-482e-bade-ab2a84618e65' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-fab7cc3f-6a61-4622-97d2-0d69bff38258' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-fab7cc3f-6a61-4622-97d2-0d69bff38258' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -2124,10 +2124,10 @@
    "execution_count": 13,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:18.345186Z",
-     "iopub.status.busy": "2021-01-05T02:20:18.344316Z",
-     "iopub.status.idle": "2021-01-05T02:20:18.364375Z",
-     "shell.execute_reply": "2021-01-05T02:20:18.363709Z"
+     "iopub.execute_input": "2021-01-06T15:14:08.422785Z",
+     "iopub.status.busy": "2021-01-06T15:14:08.422151Z",
+     "iopub.status.idle": "2021-01-06T15:14:08.441912Z",
+     "shell.execute_reply": "2021-01-06T15:14:08.442368Z"
     }
    },
    "outputs": [
@@ -2165,17 +2165,17 @@
    "execution_count": 14,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:18.371871Z",
-     "iopub.status.busy": "2021-01-05T02:20:18.371179Z",
-     "iopub.status.idle": "2021-01-05T02:20:18.661777Z",
-     "shell.execute_reply": "2021-01-05T02:20:18.661099Z"
+     "iopub.execute_input": "2021-01-06T15:14:08.451616Z",
+     "iopub.status.busy": "2021-01-06T15:14:08.450598Z",
+     "iopub.status.idle": "2021-01-06T15:14:08.759464Z",
+     "shell.execute_reply": "2021-01-06T15:14:08.760011Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.colorbar.Colorbar at 0x7f7a801c60d0>"
+       "<matplotlib.colorbar.Colorbar at 0x7fc841d1b040>"
       ]
      },
      "execution_count": 1,
@@ -2227,10 +2227,10 @@
    "execution_count": 15,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:18.669565Z",
-     "iopub.status.busy": "2021-01-05T02:20:18.668956Z",
-     "iopub.status.idle": "2021-01-05T02:20:19.072736Z",
-     "shell.execute_reply": "2021-01-05T02:20:19.072092Z"
+     "iopub.execute_input": "2021-01-06T15:14:08.767770Z",
+     "iopub.status.busy": "2021-01-06T15:14:08.767176Z",
+     "iopub.status.idle": "2021-01-06T15:14:09.238517Z",
+     "shell.execute_reply": "2021-01-06T15:14:09.239111Z"
     }
    },
    "outputs": [
@@ -2302,17 +2302,17 @@
    "execution_count": 16,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-05T02:20:19.078834Z",
-     "iopub.status.busy": "2021-01-05T02:20:19.078183Z",
-     "iopub.status.idle": "2021-01-05T02:20:19.367863Z",
-     "shell.execute_reply": "2021-01-05T02:20:19.368352Z"
+     "iopub.execute_input": "2021-01-06T15:14:09.245548Z",
+     "iopub.status.busy": "2021-01-06T15:14:09.244837Z",
+     "iopub.status.idle": "2021-01-06T15:14:09.555110Z",
+     "shell.execute_reply": "2021-01-06T15:14:09.554370Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7f7a896e8910>"
+       "<matplotlib.collections.QuadMesh at 0x7fc84b5e9730>"
       ]
      },
      "execution_count": 1,
