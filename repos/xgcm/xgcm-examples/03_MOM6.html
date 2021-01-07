@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting started with xgcm for MOM6 &#8212; Pangeo Gallery  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="NEMO Example" href="04_nemo_idealized.html" />
+    <link rel="prev" title="MITgcm Example" href="02_mitgcm.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../../../index.html">
+          <span><img src="../../../_static/small_e_reversed_24px.png"></span>
+        Pangeo Gallery</a>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+      <li>
+      <nav id="pangeo-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Gallery for XGCM Examples and Usecases</a></li>
+        
+          <li class="breadcrumb-item active"><a href="#">Getting started with xgcm for MOM6</a></li>
+        
+        </ol>
+      </nav>
+      </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+
+
+
+
+
+<div class="badges" id="sidebar-header">
+  <p><i class="fa fa-github fa-lg"></i> <a target="_blank" href="https://github.com/xgcm/xgcm-examples/blob/master/03_MOM6.ipynb">xgcm/xgcm-examples/03_MOM6.ipynb</a></p>
+  <a target="_blank" href="https://binder.pangeo.io/v2/gh/pangeo-gallery/default-binder/53de928/?urlpath=git-pull?repo=https://github.com/xgcm/xgcm-examples%26amp%3Burlpath=lab/tree/xgcm-examples/03_MOM6.ipynb%3Fautodecode"><img alt="Launch Binder" src="https://mybinder.org/badge_logo.svg?style=flat-square" /></a>
+</div>
+
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NCAR/cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../TomAugspurger/pangeo-dask-gateway/index.html">Pangeo &amp; Dask Gateway.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../earthcube2020/ec20_abernathey_etal/index.html">Cloud Storage Benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-data/landsat-8-tutorial-gallery/index.html">Landsat 8 Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-data/pangeo-tutorial-gallery/index.html">Pangeo Tutorial Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/cmip6/index.html">CMIP6 Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/example-gallery/index.html">Example Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rsignell-usgs/esip-gallery/index.html">ESIP Gallery</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gallery for XGCM Examples and Usecases</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_eccov4.html">MITgcm ECCOv4 Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_mitgcm.html">MITgcm Example</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting started with xgcm for MOM6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_nemo_idealized.html">NEMO Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_autogenerate.html">Generate missing C-grid coordinates</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    /*background: #f5f5f5;*/
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+</style>
+<div class="section" id="Getting-started-with-xgcm-for-MOM6">
+<h1>Getting started with xgcm for MOM6<a class="headerlink" href="#Getting-started-with-xgcm-for-MOM6" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>MOM6 variables are staggered according to the Arakawa C-grid</p></li>
+<li><p>It uses a north-east index convention</p></li>
+<li><p>center points are labelled (xh, yh) and corner points are labelled (xq, yq)</p></li>
+<li><p>important: variables xh/yh, xq/yq that are named “nominal” longitude/latitude <strong>are not</strong> the true geographical coordinates and are not suitable for plotting (more later)</p></li>
+</ul>
+<p>See <a class="reference external" href="https://mom6.readthedocs.io/en/dev-gfdl/api/generated/pages/Horizontal_indexing.html">indexing</a> for details.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="kn">from</span> <span class="nn">xgcm</span> <span class="kn">import</span> <span class="n">Grid</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">cartopy</span> <span class="kn">import</span> <span class="n">crs</span> <span class="k">as</span> <span class="n">ccrs</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">display_style</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>For this tutorial, we use sample data for the <span class="math notranslate nohighlight">\(\frac{1}{2}^{\circ}\)</span> global model OM4p05 hosted on a GFDL thredds server:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">dataurl</span> <span class="o">=</span> <span class="s1">&#39;http://35.188.34.63:8080/thredds/dodsC/OM4p5/&#39;</span>
+
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">dataurl</span><span class="si">}</span><span class="s1">/ocean_monthly_z.200301-200712.nc4&#39;</span><span class="p">,</span>
+                     <span class="n">chunks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;time&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;z_l&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="n">drop_variables</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;average_DT&#39;</span><span class="p">,</span>
+                                                                  <span class="s1">&#39;average_T1&#39;</span><span class="p">,</span>
+                                                                  <span class="s1">&#39;average_T2&#39;</span><span class="p">],</span>
+                     <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;pydap&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.Dataset&gt;
+Dimensions:       (nv: 2, time: 60, xh: 720, xq: 720, yh: 576, yq: 576, z_i: 36, z_l: 35)
+Coordinates:
+  * nv            (nv) float64 1.0 2.0
+  * xh            (xh) float64 -299.8 -299.2 -298.8 -298.2 ... 58.75 59.25 59.75
+  * xq            (xq) float64 -299.5 -299.0 -298.5 -298.0 ... 59.0 59.5 60.0
+  * yh            (yh) float64 -77.91 -77.72 -77.54 -77.36 ... 89.47 89.68 89.89
+  * yq            (yq) float64 -77.82 -77.63 -77.45 -77.26 ... 89.58 89.79 90.0
+  * z_i           (z_i) float64 0.0 5.0 15.0 25.0 ... 5.75e+03 6.25e+03 6.75e+03
+  * z_l           (z_l) float64 2.5 10.0 20.0 32.5 ... 5.5e+03 6e+03 6.5e+03
+  * time          (time) object 2003-01-16 12:00:00 ... 2007-12-16 12:00:00
+Data variables:
+    Coriolis      (yq, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    areacello     (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    areacello_bu  (yq, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    areacello_cu  (yh, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    areacello_cv  (yq, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    deptho        (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    dxCu          (yh, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    dxCv          (yq, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    dxt           (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    dyCu          (yh, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    dyCv          (yq, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    dyt           (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolat        (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolat_c      (yq, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolat_u      (yh, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolat_v      (yq, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolon        (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolon_c      (yq, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolon_u      (yh, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    geolon_v      (yq, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    hfgeou        (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    sftof         (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    thkcello      (z_l, yh, xh) float32 dask.array&lt;chunksize=(1, 576, 720), meta=np.ndarray&gt;
+    wet           (yh, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    wet_c         (yq, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    wet_u         (yh, xq) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    wet_v         (yq, xh) float32 dask.array&lt;chunksize=(576, 720), meta=np.ndarray&gt;
+    so            (time, z_l, yh, xh) float32 dask.array&lt;chunksize=(1, 1, 576, 720), meta=np.ndarray&gt;
+    time_bnds     (time, nv) timedelta64[ns] dask.array&lt;chunksize=(1, 2), meta=np.ndarray&gt;
+    thetao        (time, z_l, yh, xh) float32 dask.array&lt;chunksize=(1, 1, 576, 720), meta=np.ndarray&gt;
+    umo           (time, z_l, yh, xq) float32 dask.array&lt;chunksize=(1, 1, 576, 720), meta=np.ndarray&gt;
+    uo            (time, z_l, yh, xq) float32 dask.array&lt;chunksize=(1, 1, 576, 720), meta=np.ndarray&gt;
+    vmo           (time, z_l, yq, xh) float32 dask.array&lt;chunksize=(1, 1, 576, 720), meta=np.ndarray&gt;
+    vo            (time, z_l, yq, xh) float32 dask.array&lt;chunksize=(1, 1, 576, 720), meta=np.ndarray&gt;
+    volcello      (time, z_l, yh, xh) float32 dask.array&lt;chunksize=(1, 1, 576, 720), meta=np.ndarray&gt;
+    zos           (time, yh, xh) float32 dask.array&lt;chunksize=(1, 576, 720), meta=np.ndarray&gt;
+Attributes:
+    filename:                        ocean_monthly.200301-200712.zos.nc
+    title:                           OM4p5_IAF_BLING_CFC_abio_csf_mle200
+    associated_files:                areacello: 20030101.ocean_static.nc
+    grid_type:                       regular
+    grid_tile:                       N/A
+    external_variables:              areacello
+    DODS_EXTRA.Unlimited_Dimension:  time</pre></div>
+</div>
+<div class="section" id="xgcm-grid-definition">
+<h2>xgcm grid definition<a class="headerlink" href="#xgcm-grid-definition" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The horizontal dimensions are a combination of (xh or xq) and (yh or yq) corresponding to the staggered point. In the vertical z_l refers to the depth of the center of the layer and z_i to the position of the interfaces, such as len(z_i) = len(z_l) +1.</p></li>
+<li><p>the geolon/geolat family are the <strong>TRUE</strong> geographical coordinates and are the longitude/latitude you want to use to plot results. The subscript correspond to the staggered point (c: corner, u: U-point, v: V-point, no subscript: center)</p></li>
+<li><p>the areacello family is the area of the ocean cell at various points with a slightly naming convention (bu: corner, cu: U-point, cv: V-point, no subscript: center). Warning, because of the curvilinear grid:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[areacello \neq dxt * dyt\]</div>
+<ul class="simple">
+<li><p>the dx/dy family has the following naming convention: dx(Cu: U-point, Cv: V-point, no suffix: center)</p></li>
+<li><p>thkcello is the layer thickness for each cell (variable). volcello is the volume of the cell, such as:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[volcello = areacello * thkcello\]</div>
+<p>The MOM6 output can be written in Symetric (<strong>len(Xq) = len(Xh) + 1</strong>) or Non-symetric mode (<strong>len(Xq) = len(Xh)</strong>), where X is a notation for both x and y. In Symetric mode, one would define the grid for the global as:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">Grid</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;X&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;xh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;xq&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;yq&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;Z&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;z_l&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;z_i&#39;</span><span class="p">}</span> <span class="p">},</span> <span class="n">periodic</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>and in Non-symetric mode:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">Grid</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;X&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;xh&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">:</span> <span class="s1">&#39;xq&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">:</span> <span class="s1">&#39;yq&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;Z&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;z_l&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;z_i&#39;</span><span class="p">}</span> <span class="p">},</span> <span class="n">periodic</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Of course, <strong>don’t forget to drop the periodic option if you’re running a regional model</strong>. Our data is written in Non-symetric mode hence:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">Grid</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;X&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;xh&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">:</span> <span class="s1">&#39;xq&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">:</span> <span class="s1">&#39;yq&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;Z&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;z_l&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;z_i&#39;</span><span class="p">}</span> <span class="p">},</span> <span class="n">periodic</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="A-note-on-geographical-coordinates">
+<h2>A note on geographical coordinates<a class="headerlink" href="#A-note-on-geographical-coordinates" title="Permalink to this headline">¶</a></h2>
+<p>MOM6 uses land processor elimination, which creates blank holes in the produced geolon/geolat fields. This can result in problems while plotting. It is recommended to overwrite them by the full arrays that are produced by running the model for a few steps without land processor elimination. Here we copy one of these files.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">!</span>curl -O https://raw.githubusercontent.com/raphaeldussin/MOM6-AnalysisCookbook/master/docs/notebooks/data/ocean_grid_sym_OM4_05.nc
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 6512k  100 6512k    0     0  22.0M      0 --:--:-- --:--:-- --:--:-- 22.0M
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">!</span>ncdump -h ocean_grid_sym_OM4_05.nc
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+netcdf ocean_grid_sym_OM4_05 {
+dimensions:
+        yh = 576 ;
+        xh = 720 ;
+        yq = 577 ;
+        xq = 721 ;
+variables:
+        float geolat(yh, xh) ;
+                geolat:long_name = &#34;Latitude of tracer (T) points&#34; ;
+                geolat:units = &#34;degrees_north&#34; ;
+                geolat:missing_value = 1.e+20f ;
+                geolat:_FillValue = 1.e+20f ;
+                geolat:cell_methods = &#34;time: point&#34; ;
+        float geolat_c(yq, xq) ;
+                geolat_c:long_name = &#34;Latitude of corner (Bu) points&#34; ;
+                geolat_c:units = &#34;degrees_north&#34; ;
+                geolat_c:missing_value = 1.e+20f ;
+                geolat_c:_FillValue = 1.e+20f ;
+                geolat_c:cell_methods = &#34;time: point&#34; ;
+                geolat_c:interp_method = &#34;none&#34; ;
+        float geolon(yh, xh) ;
+                geolon:long_name = &#34;Longitude of tracer (T) points&#34; ;
+                geolon:units = &#34;degrees_east&#34; ;
+                geolon:missing_value = 1.e+20f ;
+                geolon:_FillValue = 1.e+20f ;
+                geolon:cell_methods = &#34;time: point&#34; ;
+        float geolon_c(yq, xq) ;
+                geolon_c:long_name = &#34;Longitude of corner (Bu) points&#34; ;
+                geolon_c:units = &#34;degrees_east&#34; ;
+                geolon_c:missing_value = 1.e+20f ;
+                geolon_c:_FillValue = 1.e+20f ;
+                geolon_c:cell_methods = &#34;time: point&#34; ;
+                geolon_c:interp_method = &#34;none&#34; ;
+        double xh(xh) ;
+                xh:long_name = &#34;h point nominal longitude&#34; ;
+                xh:units = &#34;degrees_east&#34; ;
+                xh:cartesian_axis = &#34;X&#34; ;
+        double xq(xq) ;
+                xq:long_name = &#34;q point nominal longitude&#34; ;
+                xq:units = &#34;degrees_east&#34; ;
+                xq:cartesian_axis = &#34;X&#34; ;
+        double yh(yh) ;
+                yh:long_name = &#34;h point nominal latitude&#34; ;
+                yh:units = &#34;degrees_north&#34; ;
+                yh:cartesian_axis = &#34;Y&#34; ;
+        double yq(yq) ;
+                yq:long_name = &#34;q point nominal latitude&#34; ;
+                yq:units = &#34;degrees_north&#34; ;
+                yq:cartesian_axis = &#34;Y&#34; ;
+
+// global attributes:
+                :filename = &#34;19000101.ocean_static.nc&#34; ;
+                :title = &#34;OM4_SIS2_cgrid_05&#34; ;
+                :grid_type = &#34;regular&#34; ;
+                :grid_tile = &#34;N/A&#34; ;
+                :history = &#34;Tue Mar  3 13:41:58 2020: ncks -v geolon,geolon_c,geolat,geolat_c /archive/gold/datasets/OM4_05/mosaic_ocean.v20180227.unpacked/ocean_static_sym.nc -o ocean_grid_sym_OM5_05.nc&#34; ;
+                :NCO = &#34;4.0.3&#34; ;
+}
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ocean_grid_sym</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;ocean_grid_sym_OM4_05.nc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ocean_grid_sym</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.Dataset&gt;
+Dimensions:   (xh: 720, xq: 721, yh: 576, yq: 577)
+Coordinates:
+  * xh        (xh) float64 -299.8 -299.2 -298.8 -298.2 ... 58.75 59.25 59.75
+  * xq        (xq) float64 -300.0 -299.5 -299.0 -298.5 ... 58.5 59.0 59.5 60.0
+  * yh        (yh) float64 -77.91 -77.72 -77.54 -77.36 ... 89.47 89.68 89.89
+  * yq        (yq) float64 -78.0 -77.82 -77.63 -77.45 ... 89.37 89.58 89.79 90.0
+Data variables:
+    geolat    (yh, xh) float32 ...
+    geolat_c  (yq, xq) float32 ...
+    geolon    (yh, xh) float32 ...
+    geolon_c  (yq, xq) float32 ...
+Attributes:
+    filename:   19000101.ocean_static.nc
+    title:      OM4_SIS2_cgrid_05
+    grid_type:  regular
+    grid_tile:  N/A
+    history:    Tue Mar  3 13:41:58 2020: ncks -v geolon,geolon_c,geolat,geol...
+    NCO:        4.0.3</pre></div>
+</div>
+<p>I used here a symetric grid to highlight the differences with the non-symetric. Since MOM6 uses the north-east convention, we can obtain the non-symetric grid from the symetric by removing the first row and column in our arrays. This overwrites our “gruyere” coordinates in our Non-symetric dataset:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ds</span><span class="p">[</span><span class="s1">&#39;geolon_c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">ocean_grid_sym</span><span class="p">[</span><span class="s1">&#39;geolon_c&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">:],</span> <span class="n">dims</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;yq&#39;</span><span class="p">,</span> <span class="s1">&#39;xq&#39;</span><span class="p">))</span>
+<span class="n">ds</span><span class="p">[</span><span class="s1">&#39;geolat_c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">ocean_grid_sym</span><span class="p">[</span><span class="s1">&#39;geolat_c&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">:],</span> <span class="n">dims</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;yq&#39;</span><span class="p">,</span> <span class="s1">&#39;xq&#39;</span><span class="p">))</span>
+
+<span class="n">ds</span><span class="p">[</span><span class="s1">&#39;geolon&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">ocean_grid_sym</span><span class="p">[</span><span class="s1">&#39;geolon&#39;</span><span class="p">],</span> <span class="n">dims</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;xh&#39;</span><span class="p">))</span>
+<span class="n">ds</span><span class="p">[</span><span class="s1">&#39;geolat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">ocean_grid_sym</span><span class="p">[</span><span class="s1">&#39;geolat&#39;</span><span class="p">],</span> <span class="n">dims</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;xh&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Vorticity-computation">
+<h2>Vorticity computation<a class="headerlink" href="#Vorticity-computation" title="Permalink to this headline">¶</a></h2>
+<p>We can borrow the expression for vorticity from the MITgcm example and adapt it for MOM6:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">vorticity</span> <span class="o">=</span> <span class="p">(</span> <span class="o">-</span> <span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">uo</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">dxCu</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">)</span>
+              <span class="o">+</span> <span class="n">grid</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">vo</span> <span class="o">*</span> <span class="n">ds</span><span class="o">.</span><span class="n">dyCv</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="n">boundary</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">)</span> <span class="p">)</span> <span class="o">/</span> <span class="n">ds</span><span class="o">.</span><span class="n">areacello_bu</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">vorticity</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<pre>&lt;xarray.DataArray (time: 60, z_l: 35, yq: 576, xq: 720)&gt;
+dask.array&lt;truediv, shape=(60, 35, 576, 720), dtype=float32, chunksize=(1, 1, 575, 719), chunktype=numpy.ndarray&gt;
+Coordinates:
+  * time     (time) object 2003-01-16 12:00:00 ... 2007-12-16 12:00:00
+  * z_l      (z_l) float64 2.5 10.0 20.0 32.5 ... 5e+03 5.5e+03 6e+03 6.5e+03
+  * yq       (yq) float64 -77.82 -77.63 -77.45 -77.26 ... 89.37 89.58 89.79 90.0
+  * xq       (xq) float64 -299.5 -299.0 -298.5 -298.0 ... 58.5 59.0 59.5 60.0</pre></div>
+</div>
+<p>Let’s take the surface relative vorticity at the first time record:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">data_plot</span> <span class="o">=</span> <span class="mf">1e5</span> <span class="o">*</span> <span class="n">vorticity</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z_l</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">data_plot</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Plotting">
+<h2>Plotting<a class="headerlink" href="#Plotting" title="Permalink to this headline">¶</a></h2>
+<p>Here we want to be careful and make sure we use the right set of coordinates (geolon_c/geolat_c). Since they are not present in the DataArray, we can add them easily with:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">data_plot</span> <span class="o">=</span> <span class="n">data_plot</span><span class="o">.</span><span class="n">assign_coords</span><span class="p">({</span><span class="s1">&#39;geolon_c&#39;</span><span class="p">:</span> <span class="n">ds</span><span class="p">[</span><span class="s1">&#39;geolon_c&#39;</span><span class="p">],</span>
+                                     <span class="s1">&#39;geolat_c&#39;</span><span class="p">:</span> <span class="n">ds</span><span class="p">[</span><span class="s1">&#39;geolat_c&#39;</span><span class="p">]})</span>
+</pre></div>
+</div>
+</div>
+<p>One thing worth noting is that geolon_c is not monotonic in the uppermost row. Hence this row needs to be removed for cartopy to properly plot. Another option is to subsample <code class="docutils literal notranslate"><span class="pre">x</span></code> in the MOM6 supergrid, usually named <code class="docutils literal notranslate"><span class="pre">ocean_hgrid.nc</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">data_plot</span> <span class="o">=</span> <span class="n">data_plot</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">xq</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">yq</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<p>Now let’s define a function that will produce a publication-quality plot:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">subplot_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span>
+                 <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">data_plot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;geolon_c&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;geolat_c&#39;</span><span class="p">,</span>
+                   <span class="n">vmin</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                   <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;bwr&#39;</span><span class="p">,</span>
+                   <span class="n">subplot_kws</span><span class="o">=</span><span class="n">subplot_kws</span><span class="p">,</span>
+                   <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span>
+                   <span class="n">add_labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                   <span class="n">add_colorbar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># add separate colorbar</span>
+<span class="n">cb</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+<span class="n">cb</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+
+<span class="c1"># optional add grid lines</span>
+<span class="n">p</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">gridlines</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;cartopy.mpl.gridliner.Gridliner at 0x7fea0d738fd0&gt;
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../../_images/repos_xgcm_xgcm-examples_03_MOM6_30_1.png" src="../../../_images/repos_xgcm_xgcm-examples_03_MOM6_30_1.png" />
+</div>
+</div>
+<p>Please look at the MITgcm examples for more about what xgcm can do. Also for MOM6 analysis examples using xarray and its companion software, please visit the <a class="reference external" href="https://mom6-analysiscookbook.readthedocs.io/en/latest/index.html">MOM6 Analysis Cookbook</a>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Pangeo Developers.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
