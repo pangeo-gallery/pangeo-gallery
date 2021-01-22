@@ -18,10 +18,10 @@
    "execution_count": 1,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:15.168691Z",
-     "iopub.status.busy": "2021-01-07T16:07:15.167722Z",
-     "iopub.status.idle": "2021-01-07T16:07:24.138451Z",
-     "shell.execute_reply": "2021-01-07T16:07:24.137779Z"
+     "iopub.execute_input": "2021-01-22T21:19:17.693305Z",
+     "iopub.status.busy": "2021-01-22T21:19:17.692223Z",
+     "iopub.status.idle": "2021-01-22T21:19:34.432776Z",
+     "shell.execute_reply": "2021-01-22T21:19:34.433668Z"
     }
    },
    "outputs": [],
@@ -50,10 +50,10 @@
    "execution_count": 2,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:24.153680Z",
-     "iopub.status.busy": "2021-01-07T16:07:24.145702Z",
-     "iopub.status.idle": "2021-01-07T16:07:27.814319Z",
-     "shell.execute_reply": "2021-01-07T16:07:27.814978Z"
+     "iopub.execute_input": "2021-01-22T21:19:34.446221Z",
+     "iopub.status.busy": "2021-01-22T21:19:34.443989Z",
+     "iopub.status.idle": "2021-01-22T21:19:38.203043Z",
+     "shell.execute_reply": "2021-01-22T21:19:38.202025Z"
     }
    },
    "outputs": [],
@@ -87,10 +87,10 @@
    "execution_count": 3,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:27.833122Z",
-     "iopub.status.busy": "2021-01-07T16:07:27.832517Z",
-     "iopub.status.idle": "2021-01-07T16:07:27.835441Z",
-     "shell.execute_reply": "2021-01-07T16:07:27.834839Z"
+     "iopub.execute_input": "2021-01-22T21:19:38.237808Z",
+     "iopub.status.busy": "2021-01-22T21:19:38.218970Z",
+     "iopub.status.idle": "2021-01-22T21:19:38.242581Z",
+     "shell.execute_reply": "2021-01-22T21:19:38.241221Z"
     }
    },
    "outputs": [],
@@ -105,10 +105,10 @@
    "execution_count": 4,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:27.846871Z",
-     "iopub.status.busy": "2021-01-07T16:07:27.846275Z",
-     "iopub.status.idle": "2021-01-07T16:07:27.858964Z",
-     "shell.execute_reply": "2021-01-07T16:07:27.858332Z"
+     "iopub.execute_input": "2021-01-22T21:19:38.265086Z",
+     "iopub.status.busy": "2021-01-22T21:19:38.252148Z",
+     "iopub.status.idle": "2021-01-22T21:19:38.286294Z",
+     "shell.execute_reply": "2021-01-22T21:19:38.285052Z"
     }
    },
    "outputs": [
@@ -226,17 +226,17 @@
    "execution_count": 5,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:27.883102Z",
-     "iopub.status.busy": "2021-01-07T16:07:27.882497Z",
-     "iopub.status.idle": "2021-01-07T16:07:28.158880Z",
-     "shell.execute_reply": "2021-01-07T16:07:28.158166Z"
+     "iopub.execute_input": "2021-01-22T21:19:38.336219Z",
+     "iopub.status.busy": "2021-01-22T21:19:38.335025Z",
+     "iopub.status.idle": "2021-01-22T21:19:38.840432Z",
+     "shell.execute_reply": "2021-01-22T21:19:38.839232Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.colorbar.Colorbar at 0x7f0eadb73700>"
+       "<matplotlib.colorbar.Colorbar at 0x7fbff2b4b760>"
       ]
      },
      "execution_count": 1,
@@ -277,10 +277,10 @@
    "execution_count": 6,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:28.168982Z",
-     "iopub.status.busy": "2021-01-07T16:07:28.168366Z",
-     "iopub.status.idle": "2021-01-07T16:07:28.171868Z",
-     "shell.execute_reply": "2021-01-07T16:07:28.171329Z"
+     "iopub.execute_input": "2021-01-22T21:19:38.859902Z",
+     "iopub.status.busy": "2021-01-22T21:19:38.858774Z",
+     "iopub.status.idle": "2021-01-22T21:19:38.864654Z",
+     "shell.execute_reply": "2021-01-22T21:19:38.863558Z"
     }
    },
    "outputs": [
@@ -289,15 +289,15 @@
      "output_type": "stream",
      "text": [
       "<xgcm.Grid>\n",
-      "X Axis (not periodic, boundary=None):\n",
-      "  * center   x_c --> right\n",
-      "  * right    x_f --> center\n",
+      "Y Axis (not periodic, boundary=None):\n",
+      "  * center   y_c --> right\n",
+      "  * right    y_f --> center\n",
       "Z Axis (not periodic, boundary=None):\n",
       "  * center   z_c --> left\n",
       "  * left     z_f --> center\n",
-      "Y Axis (not periodic, boundary=None):\n",
-      "  * center   y_c --> right\n",
-      "  * right    y_f --> center\n"
+      "X Axis (not periodic, boundary=None):\n",
+      "  * center   x_c --> right\n",
+      "  * right    x_f --> center\n"
      ]
     }
    ],
@@ -356,10 +356,10 @@
    "execution_count": 7,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:28.177982Z",
-     "iopub.status.busy": "2021-01-07T16:07:28.177401Z",
-     "iopub.status.idle": "2021-01-07T16:07:28.194095Z",
-     "shell.execute_reply": "2021-01-07T16:07:28.194732Z"
+     "iopub.execute_input": "2021-01-22T21:19:38.879174Z",
+     "iopub.status.busy": "2021-01-22T21:19:38.874824Z",
+     "iopub.status.idle": "2021-01-22T21:19:38.905646Z",
+     "shell.execute_reply": "2021-01-22T21:19:38.904514Z"
     }
    },
    "outputs": [
@@ -727,7 +727,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-fbaa856a-427b-4243-9d95-1c2f9d2fd0e9' class='xr-array-in' type='checkbox' checked><label for='section-fbaa856a-427b-4243-9d95-1c2f9d2fd0e9' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-5861ce46-b871-45f8-b696-a519e2b99c69' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5861ce46-b871-45f8-b696-a519e2b99c69' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-1ceadea8-21eb-4b45-bfc6-4f43ca3b4061' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-1ceadea8-21eb-4b45-bfc6-4f43ca3b4061' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-bdf4cebd-7193-41ad-9c81-c3d410d39693' class='xr-array-in' type='checkbox' checked><label for='section-bdf4cebd-7193-41ad-9c81-c3d410d39693' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-e26c941e-48ad-4da4-81cd-f9f8f326bfe0' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e26c941e-48ad-4da4-81cd-f9f8f326bfe0' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-a82c18c8-0a73-4e75-82e2-f855cc8f5806' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a82c18c8-0a73-4e75-82e2-f855cc8f5806' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -806,10 +806,10 @@
    "execution_count": 8,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:28.202817Z",
-     "iopub.status.busy": "2021-01-07T16:07:28.202164Z",
-     "iopub.status.idle": "2021-01-07T16:07:28.234897Z",
-     "shell.execute_reply": "2021-01-07T16:07:28.235404Z"
+     "iopub.execute_input": "2021-01-22T21:19:38.921190Z",
+     "iopub.status.busy": "2021-01-22T21:19:38.920073Z",
+     "iopub.status.idle": "2021-01-22T21:19:38.987705Z",
+     "shell.execute_reply": "2021-01-22T21:19:38.986553Z"
     }
    },
    "outputs": [
@@ -1167,7 +1167,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(5.44218669e-19)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-d156a15c-044f-47d6-9062-a2152bf24c9c' class='xr-array-in' type='checkbox' checked><label for='section-d156a15c-044f-47d6-9062-a2152bf24c9c' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>5.442e-19</span></div><div class='xr-array-data'><pre>array(5.44218669e-19)</pre></div></div></li><li class='xr-section-item'><input id='section-bc5ff25b-1636-4e89-b19a-fa7cc630c7f1' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-bc5ff25b-1636-4e89-b19a-fa7cc630c7f1' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-143e3366-6044-455a-a46e-64d5b198f583' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-143e3366-6044-455a-a46e-64d5b198f583' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(5.44218669e-19)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-28a4d5fc-38c7-4299-9964-c1924ac7d370' class='xr-array-in' type='checkbox' checked><label for='section-28a4d5fc-38c7-4299-9964-c1924ac7d370' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>5.442e-19</span></div><div class='xr-array-data'><pre>array(5.44218669e-19)</pre></div></div></li><li class='xr-section-item'><input id='section-42fd0526-a3ac-43d2-8c3f-890486a44254' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-42fd0526-a3ac-43d2-8c3f-890486a44254' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-80892976-e336-41cf-90d7-7b1d779fd00d' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-80892976-e336-41cf-90d7-7b1d779fd00d' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1230,10 +1230,10 @@
    "execution_count": 9,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:28.242630Z",
-     "iopub.status.busy": "2021-01-07T16:07:28.242016Z",
-     "iopub.status.idle": "2021-01-07T16:07:28.259505Z",
-     "shell.execute_reply": "2021-01-07T16:07:28.258839Z"
+     "iopub.execute_input": "2021-01-22T21:19:39.001069Z",
+     "iopub.status.busy": "2021-01-22T21:19:38.999803Z",
+     "iopub.status.idle": "2021-01-22T21:19:39.032663Z",
+     "shell.execute_reply": "2021-01-22T21:19:39.031446Z"
     }
    },
    "outputs": [
@@ -1591,7 +1591,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-a6b17c72-cbbf-4a72-b707-ab4471480e30' class='xr-array-in' type='checkbox' checked><label for='section-a6b17c72-cbbf-4a72-b707-ab4471480e30' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-5c677422-b059-4e25-99fa-1cb216a76bef' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5c677422-b059-4e25-99fa-1cb216a76bef' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-b6f8b2d2-1203-4a4e-bb35-13bbf57e55f0' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-b6f8b2d2-1203-4a4e-bb35-13bbf57e55f0' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-1eaadba7-cbb4-4f2e-8989-6f713fde86c6' class='xr-array-in' type='checkbox' checked><label for='section-1eaadba7-cbb4-4f2e-8989-6f713fde86c6' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-5b0e07d8-12b1-4e17-9c0f-09a4d6fb54bb' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5b0e07d8-12b1-4e17-9c0f-09a4d6fb54bb' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-b056cad7-e14d-4200-86a6-cbcbe585d58f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-b056cad7-e14d-4200-86a6-cbcbe585d58f' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1624,10 +1624,10 @@
    "execution_count": 10,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:28.270841Z",
-     "iopub.status.busy": "2021-01-07T16:07:28.270236Z",
-     "iopub.status.idle": "2021-01-07T16:07:36.488158Z",
-     "shell.execute_reply": "2021-01-07T16:07:36.487490Z"
+     "iopub.execute_input": "2021-01-22T21:19:39.055149Z",
+     "iopub.status.busy": "2021-01-22T21:19:39.053887Z",
+     "iopub.status.idle": "2021-01-22T21:19:55.434847Z",
+     "shell.execute_reply": "2021-01-22T21:19:55.433668Z"
     }
    },
    "outputs": [
@@ -1635,14 +1635,14 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "4.04 ms ± 57.5 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
+      "7.97 ms ± 64 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "6.05 ms ± 69.8 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
+      "12.2 ms ± 232 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)\n"
      ]
     }
    ],
@@ -1670,17 +1670,17 @@
    "execution_count": 11,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:36.510042Z",
-     "iopub.status.busy": "2021-01-07T16:07:36.509418Z",
-     "iopub.status.idle": "2021-01-07T16:07:37.003369Z",
-     "shell.execute_reply": "2021-01-07T16:07:37.002838Z"
+     "iopub.execute_input": "2021-01-22T21:19:55.517165Z",
+     "iopub.status.busy": "2021-01-22T21:19:55.516028Z",
+     "iopub.status.idle": "2021-01-22T21:19:56.386953Z",
+     "shell.execute_reply": "2021-01-22T21:19:56.385788Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7f0ea3f81220>"
+       "<matplotlib.collections.QuadMesh at 0x7fbfe9656280>"
       ]
      },
      "execution_count": 1,
@@ -1718,10 +1718,10 @@
    "execution_count": 12,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:37.011845Z",
-     "iopub.status.busy": "2021-01-07T16:07:37.009475Z",
-     "iopub.status.idle": "2021-01-07T16:07:37.016613Z",
-     "shell.execute_reply": "2021-01-07T16:07:37.017077Z"
+     "iopub.execute_input": "2021-01-22T21:19:56.399038Z",
+     "iopub.status.busy": "2021-01-22T21:19:56.397089Z",
+     "iopub.status.idle": "2021-01-22T21:19:56.407327Z",
+     "shell.execute_reply": "2021-01-22T21:19:56.408526Z"
     }
    },
    "outputs": [
@@ -2079,7 +2079,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(2.07489191e-17)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-d5b24230-f68f-4664-825d-089010a17415' class='xr-array-in' type='checkbox' checked><label for='section-d5b24230-f68f-4664-825d-089010a17415' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>2.075e-17</span></div><div class='xr-array-data'><pre>array(2.07489191e-17)</pre></div></div></li><li class='xr-section-item'><input id='section-ff309a52-58af-49b0-abbd-3a767a504896' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ff309a52-58af-49b0-abbd-3a767a504896' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-83a435a6-5964-4546-8c1d-a7ad330b5ac6' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-83a435a6-5964-4546-8c1d-a7ad330b5ac6' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(2.07489191e-17)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-888fd961-8d3c-445d-b20f-f20f3d179b31' class='xr-array-in' type='checkbox' checked><label for='section-888fd961-8d3c-445d-b20f-f20f3d179b31' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>2.075e-17</span></div><div class='xr-array-data'><pre>array(2.07489191e-17)</pre></div></div></li><li class='xr-section-item'><input id='section-a62f65f3-4a7e-4314-960d-2a63dbeb808e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a62f65f3-4a7e-4314-960d-2a63dbeb808e' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-d927cdfb-6e70-4d21-8604-83e956bf716c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-d927cdfb-6e70-4d21-8604-83e956bf716c' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -2124,10 +2124,10 @@
    "execution_count": 13,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:37.024445Z",
-     "iopub.status.busy": "2021-01-07T16:07:37.023449Z",
-     "iopub.status.idle": "2021-01-07T16:07:37.043754Z",
-     "shell.execute_reply": "2021-01-07T16:07:37.043106Z"
+     "iopub.execute_input": "2021-01-22T21:19:56.420920Z",
+     "iopub.status.busy": "2021-01-22T21:19:56.419782Z",
+     "iopub.status.idle": "2021-01-22T21:19:56.454658Z",
+     "shell.execute_reply": "2021-01-22T21:19:56.453539Z"
     }
    },
    "outputs": [
@@ -2165,17 +2165,17 @@
    "execution_count": 14,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:37.051475Z",
-     "iopub.status.busy": "2021-01-07T16:07:37.050483Z",
-     "iopub.status.idle": "2021-01-07T16:07:37.345575Z",
-     "shell.execute_reply": "2021-01-07T16:07:37.346156Z"
+     "iopub.execute_input": "2021-01-22T21:19:56.467940Z",
+     "iopub.status.busy": "2021-01-22T21:19:56.466818Z",
+     "iopub.status.idle": "2021-01-22T21:19:57.013918Z",
+     "shell.execute_reply": "2021-01-22T21:19:57.012933Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.colorbar.Colorbar at 0x7f0ea3f12d90>"
+       "<matplotlib.colorbar.Colorbar at 0x7fbfe95f9f40>"
       ]
      },
      "execution_count": 1,
@@ -2227,10 +2227,10 @@
    "execution_count": 15,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:37.353666Z",
-     "iopub.status.busy": "2021-01-07T16:07:37.352977Z",
-     "iopub.status.idle": "2021-01-07T16:07:37.777236Z",
-     "shell.execute_reply": "2021-01-07T16:07:37.776683Z"
+     "iopub.execute_input": "2021-01-22T21:19:57.028568Z",
+     "iopub.status.busy": "2021-01-22T21:19:57.027398Z",
+     "iopub.status.idle": "2021-01-22T21:19:57.753809Z",
+     "shell.execute_reply": "2021-01-22T21:19:57.752674Z"
     }
    },
    "outputs": [
@@ -2302,17 +2302,17 @@
    "execution_count": 16,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-01-07T16:07:37.783283Z",
-     "iopub.status.busy": "2021-01-07T16:07:37.782662Z",
-     "iopub.status.idle": "2021-01-07T16:07:38.076269Z",
-     "shell.execute_reply": "2021-01-07T16:07:38.075634Z"
+     "iopub.execute_input": "2021-01-22T21:19:57.764453Z",
+     "iopub.status.busy": "2021-01-22T21:19:57.763296Z",
+     "iopub.status.idle": "2021-01-22T21:19:58.306616Z",
+     "shell.execute_reply": "2021-01-22T21:19:58.305367Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7f0ead85f5e0>"
+       "<matplotlib.collections.QuadMesh at 0x7fbff2fdaa90>"
       ]
      },
      "execution_count": 1,

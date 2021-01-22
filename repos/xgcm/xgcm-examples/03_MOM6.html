@@ -487,8 +487,8 @@ Attributes:
 <div class="math notranslate nohighlight">
 \[volcello = areacello * thkcello\]</div>
 <p>The MOM6 output can be written in Symetric (<strong>len(Xq) = len(Xh) + 1</strong>) or Non-symetric mode (<strong>len(Xq) = len(Xh)</strong>), where X is a notation for both x and y. In Symetric mode, one would define the grid for the global as:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">Grid</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;X&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;xh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;xq&#39;</span><span class="p">},</span>
-                        <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;yq&#39;</span><span class="p">},</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">Grid</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;X&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;xh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;xq&#39;</span><span class="p">},</span>
+                        <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;yq&#39;</span><span class="p">},</span>
                         <span class="s1">&#39;Z&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;inner&#39;</span><span class="p">:</span> <span class="s1">&#39;z_l&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;z_i&#39;</span><span class="p">}</span> <span class="p">},</span> <span class="n">periodic</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
@@ -530,7 +530,7 @@ Attributes:
 <div class="highlight"><pre>
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100 6512k  100 6512k    0     0  22.0M      0 --:--:-- --:--:-- --:--:-- 22.0M
+100 6512k  100 6512k    0     0  10.4M      0 --:--:-- --:--:-- --:--:-- 10.4M
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -768,7 +768,7 @@ Coordinates:
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;cartopy.mpl.gridliner.Gridliner at 0x7fea0d738fd0&gt;
+&lt;cartopy.mpl.gridliner.Gridliner at 0x7f7c02025070&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
