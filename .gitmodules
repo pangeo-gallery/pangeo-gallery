@@ -40,6 +40,6 @@
 	url = https://github.com/xgcm/xgcm-examples.git
 	branch = binderbot-built
 [submodule "repos/pangeo-gallery/ncar-gallery"]
-	path = repos/pangeo-gallery/ncar-gallery
+	path = repos/NCAR/ncar-gallery
 	url = https://github.com/NCAR/notebook-gallery.git
 	branch = binderbot-built
