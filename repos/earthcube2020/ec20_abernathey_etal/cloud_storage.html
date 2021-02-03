@@ -80,6 +80,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../NCAR/cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NCAR/ncar-gallery/index.html">NCAR Gallery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../TomAugspurger/pangeo-dask-gateway/index.html">Pangeo &amp; Dask Gateway.</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Cloud Storage Benchmarks</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Big Arrays, Fast: Profiling Cloud Storage Read Throughput</a></li>
@@ -89,7 +90,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../pangeo-data/pangeo-tutorial-gallery/index.html">Pangeo Tutorial Gallery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/cmip6/index.html">CMIP6 Gallery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/example-gallery/index.html">Example Gallery</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/ncar-gallery/index.html">NCAR Gallery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pangeo-gallery/physical-oceanography/index.html">Physical Oceanography</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../rsignell-usgs/esip-gallery/index.html">ESIP Gallery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../xgcm/xgcm-examples/index.html">Gallery for XGCM Examples and Usecases</a></li>
@@ -354,11 +354,11 @@ div.rendered_html tbody tr:hover {
 <h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
 <p>Many geoscience problems involve analyzing hundreds of Gigabytes (GB), many Terabytes (TB = 100 GB), or even a Petabyte (PB = 1000 TB) of data. For such data volumes, downloading data to personal computers is inefficient. Data-proximate computing, possibly using a parallel computing cluster, is one way to overcome this challenge. With data-proximate computing, a user access a remote computer which is connected tightly to shared, high-performance storage, enabling rapid processing without the
 need for a download step.</p>
-<p><img alt="26f8cab990f94bef9a820193f560bad9" class="no-scaled-link" src="https://ndownloader.figshare.com/files/22017009/preview/22017009/preview.jpg" style="width: 400px;" /></p>
+<p><img alt="2560d1724eb446f3a565fc8a0481b7e5" class="no-scaled-link" src="https://ndownloader.figshare.com/files/22017009/preview/22017009/preview.jpg" style="width: 400px;" /></p>
 <p>Figure from <em>Data Access Modes in Science</em>, by Ryan Abernathey. <a class="reference external" href="http://dx.doi.org/10.6084/M9.FIGSHARE.11987466.V1">http://dx.doi.org/10.6084/M9.FIGSHARE.11987466.V1</a></p>
 <p>The cloud offers many exciting new possibilities for scientific data analysis. It also brings new technical challenges. Many scientific users are accustomed to the environments found on High-Performance Computing (HPC) systems, such as NSF’s XSEDE Computers or NCAR’s Cheyenne system. These systems combine parallel computing with a high-performance shared filesystem, enabling massively parallel data analytics. When shifting workloads to the cloud, one of the biggest challenges is how to store
 data: <em>cloud computing does not easily support large shared filesystems, as commonly found on HPC systems</em>. The preferred way to store data in the cloud is using <em>cloud object storage</em>, such as Amazon S3 or Google Cloud Storage.</p>
-<p><img alt="ccc61babc78249b59758ed0621f9fb9b" class="no-scaled-link" src="https://assets.ubuntu.com/v1/09b510e0-UAS_storage_options.png" style="width: 400px;" /></p>
+<p><img alt="fff5244abfdf4fd4a8dcef227cb92b14" class="no-scaled-link" src="https://assets.ubuntu.com/v1/09b510e0-UAS_storage_options.png" style="width: 400px;" /></p>
 <p><em>Image via `Ubuntu Website &lt;https://ubuntu.com/blog/what-are-the-different-types-of-storage-block-object-and-file&gt;`__, ©2020 Canonical Ltd. Ubuntu, Used with Permission</em></p>
 <p>Cloud object storage is essentially a key/value storage system. They keys are strings, and the values are bytes of data. Data is read and written using HTTP calls. The performance of object storage is very different from file storage. On one hand, each individual read / write to object storage has a high overhead (10-100 ms), since it has to go over the network. On the other hand, object storage “scales out” nearly infinitely, meaning that we can make hundreds, thousands, or millions of
 concurrent reads / writes. This makes object storage well suited for distributed data analytics. However, the software architecture of a data analysis system must be adapted to take advantage of these properties.</p>
