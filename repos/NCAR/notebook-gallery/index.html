@@ -19,7 +19,7 @@
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Get Data from Server if not locally available yet" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html" />
+    <link rel="next" title="Plot MPAS data using Delauney Triangulation" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html" />
     <link rel="prev" title="Reproducing Key Figures from Kay et al. (2015) Paper" href="../cesm-lens-aws/notebooks/kay-et-al-2015.v3.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -69,26 +69,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">NCAR Gallery</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html">Get Data from Server if not locally available yet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Convert-to-degrees-from-radians">Convert to degrees from radians</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Load-colormap-values-and-add-alpha-channel">Load colormap values and add alpha channel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Produce-Figure">Produce Figure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Save-Figure-to-PNG-File">Save Figure to PNG File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html">Plot MPAS data using Delauney Triangulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Read-data-from-MPAS-file">Read data from MPAS file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Bias-Correction/bias_correction.html">Bias Correction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html">How to calculate ocean heat content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-1">Task 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-2">Task 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-3">Task 3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-4">Task 4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-5">Task 5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-6">Task 6</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-7">Task 7</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-8">Task 8</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Plotting">Plotting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html">WRF data and Xarray</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html#Problem-#1:-Time-in-bytes.">Problem #1: Time in bytes.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html#Problem-#2:-NO-COORDINATES">Problem #2: NO COORDINATES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html#And-you're-ready-to-continue-your-analysis-using-Xarray!">And you’re ready to continue your analysis using Xarray!</a></li>
 <li class="toctree-l2"><a class="reference internal" href="notebooks/Run-Anywhere/mpas/plot_of_surface_pressure_on_mpas_grid.html">Plot of Surface Pressure on MPAS grid</a></li>
 </ul>
 </li>
@@ -126,26 +111,11 @@
 <h2>Notebooks<a class="headerlink" href="#notebooks" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html">Get Data from Server if not locally available yet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Convert-to-degrees-from-radians">Convert to degrees from radians</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Load-colormap-values-and-add-alpha-channel">Load colormap values and add alpha channel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Produce-Figure">Produce Figure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Save-Figure-to-PNG-File">Save Figure to PNG File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html">Plot MPAS data using Delauney Triangulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/Binderbot-Bug28/mpas/plot_terrain.html#Read-data-from-MPAS-file">Read data from MPAS file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Bias-Correction/bias_correction.html">Bias Correction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html">How to calculate ocean heat content</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-1">Task 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-2">Task 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-3">Task 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-4">Task 4</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-5">Task 5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-6">Task 6</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-7">Task 7</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-8">Task 8</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Plotting">Plotting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html">WRF data and Xarray</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html#Problem-#1:-Time-in-bytes.">Problem #1: Time in bytes.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html#Problem-#2:-NO-COORDINATES">Problem #2: NO COORDINATES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/WRF/wrf_ex.html#And-you're-ready-to-continue-your-analysis-using-Xarray!">And you’re ready to continue your analysis using Xarray!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks/Run-Anywhere/mpas/plot_of_surface_pressure_on_mpas_grid.html">Plot of Surface Pressure on MPAS grid</a></li>
 </ul>
 </div>

@@ -81,26 +81,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../../../contributing.html">Contributor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">NCAR Gallery</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../Binderbot-Bug28/mpas/plot_terrain.html">Get Data from Server if not locally available yet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Binderbot-Bug28/mpas/plot_terrain.html#Convert-to-degrees-from-radians">Convert to degrees from radians</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Binderbot-Bug28/mpas/plot_terrain.html#Load-colormap-values-and-add-alpha-channel">Load colormap values and add alpha channel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Binderbot-Bug28/mpas/plot_terrain.html#Produce-Figure">Produce Figure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Binderbot-Bug28/mpas/plot_terrain.html#Save-Figure-to-PNG-File">Save Figure to PNG File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Binderbot-Bug28/mpas/plot_terrain.html">Plot MPAS data using Delauney Triangulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Binderbot-Bug28/mpas/plot_terrain.html#Read-data-from-MPAS-file">Read data from MPAS file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Bias-Correction/bias_correction.html">Bias Correction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html">How to calculate ocean heat content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-1">Task 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-2">Task 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-3">Task 3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-4">Task 4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-5">Task 5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-6">Task 6</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-7">Task 7</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Task-8">Task 8</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html#Plotting">Plotting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../WRF/wrf_ex.html">WRF data and Xarray</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../WRF/wrf_ex.html#Problem-#1:-Time-in-bytes.">Problem #1: Time in bytes.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../WRF/wrf_ex.html#Problem-#2:-NO-COORDINATES">Problem #2: NO COORDINATES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../WRF/wrf_ex.html#And-you're-ready-to-continue-your-analysis-using-Xarray!">And you’re ready to continue your analysis using Xarray!</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Plot of Surface Pressure on MPAS grid</a></li>
 </ul>
 </li>
@@ -820,7 +805,7 @@ Dimensions without coordinates: nCells
 Data variables:
     lonCell           (nCells) float64 ...
     latCell           (nCells) float64 ...
-    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-19b2a148-fe1d-4f59-8bea-c310412f1236' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-19b2a148-fe1d-4f59-8bea-c310412f1236' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-7b88192e-e18d-418d-81e0-df91c8b70549' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7b88192e-e18d-418d-81e0-df91c8b70549' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-1ce29c88-4888-48cd-b450-789ae9eec451' class='xr-section-summary-in' type='checkbox'  checked><label for='section-1ce29c88-4888-48cd-b450-789ae9eec451' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-db12373a-9717-4401-86a5-c7d9bf436f51' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-db12373a-9717-4401-86a5-c7d9bf436f51' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9e19922b-282e-456e-b80c-da4ccff62414' class='xr-var-data-in' type='checkbox'><label for='data-9e19922b-282e-456e-b80c-da4ccff62414' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-685c800a-ac40-4ce0-b1d9-90a6f3896870' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-685c800a-ac40-4ce0-b1d9-90a6f3896870' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-76887f69-28e7-474c-8d60-def99ab87a75' class='xr-var-data-in' type='checkbox'><label for='data-76887f69-28e7-474c-8d60-def99ab87a75' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-34a1ca47-1a3b-472d-a829-ed521afc4fff' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-34a1ca47-1a3b-472d-a829-ed521afc4fff' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4960b26a-0ba0-4dd0-a024-3e03744986a7' class='xr-var-data-in' type='checkbox'><label for='data-4960b26a-0ba0-4dd0-a024-3e03744986a7' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-4f1a35ab-a4ad-4fe7-8011-8496b2104fd7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-4f1a35ab-a4ad-4fe7-8011-8496b2104fd7' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
+    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-6c85bdd4-cc42-4c0e-be6e-40ecea5bd396' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-6c85bdd4-cc42-4c0e-be6e-40ecea5bd396' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-cc3237c9-36c7-4229-b688-6fce9222f64f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-cc3237c9-36c7-4229-b688-6fce9222f64f' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-62cb37c4-35aa-45d4-9493-83dde4f6466b' class='xr-section-summary-in' type='checkbox'  checked><label for='section-62cb37c4-35aa-45d4-9493-83dde4f6466b' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-1d950058-3e84-471f-ac93-b09cde99fe5a' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-1d950058-3e84-471f-ac93-b09cde99fe5a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-db69eb82-4415-4b74-aae5-6b970b2cdd34' class='xr-var-data-in' type='checkbox'><label for='data-db69eb82-4415-4b74-aae5-6b970b2cdd34' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-2fc6d6fa-0b21-4842-98ab-c236cc897fd9' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-2fc6d6fa-0b21-4842-98ab-c236cc897fd9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-89a25e8b-d382-4345-9451-e6a78e124e94' class='xr-var-data-in' type='checkbox'><label for='data-89a25e8b-d382-4345-9451-e6a78e124e94' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-006e61fe-16f5-4572-b198-74447b165257' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-006e61fe-16f5-4572-b198-74447b165257' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ec7f6e23-7ae0-4851-bf7d-2829ca656102' class='xr-var-data-in' type='checkbox'><label for='data-ec7f6e23-7ae0-4851-bf7d-2829ca656102' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-0a24870b-8a28-402f-af1c-90aaeecbdb30' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0a24870b-8a28-402f-af1c-90aaeecbdb30' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
@@ -920,9 +905,9 @@ Data variables:
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-/srv/conda/envs/notebook/lib/python3.7/site-packages/cartopy/mpl/gridliner.py:307: UserWarning: The .xlabels_top attribute is deprecated. Please use .top_labels to toggle visibility instead.
+/srv/conda/envs/notebook/lib/python3.8/site-packages/cartopy/mpl/gridliner.py:307: UserWarning: The .xlabels_top attribute is deprecated. Please use .top_labels to toggle visibility instead.
   warnings.warn(&#39;The .xlabels_top attribute is deprecated. Please &#39;
-/srv/conda/envs/notebook/lib/python3.7/site-packages/cartopy/mpl/gridliner.py:343: UserWarning: The .ylabels_right attribute is deprecated. Please use .right_labels to toggle visibility instead.
+/srv/conda/envs/notebook/lib/python3.8/site-packages/cartopy/mpl/gridliner.py:343: UserWarning: The .ylabels_right attribute is deprecated. Please use .right_labels to toggle visibility instead.
   warnings.warn(&#39;The .ylabels_right attribute is deprecated. Please &#39;
 </pre></div></div>
 </div>
@@ -938,8 +923,8 @@ Data variables:
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-CPU times: user 38 s, sys: 742 ms, total: 38.7 s
-Wall time: 37.8 s
+CPU times: user 35.3 s, sys: 762 ms, total: 36.1 s
+Wall time: 35 s
 </pre></div></div>
 </div>
 <hr class="docutils" />
@@ -961,7 +946,7 @@ Wall time: 37.8 s
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Last updated: 2021-02-03
+Last updated: 2021-02-04
 
 Compiler    : GCC 9.3.0
 OS          : Linux
@@ -971,13 +956,13 @@ Processor   : x86_64
 CPU cores   : 6
 Architecture: 64bit
 
-Hostname: jupyter-ncar-2dnotebook-2dgallery-2docs7eu5b
+Hostname: jupyter-ncar-2dnotebook-2dgallery-2dl1zcju1g
 
-Git hash: d35d20de795dc02e564215a0ce87bfffca72d8f3
+Git hash: 45b9f33df8f7bacf76d9e4656b3251b4bab32051
 
-cartopy   : 0.18.0
-matplotlib: 3.3.4
 xarray    : 0.16.2
+matplotlib: 3.3.4
+cartopy   : 0.18.0
 numpy     : 1.20.0
 
 </pre></div></div>

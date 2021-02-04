@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Get Data from Server if not locally available yet &#8212; Pangeo Gallery  documentation</title>
+    <title>Plot MPAS data using Delauney Triangulation &#8212; Pangeo Gallery  documentation</title>
     <link rel="stylesheet" href="../../../../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../../../../_static/pangeo-style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
@@ -52,7 +52,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../../../index.html">NCAR Gallery</a></li>
         
-          <li class="breadcrumb-item active"><a href="#">Get Data from Server if not locally available yet</a></li>
+          <li class="breadcrumb-item active"><a href="#">Plot MPAS data using Delauney Triangulation</a></li>
         
         </ol>
       </nav>
@@ -81,26 +81,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../../../contributing.html">Contributor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../cesm-lens-aws/index.html">Gallery for CESM LENS on AWS</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">NCAR Gallery</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Get Data from Server if not locally available yet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Convert-to-degrees-from-radians">Convert to degrees from radians</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Load-colormap-values-and-add-alpha-channel">Load colormap values and add alpha channel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Produce-Figure">Produce Figure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Save-Figure-to-PNG-File">Save Figure to PNG File</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Plot MPAS data using Delauney Triangulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Read-data-from-MPAS-file">Read data from MPAS file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Bias-Correction/bias_correction.html">Bias Correction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html">How to calculate ocean heat content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-1">Task 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-2">Task 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-3">Task 3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-4">Task 4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-5">Task 5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-6">Task 6</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-7">Task 7</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Task-8">Task 8</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html#Plotting">Plotting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/WRF/wrf_ex.html">WRF data and Xarray</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/WRF/wrf_ex.html#Problem-#1:-Time-in-bytes.">Problem #1: Time in bytes.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/WRF/wrf_ex.html#Problem-#2:-NO-COORDINATES">Problem #2: NO COORDINATES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/WRF/wrf_ex.html#And-you're-ready-to-continue-your-analysis-using-Xarray!">And you’re ready to continue your analysis using Xarray!</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Run-Anywhere/mpas/plot_of_surface_pressure_on_mpas_grid.html">Plot of Surface Pressure on MPAS grid</a></li>
 </ul>
 </li>
@@ -367,6 +352,8 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
+<div class="section" id="Plot-MPAS-data-using-Delauney-Triangulation">
+<h1>Plot MPAS data using Delauney Triangulation<a class="headerlink" href="#Plot-MPAS-data-using-Delauney-Triangulation" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -383,7 +370,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="Get-Data-from-Server-if-not-locally-available-yet">
-<h1>Get Data from Server if not locally available yet<a class="headerlink" href="#Get-Data-from-Server-if-not-locally-available-yet" title="Permalink to this headline">¶</a></h1>
+<h2>Get Data from Server if not locally available yet<a class="headerlink" href="#Get-Data-from-Server-if-not-locally-available-yet" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -405,8 +392,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
+</div>
+</div>
 <div class="section" id="Read-data-from-MPAS-file">
-<h2>Read data from MPAS file<a class="headerlink" href="#Read-data-from-MPAS-file" title="Permalink to this headline">¶</a></h2>
+<h1>Read data from MPAS file<a class="headerlink" href="#Read-data-from-MPAS-file" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -420,10 +409,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
 <div class="section" id="Convert-to-degrees-from-radians">
-<h1>Convert to degrees from radians<a class="headerlink" href="#Convert-to-degrees-from-radians" title="Permalink to this headline">¶</a></h1>
+<h2>Convert to degrees from radians<a class="headerlink" href="#Convert-to-degrees-from-radians" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -475,7 +462,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="Load-colormap-values-and-add-alpha-channel">
-<h1>Load colormap values and add alpha channel<a class="headerlink" href="#Load-colormap-values-and-add-alpha-channel" title="Permalink to this headline">¶</a></h1>
+<h2>Load colormap values and add alpha channel<a class="headerlink" href="#Load-colormap-values-and-add-alpha-channel" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -510,7 +497,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="Produce-Figure">
-<h1>Produce Figure<a class="headerlink" href="#Produce-Figure" title="Permalink to this headline">¶</a></h1>
+<h2>Produce Figure<a class="headerlink" href="#Produce-Figure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="NOTE-:-First-time-plotting-may-be-slow,-as-in-several-minutes,-since-map-features-must-be-downloaded-for-the-entire-Earth.">
+<h3>NOTE : First-time plotting may be slow, as in several minutes, since map features must be downloaded for the entire Earth.<a class="headerlink" href="#NOTE-:-First-time-plotting-may-be-slow,-as-in-several-minutes,-since-map-features-must-be-downloaded-for-the-entire-Earth." title="Permalink to this headline">¶</a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -550,8 +539,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </div>
+</div>
 <div class="section" id="Save-Figure-to-PNG-File">
-<h1>Save Figure to PNG File<a class="headerlink" href="#Save-Figure-to-PNG-File" title="Permalink to this headline">¶</a></h1>
+<h2>Save Figure to PNG File<a class="headerlink" href="#Save-Figure-to-PNG-File" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -559,6 +549,7 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;./plot_terrain.png&#39;</span><span class="p">)</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
