@@ -87,6 +87,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../Ocean-Heat-Content/OHC_tutorial.html">How to calculate ocean heat content</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../WRF/wrf_ex.html">WRF data and Xarray</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Plot of Surface Pressure on MPAS grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Get-Data">Get Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Read-Data-from-MPAS-Grid">Read Data from MPAS Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Convert-to-degrees-from-radians">Convert to degrees from radians</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Global-tripcolor-plot">Global tripcolor plot</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../TomAugspurger/pangeo-dask-gateway/index.html">Pangeo &amp; Dask Gateway.</a></li>
@@ -375,8 +379,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
+</div>
 <div class="section" id="Get-Data">
-<h2>Get Data<a class="headerlink" href="#Get-Data" title="Permalink to this headline">¶</a></h2>
+<h1>Get Data<a class="headerlink" href="#Get-Data" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -431,7 +436,7 @@ Downloading file &#39;MPAS.nc&#39; from &#39;ftp://ftp.cgd.ucar.edu/archive/alet
 </div>
 </div>
 <div class="section" id="Read-Data-from-MPAS-Grid">
-<h2>Read Data from MPAS Grid<a class="headerlink" href="#Read-Data-from-MPAS-Grid" title="Permalink to this headline">¶</a></h2>
+<h1>Read Data from MPAS Grid<a class="headerlink" href="#Read-Data-from-MPAS-Grid" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -805,7 +810,7 @@ Dimensions without coordinates: nCells
 Data variables:
     lonCell           (nCells) float64 ...
     latCell           (nCells) float64 ...
-    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-6c85bdd4-cc42-4c0e-be6e-40ecea5bd396' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-6c85bdd4-cc42-4c0e-be6e-40ecea5bd396' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-cc3237c9-36c7-4229-b688-6fce9222f64f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-cc3237c9-36c7-4229-b688-6fce9222f64f' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-62cb37c4-35aa-45d4-9493-83dde4f6466b' class='xr-section-summary-in' type='checkbox'  checked><label for='section-62cb37c4-35aa-45d4-9493-83dde4f6466b' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-1d950058-3e84-471f-ac93-b09cde99fe5a' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-1d950058-3e84-471f-ac93-b09cde99fe5a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-db69eb82-4415-4b74-aae5-6b970b2cdd34' class='xr-var-data-in' type='checkbox'><label for='data-db69eb82-4415-4b74-aae5-6b970b2cdd34' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-2fc6d6fa-0b21-4842-98ab-c236cc897fd9' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-2fc6d6fa-0b21-4842-98ab-c236cc897fd9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-89a25e8b-d382-4345-9451-e6a78e124e94' class='xr-var-data-in' type='checkbox'><label for='data-89a25e8b-d382-4345-9451-e6a78e124e94' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-006e61fe-16f5-4572-b198-74447b165257' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-006e61fe-16f5-4572-b198-74447b165257' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ec7f6e23-7ae0-4851-bf7d-2829ca656102' class='xr-var-data-in' type='checkbox'><label for='data-ec7f6e23-7ae0-4851-bf7d-2829ca656102' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-0a24870b-8a28-402f-af1c-90aaeecbdb30' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0a24870b-8a28-402f-af1c-90aaeecbdb30' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
+    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-a972b71a-cfae-44dd-b7bd-5357869121b7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a972b71a-cfae-44dd-b7bd-5357869121b7' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-000ad5de-3af0-4bf5-9ed9-22d6890601e6' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-000ad5de-3af0-4bf5-9ed9-22d6890601e6' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-5e8008f6-7b82-4884-b8f1-e46711aebe16' class='xr-section-summary-in' type='checkbox'  checked><label for='section-5e8008f6-7b82-4884-b8f1-e46711aebe16' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-6b7d8c48-cd0a-4658-aeaa-3d62ffceac97' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-6b7d8c48-cd0a-4658-aeaa-3d62ffceac97' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7c6525db-e543-4e8c-ab76-eee8ae2ba56b' class='xr-var-data-in' type='checkbox'><label for='data-7c6525db-e543-4e8c-ab76-eee8ae2ba56b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-eb592b58-7481-4404-9d7c-f5c4e95c0732' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-eb592b58-7481-4404-9d7c-f5c4e95c0732' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3ad66dc4-123e-46ec-8027-90cff5196765' class='xr-var-data-in' type='checkbox'><label for='data-3ad66dc4-123e-46ec-8027-90cff5196765' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-308101e9-bb27-4852-b28f-f2f137b6967e' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-308101e9-bb27-4852-b28f-f2f137b6967e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3c874dfe-63d3-4479-9e83-4ee4a4f6938b' class='xr-var-data-in' type='checkbox'><label for='data-3c874dfe-63d3-4479-9e83-4ee4a4f6938b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-e81c33bf-c418-47ec-a905-82fc53687c1b' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e81c33bf-c418-47ec-a905-82fc53687c1b' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
@@ -819,7 +824,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="Convert-to-degrees-from-radians">
-<h2>Convert to degrees from radians<a class="headerlink" href="#Convert-to-degrees-from-radians" title="Permalink to this headline">¶</a></h2>
+<h1>Convert to degrees from radians<a class="headerlink" href="#Convert-to-degrees-from-radians" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -832,7 +837,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="Global-tripcolor-plot">
-<h2>Global tripcolor plot<a class="headerlink" href="#Global-tripcolor-plot" title="Permalink to this headline">¶</a></h2>
+<h1>Global tripcolor plot<a class="headerlink" href="#Global-tripcolor-plot" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -923,8 +928,8 @@ Data variables:
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-CPU times: user 35.3 s, sys: 762 ms, total: 36.1 s
-Wall time: 35 s
+CPU times: user 39.1 s, sys: 832 ms, total: 39.9 s
+Wall time: 38.8 s
 </pre></div></div>
 </div>
 <hr class="docutils" />
@@ -956,17 +961,16 @@ Processor   : x86_64
 CPU cores   : 6
 Architecture: 64bit
 
-Hostname: jupyter-ncar-2dnotebook-2dgallery-2dl1zcju1g
+Hostname: jupyter-ncar-2dnotebook-2dgallery-2da5qmyyzl
 
-Git hash: 45b9f33df8f7bacf76d9e4656b3251b4bab32051
+Git hash: f6b88382127738bf65402fa2d2d2a3686a3e8b3e
 
-xarray    : 0.16.2
 matplotlib: 3.3.4
-cartopy   : 0.18.0
 numpy     : 1.20.0
+cartopy   : 0.18.0
+xarray    : 0.16.2
 
 </pre></div></div>
-</div>
 </div>
 </div>
 
