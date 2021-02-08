@@ -14,7 +14,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## Plot of Surface Pressure on MPAS grid"
+    "# Plot of Surface Pressure on MPAS grid"
    ]
   },
   {
@@ -22,10 +22,10 @@
    "execution_count": 1,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:24.068218Z",
-     "iopub.status.busy": "2021-02-05T22:12:24.067611Z",
-     "iopub.status.idle": "2021-02-05T22:12:25.288975Z",
-     "shell.execute_reply": "2021-02-05T22:12:25.288226Z"
+     "iopub.execute_input": "2021-02-08T23:21:52.645582Z",
+     "iopub.status.busy": "2021-02-08T23:21:52.644525Z",
+     "iopub.status.idle": "2021-02-08T23:21:54.452292Z",
+     "shell.execute_reply": "2021-02-08T23:21:54.453168Z"
     }
    },
    "outputs": [],
@@ -51,10 +51,10 @@
    "execution_count": 2,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:25.293455Z",
-     "iopub.status.busy": "2021-02-05T22:12:25.292840Z",
-     "iopub.status.idle": "2021-02-05T22:12:25.363292Z",
-     "shell.execute_reply": "2021-02-05T22:12:25.362611Z"
+     "iopub.execute_input": "2021-02-08T23:21:54.459050Z",
+     "iopub.status.busy": "2021-02-08T23:21:54.458105Z",
+     "iopub.status.idle": "2021-02-08T23:21:54.551865Z",
+     "shell.execute_reply": "2021-02-08T23:21:54.551166Z"
     }
    },
    "outputs": [
@@ -95,10 +95,10 @@
    "execution_count": 3,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:25.367279Z",
-     "iopub.status.busy": "2021-02-05T22:12:25.366601Z",
-     "iopub.status.idle": "2021-02-05T22:12:25.768303Z",
-     "shell.execute_reply": "2021-02-05T22:12:25.767754Z"
+     "iopub.execute_input": "2021-02-08T23:21:54.557736Z",
+     "iopub.status.busy": "2021-02-08T23:21:54.556745Z",
+     "iopub.status.idle": "2021-02-08T23:21:54.930271Z",
+     "shell.execute_reply": "2021-02-08T23:21:54.929483Z"
     }
    },
    "outputs": [
@@ -126,10 +126,10 @@
    "execution_count": 4,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:25.772529Z",
-     "iopub.status.busy": "2021-02-05T22:12:25.771980Z",
-     "iopub.status.idle": "2021-02-05T22:12:25.796214Z",
-     "shell.execute_reply": "2021-02-05T22:12:25.795727Z"
+     "iopub.execute_input": "2021-02-08T23:21:54.937961Z",
+     "iopub.status.busy": "2021-02-08T23:21:54.937221Z",
+     "iopub.status.idle": "2021-02-08T23:21:54.983343Z",
+     "shell.execute_reply": "2021-02-08T23:21:54.982394Z"
     }
    },
    "outputs": [
@@ -493,7 +493,7 @@
        "Data variables:\n",
        "    lonCell           (nCells) float64 ...\n",
        "    latCell           (nCells) float64 ...\n",
-       "    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-5ea99d7e-426d-4b72-93a0-df86782be4f9' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5ea99d7e-426d-4b72-93a0-df86782be4f9' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-79dd91ca-2e57-4a49-92c1-2080f279bc31' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-79dd91ca-2e57-4a49-92c1-2080f279bc31' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-1ceeb882-2932-45d8-b230-bfd1580118c1' class='xr-section-summary-in' type='checkbox'  checked><label for='section-1ceeb882-2932-45d8-b230-bfd1580118c1' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-b7486644-639d-4fe9-a417-8fd06ddd4d1f' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-b7486644-639d-4fe9-a417-8fd06ddd4d1f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3bddb612-18b6-42d4-84a4-6aeddc84bcf5' class='xr-var-data-in' type='checkbox'><label for='data-3bddb612-18b6-42d4-84a4-6aeddc84bcf5' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-d77a4cab-97dc-42c2-89c4-b0c733853253' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-d77a4cab-97dc-42c2-89c4-b0c733853253' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4b09f67e-3f1b-43b1-9f62-3c6271b0016d' class='xr-var-data-in' type='checkbox'><label for='data-4b09f67e-3f1b-43b1-9f62-3c6271b0016d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-a68c63d0-3575-428b-8834-7da974fa11dd' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-a68c63d0-3575-428b-8834-7da974fa11dd' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a1766b90-8d6a-4c63-a086-a344d2eb8764' class='xr-var-data-in' type='checkbox'><label for='data-a1766b90-8d6a-4c63-a086-a344d2eb8764' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-7c3a8235-8e82-4071-9cbe-d65dc25cf0d2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7c3a8235-8e82-4071-9cbe-d65dc25cf0d2' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-635c467c-67d6-44ed-ba2c-cb2eb7a281d5' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-635c467c-67d6-44ed-ba2c-cb2eb7a281d5' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-e8c24ad8-7309-4704-b7a6-3b5c482fd4bc' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e8c24ad8-7309-4704-b7a6-3b5c482fd4bc' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-429b2760-ee8d-4bb8-b06c-048a83fd424a' class='xr-section-summary-in' type='checkbox'  checked><label for='section-429b2760-ee8d-4bb8-b06c-048a83fd424a' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-442dbe15-64cc-499b-b502-6c07421dd0e5' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-442dbe15-64cc-499b-b502-6c07421dd0e5' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9dc44f3b-7b56-44da-960c-3b52654b6e1d' class='xr-var-data-in' type='checkbox'><label for='data-9dc44f3b-7b56-44da-960c-3b52654b6e1d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-510232ab-5bec-4911-9cc5-c14a746fe448' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-510232ab-5bec-4911-9cc5-c14a746fe448' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b56810f5-accd-4f07-9212-1e4667483d92' class='xr-var-data-in' type='checkbox'><label for='data-b56810f5-accd-4f07-9212-1e4667483d92' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-83dcaf30-0802-447f-bf04-dc49ecf635f8' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-83dcaf30-0802-447f-bf04-dc49ecf635f8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7db61b6d-42fa-4535-9a8a-51c4ffa581d5' class='xr-var-data-in' type='checkbox'><label for='data-7db61b6d-42fa-4535-9a8a-51c4ffa581d5' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-25319e33-c96d-4730-af92-d82e1d2df3aa' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-25319e33-c96d-4730-af92-d82e1d2df3aa' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.Dataset>\n",
@@ -521,10 +521,10 @@
    "execution_count": 5,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:25.800327Z",
-     "iopub.status.busy": "2021-02-05T22:12:25.799760Z",
-     "iopub.status.idle": "2021-02-05T22:12:25.805163Z",
-     "shell.execute_reply": "2021-02-05T22:12:25.805595Z"
+     "iopub.execute_input": "2021-02-08T23:21:54.990541Z",
+     "iopub.status.busy": "2021-02-08T23:21:54.989512Z",
+     "iopub.status.idle": "2021-02-08T23:21:54.997043Z",
+     "shell.execute_reply": "2021-02-08T23:21:54.997884Z"
     }
    },
    "outputs": [],
@@ -545,10 +545,10 @@
    "execution_count": 6,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:25.809972Z",
-     "iopub.status.busy": "2021-02-05T22:12:25.809398Z",
-     "iopub.status.idle": "2021-02-05T22:12:25.816856Z",
-     "shell.execute_reply": "2021-02-05T22:12:25.817444Z"
+     "iopub.execute_input": "2021-02-08T23:21:55.004292Z",
+     "iopub.status.busy": "2021-02-08T23:21:55.003436Z",
+     "iopub.status.idle": "2021-02-08T23:21:55.014437Z",
+     "shell.execute_reply": "2021-02-08T23:21:55.013760Z"
     }
    },
    "outputs": [],
@@ -569,10 +569,10 @@
    "execution_count": 7,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:25.821566Z",
-     "iopub.status.busy": "2021-02-05T22:12:25.821035Z",
-     "iopub.status.idle": "2021-02-05T22:12:26.927149Z",
-     "shell.execute_reply": "2021-02-05T22:12:26.926271Z"
+     "iopub.execute_input": "2021-02-08T23:21:55.020614Z",
+     "iopub.status.busy": "2021-02-08T23:21:55.019732Z",
+     "iopub.status.idle": "2021-02-08T23:21:56.757993Z",
+     "shell.execute_reply": "2021-02-08T23:21:56.758478Z"
     }
    },
    "outputs": [],
@@ -587,10 +587,10 @@
    "execution_count": 8,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:26.932312Z",
-     "iopub.status.busy": "2021-02-05T22:12:26.931684Z",
-     "iopub.status.idle": "2021-02-05T22:12:26.939570Z",
-     "shell.execute_reply": "2021-02-05T22:12:26.938968Z"
+     "iopub.execute_input": "2021-02-08T23:21:56.763480Z",
+     "iopub.status.busy": "2021-02-08T23:21:56.762546Z",
+     "iopub.status.idle": "2021-02-08T23:21:56.769698Z",
+     "shell.execute_reply": "2021-02-08T23:21:56.770338Z"
     }
    },
    "outputs": [],
@@ -603,10 +603,10 @@
    "execution_count": 9,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:26.950553Z",
-     "iopub.status.busy": "2021-02-05T22:12:26.945904Z",
-     "iopub.status.idle": "2021-02-05T22:12:26.952582Z",
-     "shell.execute_reply": "2021-02-05T22:12:26.953170Z"
+     "iopub.execute_input": "2021-02-08T23:21:56.778754Z",
+     "iopub.status.busy": "2021-02-08T23:21:56.777208Z",
+     "iopub.status.idle": "2021-02-08T23:21:56.783259Z",
+     "shell.execute_reply": "2021-02-08T23:21:56.782390Z"
     }
    },
    "outputs": [],
@@ -623,10 +623,10 @@
    "execution_count": 10,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:12:26.978168Z",
-     "iopub.status.busy": "2021-02-05T22:12:26.975527Z",
-     "iopub.status.idle": "2021-02-05T22:13:04.538284Z",
-     "shell.execute_reply": "2021-02-05T22:13:04.538939Z"
+     "iopub.execute_input": "2021-02-08T23:21:56.824738Z",
+     "iopub.status.busy": "2021-02-08T23:21:56.823443Z",
+     "iopub.status.idle": "2021-02-08T23:22:44.080098Z",
+     "shell.execute_reply": "2021-02-08T23:22:44.081211Z"
     }
    },
    "outputs": [
@@ -656,8 +656,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 37.9 s, sys: 668 ms, total: 38.5 s\n",
-      "Wall time: 37.6 s\n"
+      "CPU times: user 47.5 s, sys: 805 ms, total: 48.3 s\n",
+      "Wall time: 47.3 s\n"
      ]
     }
    ],
@@ -709,10 +709,10 @@
    "execution_count": 11,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-05T22:13:04.544552Z",
-     "iopub.status.busy": "2021-02-05T22:13:04.543982Z",
-     "iopub.status.idle": "2021-02-05T22:13:04.591644Z",
-     "shell.execute_reply": "2021-02-05T22:13:04.591042Z"
+     "iopub.execute_input": "2021-02-08T23:22:44.090391Z",
+     "iopub.status.busy": "2021-02-08T23:22:44.089156Z",
+     "iopub.status.idle": "2021-02-08T23:22:44.141984Z",
+     "shell.execute_reply": "2021-02-08T23:22:44.141261Z"
     }
    },
    "outputs": [
@@ -720,7 +720,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Last updated: 2021-02-05\n",
+      "Last updated: 2021-02-08\n",
       "\n",
       "Compiler    : GCC 9.3.0\n",
       "OS          : Linux\n",
@@ -730,9 +730,9 @@
       "CPU cores   : 6\n",
       "Architecture: 64bit\n",
       "\n",
-      "Hostname: jupyter-ncar-2dnotebook-2dgallery-2dwhd17ys0\n",
+      "Hostname: jupyter-ncar-2dnotebook-2dgallery-2d7l0natb6\n",
       "\n",
-      "Git hash: bd2b85cd4f072120162f56c18b75516f096f1826\n",
+      "Git hash: d2d3b9fd0f4b0a06523614ac4523c270d3c2ee56\n",
       "\n",
       "matplotlib: 3.3.4\n",
       "cartopy   : 0.18.0\n",
