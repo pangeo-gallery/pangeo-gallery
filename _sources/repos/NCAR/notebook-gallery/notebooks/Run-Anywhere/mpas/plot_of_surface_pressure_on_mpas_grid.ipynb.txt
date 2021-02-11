@@ -22,10 +22,10 @@
    "execution_count": 1,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:52.645582Z",
-     "iopub.status.busy": "2021-02-08T23:21:52.644525Z",
-     "iopub.status.idle": "2021-02-08T23:21:54.452292Z",
-     "shell.execute_reply": "2021-02-08T23:21:54.453168Z"
+     "iopub.execute_input": "2021-02-11T23:17:44.247338Z",
+     "iopub.status.busy": "2021-02-11T23:17:44.246715Z",
+     "iopub.status.idle": "2021-02-11T23:17:45.509165Z",
+     "shell.execute_reply": "2021-02-11T23:17:45.509642Z"
     }
    },
    "outputs": [],
@@ -51,10 +51,10 @@
    "execution_count": 2,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:54.459050Z",
-     "iopub.status.busy": "2021-02-08T23:21:54.458105Z",
-     "iopub.status.idle": "2021-02-08T23:21:54.551865Z",
-     "shell.execute_reply": "2021-02-08T23:21:54.551166Z"
+     "iopub.execute_input": "2021-02-11T23:17:45.514692Z",
+     "iopub.status.busy": "2021-02-11T23:17:45.514135Z",
+     "iopub.status.idle": "2021-02-11T23:17:45.584423Z",
+     "shell.execute_reply": "2021-02-11T23:17:45.583778Z"
     }
    },
    "outputs": [
@@ -95,10 +95,10 @@
    "execution_count": 3,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:54.557736Z",
-     "iopub.status.busy": "2021-02-08T23:21:54.556745Z",
-     "iopub.status.idle": "2021-02-08T23:21:54.930271Z",
-     "shell.execute_reply": "2021-02-08T23:21:54.929483Z"
+     "iopub.execute_input": "2021-02-11T23:17:45.588730Z",
+     "iopub.status.busy": "2021-02-11T23:17:45.588178Z",
+     "iopub.status.idle": "2021-02-11T23:17:45.942460Z",
+     "shell.execute_reply": "2021-02-11T23:17:45.941846Z"
     }
    },
    "outputs": [
@@ -126,10 +126,10 @@
    "execution_count": 4,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:54.937961Z",
-     "iopub.status.busy": "2021-02-08T23:21:54.937221Z",
-     "iopub.status.idle": "2021-02-08T23:21:54.983343Z",
-     "shell.execute_reply": "2021-02-08T23:21:54.982394Z"
+     "iopub.execute_input": "2021-02-11T23:17:45.946812Z",
+     "iopub.status.busy": "2021-02-11T23:17:45.946284Z",
+     "iopub.status.idle": "2021-02-11T23:17:45.970811Z",
+     "shell.execute_reply": "2021-02-11T23:17:45.970139Z"
     }
    },
    "outputs": [
@@ -493,7 +493,7 @@
        "Data variables:\n",
        "    lonCell           (nCells) float64 ...\n",
        "    latCell           (nCells) float64 ...\n",
-       "    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-635c467c-67d6-44ed-ba2c-cb2eb7a281d5' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-635c467c-67d6-44ed-ba2c-cb2eb7a281d5' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-e8c24ad8-7309-4704-b7a6-3b5c482fd4bc' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e8c24ad8-7309-4704-b7a6-3b5c482fd4bc' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-429b2760-ee8d-4bb8-b06c-048a83fd424a' class='xr-section-summary-in' type='checkbox'  checked><label for='section-429b2760-ee8d-4bb8-b06c-048a83fd424a' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-442dbe15-64cc-499b-b502-6c07421dd0e5' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-442dbe15-64cc-499b-b502-6c07421dd0e5' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9dc44f3b-7b56-44da-960c-3b52654b6e1d' class='xr-var-data-in' type='checkbox'><label for='data-9dc44f3b-7b56-44da-960c-3b52654b6e1d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-510232ab-5bec-4911-9cc5-c14a746fe448' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-510232ab-5bec-4911-9cc5-c14a746fe448' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b56810f5-accd-4f07-9212-1e4667483d92' class='xr-var-data-in' type='checkbox'><label for='data-b56810f5-accd-4f07-9212-1e4667483d92' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-83dcaf30-0802-447f-bf04-dc49ecf635f8' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-83dcaf30-0802-447f-bf04-dc49ecf635f8' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7db61b6d-42fa-4535-9a8a-51c4ffa581d5' class='xr-var-data-in' type='checkbox'><label for='data-7db61b6d-42fa-4535-9a8a-51c4ffa581d5' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-25319e33-c96d-4730-af92-d82e1d2df3aa' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-25319e33-c96d-4730-af92-d82e1d2df3aa' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "    surface_pressure  (nCells) float64 ...</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-e3761e7d-7dfc-454d-b763-e9ea28bb1be2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e3761e7d-7dfc-454d-b763-e9ea28bb1be2' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>nCells</span>: 163842</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-1feda759-3f91-4a43-ba1c-5b74198dddaa' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-1feda759-3f91-4a43-ba1c-5b74198dddaa' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-6c1f95b5-290e-4188-bb96-c255939c99fb' class='xr-section-summary-in' type='checkbox'  checked><label for='section-6c1f95b5-290e-4188-bb96-c255939c99fb' class='xr-section-summary' >Data variables: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>lonCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-18b325fa-50a6-4349-aec1-f55aa5eec861' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-18b325fa-50a6-4349-aec1-f55aa5eec861' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-02d4f96e-630b-4778-9571-ab7c998b3326' class='xr-var-data-in' type='checkbox'><label for='data-02d4f96e-630b-4778-9571-ab7c998b3326' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latCell</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-4597d1b3-0991-4b71-b291-ca001394ba53' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-4597d1b3-0991-4b71-b291-ca001394ba53' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-35509210-0f9f-4b37-b4d7-80fdfd52970c' class='xr-var-data-in' type='checkbox'><label for='data-35509210-0f9f-4b37-b4d7-80fdfd52970c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface_pressure</span></div><div class='xr-var-dims'>(nCells)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>...</div><input id='attrs-63a56deb-1a7c-49bb-87ec-ed47e89331a4' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-63a56deb-1a7c-49bb-87ec-ed47e89331a4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-87738ff1-c32a-41be-8c3b-3ed9f0a7b73f' class='xr-var-data-in' type='checkbox'><label for='data-87738ff1-c32a-41be-8c3b-3ed9f0a7b73f' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>[163842 values with dtype=float64]</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-3962bbff-44c9-4773-b4f6-ea17d833200d' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-3962bbff-44c9-4773-b4f6-ea17d833200d' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.Dataset>\n",
@@ -521,10 +521,10 @@
    "execution_count": 5,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:54.990541Z",
-     "iopub.status.busy": "2021-02-08T23:21:54.989512Z",
-     "iopub.status.idle": "2021-02-08T23:21:54.997043Z",
-     "shell.execute_reply": "2021-02-08T23:21:54.997884Z"
+     "iopub.execute_input": "2021-02-11T23:17:45.975378Z",
+     "iopub.status.busy": "2021-02-11T23:17:45.974765Z",
+     "iopub.status.idle": "2021-02-11T23:17:45.980976Z",
+     "shell.execute_reply": "2021-02-11T23:17:45.980369Z"
     }
    },
    "outputs": [],
@@ -545,10 +545,10 @@
    "execution_count": 6,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:55.004292Z",
-     "iopub.status.busy": "2021-02-08T23:21:55.003436Z",
-     "iopub.status.idle": "2021-02-08T23:21:55.014437Z",
-     "shell.execute_reply": "2021-02-08T23:21:55.013760Z"
+     "iopub.execute_input": "2021-02-11T23:17:45.986001Z",
+     "iopub.status.busy": "2021-02-11T23:17:45.985470Z",
+     "iopub.status.idle": "2021-02-11T23:17:45.993968Z",
+     "shell.execute_reply": "2021-02-11T23:17:45.993487Z"
     }
    },
    "outputs": [],
@@ -569,10 +569,10 @@
    "execution_count": 7,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:55.020614Z",
-     "iopub.status.busy": "2021-02-08T23:21:55.019732Z",
-     "iopub.status.idle": "2021-02-08T23:21:56.757993Z",
-     "shell.execute_reply": "2021-02-08T23:21:56.758478Z"
+     "iopub.execute_input": "2021-02-11T23:17:45.998250Z",
+     "iopub.status.busy": "2021-02-11T23:17:45.997655Z",
+     "iopub.status.idle": "2021-02-11T23:17:47.262408Z",
+     "shell.execute_reply": "2021-02-11T23:17:47.262917Z"
     }
    },
    "outputs": [],
@@ -587,10 +587,10 @@
    "execution_count": 8,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:56.763480Z",
-     "iopub.status.busy": "2021-02-08T23:21:56.762546Z",
-     "iopub.status.idle": "2021-02-08T23:21:56.769698Z",
-     "shell.execute_reply": "2021-02-08T23:21:56.770338Z"
+     "iopub.execute_input": "2021-02-11T23:17:47.267822Z",
+     "iopub.status.busy": "2021-02-11T23:17:47.267253Z",
+     "iopub.status.idle": "2021-02-11T23:17:47.273884Z",
+     "shell.execute_reply": "2021-02-11T23:17:47.273270Z"
     }
    },
    "outputs": [],
@@ -603,10 +603,10 @@
    "execution_count": 9,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:56.778754Z",
-     "iopub.status.busy": "2021-02-08T23:21:56.777208Z",
-     "iopub.status.idle": "2021-02-08T23:21:56.783259Z",
-     "shell.execute_reply": "2021-02-08T23:21:56.782390Z"
+     "iopub.execute_input": "2021-02-11T23:17:47.279365Z",
+     "iopub.status.busy": "2021-02-11T23:17:47.278762Z",
+     "iopub.status.idle": "2021-02-11T23:17:47.284159Z",
+     "shell.execute_reply": "2021-02-11T23:17:47.283510Z"
     }
    },
    "outputs": [],
@@ -623,10 +623,10 @@
    "execution_count": 10,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:21:56.824738Z",
-     "iopub.status.busy": "2021-02-08T23:21:56.823443Z",
-     "iopub.status.idle": "2021-02-08T23:22:44.080098Z",
-     "shell.execute_reply": "2021-02-08T23:22:44.081211Z"
+     "iopub.execute_input": "2021-02-11T23:17:47.311323Z",
+     "iopub.status.busy": "2021-02-11T23:17:47.308267Z",
+     "iopub.status.idle": "2021-02-11T23:18:21.728571Z",
+     "shell.execute_reply": "2021-02-11T23:18:21.729216Z"
     }
    },
    "outputs": [
@@ -656,8 +656,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 47.5 s, sys: 805 ms, total: 48.3 s\n",
-      "Wall time: 47.3 s\n"
+      "CPU times: user 34.7 s, sys: 698 ms, total: 35.4 s\n",
+      "Wall time: 34.4 s\n"
      ]
     }
    ],
@@ -709,10 +709,10 @@
    "execution_count": 11,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-08T23:22:44.090391Z",
-     "iopub.status.busy": "2021-02-08T23:22:44.089156Z",
-     "iopub.status.idle": "2021-02-08T23:22:44.141984Z",
-     "shell.execute_reply": "2021-02-08T23:22:44.141261Z"
+     "iopub.execute_input": "2021-02-11T23:18:21.735787Z",
+     "iopub.status.busy": "2021-02-11T23:18:21.735228Z",
+     "iopub.status.idle": "2021-02-11T23:18:21.790918Z",
+     "shell.execute_reply": "2021-02-11T23:18:21.791396Z"
     }
    },
    "outputs": [
@@ -720,7 +720,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Last updated: 2021-02-08\n",
+      "Last updated: 2021-02-11\n",
       "\n",
       "Compiler    : GCC 9.3.0\n",
       "OS          : Linux\n",
@@ -730,14 +730,14 @@
       "CPU cores   : 6\n",
       "Architecture: 64bit\n",
       "\n",
-      "Hostname: jupyter-ncar-2dnotebook-2dgallery-2d7l0natb6\n",
+      "Hostname: jupyter-ncar-2dnotebook-2dgallery-2d0czlbko0\n",
       "\n",
-      "Git hash: d2d3b9fd0f4b0a06523614ac4523c270d3c2ee56\n",
+      "Git hash: a282f4be4ac0cb78c20250f862166b6d96b23211\n",
       "\n",
       "matplotlib: 3.3.4\n",
-      "cartopy   : 0.18.0\n",
+      "numpy     : 1.20.1\n",
       "xarray    : 0.16.2\n",
-      "numpy     : 1.20.0\n",
+      "cartopy   : 0.18.0\n",
       "\n"
      ]
     }
