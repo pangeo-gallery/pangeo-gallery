@@ -83,9 +83,6 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">NCAR Gallery</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Binderbot-Bug28/mpas/plot_terrain.html">Plot MPAS data using Delauney Triangulation</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Compare Data Access Times for AWS and Glade Zarr Stores</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Functions-for-Getting-Data">Functions for Getting Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Define-Plot-Functions">Define Plot Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#Load-Zarr-Store-from-Different-Sources-and-Record-Plotting-Times">Load Zarr Store from Different Sources and Record Plotting Times</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Run-Anywhere/Bias-Correction/bias_correction.html">Bias Correction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Run-Anywhere/Ocean-Heat-Content/OHC_tutorial.html">How to calculate ocean heat content</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Run-Anywhere/WRF/wrf_ex.html">WRF data and Xarray</a></li>
@@ -399,10 +396,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
 <div class="section" id="Functions-for-Getting-Data">
-<h1>Functions for Getting Data<a class="headerlink" href="#Functions-for-Getting-Data" title="Permalink to this headline">¶</a></h1>
+<h3>Functions for Getting Data<a class="headerlink" href="#Functions-for-Getting-Data" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -450,7 +445,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="Define-Plot-Functions">
-<h1>Define Plot Functions<a class="headerlink" href="#Define-Plot-Functions" title="Permalink to this headline">¶</a></h1>
+<h3>Define Plot Functions<a class="headerlink" href="#Define-Plot-Functions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Create-Single-Map-Plot-(Helper-Function)">
+<h4>Create Single Map Plot (Helper Function)<a class="headerlink" href="#Create-Single-Map-Plot-(Helper-Function)" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -480,6 +477,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="Function-Producing-Maps-of-First,-Middle,-Last-Timesteps">
+<h4>Function Producing Maps of First, Middle, Last Timesteps<a class="headerlink" href="#Function-Producing-Maps-of-First,-Middle,-Last-Timesteps" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -539,6 +539,9 @@ div.rendered_html tbody tr:hover {
 
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="Create-Time-Series-Plots-over-Multiple-Pages">
@@ -604,10 +607,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
 <div class="section" id="Load-Zarr-Store-from-Different-Sources-and-Record-Plotting-Times">
-<h1>Load Zarr Store from Different Sources and Record Plotting Times<a class="headerlink" href="#Load-Zarr-Store-from-Different-Sources-and-Record-Plotting-Times" title="Permalink to this headline">¶</a></h1>
+<h3>Load Zarr Store from Different Sources and Record Plotting Times<a class="headerlink" href="#Load-Zarr-Store-from-Different-Sources-and-Record-Plotting-Times" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -628,6 +629,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
+<div class="section" id="Plot-First,-Middle,-and-Final-Timesteps-from-Glade-Store">
+<h4>Plot First, Middle, and Final Timesteps from Glade Store<a class="headerlink" href="#Plot-First,-Middle,-and-Final-Timesteps-from-Glade-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -641,6 +644,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="Plot-First,-Middle,-and-Final-Timesteps-from-AWS-Store">
+<h4>Plot First, Middle, and Final Timesteps from AWS Store<a class="headerlink" href="#Plot-First,-Middle,-and-Final-Timesteps-from-AWS-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -672,6 +678,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="Plot-Time-Series-from-Glade-Store">
+<h4>Plot Time Series from Glade Store<a class="headerlink" href="#Plot-Time-Series-from-Glade-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -685,6 +694,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="Plot-Time-Series-from-AWS-Store">
+<h4>Plot Time Series from AWS Store<a class="headerlink" href="#Plot-Time-Series-from-AWS-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -705,6 +717,9 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span>
 </pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="Release-the-workers.">
