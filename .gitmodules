@@ -43,3 +43,7 @@
 	path = repos/NCAR/notebook-gallery
 	url = https://github.com/NCAR/notebook-gallery.git
 	branch = binderbot-built
+[submodule "repos/ldeo-glaciology/pangeo-glaciology-examples"]
+	path = repos/ldeo-glaciology/pangeo-glaciology-examples
+	url = https://github.com/ldeo-glaciology/pangeo-glaciology-examples.git
+	branch = binderbot-built
