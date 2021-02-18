@@ -18,10 +18,10 @@
    "execution_count": 1,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:16:33.729386Z",
-     "iopub.status.busy": "2021-02-17T22:16:33.728615Z",
-     "iopub.status.idle": "2021-02-17T22:16:36.108278Z",
-     "shell.execute_reply": "2021-02-17T22:16:36.107409Z"
+     "iopub.execute_input": "2021-02-18T23:16:03.467801Z",
+     "iopub.status.busy": "2021-02-18T23:16:03.467090Z",
+     "iopub.status.idle": "2021-02-18T23:16:05.645429Z",
+     "shell.execute_reply": "2021-02-18T23:16:05.644708Z"
     }
    },
    "outputs": [],
@@ -45,10 +45,10 @@
    "execution_count": 2,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:16:36.114273Z",
-     "iopub.status.busy": "2021-02-17T22:16:36.113649Z",
-     "iopub.status.idle": "2021-02-17T22:16:40.937837Z",
-     "shell.execute_reply": "2021-02-17T22:16:40.938461Z"
+     "iopub.execute_input": "2021-02-18T23:16:05.650902Z",
+     "iopub.status.busy": "2021-02-18T23:16:05.650341Z",
+     "iopub.status.idle": "2021-02-18T23:16:09.348425Z",
+     "shell.execute_reply": "2021-02-18T23:16:09.349012Z"
     }
    },
    "outputs": [
@@ -445,9 +445,9 @@
        "    straight_vertical_longitude_from_pole:  [0.0]\n",
        "    version:                                05-Nov-2019 (v1.38)\n",
        "    xmin:                                   [-3333000]\n",
-       "    ymax:                                   [3333000]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-1fbb5955-31e4-4c09-98a5-7f534a88574f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-1fbb5955-31e4-4c09-98a5-7f534a88574f' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 13333</li><li><span class='xr-has-index'>y</span>: 13333</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-ac598671-2721-4831-9b09-d1695209387a' class='xr-section-summary-in' type='checkbox'  checked><label for='section-ac598671-2721-4831-9b09-d1695209387a' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>-3333000 -3332500 ... 3333000</div><input id='attrs-b439b4fd-dfdd-4724-b323-6e7fa8eeb0d2' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b439b4fd-dfdd-4724-b323-6e7fa8eeb0d2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-670ddced-ae9b-4cba-8da8-b37b8a643df6' class='xr-var-data-in' type='checkbox'><label for='data-670ddced-ae9b-4cba-8da8-b37b8a643df6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian x-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_x_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([-3333000, -3332500, -3332000, ...,  3332000,  3332500,  3333000],\n",
-       "      dtype=int32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>y</span></div><div class='xr-var-dims'>(y)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>3333000 3332500 ... -3333000</div><input id='attrs-45f01275-d219-481d-bc4d-100ca5dc6e8f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-45f01275-d219-481d-bc4d-100ca5dc6e8f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-88b88c34-3cbc-49c1-abee-ddd85eb98703' class='xr-var-data-in' type='checkbox'><label for='data-88b88c34-3cbc-49c1-abee-ddd85eb98703' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian y-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_y_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([ 3333000,  3332500,  3332000, ..., -3332000, -3332500, -3333000],\n",
-       "      dtype=int32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-fafcf100-d78f-4e4e-8e82-6d80f8aeab86' class='xr-section-summary-in' type='checkbox'  checked><label for='section-fafcf100-d78f-4e4e-8e82-6d80f8aeab86' class='xr-section-summary' >Data variables: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>bed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-773c0e0f-71e5-49eb-96ea-61c3659fc036' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-773c0e0f-71e5-49eb-96ea-61c3659fc036' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e46b597d-836f-4731-901e-49b0733485cd' class='xr-var-data-in' type='checkbox'><label for='data-e46b597d-836f-4731-901e-49b0733485cd' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography</dd><dt><span>source :</span></dt><dd>IBCSO and Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>bedrock_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "    ymax:                                   [3333000]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-fce1b615-f991-4d48-ad58-9a0da96d64bf' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-fce1b615-f991-4d48-ad58-9a0da96d64bf' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 13333</li><li><span class='xr-has-index'>y</span>: 13333</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-91da5f32-8c82-4c8e-9af9-27a087867053' class='xr-section-summary-in' type='checkbox'  checked><label for='section-91da5f32-8c82-4c8e-9af9-27a087867053' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>-3333000 -3332500 ... 3333000</div><input id='attrs-990d5174-e447-4c6c-a7ea-494e9112e1b3' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-990d5174-e447-4c6c-a7ea-494e9112e1b3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-983eb8df-4828-47b2-9be4-969208091514' class='xr-var-data-in' type='checkbox'><label for='data-983eb8df-4828-47b2-9be4-969208091514' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian x-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_x_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([-3333000, -3332500, -3332000, ...,  3332000,  3332500,  3333000],\n",
+       "      dtype=int32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>y</span></div><div class='xr-var-dims'>(y)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>3333000 3332500 ... -3333000</div><input id='attrs-a5d1c661-bd70-47d7-a104-565bf5cfdaf6' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a5d1c661-bd70-47d7-a104-565bf5cfdaf6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a0c043ee-0f42-4ff1-b92e-43ed63aa5b4a' class='xr-var-data-in' type='checkbox'><label for='data-a0c043ee-0f42-4ff1-b92e-43ed63aa5b4a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian y-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_y_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([ 3333000,  3332500,  3332000, ..., -3332000, -3332500, -3333000],\n",
+       "      dtype=int32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-6b95aee2-dd59-431e-b280-158de2eda4e7' class='xr-section-summary-in' type='checkbox'  checked><label for='section-6b95aee2-dd59-431e-b280-158de2eda4e7' class='xr-section-summary' >Data variables: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>bed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-ef642777-a690-4f55-8c0e-dba72b788894' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-ef642777-a690-4f55-8c0e-dba72b788894' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fc2c20c4-d6cb-4c88-bba9-2cb4e566c90c' class='xr-var-data-in' type='checkbox'><label for='data-fc2c20c4-d6cb-4c88-bba9-2cb4e566c90c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography</dd><dt><span>source :</span></dt><dd>IBCSO and Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>bedrock_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -490,7 +490,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>errbed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-75fcfe34-c243-492f-804e-67bb3e8e3953' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-75fcfe34-c243-492f-804e-67bb3e8e3953' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-499a2ebc-25a8-43f1-b5b0-f800e6d0ab7c' class='xr-var-data-in' type='checkbox'><label for='data-499a2ebc-25a8-43f1-b5b0-f800e6d0ab7c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography/ice thickness error</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>errbed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-0b465d6f-f6df-4477-9a82-8bde9a64ed9e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-0b465d6f-f6df-4477-9a82-8bde9a64ed9e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-11a22c33-fd86-42b0-9579-a9c02ef370ab' class='xr-var-data-in' type='checkbox'><label for='data-11a22c33-fd86-42b0-9579-a9c02ef370ab' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography/ice thickness error</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -533,7 +533,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>firn</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-68e103d8-bb62-48fc-96ce-69bd59839e0e' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-68e103d8-bb62-48fc-96ce-69bd59839e0e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-762d000a-6041-4425-8ee0-98343c24452d' class='xr-var-data-in' type='checkbox'><label for='data-762d000a-6041-4425-8ee0-98343c24452d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>firn air content</dd><dt><span>source :</span></dt><dd>FAC model from Ligtenberg et al., 2011, forced by RACMO2.3p2 (van Wessem et al., 2018)</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>firn</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-b04be88c-8f96-412d-8bce-f7b5c5ff8cc4' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b04be88c-8f96-412d-8bce-f7b5c5ff8cc4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e7b95010-c9e5-47a1-b300-3153afd5550a' class='xr-var-data-in' type='checkbox'><label for='data-e7b95010-c9e5-47a1-b300-3153afd5550a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>firn air content</dd><dt><span>source :</span></dt><dd>FAC model from Ligtenberg et al., 2011, forced by RACMO2.3p2 (van Wessem et al., 2018)</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -576,7 +576,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>geoid</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int16</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-add0aa46-b0c6-4bbc-bcaa-d6fe2e69bdf3' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-add0aa46-b0c6-4bbc-bcaa-d6fe2e69bdf3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7eb78212-aeb7-49f5-b24d-143071d09fca' class='xr-var-data-in' type='checkbox'><label for='data-7eb78212-aeb7-49f5-b24d-143071d09fca' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>geoid :</span></dt><dd>eigen-6c4 (Forste et al 2014)</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>EIGEN-EC4 Geoid - WGS84 Ellipsoid difference</dd><dt><span>standard_name :</span></dt><dd>geoid_height_above_reference_ellipsoid</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>geoid</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int16</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-04c7be2a-d19b-476b-9f86-feb8a8ab8a19' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-04c7be2a-d19b-476b-9f86-feb8a8ab8a19' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6c6c4fef-346d-4458-8a6a-b51f5a06c15b' class='xr-var-data-in' type='checkbox'><label for='data-6c6c4fef-346d-4458-8a6a-b51f5a06c15b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>geoid :</span></dt><dd>eigen-6c4 (Forste et al 2014)</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>EIGEN-EC4 Geoid - WGS84 Ellipsoid difference</dd><dt><span>standard_name :</span></dt><dd>geoid_height_above_reference_ellipsoid</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -619,7 +619,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>mask</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-cc969e72-4df0-4ee5-8804-8527cf841537' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-cc969e72-4df0-4ee5-8804-8527cf841537' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-367e9e48-9699-4c51-89b3-30132027933b' class='xr-var-data-in' type='checkbox'><label for='data-367e9e48-9699-4c51-89b3-30132027933b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>ocean ice_free_land grounded_ice floating_ice lake_vostok</dd><dt><span>flag_values :</span></dt><dd>[0, 1, 2, 3, 4]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>mask</dd><dt><span>source :</span></dt><dd>Antarctic Digital Database (rock outcrop) and Jeremie Mouginot (pers. comm., grounding lines)</dd><dt><span>valid_range :</span></dt><dd>[0, 4]</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>mask</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-09d8badb-8fed-45ff-aa8b-00659d46f31d' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-09d8badb-8fed-45ff-aa8b-00659d46f31d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ed742630-9ef8-4b70-9aaf-40d263541594' class='xr-var-data-in' type='checkbox'><label for='data-ed742630-9ef8-4b70-9aaf-40d263541594' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>ocean ice_free_land grounded_ice floating_ice lake_vostok</dd><dt><span>flag_values :</span></dt><dd>[0, 1, 2, 3, 4]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>mask</dd><dt><span>source :</span></dt><dd>Antarctic Digital Database (rock outcrop) and Jeremie Mouginot (pers. comm., grounding lines)</dd><dt><span>valid_range :</span></dt><dd>[0, 4]</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -662,7 +662,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>source</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-054dda9c-1f24-460e-ad9d-05a436420f7f' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-054dda9c-1f24-460e-ad9d-05a436420f7f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fdcd47be-aabd-45f3-aa84-17ecdd5ccb84' class='xr-var-data-in' type='checkbox'><label for='data-fdcd47be-aabd-45f3-aa84-17ecdd5ccb84' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>REMA_IBCSO mass_conservation interpolation hydrostatic streamline_diffusion gravity seismic multibeam</dd><dt><span>flag_values :</span></dt><dd>[1, 2, 3, 4, 5, 6, 7, 10]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>data source</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>valid_range :</span></dt><dd>[1, 10]</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>source</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-ee478256-d542-4a8c-94c9-815bcb206106' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-ee478256-d542-4a8c-94c9-815bcb206106' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a94a6a85-35eb-46da-8731-de2553b9a1f2' class='xr-var-data-in' type='checkbox'><label for='data-a94a6a85-35eb-46da-8731-de2553b9a1f2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>REMA_IBCSO mass_conservation interpolation hydrostatic streamline_diffusion gravity seismic multibeam</dd><dt><span>flag_values :</span></dt><dd>[1, 2, 3, 4, 5, 6, 7, 10]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>data source</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>valid_range :</span></dt><dd>[1, 10]</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -705,7 +705,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-9e5ff3d3-f4e1-4332-af5b-e698d2c80626' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-9e5ff3d3-f4e1-4332-af5b-e698d2c80626' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5d79d482-49fe-44c5-8dfd-6b78d4232f5d' class='xr-var-data-in' type='checkbox'><label for='data-5d79d482-49fe-44c5-8dfd-6b78d4232f5d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice surface elevation</dd><dt><span>source :</span></dt><dd>REMA (Byrd Polar and Climate Research Center and the Polar Geospatial Center)</dd><dt><span>standard_name :</span></dt><dd>surface_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-86b52d6e-76f5-49b2-ae85-397f1686a964' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-86b52d6e-76f5-49b2-ae85-397f1686a964' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4f523ad5-52e7-4088-b5b4-990b1c37e52a' class='xr-var-data-in' type='checkbox'><label for='data-4f523ad5-52e7-4088-b5b4-990b1c37e52a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice surface elevation</dd><dt><span>source :</span></dt><dd>REMA (Byrd Polar and Climate Research Center and the Polar Geospatial Center)</dd><dt><span>standard_name :</span></dt><dd>surface_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -748,7 +748,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>thickness</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-a59f0ca1-0184-47cd-a178-eff36e032888' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a59f0ca1-0184-47cd-a178-eff36e032888' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-ce6a47d5-ed9d-4759-b770-18b2977047bb' class='xr-var-data-in' type='checkbox'><label for='data-ce6a47d5-ed9d-4759-b770-18b2977047bb' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice thickness</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>land_ice_thickness</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>thickness</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-f18b3c6c-b719-455a-9c3b-01182c053235' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f18b3c6c-b719-455a-9c3b-01182c053235' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-447a3446-4e7d-45e5-8513-558b9e718dce' class='xr-var-data-in' type='checkbox'><label for='data-447a3446-4e7d-45e5-8513-558b9e718dce' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice thickness</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>land_ice_thickness</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -791,7 +791,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li></ul></div></li><li class='xr-section-item'><input id='section-df915e07-bb82-40f9-b555-4b91ffbfec87' class='xr-section-summary-in' type='checkbox'  ><label for='section-df915e07-bb82-40f9-b555-4b91ffbfec87' class='xr-section-summary' >Attributes: <span>(25)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Author :</span></dt><dd>Mathieu Morlighem</dd><dt><span>Conventions :</span></dt><dd>CF-1.7</dd><dt><span>Data_citation :</span></dt><dd>Morlighem M. et al., (2019), Deep glacial troughs and stabilizing ridges unveiled beneath the margins of the Antarctic ice sheet, Nature Geoscience (accepted)</dd><dt><span>Notes :</span></dt><dd>Data processed at the Department of Earth System Science, University of California, Irvine</dd><dt><span>Projection :</span></dt><dd>Polar Stereographic South (71S,0E)</dd><dt><span>Title :</span></dt><dd>BedMachine Antarctica</dd><dt><span>false_easting :</span></dt><dd>[0.0]</dd><dt><span>false_northing :</span></dt><dd>[0.0]</dd><dt><span>grid_mapping_name :</span></dt><dd>polar_stereographic</dd><dt><span>ice_density (kg m-3) :</span></dt><dd>[917.0]</dd><dt><span>inverse_flattening :</span></dt><dd>[298.2794050428205]</dd><dt><span>latitude_of_projection_origin :</span></dt><dd>[-90.0]</dd><dt><span>license :</span></dt><dd>No restrictions on access or use</dd><dt><span>no_data :</span></dt><dd>[-9999.0]</dd><dt><span>nx :</span></dt><dd>[13333.0]</dd><dt><span>ny :</span></dt><dd>[13333.0]</dd><dt><span>proj4 :</span></dt><dd>+init=epsg:3031</dd><dt><span>sea_water_density (kg m-3) :</span></dt><dd>[1027.0]</dd><dt><span>semi_major_axis :</span></dt><dd>[6378273.0]</dd><dt><span>spacing :</span></dt><dd>[500]</dd><dt><span>standard_parallel :</span></dt><dd>[-71.0]</dd><dt><span>straight_vertical_longitude_from_pole :</span></dt><dd>[0.0]</dd><dt><span>version :</span></dt><dd>05-Nov-2019 (v1.38)</dd><dt><span>xmin :</span></dt><dd>[-3333000]</dd><dt><span>ymax :</span></dt><dd>[3333000]</dd></dl></div></li></ul></div></div>"
+       "</table></div></li></ul></div></li><li class='xr-section-item'><input id='section-bcd67ee1-92b8-4495-8370-2e39afa651cf' class='xr-section-summary-in' type='checkbox'  ><label for='section-bcd67ee1-92b8-4495-8370-2e39afa651cf' class='xr-section-summary' >Attributes: <span>(25)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Author :</span></dt><dd>Mathieu Morlighem</dd><dt><span>Conventions :</span></dt><dd>CF-1.7</dd><dt><span>Data_citation :</span></dt><dd>Morlighem M. et al., (2019), Deep glacial troughs and stabilizing ridges unveiled beneath the margins of the Antarctic ice sheet, Nature Geoscience (accepted)</dd><dt><span>Notes :</span></dt><dd>Data processed at the Department of Earth System Science, University of California, Irvine</dd><dt><span>Projection :</span></dt><dd>Polar Stereographic South (71S,0E)</dd><dt><span>Title :</span></dt><dd>BedMachine Antarctica</dd><dt><span>false_easting :</span></dt><dd>[0.0]</dd><dt><span>false_northing :</span></dt><dd>[0.0]</dd><dt><span>grid_mapping_name :</span></dt><dd>polar_stereographic</dd><dt><span>ice_density (kg m-3) :</span></dt><dd>[917.0]</dd><dt><span>inverse_flattening :</span></dt><dd>[298.2794050428205]</dd><dt><span>latitude_of_projection_origin :</span></dt><dd>[-90.0]</dd><dt><span>license :</span></dt><dd>No restrictions on access or use</dd><dt><span>no_data :</span></dt><dd>[-9999.0]</dd><dt><span>nx :</span></dt><dd>[13333.0]</dd><dt><span>ny :</span></dt><dd>[13333.0]</dd><dt><span>proj4 :</span></dt><dd>+init=epsg:3031</dd><dt><span>sea_water_density (kg m-3) :</span></dt><dd>[1027.0]</dd><dt><span>semi_major_axis :</span></dt><dd>[6378273.0]</dd><dt><span>spacing :</span></dt><dd>[500]</dd><dt><span>standard_parallel :</span></dt><dd>[-71.0]</dd><dt><span>straight_vertical_longitude_from_pole :</span></dt><dd>[0.0]</dd><dt><span>version :</span></dt><dd>05-Nov-2019 (v1.38)</dd><dt><span>xmin :</span></dt><dd>[-3333000]</dd><dt><span>ymax :</span></dt><dd>[3333000]</dd></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.Dataset>\n",
@@ -860,10 +860,10 @@
    "execution_count": 3,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:16:40.944620Z",
-     "iopub.status.busy": "2021-02-17T22:16:40.943609Z",
-     "iopub.status.idle": "2021-02-17T22:16:40.948523Z",
-     "shell.execute_reply": "2021-02-17T22:16:40.947873Z"
+     "iopub.execute_input": "2021-02-18T23:16:09.354269Z",
+     "iopub.status.busy": "2021-02-18T23:16:09.353596Z",
+     "iopub.status.idle": "2021-02-18T23:16:09.357360Z",
+     "shell.execute_reply": "2021-02-18T23:16:09.358040Z"
     }
    },
    "outputs": [
@@ -895,17 +895,17 @@
    "execution_count": 4,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:16:40.957344Z",
-     "iopub.status.busy": "2021-02-17T22:16:40.956380Z",
-     "iopub.status.idle": "2021-02-17T22:16:42.357983Z",
-     "shell.execute_reply": "2021-02-17T22:16:42.358636Z"
+     "iopub.execute_input": "2021-02-18T23:16:09.365661Z",
+     "iopub.status.busy": "2021-02-18T23:16:09.365111Z",
+     "iopub.status.idle": "2021-02-18T23:16:10.785175Z",
+     "shell.execute_reply": "2021-02-18T23:16:10.784566Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7ffb039b58b0>"
+       "<matplotlib.collections.QuadMesh at 0x7f37629ea100>"
       ]
      },
      "execution_count": 1,
@@ -941,10 +941,10 @@
    "execution_count": 5,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:16:42.365099Z",
-     "iopub.status.busy": "2021-02-17T22:16:42.363963Z",
-     "iopub.status.idle": "2021-02-17T22:18:11.410837Z",
-     "shell.execute_reply": "2021-02-17T22:18:11.410092Z"
+     "iopub.execute_input": "2021-02-18T23:16:10.789955Z",
+     "iopub.status.busy": "2021-02-18T23:16:10.789335Z",
+     "iopub.status.idle": "2021-02-18T23:18:32.734320Z",
+     "shell.execute_reply": "2021-02-18T23:18:32.733391Z"
     }
    },
    "outputs": [],
@@ -961,17 +961,17 @@
    "execution_count": 6,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:18:11.417319Z",
-     "iopub.status.busy": "2021-02-17T22:18:11.416299Z",
-     "iopub.status.idle": "2021-02-17T22:18:11.730168Z",
-     "shell.execute_reply": "2021-02-17T22:18:11.730871Z"
+     "iopub.execute_input": "2021-02-18T23:18:32.740326Z",
+     "iopub.status.busy": "2021-02-18T23:18:32.738904Z",
+     "iopub.status.idle": "2021-02-18T23:18:33.028052Z",
+     "shell.execute_reply": "2021-02-18T23:18:33.028731Z"
     }
    },
    "outputs": [
     {
      "data": {
       "application/vnd.jupyter.widget-view+json": {
-       "model_id": "5b778e8c87e4474a82b011f588debeec",
+       "model_id": "1725d65c06c14bc5ab1ce2ea5c3c7df0",
        "version_major": 2,
        "version_minor": 0
       },
@@ -1009,10 +1009,10 @@
    "execution_count": 7,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:18:11.760835Z",
-     "iopub.status.busy": "2021-02-17T22:18:11.760141Z",
-     "iopub.status.idle": "2021-02-17T22:18:11.765687Z",
-     "shell.execute_reply": "2021-02-17T22:18:11.764847Z"
+     "iopub.execute_input": "2021-02-18T23:18:33.044708Z",
+     "iopub.status.busy": "2021-02-18T23:18:33.044094Z",
+     "iopub.status.idle": "2021-02-18T23:18:33.047323Z",
+     "shell.execute_reply": "2021-02-18T23:18:33.046696Z"
     }
    },
    "outputs": [],
@@ -1036,10 +1036,10 @@
    "execution_count": 8,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:18:11.774620Z",
-     "iopub.status.busy": "2021-02-17T22:18:11.773788Z",
-     "iopub.status.idle": "2021-02-17T22:18:11.781041Z",
-     "shell.execute_reply": "2021-02-17T22:18:11.779903Z"
+     "iopub.execute_input": "2021-02-18T23:18:33.054435Z",
+     "iopub.status.busy": "2021-02-18T23:18:33.053570Z",
+     "iopub.status.idle": "2021-02-18T23:18:33.058461Z",
+     "shell.execute_reply": "2021-02-18T23:18:33.057981Z"
     }
    },
    "outputs": [
@@ -1398,7 +1398,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-07375c49-736d-4cee-8008-e17b423ebcf7' class='xr-array-in' type='checkbox' checked><label for='section-07375c49-736d-4cee-8008-e17b423ebcf7' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
+       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-f0cfb2fd-8c30-4665-ab69-7056ab3d8ec6' class='xr-array-in' type='checkbox' checked><label for='section-f0cfb2fd-8c30-4665-ab69-7056ab3d8ec6' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -1417,7 +1417,7 @@
        "\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></div></li><li class='xr-section-item'><input id='section-88327a46-5504-43dd-8391-8709ce9460a9' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-88327a46-5504-43dd-8391-8709ce9460a9' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-90b61e1b-b00d-470c-bc29-fb2fd6635b9c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-90b61e1b-b00d-470c-bc29-fb2fd6635b9c' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "</table></div></div></li><li class='xr-section-item'><input id='section-043565f3-5fcb-4c2d-a0e9-08ee84bda984' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-043565f3-5fcb-4c2d-a0e9-08ee84bda984' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-b6e03b9f-94c3-4a1e-bee8-90c1a250e19f' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-b6e03b9f-94c3-4a1e-bee8-90c1a250e19f' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1445,10 +1445,10 @@
    "execution_count": 9,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:18:11.789122Z",
-     "iopub.status.busy": "2021-02-17T22:18:11.788038Z",
-     "iopub.status.idle": "2021-02-17T22:18:11.795992Z",
-     "shell.execute_reply": "2021-02-17T22:18:11.797206Z"
+     "iopub.execute_input": "2021-02-18T23:18:33.064569Z",
+     "iopub.status.busy": "2021-02-18T23:18:33.063938Z",
+     "iopub.status.idle": "2021-02-18T23:18:33.069186Z",
+     "shell.execute_reply": "2021-02-18T23:18:33.068647Z"
     }
    },
    "outputs": [
@@ -1807,7 +1807,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-190c942e-2498-4b50-a974-f176b9d31679' class='xr-array-in' type='checkbox' checked><label for='section-190c942e-2498-4b50-a974-f176b9d31679' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
+       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-565dd4a0-bd9f-4bef-b0d8-109b9ac04079' class='xr-array-in' type='checkbox' checked><label for='section-565dd4a0-bd9f-4bef-b0d8-109b9ac04079' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -1826,7 +1826,7 @@
        "\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></div></li><li class='xr-section-item'><input id='section-585afb9f-da66-4c54-8051-347a7185a6a8' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-585afb9f-da66-4c54-8051-347a7185a6a8' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-27017739-5db8-4ac0-96e1-eff646247827' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-27017739-5db8-4ac0-96e1-eff646247827' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "</table></div></div></li><li class='xr-section-item'><input id='section-5cb35031-99d3-4466-9117-57d791076100' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5cb35031-99d3-4466-9117-57d791076100' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-c7282f73-07dd-484b-8237-4a1f01358320' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c7282f73-07dd-484b-8237-4a1f01358320' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1855,10 +1855,10 @@
    "execution_count": 10,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:18:11.819731Z",
-     "iopub.status.busy": "2021-02-17T22:18:11.818603Z",
-     "iopub.status.idle": "2021-02-17T22:20:12.414432Z",
-     "shell.execute_reply": "2021-02-17T22:20:12.413783Z"
+     "iopub.execute_input": "2021-02-18T23:18:33.088223Z",
+     "iopub.status.busy": "2021-02-18T23:18:33.087579Z",
+     "iopub.status.idle": "2021-02-18T23:20:56.237234Z",
+     "shell.execute_reply": "2021-02-18T23:20:56.237673Z"
     }
    },
    "outputs": [
@@ -1866,8 +1866,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 159 ms, sys: 24.6 ms, total: 183 ms\n",
-      "Wall time: 2min\n"
+      "CPU times: user 127 ms, sys: 28.5 ms, total: 156 ms\n",
+      "Wall time: 2min 23s\n"
      ]
     },
     {
@@ -2225,7 +2225,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-6097dc71-b91e-4ee8-8251-fee8b3ffbc0f' class='xr-array-in' type='checkbox' checked><label for='section-6097dc71-b91e-4ee8-8251-fee8b3ffbc0f' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-69d92f9c-b9f2-4bd7-9400-f4929c382515' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-69d92f9c-b9f2-4bd7-9400-f4929c382515' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-f066dd68-07c3-4aa9-bf94-b7091b646824' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f066dd68-07c3-4aa9-bf94-b7091b646824' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-8c50f6c2-3dc3-460e-9bac-ba96a825245c' class='xr-array-in' type='checkbox' checked><label for='section-8c50f6c2-3dc3-460e-9bac-ba96a825245c' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-14d8cfea-3816-4de3-a7d5-cb6b9aaf56fd' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-14d8cfea-3816-4de3-a7d5-cb6b9aaf56fd' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-48a47f68-3e8f-448c-86f7-4fce3ac79868' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-48a47f68-3e8f-448c-86f7-4fce3ac79868' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -2254,10 +2254,10 @@
    "execution_count": 11,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:20:12.422302Z",
-     "iopub.status.busy": "2021-02-17T22:20:12.421623Z",
-     "iopub.status.idle": "2021-02-17T22:20:12.427670Z",
-     "shell.execute_reply": "2021-02-17T22:20:12.427115Z"
+     "iopub.execute_input": "2021-02-18T23:20:56.244726Z",
+     "iopub.status.busy": "2021-02-18T23:20:56.244194Z",
+     "iopub.status.idle": "2021-02-18T23:20:56.250317Z",
+     "shell.execute_reply": "2021-02-18T23:20:56.249601Z"
     }
    },
    "outputs": [
@@ -2265,8 +2265,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 119 µs, sys: 25 µs, total: 144 µs\n",
-      "Wall time: 150 µs\n"
+      "CPU times: user 92 µs, sys: 20 µs, total: 112 µs\n",
+      "Wall time: 118 µs\n"
      ]
     },
     {
@@ -2624,7 +2624,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-93047a97-f3ce-45a5-9f1c-a1c48746f124' class='xr-array-in' type='checkbox' checked><label for='section-93047a97-f3ce-45a5-9f1c-a1c48746f124' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-4dc42380-8430-48ea-8a87-b08defc890ba' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-4dc42380-8430-48ea-8a87-b08defc890ba' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-bd811aea-ce33-4ab4-8393-a41796c2960e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-bd811aea-ce33-4ab4-8393-a41796c2960e' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-84c4e69e-5524-42e0-8886-e8682df17d38' class='xr-array-in' type='checkbox' checked><label for='section-84c4e69e-5524-42e0-8886-e8682df17d38' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-d5ab3121-c7a5-4768-83ea-f3e029f1a3bd' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-d5ab3121-c7a5-4768-83ea-f3e029f1a3bd' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-fbcbb387-7f0b-4a2e-9feb-b9d99a1370f4' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-fbcbb387-7f0b-4a2e-9feb-b9d99a1370f4' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -2653,10 +2653,10 @@
    "execution_count": 12,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:20:12.460329Z",
-     "iopub.status.busy": "2021-02-17T22:20:12.458844Z",
-     "iopub.status.idle": "2021-02-17T22:20:13.901731Z",
-     "shell.execute_reply": "2021-02-17T22:20:13.900783Z"
+     "iopub.execute_input": "2021-02-18T23:20:56.270941Z",
+     "iopub.status.busy": "2021-02-18T23:20:56.270328Z",
+     "iopub.status.idle": "2021-02-18T23:20:57.798754Z",
+     "shell.execute_reply": "2021-02-18T23:20:57.799250Z"
     }
    },
    "outputs": [
@@ -2664,8 +2664,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 35.3 ms, sys: 1.18 ms, total: 36.4 ms\n",
-      "Wall time: 1.46 s\n"
+      "CPU times: user 20.5 ms, sys: 2.07 ms, total: 22.5 ms\n",
+      "Wall time: 1.54 s\n"
      ]
     },
     {
@@ -3023,7 +3023,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;thickness&#x27; ()&gt;\n",
-       "array(1916.2861, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'thickness'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-6f4d355f-ce4a-47e0-af84-b5b2ad9b26e6' class='xr-array-in' type='checkbox' checked><label for='section-6f4d355f-ce4a-47e0-af84-b5b2ad9b26e6' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.916e+03</span></div><div class='xr-array-data'><pre>array(1916.2861, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-896887ff-c3b4-4aa1-ac23-c573bfc0cffd' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-896887ff-c3b4-4aa1-ac23-c573bfc0cffd' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-e492abea-955a-431c-9294-a45e5522ba1c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e492abea-955a-431c-9294-a45e5522ba1c' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(1916.2861, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'thickness'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-45c2c5f9-a621-46a6-9332-4b2f1acfdf9b' class='xr-array-in' type='checkbox' checked><label for='section-45c2c5f9-a621-46a6-9332-4b2f1acfdf9b' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.916e+03</span></div><div class='xr-array-data'><pre>array(1916.2861, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-f35a0a50-d986-4f4e-aea2-c59fd39600e7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f35a0a50-d986-4f4e-aea2-c59fd39600e7' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-2664339b-1395-4eac-bac9-837f876dffa9' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-2664339b-1395-4eac-bac9-837f876dffa9' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray 'thickness' ()>\n",
@@ -3061,17 +3061,17 @@
    "execution_count": 13,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:20:13.922601Z",
-     "iopub.status.busy": "2021-02-17T22:20:13.918204Z",
-     "iopub.status.idle": "2021-02-17T22:20:16.641064Z",
-     "shell.execute_reply": "2021-02-17T22:20:16.640505Z"
+     "iopub.execute_input": "2021-02-18T23:20:57.824796Z",
+     "iopub.status.busy": "2021-02-18T23:20:57.813604Z",
+     "iopub.status.idle": "2021-02-18T23:21:00.529759Z",
+     "shell.execute_reply": "2021-02-18T23:21:00.529071Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7ffb002e8940>"
+       "<matplotlib.collections.QuadMesh at 0x7f3762869b20>"
       ]
      },
      "execution_count": 1,
@@ -3100,17 +3100,17 @@
    "execution_count": 14,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:20:16.661954Z",
-     "iopub.status.busy": "2021-02-17T22:20:16.649633Z",
-     "iopub.status.idle": "2021-02-17T22:20:18.188956Z",
-     "shell.execute_reply": "2021-02-17T22:20:18.187944Z"
+     "iopub.execute_input": "2021-02-18T23:21:00.556612Z",
+     "iopub.status.busy": "2021-02-18T23:21:00.555777Z",
+     "iopub.status.idle": "2021-02-18T23:21:02.153175Z",
+     "shell.execute_reply": "2021-02-18T23:21:02.152525Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7ffb61ddcb20>"
+       "<matplotlib.collections.QuadMesh at 0x7f376024d8e0>"
       ]
      },
      "execution_count": 1,
@@ -3139,17 +3139,17 @@
    "execution_count": 15,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-02-17T22:20:18.200993Z",
-     "iopub.status.busy": "2021-02-17T22:20:18.197903Z",
-     "iopub.status.idle": "2021-02-17T22:20:22.039669Z",
-     "shell.execute_reply": "2021-02-17T22:20:22.038880Z"
+     "iopub.execute_input": "2021-02-18T23:21:02.162599Z",
+     "iopub.status.busy": "2021-02-18T23:21:02.158366Z",
+     "iopub.status.idle": "2021-02-18T23:21:05.933856Z",
+     "shell.execute_reply": "2021-02-18T23:21:05.933257Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7ffb001e6820>"
+       "<matplotlib.collections.QuadMesh at 0x7f376022b9d0>"
       ]
      },
      "execution_count": 1,
@@ -3196,75 +3196,7 @@
   "widgets": {
    "application/vnd.jupyter.widget-state+json": {
     "state": {
-     "0232db7f48b74851a8f817f45dce47d8": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "AccordionModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "AccordionModel",
-       "_titles": {
-        "0": "Manual Scaling",
-        "1": "Adaptive Scaling"
-       },
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "AccordionView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_0ea6e449cd8e4dc48a6a6aa5f9bb5ea6",
-        "IPY_MODEL_5e7315793c1c4f6ba70c26dc21ec35f7"
-       ],
-       "layout": "IPY_MODEL_af77ac57f59446498483cc930624212a",
-       "selected_index": null
-      }
-     },
-     "072d3971d3dd45b6b5dce4708f9eed1a": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_tooltip": null,
-       "layout": "IPY_MODEL_96fc6c6bc8a44a7e84f6b2a4df7dab53",
-       "placeholder": "​",
-       "style": "IPY_MODEL_6abddd001c944af3981de89ae418883e",
-       "value": "\n<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table style=\"text-align: right;\">\n    <tr><th>Workers</th> <td>4</td></tr>\n    <tr><th>Cores</th> <td>8</td></tr>\n    <tr><th>Memory</th> <td>17.18 GB</td></tr>\n</table>\n</div>\n"
-      }
-     },
-     "0ea6e449cd8e4dc48a6a6aa5f9bb5ea6": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_16f231ce9ccd4fc09e3b90169d606ee0",
-        "IPY_MODEL_78f278ee26304e018cc6b55e0c0bf958"
-       ],
-       "layout": "IPY_MODEL_9d03ca733b264703a8eb742216be3490"
-      }
-     },
-     "14416840f9534cad8f48d0e0412cdd2f": {
+     "0142cf6007db4df3802dc7a022e07e69": {
       "model_module": "@jupyter-widgets/base",
       "model_module_version": "1.2.0",
       "model_name": "LayoutModel",
@@ -3316,75 +3248,7 @@
        "width": null
       }
      },
-     "16f231ce9ccd4fc09e3b90169d606ee0": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "IntTextModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "IntTextModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "IntTextView",
-       "continuous_update": false,
-       "description": "Workers",
-       "description_tooltip": null,
-       "disabled": false,
-       "layout": "IPY_MODEL_b6d068fc1f184bf8933ff6c5886482bd",
-       "step": 1,
-       "style": "IPY_MODEL_9bcf92e1401549a895625112165b68c3",
-       "value": 0
-      }
-     },
-     "25f12bbea2dd49c3be0913c899d0c0c1": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "ButtonModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "ButtonModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "ButtonView",
-       "button_style": "",
-       "description": "Adapt",
-       "disabled": false,
-       "icon": "",
-       "layout": "IPY_MODEL_b6d068fc1f184bf8933ff6c5886482bd",
-       "style": "IPY_MODEL_af841dacba0d48ffa3d2190a6215a562",
-       "tooltip": ""
-      }
-     },
-     "39e9b06e03904c38a027f443d1d9f00e": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "IntTextModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "IntTextModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "IntTextView",
-       "continuous_update": false,
-       "description": "Minimum",
-       "description_tooltip": null,
-       "disabled": false,
-       "layout": "IPY_MODEL_b6d068fc1f184bf8933ff6c5886482bd",
-       "step": 1,
-       "style": "IPY_MODEL_f7f4ecd8fb1f4e509c3d61b071cbe58c",
-       "value": 0
-      }
-     },
-     "3d6d654665504449accbf4236690c328": {
+     "0d70736025d541c4b6df535fc640a934": {
       "model_module": "@jupyter-widgets/controls",
       "model_module_version": "1.5.0",
       "model_name": "DescriptionStyleModel",
@@ -3399,28 +3263,7 @@
        "description_width": ""
       }
      },
-     "482ef1312494451b86a88040276473da": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_tooltip": null,
-       "layout": "IPY_MODEL_14416840f9534cad8f48d0e0412cdd2f",
-       "placeholder": "​",
-       "style": "IPY_MODEL_3d6d654665504449accbf4236690c328",
-       "value": "<h2>GatewayCluster</h2>"
-      }
-     },
-     "4e21e2106f17407fb3e8b9f95c6a5990": {
+     "105ae0fc6bc746a0b721a8083a8087a6": {
       "model_module": "@jupyter-widgets/base",
       "model_module_version": "1.2.0",
       "model_name": "LayoutModel",
@@ -3472,59 +3315,7 @@
        "width": null
       }
      },
-     "53debbb4ecc24462a4ef4ca6d5abe10d": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "5b778e8c87e4474a82b011f588debeec": {
+     "1725d65c06c14bc5ab1ce2ea5c3c7df0": {
       "model_module": "@jupyter-widgets/controls",
       "model_module_version": "1.5.0",
       "model_name": "VBoxModel",
@@ -3539,400 +3330,15 @@
        "_view_name": "VBoxView",
        "box_style": "",
        "children": [
-        "IPY_MODEL_482ef1312494451b86a88040276473da",
-        "IPY_MODEL_abdab9a2ee8145f0abed8a6cc83483ce",
-        "IPY_MODEL_af5fdf555d0f4d09aba431f24a3c4b14",
-        "IPY_MODEL_bac1c779d66d4abe914fd4b2f97003e8"
+        "IPY_MODEL_9646559958444a6c9b1a91d1ecb85971",
+        "IPY_MODEL_e89599fe701c4c9fa1fc0d57c73b61b1",
+        "IPY_MODEL_504ec86c74804d22ac38840ee823c4a0",
+        "IPY_MODEL_e6b039a9762643ada2e023854d7c7716"
        ],
-       "layout": "IPY_MODEL_f65003568ca64c39bf4d26498e0372dc"
+       "layout": "IPY_MODEL_38110ae6cd8b410eb4ad13e6a145e2f9"
       }
      },
-     "5e7315793c1c4f6ba70c26dc21ec35f7": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_39e9b06e03904c38a027f443d1d9f00e",
-        "IPY_MODEL_d8020c24991742fdbcc524d6cde20891",
-        "IPY_MODEL_25f12bbea2dd49c3be0913c899d0c0c1"
-       ],
-       "layout": "IPY_MODEL_4e21e2106f17407fb3e8b9f95c6a5990"
-      }
-     },
-     "6aac01e5b3da4a08874e6ff52ac0de84": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "6abddd001c944af3981de89ae418883e": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "78f278ee26304e018cc6b55e0c0bf958": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "ButtonModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "ButtonModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "ButtonView",
-       "button_style": "",
-       "description": "Scale",
-       "disabled": false,
-       "icon": "",
-       "layout": "IPY_MODEL_b6d068fc1f184bf8933ff6c5886482bd",
-       "style": "IPY_MODEL_ffd3217d5b384389b9f6a78e2bc53c91",
-       "tooltip": ""
-      }
-     },
-     "96fc6c6bc8a44a7e84f6b2a4df7dab53": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": "150px",
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "99112aadc8a047d5a3a1cdb80b07b444": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "9bcf92e1401549a895625112165b68c3": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "9bf9547b1cb0412abd164de07c06e08a": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "9c9f0b76796447e198398c36ec1c9ea9": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "9d03ca733b264703a8eb742216be3490": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "abdab9a2ee8145f0abed8a6cc83483ce": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_072d3971d3dd45b6b5dce4708f9eed1a",
-        "IPY_MODEL_0232db7f48b74851a8f817f45dce47d8"
-       ],
-       "layout": "IPY_MODEL_9c9f0b76796447e198398c36ec1c9ea9"
-      }
-     },
-     "af5fdf555d0f4d09aba431f24a3c4b14": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_tooltip": null,
-       "layout": "IPY_MODEL_53debbb4ecc24462a4ef4ca6d5abe10d",
-       "placeholder": "​",
-       "style": "IPY_MODEL_9bf9547b1cb0412abd164de07c06e08a",
-       "value": "<p><b>Name: </b>prod.17d78c5e5c4b46faa4e4f6cfcf88fbbb</p>"
-      }
-     },
-     "af77ac57f59446498483cc930624212a": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": "500px",
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "af841dacba0d48ffa3d2190a6215a562": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "ButtonStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "ButtonStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "button_color": null,
-       "font_weight": ""
-      }
-     },
-     "b6d068fc1f184bf8933ff6c5886482bd": {
+     "19f639d2d2334c80bb627fe85a485cc4": {
       "model_module": "@jupyter-widgets/base",
       "model_module_version": "1.2.0",
       "model_name": "LayoutModel",
@@ -3984,80 +3390,7 @@
        "width": "150px"
       }
      },
-     "bac1c779d66d4abe914fd4b2f97003e8": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_tooltip": null,
-       "layout": "IPY_MODEL_c9afc23857604d3782da3126c4c81b75",
-       "placeholder": "​",
-       "style": "IPY_MODEL_6aac01e5b3da4a08874e6ff52ac0de84",
-       "value": "<p><b>Dashboard: </b><a href=\"https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.17d78c5e5c4b46faa4e4f6cfcf88fbbb/status\" target=\"_blank\">https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.17d78c5e5c4b46faa4e4f6cfcf88fbbb/status</a></p>\n"
-      }
-     },
-     "c9afc23857604d3782da3126c4c81b75": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "d8020c24991742fdbcc524d6cde20891": {
+     "1f0afb2c94f047cc9070dcaab45d691e": {
       "model_module": "@jupyter-widgets/controls",
       "model_module_version": "1.5.0",
       "model_name": "IntTextModel",
@@ -4074,13 +3407,96 @@
        "description": "Maximum",
        "description_tooltip": null,
        "disabled": false,
-       "layout": "IPY_MODEL_b6d068fc1f184bf8933ff6c5886482bd",
+       "layout": "IPY_MODEL_19f639d2d2334c80bb627fe85a485cc4",
        "step": 1,
-       "style": "IPY_MODEL_99112aadc8a047d5a3a1cdb80b07b444",
+       "style": "IPY_MODEL_87cf5e6cdf6d4752ae910bbe6227632d",
        "value": 0
       }
      },
-     "f65003568ca64c39bf4d26498e0372dc": {
+     "2171f1fcd2964e8cac2ff336eb867076": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "28d89fd1e7cb47d49f949aec3192f65a": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "ButtonStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "ButtonStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "button_color": null,
+       "font_weight": ""
+      }
+     },
+     "29a2b1581b1f4fafa435e90133d789e6": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": "150px",
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "38110ae6cd8b410eb4ad13e6a145e2f9": {
       "model_module": "@jupyter-widgets/base",
       "model_module_version": "1.2.0",
       "model_name": "LayoutModel",
@@ -4132,7 +3548,298 @@
        "width": null
       }
      },
-     "f7f4ecd8fb1f4e509c3d61b071cbe58c": {
+     "396db49db73146c7a97f90245772c744": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": "500px",
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "504ec86c74804d22ac38840ee823c4a0": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HTMLModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HTMLModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HTMLView",
+       "description": "",
+       "description_tooltip": null,
+       "layout": "IPY_MODEL_68c4da28f4b64fc2bddd7281f8b3ff68",
+       "placeholder": "​",
+       "style": "IPY_MODEL_d81681478fe64a05a3f109c9c0964c9e",
+       "value": "<p><b>Name: </b>prod.93bb7f4921a742b9a242d4ec6bb32b2a</p>"
+      }
+     },
+     "529c818331c44333be8012f5ebdf9d49": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HBoxModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HBoxModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HBoxView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_7d26a4ec6d3f4397bada80759b76d4ba",
+        "IPY_MODEL_5797e6607b9a4936bce9974bd64345c5"
+       ],
+       "layout": "IPY_MODEL_105ae0fc6bc746a0b721a8083a8087a6"
+      }
+     },
+     "5797e6607b9a4936bce9974bd64345c5": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "ButtonModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "ButtonModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "ButtonView",
+       "button_style": "",
+       "description": "Scale",
+       "disabled": false,
+       "icon": "",
+       "layout": "IPY_MODEL_19f639d2d2334c80bb627fe85a485cc4",
+       "style": "IPY_MODEL_28d89fd1e7cb47d49f949aec3192f65a",
+       "tooltip": ""
+      }
+     },
+     "68c4da28f4b64fc2bddd7281f8b3ff68": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "6cea1141efe342f090e1e24de96a4c21": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "AccordionModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "AccordionModel",
+       "_titles": {
+        "0": "Manual Scaling",
+        "1": "Adaptive Scaling"
+       },
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "AccordionView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_529c818331c44333be8012f5ebdf9d49",
+        "IPY_MODEL_80e752892a9e43f1a62824999dc2f495"
+       ],
+       "layout": "IPY_MODEL_396db49db73146c7a97f90245772c744",
+       "selected_index": null
+      }
+     },
+     "7d26a4ec6d3f4397bada80759b76d4ba": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "IntTextModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "IntTextModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "IntTextView",
+       "continuous_update": false,
+       "description": "Workers",
+       "description_tooltip": null,
+       "disabled": false,
+       "layout": "IPY_MODEL_19f639d2d2334c80bb627fe85a485cc4",
+       "step": 1,
+       "style": "IPY_MODEL_0d70736025d541c4b6df535fc640a934",
+       "value": 0
+      }
+     },
+     "80e752892a9e43f1a62824999dc2f495": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HBoxModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HBoxModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HBoxView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_ff565b664f6a464283f536df1bfe5a78",
+        "IPY_MODEL_1f0afb2c94f047cc9070dcaab45d691e",
+        "IPY_MODEL_c338161caf3345b3b664196bad63cb7f"
+       ],
+       "layout": "IPY_MODEL_aab2399c85844e7a8716ae0f4b61dbef"
+      }
+     },
+     "87843274772545e3b0d11a59fede70c7": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "87884f17449b4f2b9cbb256ff4691366": {
       "model_module": "@jupyter-widgets/controls",
       "model_module_version": "1.5.0",
       "model_name": "DescriptionStyleModel",
@@ -4147,7 +3854,168 @@
        "description_width": ""
       }
      },
-     "ffd3217d5b384389b9f6a78e2bc53c91": {
+     "87cf5e6cdf6d4752ae910bbe6227632d": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "8d4efe7f437a4a628a75edb7ebe69f7c": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HTMLModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HTMLModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HTMLView",
+       "description": "",
+       "description_tooltip": null,
+       "layout": "IPY_MODEL_29a2b1581b1f4fafa435e90133d789e6",
+       "placeholder": "​",
+       "style": "IPY_MODEL_2171f1fcd2964e8cac2ff336eb867076",
+       "value": "\n<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table style=\"text-align: right;\">\n    <tr><th>Workers</th> <td>4</td></tr>\n    <tr><th>Cores</th> <td>8</td></tr>\n    <tr><th>Memory</th> <td>17.18 GB</td></tr>\n</table>\n</div>\n"
+      }
+     },
+     "91f67c2059c84802b4986ec9c87b6f58": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "937d8659bba94f449a15a3d53f66655e": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "9646559958444a6c9b1a91d1ecb85971": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HTMLModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HTMLModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HTMLView",
+       "description": "",
+       "description_tooltip": null,
+       "layout": "IPY_MODEL_87843274772545e3b0d11a59fede70c7",
+       "placeholder": "​",
+       "style": "IPY_MODEL_937d8659bba94f449a15a3d53f66655e",
+       "value": "<h2>GatewayCluster</h2>"
+      }
+     },
+     "aab2399c85844e7a8716ae0f4b61dbef": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "c338161caf3345b3b664196bad63cb7f": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "ButtonModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "ButtonModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "ButtonView",
+       "button_style": "",
+       "description": "Adapt",
+       "disabled": false,
+       "icon": "",
+       "layout": "IPY_MODEL_19f639d2d2334c80bb627fe85a485cc4",
+       "style": "IPY_MODEL_ca3469ba823748198aaad1af50fd9807",
+       "tooltip": ""
+      }
+     },
+     "ca3469ba823748198aaad1af50fd9807": {
       "model_module": "@jupyter-widgets/controls",
       "model_module_version": "1.5.0",
       "model_name": "ButtonStyleModel",
@@ -4161,6 +4029,138 @@
        "_view_name": "StyleView",
        "button_color": null,
        "font_weight": ""
+      }
+     },
+     "d81681478fe64a05a3f109c9c0964c9e": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "e1d77047fd84457f8bd8b258cbbb29b2": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "e6b039a9762643ada2e023854d7c7716": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HTMLModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HTMLModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HTMLView",
+       "description": "",
+       "description_tooltip": null,
+       "layout": "IPY_MODEL_0142cf6007db4df3802dc7a022e07e69",
+       "placeholder": "​",
+       "style": "IPY_MODEL_91f67c2059c84802b4986ec9c87b6f58",
+       "value": "<p><b>Dashboard: </b><a href=\"https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.93bb7f4921a742b9a242d4ec6bb32b2a/status\" target=\"_blank\">https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.93bb7f4921a742b9a242d4ec6bb32b2a/status</a></p>\n"
+      }
+     },
+     "e89599fe701c4c9fa1fc0d57c73b61b1": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HBoxModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HBoxModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HBoxView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_8d4efe7f437a4a628a75edb7ebe69f7c",
+        "IPY_MODEL_6cea1141efe342f090e1e24de96a4c21"
+       ],
+       "layout": "IPY_MODEL_e1d77047fd84457f8bd8b258cbbb29b2"
+      }
+     },
+     "ff565b664f6a464283f536df1bfe5a78": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "IntTextModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "IntTextModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "IntTextView",
+       "continuous_update": false,
+       "description": "Minimum",
+       "description_tooltip": null,
+       "disabled": false,
+       "layout": "IPY_MODEL_19f639d2d2334c80bb627fe85a485cc4",
+       "step": 1,
+       "style": "IPY_MODEL_87884f17449b4f2b9cbb256ff4691366",
+       "value": 0
       }
      }
     },
