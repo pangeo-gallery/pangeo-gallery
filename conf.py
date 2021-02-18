@@ -34,11 +34,14 @@ import sphinx_pangeo_theme
 extensions = [
     'nbsphinx',
     'sphinx.ext.mathjax',
-    'sphinxcontrib.fulltoc'
+    'sphinxcontrib.fulltoc',
+    'sphinxcontrib.googleanalytics'
 ]
 
 nbsphinx_timeout = 600
 nbsphinx_execute = "never"
+googleanalytics_id = 'UA-262-797-369'    # google analytics property
+
 # not working yet
 # nbsphinx_prolog = """
 # {% set docname = env.doc2path(env.docname, base=None) %}
