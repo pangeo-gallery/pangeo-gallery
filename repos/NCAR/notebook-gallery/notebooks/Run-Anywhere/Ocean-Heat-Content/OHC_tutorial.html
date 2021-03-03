@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -372,8 +372,8 @@ div.rendered_html tbody tr:hover {
 <p>The purpose of this notebook tutorial is to teach Pangeo as a toolbox by starting with a use case (calculating ocean heat content) and teaching the integrated tools necessary along the way.</p>
 <hr class="docutils" />
 </div>
-<div class="section" id="Step-1----Importing-Modules">
-<h2>Step 1 – Importing Modules<a class="headerlink" href="#Step-1----Importing-Modules" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Step-1-–-Importing-Modules">
+<h2>Step 1 – Importing Modules<a class="headerlink" href="#Step-1-–-Importing-Modules" title="Permalink to this headline">¶</a></h2>
 <p>This workflow will utilize the Xarray and Cf_units modules. Read about these here[].</p>
 <p>Modules are <code class="docutils literal notranslate"><span class="pre">.py</span></code> Python files that consist of Python code to be called upon (read: imported) into other Python files or in the command line. A module contains Python classes, functions, or variables to be referenced elsewhere. This allows you to tuck away widely used helper functions, while providing a pointer to where the base code is.</p>
 <p>You can import a whole package, change its name using the <code class="docutils literal notranslate"><span class="pre">as</span></code> code, or import only select functions using <code class="docutils literal notranslate"><span class="pre">from</span></code>.</p>
@@ -389,8 +389,8 @@ div.rendered_html tbody tr:hover {
 </div>
 <hr class="docutils" />
 </div>
-<div class="section" id="Step-2----Using-Dask-to-Distribute-Workflows">
-<h2>Step 2 – Using Dask to Distribute Workflows<a class="headerlink" href="#Step-2----Using-Dask-to-Distribute-Workflows" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Step-2-–-Using-Dask-to-Distribute-Workflows">
+<h2>Step 2 – Using Dask to Distribute Workflows<a class="headerlink" href="#Step-2-–-Using-Dask-to-Distribute-Workflows" title="Permalink to this headline">¶</a></h2>
 <p>The first module we imported is dask.</p>
 <p><strong>What is Dask?</strong> Dask is a package that enables scaling and parallelising for analytical Python. You can read about dask <a class="reference external" href="https://dask.org/">here</a> if you want to learn about more advanced usage. The method used here is a ‘set and forget’ easiest deployment situation.</p>
 <div class="nbinput docutils container">
@@ -439,8 +439,8 @@ div.rendered_html tbody tr:hover {
 </div>
 <hr class="docutils" />
 </div>
-<div class="section" id="Step-3----Reading-in-a-.nc-File-Using-Xarray.open_dataset">
-<h2>Step 3 – Reading in a .nc File Using Xarray.open_dataset<a class="headerlink" href="#Step-3----Reading-in-a-.nc-File-Using-Xarray.open_dataset" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Step-3-–-Reading-in-a-.nc-File-Using-Xarray.open_dataset">
+<h2>Step 3 – Reading in a .nc File Using Xarray.open_dataset<a class="headerlink" href="#Step-3-–-Reading-in-a-.nc-File-Using-Xarray.open_dataset" title="Permalink to this headline">¶</a></h2>
 <p>Pass into <code class="docutils literal notranslate"><span class="pre">xarray.open_dataset</span></code> the relative file path and name, and the chunking.</p>
 <p><strong>What is Xarray?</strong> Xarray is a package that allows for the labeling of dimensions in multi-dimensional datasets. <a class="reference external" href="http://xarray.pydata.org/en/stable/index.html">Here</a> is Xarray’s documentation.</p>
 <p><strong>What is Chunking?</strong> Your dataset may be rather large. It is beneficial to break it up into sections that can be fed to different nodes for parallel computing. The <code class="docutils literal notranslate"><span class="pre">chunking</span></code> keyword allows you to chose how that happens.</p>
@@ -2420,8 +2420,8 @@ Attributes:
 <hr class="docutils" />
 </div>
 </div>
-<div class="section" id="Step-4----Let's-check-units!">
-<h2>Step 4 – Let’s check units!<a class="headerlink" href="#Step-4----Let's-check-units!" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Step-4-–-Let’s-check-units!">
+<h2>Step 4 – Let’s check units!<a class="headerlink" href="#Step-4-–-Let’s-check-units!" title="Permalink to this headline">¶</a></h2>
 <p>In many routines, checking and converting betweeen units is complicated. But in Python we have a great tool <code class="docutils literal notranslate"><span class="pre">cf_units</span></code> that can do this quickly and easily as long as the data is cf-compliant.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
@@ -3279,8 +3279,8 @@ Dimensions without coordinates: bnds</pre><div class='xr-wrap' hidden><div class
 </div>
 </div>
 </div>
-<div class="section" id="Let's-write-a-function">
-<h2>Let’s write a function<a class="headerlink" href="#Let's-write-a-function" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Let’s-write-a-function">
+<h2>Let’s write a function<a class="headerlink" href="#Let’s-write-a-function" title="Permalink to this headline">¶</a></h2>
 <p>This is only took us three lines of code to write, but you may want to check, convert, or assert desired units for every variable in a dataset. Your code will be much easier to read if this process is inside a function which you call up in one line. So let’s write a function for unit conversion!</p>
 <p>Python functions follow the following format of a function that sums two variables.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_variables</span><span class="p">(</span><span class="n">variable1</span><span class="p">,</span> <span class="n">variable2</span><span class="p">):</span>
@@ -3326,9 +3326,9 @@ Dimensions without coordinates: bnds</pre><div class='xr-wrap' hidden><div class
 </div>
 <p>How similar is it to yours?</p>
 <p>Let’s review how to call up a function:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">variable1</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">variable2</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">output_variable</span> <span class="o">=</span> <span class="n">sum_variables</span><span class="p">(</span><span class="n">variable1</span><span class="p">,</span> <span class="n">variable2</span><span class="p">)</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>variable1 = 0
+variable2 = 1
+output_variable = sum_variables(variable1, variable2)
 </pre></div>
 </div>
 <p>If your function outputs more than one variable:</p>
@@ -4313,8 +4313,8 @@ Coordinates:
 <hr class="docutils" />
 </div>
 </div>
-<div class="section" id="Step-4----Selecting-Data-using-Xarray.where">
-<h2>Step 4 – Selecting Data using Xarray.where<a class="headerlink" href="#Step-4----Selecting-Data-using-Xarray.where" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Step-4-–-Selecting-Data-using-Xarray.where">
+<h2>Step 4 – Selecting Data using Xarray.where<a class="headerlink" href="#Step-4-–-Selecting-Data-using-Xarray.where" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have our data, and have made sure the variables are in the correct units - let’s use <code class="docutils literal notranslate"><span class="pre">xarray.DataArray.where</span></code> to filter our data to the depths where we want to integrate ocean heat content. This takes arguments as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">da_filtered_2_conditions</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">other</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">NA</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 </pre></div>
@@ -4932,8 +4932,8 @@ Coordinates:
 <hr class="docutils" />
 </div>
 </div>
-<div class="section" id="Step-5----now-we-can-do-some-math-and-actually-CALCULATE-THE-OCEAN-HEAT-CONTENT!">
-<h2>Step 5 – now we can do some math and actually CALCULATE THE OCEAN HEAT CONTENT!<a class="headerlink" href="#Step-5----now-we-can-do-some-math-and-actually-CALCULATE-THE-OCEAN-HEAT-CONTENT!" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Step-5-–-now-we-can-do-some-math-and-actually-CALCULATE-THE-OCEAN-HEAT-CONTENT!">
+<h2>Step 5 – now we can do some math and actually CALCULATE THE OCEAN HEAT CONTENT!<a class="headerlink" href="#Step-5-–-now-we-can-do-some-math-and-actually-CALCULATE-THE-OCEAN-HEAT-CONTENT!" title="Permalink to this headline">¶</a></h2>
 <p>The formula for this is:</p>
 <div class="math notranslate nohighlight">
 \[H = \rho  C \int_{0}^{z}T(z) dz\]</div>
@@ -6051,8 +6051,8 @@ Coordinates:
 </div>
 </div>
 </div>
-<div class="section" id="Step-6----Selecting-and-Plotting-Data-in-Xarray">
-<h2>Step 6 – Selecting and Plotting Data in Xarray<a class="headerlink" href="#Step-6----Selecting-and-Plotting-Data-in-Xarray" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Step-6-–-Selecting-and-Plotting-Data-in-Xarray">
+<h2>Step 6 – Selecting and Plotting Data in Xarray<a class="headerlink" href="#Step-6-–-Selecting-and-Plotting-Data-in-Xarray" title="Permalink to this headline">¶</a></h2>
 <p>Xarray has built-in plotting functionality called by <code class="docutils literal notranslate"><span class="pre">.plot()</span></code> that will intelligently pick the best plotting method for a DataSet.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:

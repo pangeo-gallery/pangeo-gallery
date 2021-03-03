@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -377,11 +377,11 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="Table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#Table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="#Dask-primer">**Dask primer**</a></p></li>
-<li><p><a class="reference external" href="#Dask-Clusters">**Dask clusters**</a></p></li>
-<li><p><a class="reference external" href="#Dask-Dataframe">**Dask dataframe**</a></p></li>
-<li><p><a class="reference external" href="#Dask-Arrays">**Dask arrays**</a></p></li>
-<li><p><a class="reference external" href="#Dask-Delayed">**Dask delayed**</a></p></li>
+<li><p><a class="reference external" href="#Dask-primer">Dask primer</a></p></li>
+<li><p><a class="reference external" href="#Dask-Clusters">Dask clusters</a></p></li>
+<li><p><a class="reference external" href="#Dask-Dataframe">Dask dataframe</a></p></li>
+<li><p><a class="reference external" href="#Dask-Arrays">Dask arrays</a></p></li>
+<li><p><a class="reference external" href="#Dask-Delayed">Dask delayed</a></p></li>
 </ol>
 <div class="section" id="Dask-Primer">
 <h3>Dask Primer<a class="headerlink" href="#Dask-Primer" title="Permalink to this headline">¶</a></h3>
@@ -951,7 +951,7 @@ array([[1., 1., 1., ..., 1., 1., 1.],
 </div>
 <p>This works, but we didn’t tell dask how to split up the array, so it is not optimized for distributed computation.</p>
 <p>A crucal difference with dask is that we must specify the <code class="docutils literal notranslate"><span class="pre">chunks</span></code> argument. “Chunks” describes how the array is split up over many sub-arrays.</p>
-<p><img alt="Dask Arrays" src="http://dask.pydata.org/en/latest/_images/dask-array-black-text.svg" /> <em>source: `Dask Array Documentation &lt;http://dask.pydata.org/en/latest/array-overview.html&gt;`__</em></p>
+<p><img alt="Dask Arrays" src="http://dask.pydata.org/en/latest/_images/dask-array-black-text.svg" /> <em>source:</em><a class="reference external" href="http://dask.pydata.org/en/latest/array-overview.html">Dask Array Documentation</a></p>
 <p>There are <a class="reference external" href="http://dask.pydata.org/en/latest/array-creation.html#chunks">several ways to specify chunks</a>. In this lecture, we will use a block shape.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:

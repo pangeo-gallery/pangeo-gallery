@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -61,7 +61,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../index.html">Gallery for CESM LENS on AWS</a></li>
         
-          <li class="breadcrumb-item active"><a href="#">Reproducing Key Figures from Kay et al. (2015) Paper</a></li>
+          <li class="breadcrumb-item active"><a href="#">Reproducing Key Figures from Kay et al. (2015) Paper</a></li>
         
         </ol>
       </nav>
@@ -90,7 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributor Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Gallery for CESM LENS on AWS</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="EnhancedIntakeCatalogDemo.html">Enhanced Intake-ESM Catalog Demo</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Reproducing Key Figures from Kay et al. (2015) Paper</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Reproducing Key Figures from Kay et al. (2015) Paper</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../notebook-gallery/index.html">NCAR Gallery</a></li>
@@ -358,11 +358,11 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Reproducing-Key-Figures-from-Kay-et-al.-(2015)-Paper">
-<h1>Reproducing Key Figures from Kay et al. (2015) Paper<a class="headerlink" href="#Reproducing-Key-Figures-from-Kay-et-al.-(2015)-Paper" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Reproducing-Key-Figures-from-Kay-et-al. (2015)-Paper">
+<h1>Reproducing Key Figures from Kay et al. (2015) Paper<a class="headerlink" href="#Reproducing-Key-Figures-from-Kay-et-al. (2015)-Paper" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="Introduction">
 <h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
-<p>This Jupyter Notebook demonstrates how one might use the NCAR Community Earth System Model (CESM) Large Ensemble (LENS) data hosted on AWS S3 (<a class="reference external" href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a>). The notebook shows how to reproduce figures 2 and 4 from the Kay et al. (2015) paper describing the CESM LENS dataset (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>)</p>
+<p>This Jupyter Notebook demonstrates how one might use the NCAR Community Earth System Model (CESM) Large Ensemble (LENS) data hosted on AWS S3 (<a class="reference external" href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a>). The notebook shows how to reproduce figures 2 and 4 from the Kay et al. (2015) paper describing the CESM LENS dataset (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>)</p>
 <p>This resource is intended to be helpful for people not familiar with elements of the <a class="reference external" href="https://pangeo.io">Pangeo</a> framework including Jupyter Notebooks, <a class="reference external" href="http://xarray.pydata.org/">Xarray</a>, and <a class="reference external" href="https://zarr.readthedocs.io/">Zarr</a> data format, or with the original paper, so it includes additional explanation.</p>
 </div>
 <div class="section" id="Set-up-environment">
@@ -706,8 +706,8 @@ div.rendered_html tbody tr:hover {
 </pre></div></div>
 </div>
 </div>
-<div class="section" id="Extract-data-needed-to-construct-Figure-2-of-Kay-et-al.-paper">
-<h2>Extract data needed to construct Figure 2 of Kay et al. paper<a class="headerlink" href="#Extract-data-needed-to-construct-Figure-2-of-Kay-et-al.-paper" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Extract-data-needed-to-construct-Figure-2-of-Kay-et-al. paper">
+<h2>Extract data needed to construct Figure 2 of Kay et al. paper<a class="headerlink" href="#Extract-data-needed-to-construct-Figure-2-of-Kay-et-al. paper" title="Permalink to this headline">¶</a></h2>
 <p>Search the catalog to find the desired data, in this case the reference height temperature of the atmosphere, at daily time resolution, for the Historical, 20th Century, and RCP8.5 (IPCC Representative Concentration Pathway 8.5) experiments</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
@@ -3916,8 +3916,8 @@ Wall time: 1min 18s
 </div></div>
 </div>
 </div>
-<div class="section" id="Get-observations-for-figure-2-(HadCRUT4;-Morice-et-al.-2012)">
-<h2>Get observations for figure 2 (HadCRUT4; Morice et al. 2012)<a class="headerlink" href="#Get-observations-for-figure-2-(HadCRUT4;-Morice-et-al.-2012)" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Get-observations-for-figure-2-(HadCRUT4;-Morice-et-al. 2012)">
+<h2>Get observations for figure 2 (HadCRUT4; Morice et al. 2012)<a class="headerlink" href="#Get-observations-for-figure-2-(HadCRUT4;-Morice-et-al. 2012)" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
@@ -4524,7 +4524,7 @@ Freq: AS-JAN, dtype: float64
 <img alt="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_38_0.png" src="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_38_0.png" />
 </div>
 </div>
-<p>Figure will appear above when ready. Compare with Fig.2 of Kay et al. 2015 (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>)</p>
+<p>Figure will appear above when ready. Compare with Fig.2 of Kay et al. 2015 (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>)</p>
 <p><img alt="figure-2" src="repos/NCAR/cesm-lens-aws/notebooks/images/bams-d-13-00255_1-f2.jpeg" /></p>
 </div>
 <div class="section" id="Compute-linear-trend-for-winter-seasons">
@@ -6492,7 +6492,7 @@ Data variables:
 <img alt="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_56_0.png" src="../../../../_images/repos_NCAR_cesm-lens-aws_notebooks_kay-et-al-2015.v3_56_0.png" />
 </div>
 </div>
-<p>Figure will appear above when ready. Compare with Fig. 4 of Kay et al. 2015 (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>).</p>
+<p>Figure will appear above when ready. Compare with Fig. 4 of Kay et al. 2015 (<a class="reference external" href="https://doi.org/10.1175/BAMS-D-13-00255.1">doi:10.1175/BAMS-D-13-00255.1</a>).</p>
 <p><img alt="image0" src="repos/NCAR/cesm-lens-aws/notebooks/images/bams-d-13-00255_1-f4.png" /></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:

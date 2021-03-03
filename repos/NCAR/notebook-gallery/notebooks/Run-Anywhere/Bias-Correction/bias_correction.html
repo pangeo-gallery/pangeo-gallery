@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -1897,26 +1897,31 @@ Wed Aug 28 18:42:26 MDT 2019: updated for CF-compliance</dd><dt><span>NCO :</spa
 </div>
 <blockquote>
 <div><div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\overline{x} = \sum_{i=0}^N \frac{x_i}{N}\\and standard deviation\end{aligned}\end{align} \]</div>
+\[\overline{x} = \sum_{i=0}^N \frac{x_i}{N}\]</div>
+<p>and standard deviation</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\sigma = \sqrt{\frac{\sum_{i=0}^N |x_i - \overline{x}|^2}{N-1}}\\of target (measured) data and training (historical modeled) data.\end{aligned}\end{align} \]</div>
+\[\sigma = \sqrt{\frac{\sum_{i=0}^N |x_i - \overline{x}|^2}{N-1}}\]</div>
+<p>of target (measured) data and training (historical modeled) data.</p>
 </div></blockquote>
 </li>
 <li><p>Compares the difference between the statistical values to produce a shift</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}shift = \overline{x_{target}} - \overline{x_{training}}\\and scale parameter\end{aligned}\end{align} \]</div>
+\[shift = \overline{x_{target}} - \overline{x_{training}}\]</div>
+<p>and scale parameter</p>
 <div class="math notranslate nohighlight">
 \[scale = \sigma_{target} \div \sigma_{training}\]</div>
 </li>
 <li><p>Applies these paramaters to the future model data to be corrected to get a new mean</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\overline{x_{corrected}} = \overline{x_{future}} + shift\\and new standard deviation\end{aligned}\end{align} \]</div>
+\[\overline{x_{corrected}} = \overline{x_{future}} + shift\]</div>
+<p>and new standard deviation</p>
 <div class="math notranslate nohighlight">
 \[\sigma_{corrected} = \sigma_{future} \times scale\]</div>
 </li>
 <li><p>Calculates the corrected values</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}x_{corrected_{i}} = z_i \times \sigma_{corrected} + \overline{x_{corrected}}\\from the future model's z-score values\end{aligned}\end{align} \]</div>
+\[x_{corrected_{i}} = z_i \times \sigma_{corrected} + \overline{x_{corrected}}\]</div>
+<p>from the future model’s z-score values</p>
 <div class="math notranslate nohighlight">
 \[z_i = \frac{x_i-\overline{x}}{\sigma}\]</div>
 </li>

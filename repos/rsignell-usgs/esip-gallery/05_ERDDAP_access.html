@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -364,12 +364,11 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="ERDDAP-Access">
 <h1>ERDDAP Access<a class="headerlink" href="#ERDDAP-Access" title="Permalink to this headline">¶</a></h1>
 <p>Find OOI and IOOS salinity data in a specified time interval and bounding box using the ERDDAP advanced search and data access RESTful APIs</p>
-<p><em>Note: This Jupyter notebook originated from `an ERDDAPY notebook from the IOOS gallery &lt;https://ioos.github.io/notebooks_demos/notebooks/2018-03-01-erddapy&gt;`__</em></p>
-<p><a class="reference external" href="https://coastwatch.pfeg.noaa.gov/erddapinfo/">ERDDAP</a> is a data server that gives you a simple, consistent way to download data in the format and the spatial and temporal coverage that you want. ERDDAP is a web application with an interface for people to use. It is also a RESTful web service that allows data access directly from any computer program (e.g. Matlab, R, or webpages).”</p>
+<p><em>Note: This Jupyter notebook originated from</em><a class="reference external" href="https://ioos.github.io/notebooks_demos/notebooks/2018-03-01-erddapy">an ERDDAPY notebook from the IOOS gallery</a></p>
+<p><a class="reference external" href="https://coastwatch.pfeg.noaa.gov/erddapinfo/">ERDDAP</a> is a data server that gives you a simple, consistent way to download data in the format and the spatial and temporal coverage that you want. ERDDAP is a web application with an interface for people to use. It is also a RESTful web service that allows data access directly from any computer program (e.g. Matlab, R, or webpages).”</p>
 <p>This notebook uses the python client <a class="reference external" href="https://pyoceans.github.io/erddapy">erddapy</a> to help construct the RESTful URLs and translate the responses into Pandas and Xarray objects.</p>
 <p>A typical ERDDAP RESTful URL looks like:</p>
-<p><a class="reference external" href="https://data.ioos.us/gliders/erddap/tabledap/whoi_406-20160902T1700.mat?depth,latitude,longitude,salinity,temperature,time&amp;time%3E=2016-07-10T00:00:00Z&amp;time%3C=2017-02-10T00:00:00Z&amp;latitude%3E=38.0&amp;latitude%3C=41.0&amp;longitude%3E=-72.0&amp;longitude%3C=-69.0">https://data.ioos.us/gliders/erddap/tabledap/whoi_406-20160902T1700.mat?depth,latitude,longitude,salinity,temperature,time&amp;time&gt;=2016-07-10T00:00:00Z&amp;time&lt;=2017-02-10T00:00:00Z
-&amp;latitude&gt;=38.0&amp;latitude&lt;=41.0&amp;longitude&gt;=-72.0&amp;longitude&lt;=-69.0</a></p>
+<p><a class="reference external" href="https://data.ioos.us/gliders/erddap/tabledap/whoi_406-20160902T1700.mat?depth,latitude,longitude,salinity,temperature,time&amp;time%3E=2016-07-10T00:00:00Z&amp;time%3C=2017-02-10T00:00:00Z&amp;latitude%3E=38.0&amp;latitude%3C=41.0&amp;longitude%3E=-72.0&amp;longitude%3C=-69.0">https://data.ioos.us/gliders/erddap/tabledap/whoi_406-20160902T1700.mat?depth,latitude,longitude,salinity,temperature,time&amp;time&gt;=2016-07-10T00:00:00Z&amp;time&lt;=2017-02-10T00:00:00Z &amp;latitude&gt;=38.0&amp;latitude&lt;=41.0&amp;longitude&gt;=-72.0&amp;longitude&lt;=-69.0</a></p>
 <p>Let’s break it down to smaller parts:</p>
 <ul class="simple">
 <li><p><strong>server</strong>: <a class="reference external" href="https://data.ioos.us/gliders/erddap/">https://data.ioos.us/gliders/erddap/</a></p></li>
@@ -1785,8 +1784,8 @@ if (window.Jupyter !== undefined) {
 <div class="output_area rendered_html docutils container">
 <!-- empty output --></div>
 </div>
-<div class="section" id="1.-Search-ERDDAP-&quot;catalog&quot;">
-<h2>1. Search ERDDAP “catalog”<a class="headerlink" href="#1.-Search-ERDDAP-"catalog"" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="1.-Search-ERDDAP-“catalog”">
+<h2>1. Search ERDDAP “catalog”<a class="headerlink" href="#1.-Search-ERDDAP-“catalog”" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>

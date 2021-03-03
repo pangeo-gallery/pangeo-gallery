@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -486,19 +486,19 @@ Attributes:
 </div>
 <div class="section" id="xgcm-grid-definition">
 <h2>xgcm grid definition<a class="headerlink" href="#xgcm-grid-definition" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
+<ul>
 <li><p>The horizontal dimensions are a combination of (xh or xq) and (yh or yq) corresponding to the staggered point. In the vertical z_l refers to the depth of the center of the layer and z_i to the position of the interfaces, such as len(z_i) = len(z_l) +1.</p></li>
 <li><p>the geolon/geolat family are the <strong>TRUE</strong> geographical coordinates and are the longitude/latitude you want to use to plot results. The subscript correspond to the staggered point (c: corner, u: U-point, v: V-point, no subscript: center)</p></li>
-<li><p>the areacello family is the area of the ocean cell at various points with a slightly naming convention (bu: corner, cu: U-point, cv: V-point, no subscript: center). Warning, because of the curvilinear grid:</p></li>
-</ul>
+<li><p>the areacello family is the area of the ocean cell at various points with a slightly naming convention (bu: corner, cu: U-point, cv: V-point, no subscript: center). Warning, because of the curvilinear grid:</p>
 <div class="math notranslate nohighlight">
 \[areacello \neq dxt * dyt\]</div>
-<ul class="simple">
+</li>
 <li><p>the dx/dy family has the following naming convention: dx(Cu: U-point, Cv: V-point, no suffix: center)</p></li>
-<li><p>thkcello is the layer thickness for each cell (variable). volcello is the volume of the cell, such as:</p></li>
-</ul>
+<li><p>thkcello is the layer thickness for each cell (variable). volcello is the volume of the cell, such as:</p>
 <div class="math notranslate nohighlight">
 \[volcello = areacello * thkcello\]</div>
+</li>
+</ul>
 <p>The MOM6 output can be written in Symetric (<strong>len(Xq) = len(Xh) + 1</strong>) or Non-symetric mode (<strong>len(Xq) = len(Xh)</strong>), where X is a notation for both x and y. In Symetric mode, one would define the grid for the global as:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">Grid</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;X&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;xh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;xq&#39;</span><span class="p">},</span>
                         <span class="s1">&#39;Y&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;center&#39;</span><span class="p">:</span> <span class="s1">&#39;yh&#39;</span><span class="p">,</span> <span class="s1">&#39;outer&#39;</span><span class="p">:</span> <span class="s1">&#39;yq&#39;</span><span class="p">},</span>

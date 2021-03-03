@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -364,18 +364,18 @@ div.rendered_html tbody tr:hover {
 <h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
 <p>Many geoscience problems involve analyzing hundreds of Gigabytes (GB), many Terabytes (TB = 100 GB), or even a Petabyte (PB = 1000 TB) of data. For such data volumes, downloading data to personal computers is inefficient. Data-proximate computing, possibly using a parallel computing cluster, is one way to overcome this challenge. With data-proximate computing, a user access a remote computer which is connected tightly to shared, high-performance storage, enabling rapid processing without the
 need for a download step.</p>
-<p><img alt="3155b942ff3f4333bc93dbf31ed09dd5" class="no-scaled-link" src="https://ndownloader.figshare.com/files/22017009/preview/22017009/preview.jpg" style="width: 400px;" /></p>
+<p><img alt="e921f01109464fa7b8bc985bd843bc1b" class="no-scaled-link" src="https://ndownloader.figshare.com/files/22017009/preview/22017009/preview.jpg" style="width: 400px;" /></p>
 <p>Figure from <em>Data Access Modes in Science</em>, by Ryan Abernathey. <a class="reference external" href="http://dx.doi.org/10.6084/M9.FIGSHARE.11987466.V1">http://dx.doi.org/10.6084/M9.FIGSHARE.11987466.V1</a></p>
 <p>The cloud offers many exciting new possibilities for scientific data analysis. It also brings new technical challenges. Many scientific users are accustomed to the environments found on High-Performance Computing (HPC) systems, such as NSF’s XSEDE Computers or NCAR’s Cheyenne system. These systems combine parallel computing with a high-performance shared filesystem, enabling massively parallel data analytics. When shifting workloads to the cloud, one of the biggest challenges is how to store
 data: <em>cloud computing does not easily support large shared filesystems, as commonly found on HPC systems</em>. The preferred way to store data in the cloud is using <em>cloud object storage</em>, such as Amazon S3 or Google Cloud Storage.</p>
-<p><img alt="f743eee136e24cf8aa868da5a3c48b75" class="no-scaled-link" src="https://assets.ubuntu.com/v1/09b510e0-UAS_storage_options.png" style="width: 400px;" /></p>
-<p><em>Image via `Ubuntu Website &lt;https://ubuntu.com/blog/what-are-the-different-types-of-storage-block-object-and-file&gt;`__, ©2020 Canonical Ltd. Ubuntu, Used with Permission</em></p>
+<p><img alt="c48363892c274626bc8497d4a809eeb8" class="no-scaled-link" src="https://assets.ubuntu.com/v1/09b510e0-UAS_storage_options.png" style="width: 400px;" /></p>
+<p><em>Image via</em><a class="reference external" href="https://ubuntu.com/blog/what-are-the-different-types-of-storage-block-object-and-file">Ubuntu Website</a><em>, ©2020 Canonical Ltd. Ubuntu, Used with Permission</em></p>
 <p>Cloud object storage is essentially a key/value storage system. They keys are strings, and the values are bytes of data. Data is read and written using HTTP calls. The performance of object storage is very different from file storage. On one hand, each individual read / write to object storage has a high overhead (10-100 ms), since it has to go over the network. On the other hand, object storage “scales out” nearly infinitely, meaning that we can make hundreds, thousands, or millions of
 concurrent reads / writes. This makes object storage well suited for distributed data analytics. However, the software architecture of a data analysis system must be adapted to take advantage of these properties.</p>
 <p>The goal of this notebook is to demonstrate one software stack that can effectively exploit the scalable nature of cloud storage and computing for data processing. There are three key elements:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="http://zarr.readthedocs.io/">Zarr</a> - a library for the storage of multi-dimensional arrays using compressed chunks.</p></li>
-<li><p><a class="reference external" href="https://filesystem-spec.readthedocs.io/">Filesystem Spec</a> - an abstraction layer for working with different storage technologies. Specific implementations of filesystem spec (e.g. <a class="reference external" href="https://gcsfs.readthedocs.io/">gcsfs</a>, Google Cloud Storage Filesystem) allow Zarr to read and write data from object storage.</p></li>
+<li><p><a class="reference external" href="https://filesystem-spec.readthedocs.io/">Filesystem Spec</a> - an abstraction layer for working with different storage technologies. Specific implementations of filesystem spec (e.g. <a class="reference external" href="https://gcsfs.readthedocs.io/">gcsfs</a>, Google Cloud Storage Filesystem) allow Zarr to read and write data from object storage.</p></li>
 <li><p><a class="reference external" href="http://dask.pydata.org/">Dask</a> - a distributed computing framework that allows us to read and write data in parallel asynchronously.</p></li>
 </ul>
 </div>
@@ -9051,9 +9051,12 @@ cloud environments can work with <a class="reference external" href="https://kub
 <li><p><a class="reference external" href="http://jetstream-cloud.org/">Jetstream Cloud</a> + Zarr Format (NSF’s Cloud)</p></li>
 <li><p><a class="reference external" href="https://www.openstoragenetwork.org/">Open Storage Network</a> (OSN) NCSA Storage Pod + Zarr Format</p></li>
 <li><p>The <a class="reference external" href="https://data.nas.nasa.gov/ecco">NASA ECCO Data Portal</a> (data read using <code class="docutils literal notranslate"><span class="pre">`xmitgcm.llcreader</span></code> &lt;<a class="reference external" href="https://xmitgcm.readthedocs.io/en/latest/llcreader.html">https://xmitgcm.readthedocs.io/en/latest/llcreader.html</a>&gt;`__)</p></li>
-<li><p>Various OPeNDAP Servers, including:</p></li>
+<li><p>Various OPeNDAP Servers, including:</p>
+<ul>
 <li><p>The <a class="reference external" href="https://esgf-data.ucar.edu/thredds/catalog/catalog.html">UCAR ESGF Node</a> TDS Server</p></li>
 <li><p><a class="reference external" href="https://psl.noaa.gov/thredds/catalog.html">NOAA ESRL PSL</a> TDS Server</p></li>
+</ul>
+</li>
 </ul>
 <p>The results have been archived on Zenodo: <a class="reference external" href="https://doi.org/10.5281/zenodo.3829032"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.3829032.svg" /></a></p>
 <p>Despite the different sources and formats, all tests were conducted in the same basic manner: 1. A “lazy” dask array referencing the source data was created 2. A dask cluster was scaled up to different sizes 3. The array was “stored” into the <code class="docutils literal notranslate"><span class="pre">NullStore</span></code>, forcing all data to read from the source</p>
@@ -9497,7 +9500,7 @@ cloud environments can work with <a class="reference external" href="https://kub
 </div>
 <div class="section" id="Discussion">
 <h2>Discussion<a class="headerlink" href="#Discussion" title="Permalink to this headline">¶</a></h2>
-<p>The figure above shows a wide range of throughput rates and scaling behavior. There are a great many factors which might influence the results, including: - The structure of the source data (e.g. data format, chunk size, compression, etc.) - The rate at which the storage service can read and process data from its own disks - The transport protocol and encoding (compression, etc.) - The network bandwidth between the source and Google Cloud US-CENTRAL1 region - The overhead of the dask cluster in
+<p>The figure above shows a wide range of throughput rates and scaling behavior. There are a great many factors which might influence the results, including: - The structure of the source data (e.g. data format, chunk size, compression, etc.) - The rate at which the storage service can read and process data from its own disks - The transport protocol and encoding (compression, etc.) - The network bandwidth between the source and Google Cloud US-CENTRAL1 region - The overhead of the dask cluster in
 computing many tasks simultaneously</p>
 <p>The comparison is far from “fair”: it is clearly biased towards Google Cloud Storage, which has optimum network proximity to the compute location. Nevertheless, we make the following observations.</p>
 <div class="section" id="Zarr-is-about-10x-faster-than-NetCDF-in-Cloud-Object-Storage">
@@ -9509,8 +9512,8 @@ computing many tasks simultaneously</p>
 <p>Both formats, however, showed good scaling, with throughput increasingly nearly linearly with the size of the cluster. The largest experiment we attempted used nearly 400 cores: we were able to pull data from GCS at roughly 20 GB/s. That’s pretty fast! At this rate, we could process a Petebyte of data in about 14 hours. However, there is a knee in the GCS-Zarr curve around 150 cores, with the scaling becoming slightly poorer above that value. We hypothesize that this is due to Dask’s overhead
 from handling a very large task graph.</p>
 </div>
-<div class="section" id="External-Cloud-Storage-Providers-Scale...then-Saturate">
-<h3>External Cloud Storage Providers Scale…then Saturate<a class="headerlink" href="#External-Cloud-Storage-Providers-Scale...then-Saturate" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="External-Cloud-Storage-Providers-Scale…then-Saturate">
+<h3>External Cloud Storage Providers Scale…then Saturate<a class="headerlink" href="#External-Cloud-Storage-Providers-Scale…then-Saturate" title="Permalink to this headline">¶</a></h3>
 <p>We tested three cloud storage providers <em>outside</em> of Google Cloud: Wasabi (a commercial service), Jetstream (an NSF-operated cloud), and OSN (an NSF-sponsored storage provider). These curves all show a similar pattern: good scaling for low worker counts, then a plateau. We interpret this a saturation of the network bandwidth between the data and the compute location. Of these three, Jetstream saturated at the lowest value (2 GB/s), then Wasabi (3.5 GB/s, but possibly not fully saturated yet),
 then OSN (5.5 GB/s). Also noteworthy is the fact that, for smaller core counts, OSN was actually <em>faster</em> than GCS <em>within Google Cloud</em>. These results are likely highly sensitive to network topology. However, they show unambiguously that OSN is an attractive choice for cloud-style storage and on-demand big-data processing.</p>
 </div>
@@ -9526,8 +9529,8 @@ find some way to speed it up.</p>
 of parallelism. (Care must be taken in this case, however, because many cloud providers charge egress fees for data leaving their network.) Combined with Zarr, all of the cloud object storage platforms were able to deliver data orders of magnitude faster than traditional OPeNDAP servers, the standard remote-data-access protocol for the geosciences.</p>
 <div class="section" id="Future-Work">
 <h3>Future Work<a class="headerlink" href="#Future-Work" title="Permalink to this headline">¶</a></h3>
-<p>This analysis could be improved in numerous ways. In the future we would like to - Investigate other cloud-native storage formats, such as TileDB and Cloud-Optimized Geotiff - Perform deeper analysis of parameter sensitivity (chunk size, compression, etc.) - Explore other clouds (e.g. AWS, Microstoft Azure)</p>
-<p>Finally, we did not attempt to assess the relative costs associated with cloud vs. on-premises data storage, as this involves difficult questions related to total cost of ownership. However, we hope these results are useful for data providers in deciding how to provision future infrastructure for data-intensive geoscience.</p>
+<p>This analysis could be improved in numerous ways. In the future we would like to - Investigate other cloud-native storage formats, such as TileDB and Cloud-Optimized Geotiff - Perform deeper analysis of parameter sensitivity (chunk size, compression, etc.) - Explore other clouds (e.g. AWS, Microstoft Azure)</p>
+<p>Finally, we did not attempt to assess the relative costs associated with cloud vs. on-premises data storage, as this involves difficult questions related to total cost of ownership. However, we hope these results are useful for data providers in deciding how to provision future infrastructure for data-intensive geoscience.</p>
 </div>
 </div>
 <div class="section" id="Notebook-Reviews">
@@ -9555,13 +9558,12 @@ of parallelism. (Care must be taken in this case, however, because many cloud pr
 <li><p>Computational cells are small and intermixed with expository prose.</p></li>
 </ul>
 <p>Problems with this notebook:</p>
-<ul>
-<li><p>Quite a few distracting spelling errors: Benachmarks, analagous, simultaneouslly, slighly, saturdation</p>
+<ul class="simple">
+<li><p>Quite a few distracting spelling errors: Benachmarks, analagous, simultaneouslly, slighly, saturdation</p></li>
+</ul>
 <blockquote>
 <div><p>Unfortunately, JupyterLab has no spell checker, a feature I have obviously become to reliant upon.</p>
 </div></blockquote>
-</li>
-</ul>
 <p>A suggestion for improvement would be to include a reference section with HTML linked DOIs for further inquiry and background material, and perhaps also a future work section.</p>
 <blockquote>
 <div><p>A future work section has been included.</p>
@@ -9570,49 +9572,54 @@ of parallelism. (Care must be taken in this case, however, because many cloud pr
 </div>
 <div class="section" id="Review-2">
 <h3>Review 2<a class="headerlink" href="#Review-2" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id1">
-<h4>Evaluation of the Contribution<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="evaluation-of-the-contribution-1">
+<span id="id1"></span><h4>Evaluation of the Contribution<a class="headerlink" href="#evaluation-of-the-contribution-1" title="Permalink to this headline">¶</a></h4>
 <p>Overall Recommendation (100%): 8 Total points (out of 10) : 8</p>
 </div>
-<div class="section" id="id2">
-<h4>Comments for the Authors<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-<ul>
-<li><p>the author should add to the discussion a reason for the choice of threads, cores and workers in the ‘do benchmarking’ section</p>
+<div class="section" id="comments-for-the-authors-1">
+<span id="id2"></span><h4>Comments for the Authors<a class="headerlink" href="#comments-for-the-authors-1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>the author should add to the discussion a reason for the choice of threads, cores and workers in the ‘do benchmarking’ section</p></li>
+</ul>
 <blockquote>
 <div><p>This has been done</p>
 </div></blockquote>
-</li>
-<li><p>while the analysis is designed to provide a coarse grain view of the speed of zarr, it might be a valuable exercise to break the scales down to segments where they can be compared; e.g. of the four zarr tests, the n_cores scales vary from 0..400 (gcs), 0..60 (wasabi, jetstream) and 0..175 (osn) and thus these scales make it difficult to compare them when we do not have data past n_cores=60 and again n_cores=175</p>
+<ul class="simple">
+<li><p>while the analysis is designed to provide a coarse grain view of the speed of zarr, it might be a valuable exercise to break the scales down to segments where they can be compared; e.g. of the four zarr tests, the n_cores scales vary from 0..400 (gcs), 0..60 (wasabi, jetstream) and 0..175 (osn) and thus these scales make it difficult to compare them when we do not have data past n_cores=60 and again n_cores=175</p></li>
+</ul>
 <blockquote>
 <div><p>This a reasonable suggestion but beyond what we could accomplish in a brief revision period.</p>
 </div></blockquote>
-</li>
-<li><p>though the authors acknowledge the tests are not ‘fair’, indeed it would be more valuable to compare various configurations of netcdf to make such comparisons more easily interpretable</p>
+<ul class="simple">
+<li><p>though the authors acknowledge the tests are not ‘fair’, indeed it would be more valuable to compare various configurations of netcdf to make such comparisons more easily interpretable</p></li>
+</ul>
 <blockquote>
 <div><p>It’s not clear what other “configurations” of netCDF are being suggested here.</p>
 </div></blockquote>
-</li>
-<li><p>typo: change to “saturation” &gt; We interpret this a saturdation of the network bandwidth between the data and the compute location.</p>
+<ul class="simple">
+<li><p>typo: change to “saturation” &gt; We interpret this a saturdation of the network bandwidth between the data and the compute location.</p></li>
+</ul>
 <blockquote>
 <div><p>Thanks, done.</p>
 </div></blockquote>
-</li>
-<li><p>the abstract should include “preliminary” to situate this work as in-progress and not a full quantitative exploration and assessment of accessing data</p>
+<ul class="simple">
+<li><p>the abstract should include “preliminary” to situate this work as in-progress and not a full quantitative exploration and assessment of accessing data</p></li>
+</ul>
 <blockquote>
 <div><p>Given the combinatoric explosion of possible configuration choices, is a comprehensive “full quantitative exploration” even possible?</p>
 </div></blockquote>
-</li>
-<li><p>if at all possible the author should provide instructions for how to execute elsewhere outside the pangeo platform</p>
+<ul class="simple">
+<li><p>if at all possible the author should provide instructions for how to execute elsewhere outside the pangeo platform</p></li>
+</ul>
 <blockquote>
 <div><p>We have included some new links to how to deploy dask in other environments.</p>
 </div></blockquote>
-</li>
-<li><p>licensing information as well as notebook requirements should also be provided with the notebook (or a link to the GH repo if one exists for the notebook)</p>
+<ul class="simple">
+<li><p>licensing information as well as notebook requirements should also be provided with the notebook (or a link to the GH repo if one exists for the notebook)</p></li>
+</ul>
 <blockquote>
 <div><p>This was all included in the original submission.</p>
 </div></blockquote>
-</li>
-</ul>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>

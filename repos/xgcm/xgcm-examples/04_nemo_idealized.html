@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -382,8 +382,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<p>Now we open the NEMO example dataset, from the BASIN configuration. The <em>ds</em> dataset contains the variables data (e.g. temperature, velocities) while the <em>domcfg</em> dataset contains the grid data (position, scale factor, etc).</p>
-<p>We get a dataset produced for the purpose of this documentation <a class="reference external" href="https://doi.org/10.5281/zenodo.3736803"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.3736803.svg" /></a>. In this dataset, we have not outputed the vertical scale factors in the <em>file_def_nemo-oce.xml</em> to save space. In a real case, the scale factors need to be saved to use properly the “thickness weighted” variables. The <em>domcfg</em> dataset has also been filtered to remove many unused variables in this notebook (e.g. <em>umask</em>).</p>
+<p>Now we open the NEMO example dataset, from the BASIN configuration. The <em>ds</em> dataset contains the variables data (e.g. temperature, velocities) while the <em>domcfg</em> dataset contains the grid data (position, scale factor, etc).</p>
+<p>We get a dataset produced for the purpose of this documentation <a class="reference external" href="https://doi.org/10.5281/zenodo.3736803"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.3736803.svg" /></a>. In this dataset, we have not outputed the vertical scale factors in the <em>file_def_nemo-oce.xml</em> to save space. In a real case, the scale factors need to be saved to use properly the “thickness weighted” variables. The <em>domcfg</em> dataset has also been filtered to remove many unused variables in this notebook (e.g. <em>umask</em>).</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -985,7 +985,7 @@ array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='
 </div>
 <div class="section" id="Divergence-Calculation">
 <h3>Divergence Calculation<a class="headerlink" href="#Divergence-Calculation" title="Permalink to this headline">¶</a></h3>
-<p>Here we show how to calculate the divergence of the flow. The precise details of how to do this calculation are highly model- and configuration-dependent (e.g. free-surface vs. rigid lid, etc.) In this example, the flow is incompressible, without precipitations or evaporation, with a linear free surface, satisfying the continuity equation</p>
+<p>Here we show how to calculate the divergence of the flow. The precise details of how to do this calculation are highly model- and configuration-dependent (e.g. free-surface vs. rigid lid, etc.) In this example, the flow is incompressible, without precipitations or evaporation, with a linear free surface, satisfying the continuity equation</p>
 <div class="math notranslate nohighlight">
 \[\vec{\nabla} \cdot \vec{u} =
  \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}
@@ -2225,7 +2225,7 @@ Coordinates:
 </pre></div></div>
 </div>
 <p><span class="math notranslate nohighlight">\(\zeta\)</span> is located in the F point (<em>x_f</em>, <em>y_f</em>).</p>
-<p>We plot the vertical integral of this quantity, i.e. the barotropic vorticity:</p>
+<p>We plot the vertical integral of this quantity, i.e. the barotropic vorticity:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>

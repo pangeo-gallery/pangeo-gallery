@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-262-797-369']);
+      _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -459,7 +459,7 @@ Data variables:
 </pre></div></div>
 </div>
 <p>We see now that a new dimension <code class="docutils literal notranslate"><span class="pre">depth_left</span></code> was created, with cell boundaries shifted towards the surface</p>
-<p>The default behaviour of <a class="reference external" href="api.rst#xgcm.autogenerate.generate_grid_ds">generate_grid_ds</a> is to extrapolate the grid position to the ‘left’ (e.g. towards the surface for a depth profile), assuming that the spacing in the two cells closest to the boundary (here: the first and second cell) is equal. Particular geometries might require adjustments of the boundary treatment, by specifying e.g. <code class="docutils literal notranslate"><span class="pre">pad=0</span></code> to ensure the topmost cell boundary is located at the sea surface.</p>
+<p>The default behaviour of <a class="reference external" href="api.rst#xgcm.autogenerate.generate_grid_ds">generate_grid_ds</a> is to extrapolate the grid position to the ‘left’ (e.g. towards the surface for a depth profile), assuming that the spacing in the two cells closest to the boundary (here: the first and second cell) is equal. Particular geometries might require adjustments of the boundary treatment, by specifying e.g. <code class="docutils literal notranslate"><span class="pre">pad=0</span></code> to ensure the topmost cell boundary is located at the sea surface.</p>
 <p>Finally we can create the <a class="reference external" href="api.rst#xgcm.Grid">xgcm.Grid</a> object like we would from model output (see for example <a class="reference external" href="grids.rst#simple-grids">here</a>)</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
@@ -2435,7 +2435,7 @@ Coordinates:
 <img alt="../../../_images/repos_xgcm_xgcm-examples_05_autogenerate_36_0.png" src="../../../_images/repos_xgcm_xgcm-examples_05_autogenerate_36_0.png" />
 </div>
 </div>
-<p>Thes two lines show the importance of applying a weighted mean, when the grid spacing is irregular (e.g. datasets gridded on a regular lat-lon grid).</p>
+<p>Thes two lines show the importance of applying a weighted mean, when the grid spacing is irregular (e.g. datasets gridded on a regular lat-lon grid).</p>
 </div>
 </div>
 </div>
