@@ -47,7 +47,7 @@ extensions = [
 
 nbsphinx_timeout = 600
 nbsphinx_execute = "never"
-googleanalytics_id = 'UA-262-797-369'    # google analytics property
+googleanalytics_id = 'G-XQVC88BYCT'    # google analytics property
 
 # not working yet
 # nbsphinx_prolog = """
