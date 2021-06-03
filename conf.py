@@ -225,7 +225,7 @@ def setup(app):
     # basic CSS
     app.connect("source-read", rstjinja)
     app.add_css_file("https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css")
-    app.add_stylesheet("pangeo-gallery.css")
+    app.add_css_file("pangeo-gallery.css")
 
 
 import yaml
