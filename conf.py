@@ -224,7 +224,7 @@ def rstjinja(app, docname, source):
 def setup(app):
     # basic CSS
     app.connect("source-read", rstjinja)
-    app.add_stylesheet("https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css")
+    app.add_css_file("https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css")
     app.add_stylesheet("pangeo-gallery.css")
 
 
