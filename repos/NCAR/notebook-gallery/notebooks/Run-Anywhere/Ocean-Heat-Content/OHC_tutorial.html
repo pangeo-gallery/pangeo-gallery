@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,18 +17,18 @@
       })();
     </script>
     <title>How to calculate ocean heat content &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../../../../" src="../../../../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../../../../" id="documentation_options" src="../../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../../_static/jquery.js"></script>
     <script src="../../../../../../_static/underscore.js"></script>
     <script src="../../../../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../../search.html" />
     <link rel="next" title="WRF data and Xarray" href="../WRF/wrf_ex.html" />
@@ -364,15 +365,15 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="How-to-calculate-ocean-heat-content">
+<section id="How-to-calculate-ocean-heat-content">
 <h1>How to calculate ocean heat content<a class="headerlink" href="#How-to-calculate-ocean-heat-content" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="And-how-to-use-the-tools-along-the-way">
+<section id="And-how-to-use-the-tools-along-the-way">
 <h2>And how to use the tools along the way<a class="headerlink" href="#And-how-to-use-the-tools-along-the-way" title="Permalink to this headline">¶</a></h2>
 <p>This tutorial assumes you already know Python basics (accessing Python, Jupyter kernels, object and datatypes).</p>
 <p>The purpose of this notebook tutorial is to teach Pangeo as a toolbox by starting with a use case (calculating ocean heat content) and teaching the integrated tools necessary along the way.</p>
 <hr class="docutils" />
-</div>
-<div class="section" id="Step-1-–-Importing-Modules">
+</section>
+<section id="Step-1-–-Importing-Modules">
 <h2>Step 1 – Importing Modules<a class="headerlink" href="#Step-1-–-Importing-Modules" title="Permalink to this headline">¶</a></h2>
 <p>This workflow will utilize the Xarray and Cf_units modules. Read about these here[].</p>
 <p>Modules are <code class="docutils literal notranslate"><span class="pre">.py</span></code> Python files that consist of Python code to be called upon (read: imported) into other Python files or in the command line. A module contains Python classes, functions, or variables to be referenced elsewhere. This allows you to tuck away widely used helper functions, while providing a pointer to where the base code is.</p>
@@ -388,8 +389,8 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <hr class="docutils" />
-</div>
-<div class="section" id="Step-2-–-Using-Dask-to-Distribute-Workflows">
+</section>
+<section id="Step-2-–-Using-Dask-to-Distribute-Workflows">
 <h2>Step 2 – Using Dask to Distribute Workflows<a class="headerlink" href="#Step-2-–-Using-Dask-to-Distribute-Workflows" title="Permalink to this headline">¶</a></h2>
 <p>The first module we imported is dask.</p>
 <p><strong>What is Dask?</strong> Dask is a package that enables scaling and parallelising for analytical Python. You can read about dask <a class="reference external" href="https://dask.org/">here</a> if you want to learn about more advanced usage. The method used here is a ‘set and forget’ easiest deployment situation.</p>
@@ -438,8 +439,8 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <hr class="docutils" />
-</div>
-<div class="section" id="Step-3-–-Reading-in-a-.nc-File-Using-Xarray.open_dataset">
+</section>
+<section id="Step-3-–-Reading-in-a-.nc-File-Using-Xarray.open_dataset">
 <h2>Step 3 – Reading in a .nc File Using Xarray.open_dataset<a class="headerlink" href="#Step-3-–-Reading-in-a-.nc-File-Using-Xarray.open_dataset" title="Permalink to this headline">¶</a></h2>
 <p>Pass into <code class="docutils literal notranslate"><span class="pre">xarray.open_dataset</span></code> the relative file path and name, and the chunking.</p>
 <p><strong>What is Xarray?</strong> Xarray is a package that allows for the labeling of dimensions in multi-dimensional datasets. <a class="reference external" href="http://xarray.pydata.org/en/stable/index.html">Here</a> is Xarray’s documentation.</p>
@@ -2405,7 +2406,7 @@ Attributes:
         80.5,  81.5,  82.5,  83.5,  84.5,  85.5,  86.5,  87.5,  88.5,  89.5])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>lon</span></div><div class='xr-var-dims'>(lon)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>0.625 1.875 3.125 ... 358.1 359.4</div><input id='attrs-e787f2f3-a675-47f9-a890-93b0d7697ad1' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e787f2f3-a675-47f9-a890-93b0d7697ad1' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-22349355-4f7b-4c6a-8455-7fea3f82309f' class='xr-var-data-in' type='checkbox'><label for='data-22349355-4f7b-4c6a-8455-7fea3f82309f' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>bounds :</span></dt><dd>lon_bnds</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>long_name :</span></dt><dd>longitude</dd><dt><span>standard_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([  0.625,   1.875,   3.125, ..., 356.875, 358.125, 359.375])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-b6115c47-0fb8-428c-b0dc-9a93f90ff5ac' class='xr-section-summary-in' type='checkbox'  checked><label for='section-b6115c47-0fb8-428c-b0dc-9a93f90ff5ac' class='xr-section-summary' >Attributes: <span>(7)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>standard_name :</span></dt><dd>sea_water_potential_temperature</dd><dt><span>long_name :</span></dt><dd>Sea Water Potential Temperature</dd><dt><span>comment :</span></dt><dd>Diagnostic should be contributed even for models using conservative temperature as prognostic field.</dd><dt><span>units :</span></dt><dd>degC</dd><dt><span>cell_methods :</span></dt><dd>area: mean where sea time: mean</dd><dt><span>cell_measures :</span></dt><dd>area: areacello volume: volcello</dd><dt><span>history :</span></dt><dd>2018-08-27T13:51:26Z altered by CMOR: replaced missing value flag (-1e+30) with standard missing value (1e+20).</dd></dl></div></li></ul></div></div></div>
 </div>
 <p>You can convert a DataArray back to a DataSet using <code class="docutils literal notranslate"><span class="pre">xarray.DataArray.to_dataset</span></code>. You would want to do this if you plan on adding new dimension, coordinate, or attribute information.</p>
-<div class="section" id="Task-1">
+<section id="Task-1">
 <h3>Task 1<a class="headerlink" href="#Task-1" title="Permalink to this headline">¶</a></h3>
 <p>Now you try isolating the DataArray for any other variable in the DataSet in the code cell block below:</p>
 <div class="nbinput nblast docutils container">
@@ -2418,9 +2419,9 @@ Attributes:
 </div>
 </div>
 <hr class="docutils" />
-</div>
-</div>
-<div class="section" id="Step-4-–-Let’s-check-units!">
+</section>
+</section>
+<section id="Step-4-–-Let’s-check-units!">
 <h2>Step 4 – Let’s check units!<a class="headerlink" href="#Step-4-–-Let’s-check-units!" title="Permalink to this headline">¶</a></h2>
 <p>In many routines, checking and converting betweeen units is complicated. But in Python we have a great tool <code class="docutils literal notranslate"><span class="pre">cf_units</span></code> that can do this quickly and easily as long as the data is cf-compliant.</p>
 <div class="nbinput nblast docutils container">
@@ -2852,7 +2853,7 @@ Unit(&#39;m&#39;)
 0.005
 </pre></div></div>
 </div>
-<div class="section" id="Task-2">
+<section id="Task-2">
 <h3>Task 2<a class="headerlink" href="#Task-2" title="Permalink to this headline">¶</a></h3>
 <p>Use cf_units to make sure or convert the time variable (thetao) into degrees Kelvin (degK) in the code cell block below:</p>
 <div class="nbinput nblast docutils container">
@@ -3277,9 +3278,9 @@ Dimensions without coordinates: bnds</pre><div class='xr-wrap' hidden><div class
         884., 1041., 1214., 1400., 1597., 1803., 2016., 2234., 2455., 2677.,
        2899., 3121., 3343., 3565., 3787., 4009., 4231., 4453., 4675., 4897.])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-2f1f9bea-9072-4ad4-97a6-5f4f2e3b1053' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-2f1f9bea-9072-4ad4-97a6-5f4f2e3b1053' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Let’s-write-a-function">
+</section>
+</section>
+<section id="Let’s-write-a-function">
 <h2>Let’s write a function<a class="headerlink" href="#Let’s-write-a-function" title="Permalink to this headline">¶</a></h2>
 <p>This is only took us three lines of code to write, but you may want to check, convert, or assert desired units for every variable in a dataset. Your code will be much easier to read if this process is inside a function which you call up in one line. So let’s write a function for unit conversion!</p>
 <p>Python functions follow the following format of a function that sums two variables.</p>
@@ -3296,7 +3297,7 @@ Dimensions without coordinates: bnds</pre><div class='xr-wrap' hidden><div class
     <span class="k">return</span> <span class="n">variable1</span><span class="p">,</span> <span class="n">variable2</span>
 </pre></div>
 </div>
-<div class="section" id="Task-3">
+<section id="Task-3">
 <h3>Task 3<a class="headerlink" href="#Task-3" title="Permalink to this headline">¶</a></h3>
 <p>Try to write a function for changing units in the code cell block below:</p>
 <p><em>Hint: The functionality should follow the same logic as the previous 3 cell blocks and you should be able to do this in 3 lines</em></p>
@@ -3335,8 +3336,8 @@ output_variable = sum_variables(variable1, variable2)
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variable1</span><span class="p">,</span> <span class="n">variable2</span> <span class="o">=</span> <span class="n">output_inputs</span><span class="p">(</span><span class="n">variable1</span><span class="p">,</span> <span class="n">variable2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Task-4">
+</section>
+<section id="Task-4">
 <h3>Task 4<a class="headerlink" href="#Task-4" title="Permalink to this headline">¶</a></h3>
 <p>Now use your function to convert your level bounds (<code class="docutils literal notranslate"><span class="pre">lev_bnds</span></code>) and temperature (<code class="docutils literal notranslate"><span class="pre">thetao</span></code>) DataSet variables to units of meters (‘m’) and degrees Kelvin (‘degK’) in the code cell block below.</p>
 <div class="nbinput nblast docutils container">
@@ -4311,9 +4312,9 @@ Coordinates:
         80.5,  81.5,  82.5,  83.5,  84.5,  85.5,  86.5,  87.5,  88.5,  89.5])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>lon</span></div><div class='xr-var-dims'>(lon)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>0.625 1.875 3.125 ... 358.1 359.4</div><input id='attrs-e8e70b79-56dd-465e-af30-9309bae88d55' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e8e70b79-56dd-465e-af30-9309bae88d55' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8a1ed29a-f781-4a63-9cac-6f1508984b0f' class='xr-var-data-in' type='checkbox'><label for='data-8a1ed29a-f781-4a63-9cac-6f1508984b0f' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>bounds :</span></dt><dd>lon_bnds</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>long_name :</span></dt><dd>longitude</dd><dt><span>standard_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([  0.625,   1.875,   3.125, ..., 356.875, 358.125, 359.375])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-2c1a318d-c4bd-47b4-a8d3-60edf9bbe6dc' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-2c1a318d-c4bd-47b4-a8d3-60edf9bbe6dc' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
 <hr class="docutils" />
-</div>
-</div>
-<div class="section" id="Step-4-–-Selecting-Data-using-Xarray.where">
+</section>
+</section>
+<section id="Step-4-–-Selecting-Data-using-Xarray.where">
 <h2>Step 4 – Selecting Data using Xarray.where<a class="headerlink" href="#Step-4-–-Selecting-Data-using-Xarray.where" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have our data, and have made sure the variables are in the correct units - let’s use <code class="docutils literal notranslate"><span class="pre">xarray.DataArray.where</span></code> to filter our data to the depths where we want to integrate ocean heat content. This takes arguments as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">da_filtered_2_conditions</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">condition</span><span class="p">,</span> <span class="n">other</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">NA</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
@@ -4343,7 +4344,7 @@ array([[ 0., 10.],
        [36., nan]])
 </pre></div></div>
 </div>
-<div class="section" id="Task-5">
+<section id="Task-5">
 <h3>Task 5<a class="headerlink" href="#Task-5" title="Permalink to this headline">¶</a></h3>
 <p>Limit depth to the top 100 m in the code cell block below:</p>
 <div class="nbinput nblast docutils container">
@@ -4846,8 +4847,8 @@ Coordinates:
 </tr>
 </table></div></div></li><li class='xr-section-item'><input id='section-ef077027-13ab-42a7-8482-c53a3fb18d42' class='xr-section-summary-in' type='checkbox'  checked><label for='section-ef077027-13ab-42a7-8482-c53a3fb18d42' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>lev</span></div><div class='xr-var-dims'>(lev)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>5.0 16.0 29.0 44.0</div><input id='attrs-71d72361-b3eb-46de-8a59-64e2f87b06bd' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-71d72361-b3eb-46de-8a59-64e2f87b06bd' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-569c715e-83b8-47c8-b64b-2ba114161966' class='xr-var-data-in' type='checkbox'><label for='data-569c715e-83b8-47c8-b64b-2ba114161966' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>bounds :</span></dt><dd>lev_bnds</dd><dt><span>units :</span></dt><dd>m</dd><dt><span>axis :</span></dt><dd>Z</dd><dt><span>positive :</span></dt><dd>down</dd><dt><span>long_name :</span></dt><dd>ocean depth coordinate</dd><dt><span>standard_name :</span></dt><dd>depth</dd></dl></div><div class='xr-var-data'><pre>array([ 5., 16., 29., 44.])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-62a82b81-83b5-40ab-85f3-f15d3e632f97' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-62a82b81-83b5-40ab-85f3-f15d3e632f97' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
-</div>
-<div class="section" id="Task-6">
+</section>
+<section id="Task-6">
 <h3>Task 6<a class="headerlink" href="#Task-6" title="Permalink to this headline">¶</a></h3>
 <p>We want to limit our temperature values by the same condition. Do so in the code cell block below:</p>
 <div class="nbinput nblast docutils container">
@@ -4869,8 +4870,8 @@ Coordinates:
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Task-7">
+</section>
+<section id="Task-7">
 <h3>Task 7<a class="headerlink" href="#Task-7" title="Permalink to this headline">¶</a></h3>
 <p>Let’s turn this functionality into a function that repeats this work flow (replaces depth values above the limit with the limit value, finds the delta values for each level, and limits the level deltas and temperature coordinates to the depth limit) for any depth limit.</p>
 <p>Write your function in the code cell block below:</p>
@@ -4930,9 +4931,9 @@ Coordinates:
 </pre></div></div>
 </div>
 <hr class="docutils" />
-</div>
-</div>
-<div class="section" id="Step-5-–-now-we-can-do-some-math-and-actually-CALCULATE-THE-OCEAN-HEAT-CONTENT!">
+</section>
+</section>
+<section id="Step-5-–-now-we-can-do-some-math-and-actually-CALCULATE-THE-OCEAN-HEAT-CONTENT!">
 <h2>Step 5 – now we can do some math and actually CALCULATE THE OCEAN HEAT CONTENT!<a class="headerlink" href="#Step-5-–-now-we-can-do-some-math-and-actually-CALCULATE-THE-OCEAN-HEAT-CONTENT!" title="Permalink to this headline">¶</a></h2>
 <p>The formula for this is:</p>
 <div class="math notranslate nohighlight">
@@ -4942,7 +4943,7 @@ Coordinates:
 <p><span class="math notranslate nohighlight">\(C\)</span> is the specific heat of sea water, <span class="math notranslate nohighlight">\(3990\)</span> <span class="math notranslate nohighlight">\(J/(kg K)\)</span>,</p>
 <p><span class="math notranslate nohighlight">\(z\)</span> is the depth limit of the calculation in meters,</p>
 <p>and <span class="math notranslate nohighlight">\(T\)</span> is the temperature at each depth in degrees Kelvin.</p>
-<div class="section" id="Task-8">
+<section id="Task-8">
 <h3>Task 8<a class="headerlink" href="#Task-8" title="Permalink to this headline">¶</a></h3>
 <p>Write the function for this calculation in the code cell block below:</p>
 <div class="nbinput nblast docutils container">
@@ -6035,8 +6036,8 @@ Coordinates:
         70.5,  71.5,  72.5,  73.5,  74.5,  75.5,  76.5,  77.5,  78.5,  79.5,
         80.5,  81.5,  82.5,  83.5,  84.5,  85.5,  86.5,  87.5,  88.5,  89.5])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>lon</span></div><div class='xr-var-dims'>(lon)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>0.625 1.875 3.125 ... 358.1 359.4</div><input id='attrs-b83664a8-6d82-4118-a24a-dbf1a1fad544' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-b83664a8-6d82-4118-a24a-dbf1a1fad544' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b397f2de-9320-4fe4-b441-f732428b5eb6' class='xr-var-data-in' type='checkbox'><label for='data-b397f2de-9320-4fe4-b441-f732428b5eb6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>bounds :</span></dt><dd>lon_bnds</dd><dt><span>units :</span></dt><dd>degrees_east</dd><dt><span>axis :</span></dt><dd>X</dd><dt><span>long_name :</span></dt><dd>longitude</dd><dt><span>standard_name :</span></dt><dd>longitude</dd></dl></div><div class='xr-var-data'><pre>array([  0.625,   1.875,   3.125, ..., 356.875, 358.125, 359.375])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-f691b743-d873-4384-8b12-8a10ec526381' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-f691b743-d873-4384-8b12-8a10ec526381' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
-</div>
-<div class="section" id="Plotting">
+</section>
+<section id="Plotting">
 <h3>Plotting<a class="headerlink" href="#Plotting" title="Permalink to this headline">¶</a></h3>
 <p>Congratulations you calculated the ocean heat content. You probably want to look at your data or produce some figures to communicate your findings. The next section of the notebook is all about plotting methods.</p>
 <p>First, if you are working in a Jupyter notebook (which you are), you need to specify to display plots under the code cell block. To do that you need the following command:</p>
@@ -6049,9 +6050,9 @@ Coordinates:
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Step-6-–-Selecting-and-Plotting-Data-in-Xarray">
+</section>
+</section>
+<section id="Step-6-–-Selecting-and-Plotting-Data-in-Xarray">
 <h2>Step 6 – Selecting and Plotting Data in Xarray<a class="headerlink" href="#Step-6-–-Selecting-and-Plotting-Data-in-Xarray" title="Permalink to this headline">¶</a></h2>
 <p>Xarray has built-in plotting functionality called by <code class="docutils literal notranslate"><span class="pre">.plot()</span></code> that will intelligently pick the best plotting method for a DataSet.</p>
 <div class="nbinput docutils container">
@@ -7732,8 +7733,8 @@ Attributes:
 </div>
 </div>
 <p>There are many ways to manipulate visualizations in Python. For more examples visit some of our other notebooks.</p>
-</div>
-</div>
+</section>
+</section>
 
 
     </div>
@@ -7748,7 +7749,7 @@ Attributes:
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

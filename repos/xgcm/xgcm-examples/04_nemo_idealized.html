@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,18 +17,18 @@
       })();
     </script>
     <title>NEMO Example &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Generate missing C-grid coordinates" href="05_autogenerate.html" />
@@ -363,7 +364,7 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="NEMO-Example">
+<section id="NEMO-Example">
 <h1>NEMO Example<a class="headerlink" href="#NEMO-Example" title="Permalink to this headline">¶</a></h1>
 <p>For this example, the NEMO output files have already been saved as netCDF with the right coordinate names. The <a class="reference external" href="https://github.com/willirath/xorca">xorca</a> package is designed to open NEMO datasets so they are understandable by xgcm. The <a class="reference external" href="https://github.com/rcaneill/xnemogcm">xnemogcm</a> does a similar work on idealized configurations.</p>
 <p>Below are some example of how to make calculations using xgcm.</p>
@@ -518,7 +519,7 @@ Attributes:
 </pre></div></div>
 </div>
 <p>In the coordinates, the *_c* suffix means <em>center</em> while the *_f* suffix means <em>face</em>. Thus the (x_c, y_c, z_c) point is the T point, the (x_c, y_f, z_c) is the V point, etc.</p>
-<div class="section" id="Geometry-of-the-basin">
+<section id="Geometry-of-the-basin">
 <h2>Geometry of the basin<a class="headerlink" href="#Geometry-of-the-basin" title="Permalink to this headline">¶</a></h2>
 <p>The geometry of the simulation is a closed basin, with a bottom bathymetry, going from 2000 m at the coasts, to 4000 m in the interior of the basin. Terrain following coordinates are used and the free surface is linear (fixed vertical levels). A 2 degrees Mercator grid is used.</p>
 <div class="nbinput docutils container">
@@ -547,8 +548,8 @@ Attributes:
 <img alt="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_9_1.png" src="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_9_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Creating-the-grid-object">
+</section>
+<section id="Creating-the-grid-object">
 <h2>Creating the grid object<a class="headerlink" href="#Creating-the-grid-object" title="Permalink to this headline">¶</a></h2>
 <p>Next we create a <code class="docutils literal notranslate"><span class="pre">Grid</span></code> object from the dataset. All the axes are here non-periodic. The <code class="docutils literal notranslate"><span class="pre">metrics</span></code> dict contains the scale factors.</p>
 <div class="nbinput docutils container">
@@ -586,10 +587,10 @@ X Axis (not periodic, boundary=None):
 </pre></div></div>
 </div>
 <p>We see that xgcm identified three different axes: X (longitude), Y (latitude), Z (depth).</p>
-</div>
-<div class="section" id="Computation-examples">
+</section>
+<section id="Computation-examples">
 <h2>Computation examples<a class="headerlink" href="#Computation-examples" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Horizontal-gradient-of-SST">
+<section id="Horizontal-gradient-of-SST">
 <h3>Horizontal gradient of SST<a class="headerlink" href="#Horizontal-gradient-of-SST" title="Permalink to this headline">¶</a></h3>
 <p>We will compute the horizontal component of the gradient of SST in the longitude direction as a first example to understand the logic behind the xgcm grids.</p>
 <p>We want to compute <span class="math notranslate nohighlight">\(\frac{\partial SST}{\partial x}\)</span>. The SST is the variable <code class="docutils literal notranslate"><span class="pre">tos</span></code> (Temperature Ocean Surface) in our dataset.</p>
@@ -982,8 +983,8 @@ dl.xr-attrs {
 array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-bdf4cebd-7193-41ad-9c81-c3d410d39693' class='xr-array-in' type='checkbox' checked><label for='section-bdf4cebd-7193-41ad-9c81-c3d410d39693' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>True</span></div><div class='xr-array-data'><pre>array(True)</pre></div></div></li><li class='xr-section-item'><input id='section-e26c941e-48ad-4da4-81cd-f9f8f326bfe0' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e26c941e-48ad-4da4-81cd-f9f8f326bfe0' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-a82c18c8-0a73-4e75-82e2-f855cc8f5806' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a82c18c8-0a73-4e75-82e2-f855cc8f5806' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
 <p>As expected the result of the 2 operations is the same. The position of the derivative is now on the U point.</p>
-</div>
-<div class="section" id="Divergence-Calculation">
+</section>
+<section id="Divergence-Calculation">
 <h3>Divergence Calculation<a class="headerlink" href="#Divergence-Calculation" title="Permalink to this headline">¶</a></h3>
 <p>Here we show how to calculate the divergence of the flow. The precise details of how to do this calculation are highly model- and configuration-dependent (e.g. free-surface vs. rigid lid, etc.) In this example, the flow is incompressible, without precipitations or evaporation, with a linear free surface, satisfying the continuity equation</p>
 <div class="math notranslate nohighlight">
@@ -999,7 +1000,7 @@ array(True)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='
  + \frac{1}{e_{3t}} \delta_k(w)  \ .\]</div>
 <p>The equation for the divergence calculation could be simplified due to the geometry of our basin, but we will keep it in the general form.</p>
 <hr><p>[1] NEMO book v4.0.1, pp 22</p>
-<div class="section" id="3d-flow">
+<section id="3d-flow">
 <h4>3d flow<a class="headerlink" href="#3d-flow" title="Permalink to this headline">¶</a></h4>
 <p>We can’t use the <code class="docutils literal notranslate"><span class="pre">grid.derivative</span></code> function for <em>w</em> even if this is a simple vertical derivative: xgcm does not use the temporaly varying scale factors but the <em>domcfg.e3t_0</em> initial vertical scale factors. In this simple linear free surface case, the scale factors don’t vary in time, but we will use here a more general approach.</p>
 <p>For <em>u</em> and <em>v</em> we use the <code class="docutils literal notranslate"><span class="pre">grid.diff</span></code> as this is not a simple derivative, even if the horizontal scale factors are fixed in time in any case. The first T point along x is an earth point, we can use a ‘fill’ <code class="docutils literal notranslate"><span class="pre">boundary</span></code> with a 0 <code class="docutils literal notranslate"><span class="pre">fill_value</span></code>. The same argument applies along y and z.</p>
@@ -1381,8 +1382,8 @@ dl.xr-attrs {
 array(5.44218669e-19)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-28a4d5fc-38c7-4299-9964-c1924ac7d370' class='xr-array-in' type='checkbox' checked><label for='section-28a4d5fc-38c7-4299-9964-c1924ac7d370' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>5.442e-19</span></div><div class='xr-array-data'><pre>array(5.44218669e-19)</pre></div></div></li><li class='xr-section-item'><input id='section-42fd0526-a3ac-43d2-8c3f-890486a44254' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-42fd0526-a3ac-43d2-8c3f-890486a44254' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-80892976-e336-41cf-90d7-7b1d779fd00d' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-80892976-e336-41cf-90d7-7b1d779fd00d' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
 <p>As expected the divergence of the flow is zero (if we neglect the truncation error).</p>
-</div>
-<div class="section" id="Vertical-velocity">
+</section>
+<section id="Vertical-velocity">
 <h4>Vertical velocity<a class="headerlink" href="#Vertical-velocity" title="Permalink to this headline">¶</a></h4>
 <p>In NEMO the vertical velocity is computed from the divergence of the horizontal velocity. In non-linear free surface, the vertical velocity can’t be computed offline because it also takes the time variations of the vertical scale factors into account. However, we are using here a linear free surface, so that</p>
 <div class="math notranslate nohighlight">
@@ -2188,9 +2189,9 @@ dl.xr-attrs {
 </style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;
 array(2.07489191e-17)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-888fd961-8d3c-445d-b20f-f20f3d179b31' class='xr-array-in' type='checkbox' checked><label for='section-888fd961-8d3c-445d-b20f-f20f3d179b31' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>2.075e-17</span></div><div class='xr-array-data'><pre>array(2.07489191e-17)</pre></div></div></li><li class='xr-section-item'><input id='section-a62f65f3-4a7e-4314-960d-2a63dbeb808e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a62f65f3-4a7e-4314-960d-2a63dbeb808e' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-d927cdfb-6e70-4d21-8604-83e956bf716c' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-d927cdfb-6e70-4d21-8604-83e956bf716c' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Vorticity">
+</section>
+</section>
+<section id="Vorticity">
 <h3>Vorticity<a class="headerlink" href="#Vorticity" title="Permalink to this headline">¶</a></h3>
 <p>Here we compute more derived quantities from the velocity field.</p>
 <p>The vertical component of the vorticity is a fundamental quantity of interest in ocean circulation theory. It is defined as</p>
@@ -2259,8 +2260,8 @@ Coordinates:
 <img alt="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_31_1.png" src="../../../_images/repos_xgcm_xgcm-examples_04_nemo_idealized_31_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Barotropic-Transport-Streamfunction">
+</section>
+<section id="Barotropic-Transport-Streamfunction">
 <h3>Barotropic Transport Streamfunction<a class="headerlink" href="#Barotropic-Transport-Streamfunction" title="Permalink to this headline">¶</a></h3>
 <p>We can use the barotropic velocity to calcuate the barotropic transport streamfunction, defined via</p>
 <div class="math notranslate nohighlight">
@@ -2315,8 +2316,8 @@ Coordinates:
 </div>
 </div>
 <p>By construction, <span class="math notranslate nohighlight">\(\psi\)</span> is 0 at the western boundary.</p>
-</div>
-<div class="section" id="Kinetic-Energy">
+</section>
+<section id="Kinetic-Energy">
 <h3>Kinetic Energy<a class="headerlink" href="#Kinetic-Energy" title="Permalink to this headline">¶</a></h3>
 <p>Finally, we plot the surface kinetic energy <span class="math notranslate nohighlight">\(1/2 (u^2 + v^2)\)</span> by interpoloting both quantities the cell center point.</p>
 <div class="nbinput docutils container">
@@ -2355,9 +2356,9 @@ Coordinates:
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
     </div>
@@ -2372,7 +2373,7 @@ Coordinates:
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,18 +17,18 @@
       })();
     </script>
     <title>Xarray Tutorial &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CMIP6 Gallery" href="../../pangeo-gallery/cmip6/index.html" />
@@ -362,9 +363,9 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Xarray-Tutorial">
+<section id="Xarray-Tutorial">
 <h1>Xarray Tutorial<a class="headerlink" href="#Xarray-Tutorial" title="Permalink to this headline">¶</a></h1>
-<div class="alert-info"><div class="section" id="Overview">
+<div class="alert-info"><section id="Overview">
 <h2>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>teaching:</strong> 30 minutes</p></li>
@@ -379,8 +380,8 @@ div.rendered_html tbody tr:hover {
 </ul>
 </li>
 </ul>
-</div></div>
-<div class="section" id="Table-of-contents">
+</div></section>
+<section id="Table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#Table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="#Xarray-primer">Xarray primer</a></p></li>
@@ -391,7 +392,7 @@ div.rendered_html tbody tr:hover {
 <li><p><a class="reference external" href="#Advanced-Computations">Advanced computations</a></p></li>
 <li><p><a class="reference external" href="#ENSO-exercise">ENSO excercise</a></p></li>
 </ol>
-<div class="section" id="Xarray-primer">
+<section id="Xarray-primer">
 <h3>Xarray primer<a class="headerlink" href="#Xarray-primer" title="Permalink to this headline">¶</a></h3>
 <p>We’ve seen that <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas</a> and <a class="reference external" href="http://geopandas.org">Geopandas</a> are excellent libraries for analyzing tabular “labeled data”. <a class="reference external" href="http://xarray.pydata.org/en/stable/">Xarray</a> is designed to make it easier to work with with <em>labeled multidimensional data</em>. By <em>multidimensional data</em> (also often called <em>N-dimensional</em>), we mean data with many independent dimensions or axes. For example, we might represent Earth’s surface temperature <span class="math notranslate nohighlight">\(T\)</span> as
 a three dimensional variable</p>
@@ -399,14 +400,14 @@ a three dimensional variable</p>
 \[T(x, y, t)\]</div>
 <p>where <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are spatial dimensions and and <span class="math notranslate nohighlight">\(t\)</span> is time. By <em>labeled</em>, we mean data that has metadata associated with it describing the names and relationships between the variables. The cartoon below shows a “data cube” schematic dataset with temperature and preciptation sharing the same three dimensions, plus longitude and latitude as auxilliary coordinates.</p>
 <p><img alt="xarray data model" src="https://github.com/pydata/xarray/raw/master/doc/_static/dataset-diagram.png" /></p>
-</div>
-</div>
-<div class="section" id="Xarray-data-structures">
+</section>
+</section>
+<section id="Xarray-data-structures">
 <h2>Xarray data structures<a class="headerlink" href="#Xarray-data-structures" title="Permalink to this headline">¶</a></h2>
 <p>Like Pandas, xarray has two fundamental data structures: * a <code class="docutils literal notranslate"><span class="pre">DataArray</span></code>, which holds a single multi-dimensional variable and its coordinates * a <code class="docutils literal notranslate"><span class="pre">Dataset</span></code>, which holds multiple variables that potentially share the same coordinates</p>
 <p>A <code class="docutils literal notranslate"><span class="pre">DataArray</span></code> has four essential attributes: * <code class="docutils literal notranslate"><span class="pre">values</span></code>: a <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> holding the array’s values * <code class="docutils literal notranslate"><span class="pre">dims</span></code>: dimension names for each axis (e.g., <code class="docutils literal notranslate"><span class="pre">('x',</span> <span class="pre">'y',</span> <span class="pre">'z')</span></code>) * <code class="docutils literal notranslate"><span class="pre">coords</span></code>: a dict-like container of arrays (coordinates) that label each point (e.g., 1-dimensional arrays of numbers, datetime objects or strings) * <code class="docutils literal notranslate"><span class="pre">attrs</span></code>: an <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code> to hold arbitrary metadata (attributes)</p>
 <p>A dataset is simply an object containing multiple DataArrays indexed by variable name</p>
-<div class="section" id="Creating-data">
+<section id="Creating-data">
 <h3>Creating data<a class="headerlink" href="#Creating-data" title="Permalink to this headline">¶</a></h3>
 <p>Let’s start by constructing some DataArrays manually</p>
 <div class="nbinput nblast docutils container">
@@ -1550,9 +1551,9 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_15_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_15_1.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Selecting-Data">
+</section>
+</section>
+<section id="Selecting-Data">
 <h2>Selecting Data<a class="headerlink" href="#Selecting-Data" title="Permalink to this headline">¶</a></h2>
 <p>We can always use regular numpy indexing and slicing on DataArrays to get the data back out.</p>
 <div class="nbinput docutils container">
@@ -2636,8 +2637,8 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_21_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_21_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Basic-Computations">
+</section>
+<section id="Basic-Computations">
 <h2>Basic Computations<a class="headerlink" href="#Basic-Computations" title="Permalink to this headline">¶</a></h2>
 <p>When we perform mathematical manipulations of xarray DataArrays, the coordinates come along for the ride. Imagine we want to calcuate</p>
 <div class="math notranslate nohighlight">
@@ -3025,8 +3026,8 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_24_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_24_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise">
+</section>
+<section id="Exercise">
 <h2>Exercise<a class="headerlink" href="#Exercise" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Multipy the DataArrays <code class="docutils literal notranslate"><span class="pre">da_f</span></code> and <code class="docutils literal notranslate"><span class="pre">da_g</span></code> together.</p></li>
@@ -3058,7 +3059,7 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_26_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_26_1.png" />
 </div>
 </div>
-<div class="section" id="Multidimensional-Data">
+<section id="Multidimensional-Data">
 <h3>Multidimensional Data<a class="headerlink" href="#Multidimensional-Data" title="Permalink to this headline">¶</a></h3>
 <p>If we are just dealing with 1D data, Pandas and Xarray have very similar capabilities. Xarray’s real potential comes with multidimensional data.</p>
 <p>At this point we will load data from a netCDF file into an xarray dataset.</p>
@@ -4226,9 +4227,9 @@ dl.xr-attrs {
        &#x27;1960-11-15T00:00:00.000000000&#x27;, &#x27;1960-12-15T00:00:00.000000000&#x27;],
       dtype=&#x27;datetime64[ns]&#x27;)</pre></li></ul></div></li><li class='xr-section-item'><input id='section-3411d8f2-da3f-4313-b263-69c70ba9b80a' class='xr-section-summary-in' type='checkbox'  checked><label for='section-3411d8f2-da3f-4313-b263-69c70ba9b80a' class='xr-section-summary' >Attributes: <span>(7)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>pointwidth :</span></dt><dd>1.0</dd><dt><span>valid_min :</span></dt><dd>-3.0</dd><dt><span>valid_max :</span></dt><dd>45.0</dd><dt><span>units :</span></dt><dd>degree_Celsius</dd><dt><span>long_name :</span></dt><dd>Extended reconstructed sea surface temperature</dd><dt><span>standard_name :</span></dt><dd>sea_surface_temperature</dd><dt><span>iridl:hasSemantics :</span></dt><dd>iridl:SeaSurfaceTemperature</dd></dl></div></li></ul></div></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Multidimensional-Indexing">
+</section>
+</section>
+<section id="Multidimensional-Indexing">
 <h2>Multidimensional Indexing<a class="headerlink" href="#Multidimensional-Indexing" title="Permalink to this headline">¶</a></h2>
 <p>In this example, we take advantage of the fact that xarray understands time to select a particular date</p>
 <div class="nbinput docutils container">
@@ -4307,8 +4308,8 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_36_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_36_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Label-Based-Reduction-Operations">
+</section>
+<section id="Label-Based-Reduction-Operations">
 <h2>Label-Based Reduction Operations<a class="headerlink" href="#Label-Based-Reduction-Operations" title="Permalink to this headline">¶</a></h2>
 <p>Usually the process of data analysis involves going from a big, multidimensional dataset to a few concise figures. Inevitably, the data must be “reduced” somehow. Examples of simple reduction operations include:</p>
 <ul class="simple">
@@ -4782,8 +4783,8 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_42_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_42_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="More-Complicated-Example:-Weighted-Mean">
+</section>
+<section id="More-Complicated-Example:-Weighted-Mean">
 <h2>More Complicated Example: Weighted Mean<a class="headerlink" href="#More-Complicated-Example:-Weighted-Mean" title="Permalink to this headline">¶</a></h2>
 <p>The means we calculated above were “naive”; they were straightforward numerical means over the different dimensions of the dataset. They did not account, for example, for spherical geometry of the globe and the necessary weighting factors. Although xarray is very useful for geospatial analysis, <strong>it has no built-in understanding of geography</strong>.</p>
 <p>Below we show how to create a proper weighted mean by using the formula for the area element in spherical coordinates. This is a good illustration of several xarray concepts.</p>
@@ -5258,8 +5259,8 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_47_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_47_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Maps">
+</section>
+<section id="Maps">
 <h2>Maps<a class="headerlink" href="#Maps" title="Permalink to this headline">¶</a></h2>
 <p>Xarray integrates with cartopy to enable you to plot your data on a map</p>
 <div class="nbinput docutils container">
@@ -5304,7 +5305,7 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_49_2.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_49_2.png" />
 </div>
 </div>
-<div class="section" id="IV.-Opening-Many-Files">
+<section id="IV.-Opening-Many-Files">
 <h3>IV. Opening Many Files<a class="headerlink" href="#IV.-Opening-Many-Files" title="Permalink to this headline">¶</a></h3>
 <p>One of the killer features of xarray is its ability to open many files into a single dataset. We do this with the <code class="docutils literal notranslate"><span class="pre">open_mfdataset</span></code> function.</p>
 <div class="nbinput docutils container">
@@ -5854,8 +5855,8 @@ dl.xr-attrs {
 </table></pre></li></ul></div></li><li class='xr-section-item'><input id='section-02066a03-47dc-4fec-8dd1-c0e0b63aa08b' class='xr-section-summary-in' type='checkbox'  checked><label for='section-02066a03-47dc-4fec-8dd1-c0e0b63aa08b' class='xr-section-summary' >Attributes: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Conventions :</span></dt><dd>IRIDL</dd><dt><span>source :</span></dt><dd>https://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.ERSST/.version3b/.sst/</dd><dt><span>history :</span></dt><dd>extracted and cleaned by Ryan Abernathey for Research Computing in Earth Science</dd></dl></div></li></ul></div></div></div>
 </div>
 <p>Now we have 57 years of data instead of one!</p>
-</div>
-<div class="section" id="V.-Groupby">
+</section>
+<section id="V.-Groupby">
 <h3>V. Groupby<a class="headerlink" href="#V.-Groupby" title="Permalink to this headline">¶</a></h3>
 <p>Now that we have a bigger dataset, this is a good time to check out xarray’s groupby capabilities.</p>
 <div class="nbinput docutils container">
@@ -6347,8 +6348,8 @@ Text(0.5, 1.0, &#39;June minus July SST Climatology&#39;)
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_56_2.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_56_2.png" />
 </div>
 </div>
-</div>
-<div class="section" id="VI.-Resample-and-Rolling">
+</section>
+<section id="VI.-Resample-and-Rolling">
 <h3>VI. Resample and Rolling<a class="headerlink" href="#VI.-Resample-and-Rolling" title="Permalink to this headline">¶</a></h3>
 <p>Resample is meant specifically to work with time data (data with a <code class="docutils literal notranslate"><span class="pre">datetime64</span></code> variable as a dimension). It allows you to change the time-sampling frequency of your data.</p>
 <p>Let’s illustrate by selecting a single point.</p>
@@ -6877,8 +6878,8 @@ dl.xr-attrs {
 <img alt="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_61_1.png" src="../../../_images/repos_pangeo-data_pangeo-tutorial-gallery_xarray_61_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Finale:-Calculate-the-ENSO-Index">
+</section>
+<section id="Finale:-Calculate-the-ENSO-Index">
 <h3>Finale: Calculate the ENSO Index<a class="headerlink" href="#Finale:-Calculate-the-ENSO-Index" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.ncdc.noaa.gov/teleconnections/enso/indicators/sst">This page from NOAA</a> explains how the El Niño Southern Oscillation index is calculated.</p>
 <ul class="simple">
@@ -6926,8 +6927,8 @@ time
 Name: NINO3.4, dtype: float64
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Getting-Help-with-Xarray">
+</section>
+<section id="Getting-Help-with-Xarray">
 <h3>Getting Help with Xarray<a class="headerlink" href="#Getting-Help-with-Xarray" title="Permalink to this headline">¶</a></h3>
 <p>Here are some important resources for learning more about xarray and getting help.</p>
 <ul class="simple">
@@ -6935,9 +6936,9 @@ Name: NINO3.4, dtype: float64
 <li><p><a class="reference external" href="https://github.com/pydata/xarray/issues">Xarray GitHub Issue Tracker</a></p></li>
 <li><p><a class="reference external" href="https://stackoverflow.com/questions/tagged/python-xarray">Xarray questions on StackOverflow</a></p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
     </div>
@@ -6952,7 +6953,7 @@ Name: NINO3.4, dtype: float64
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

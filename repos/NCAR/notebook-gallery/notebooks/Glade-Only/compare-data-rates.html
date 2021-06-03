@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,16 +17,18 @@
       })();
     </script>
     <title>Compare Data Access Times for AWS and Glade Zarr Stores &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
     <script src="../../../../../_static/jquery.js"></script>
     <script src="../../../../../_static/underscore.js"></script>
     <script src="../../../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
     <link rel="next" title="Bias Correction" href="../Run-Anywhere/Bias-Correction/bias_correction.html" />
@@ -362,7 +365,7 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Compare-Data-Access-Times-for-AWS-and-Glade-Zarr-Stores">
+<section id="Compare-Data-Access-Times-for-AWS-and-Glade-Zarr-Stores">
 <h1>Compare Data Access Times for AWS and Glade Zarr Stores<a class="headerlink" href="#Compare-Data-Access-Times-for-AWS-and-Glade-Zarr-Stores" title="Permalink to this headline">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -379,7 +382,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="section" id="Use-Dask-to-Speed-up-Computations">
+<section id="Use-Dask-to-Speed-up-Computations">
 <h2>Use Dask to Speed up Computations<a class="headerlink" href="#Use-Dask-to-Speed-up-Computations" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We are testing data transfer rate, so we use many workers to make sure data bandwidth is as saturated as possible.</p></li>
@@ -406,7 +409,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="section" id="Functions-for-Getting-Data">
+<section id="Functions-for-Getting-Data">
 <h3>Functions for Getting Data<a class="headerlink" href="#Functions-for-Getting-Data" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -453,10 +456,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Define-Plot-Functions">
+</section>
+<section id="Define-Plot-Functions">
 <h3>Define Plot Functions<a class="headerlink" href="#Define-Plot-Functions" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="Create-Single-Map-Plot-(Helper-Function)">
+<section id="Create-Single-Map-Plot-(Helper-Function)">
 <h4>Create Single Map Plot (Helper Function)<a class="headerlink" href="#Create-Single-Map-Plot-(Helper-Function)" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -487,8 +490,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Function-Producing-Maps-of-First,-Middle,-Last-Timesteps">
+</section>
+<section id="Function-Producing-Maps-of-First,-Middle,-Last-Timesteps">
 <h4>Function Producing Maps of First, Middle, Last Timesteps<a class="headerlink" href="#Function-Producing-Maps-of-First,-Middle,-Last-Timesteps" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -551,10 +554,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="Create-Time-Series-Plots-over-Multiple-Pages">
+</section>
+</section>
+</section>
+<section id="Create-Time-Series-Plots-over-Multiple-Pages">
 <h2>Create Time Series Plots over Multiple Pages<a class="headerlink" href="#Create-Time-Series-Plots-over-Multiple-Pages" title="Permalink to this headline">¶</a></h2>
 <p>These also mark the locations of missing values.</p>
 <div class="nbinput nblast docutils container">
@@ -617,7 +620,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="section" id="Load-Zarr-Store-from-Different-Sources-and-Record-Plotting-Times">
+<section id="Load-Zarr-Store-from-Different-Sources-and-Record-Plotting-Times">
 <h3>Load Zarr Store from Different Sources and Record Plotting Times<a class="headerlink" href="#Load-Zarr-Store-from-Different-Sources-and-Record-Plotting-Times" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -639,7 +642,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="section" id="Plot-First,-Middle,-and-Final-Timesteps-from-Glade-Store">
+<section id="Plot-First,-Middle,-and-Final-Timesteps-from-Glade-Store">
 <h4>Plot First, Middle, and Final Timesteps from Glade Store<a class="headerlink" href="#Plot-First,-Middle,-and-Final-Timesteps-from-Glade-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -654,8 +657,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Plot-First,-Middle,-and-Final-Timesteps-from-AWS-Store">
+</section>
+<section id="Plot-First,-Middle,-and-Final-Timesteps-from-AWS-Store">
 <h4>Plot First, Middle, and Final Timesteps from AWS Store<a class="headerlink" href="#Plot-First,-Middle,-and-Final-Timesteps-from-AWS-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -688,8 +691,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Plot-Time-Series-from-Glade-Store">
+</section>
+<section id="Plot-Time-Series-from-Glade-Store">
 <h4>Plot Time Series from Glade Store<a class="headerlink" href="#Plot-Time-Series-from-Glade-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -704,8 +707,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Plot-Time-Series-from-AWS-Store">
+</section>
+<section id="Plot-Time-Series-from-AWS-Store">
 <h4>Plot Time Series from AWS Store<a class="headerlink" href="#Plot-Time-Series-from-AWS-Store" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -729,10 +732,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="Release-the-workers.">
+</section>
+</section>
+</section>
+<section id="Release-the-workers.">
 <h2>Release the workers.<a class="headerlink" href="#Release-the-workers." title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -761,8 +764,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
     </div>
@@ -777,7 +780,7 @@ div.rendered_html tbody tr:hover {
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

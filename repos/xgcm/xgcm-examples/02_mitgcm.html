@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,18 +17,18 @@
       })();
     </script>
     <title>MITgcm Example &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Getting started with xgcm for MOM6" href="03_MOM6.html" />
@@ -363,7 +364,7 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="MITgcm-Example">
+<section id="MITgcm-Example">
 <h1>MITgcm Example<a class="headerlink" href="#MITgcm-Example" title="Permalink to this headline">¶</a></h1>
 <p>xgcm is developed in close coordination with the <a class="reference external" href="http://xmitgcm.readthedocs.io/">xmitgcm</a> package. The metadata in datasets constructed by xmitgcm should always be compatible with xgcm’s expectations. xmitgcm is necessary for reading MITgcm’s binary MDS file format. However, for this example, the MDS files have already been converted and saved as netCDF.</p>
 <p>Below are some example of how to make calculations on mitgcm-style datasets using xgcm.</p>
@@ -1103,7 +1104,7 @@ Attributes:
         [-0.702411, -0.694586, ..., -0.694789, -0.709546],
         [-0.656158, -0.659816, ..., -0.623395, -0.649   ]]], dtype=float32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-f0cd2267-ae2d-4f4c-a839-dafff3946066' class='xr-section-summary-in' type='checkbox'  checked><label for='section-f0cd2267-ae2d-4f4c-a839-dafff3946066' class='xr-section-summary' >Attributes: <span>(4)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Conventions :</span></dt><dd>CF-1.6</dd><dt><span>title :</span></dt><dd>netCDF wrapper of MITgcm MDS binary data</dd><dt><span>source :</span></dt><dd>MITgcm</dd><dt><span>history :</span></dt><dd>Created by calling `open_mdsdataset(extra_metadata=None, llc_method=&#x27;smallchunks&#x27;, nz=None, ny=None, nx=None, default_dtype=None, ignore_unknown_vars=False, chunks=None, endian=&#x27;&gt;&#x27;, swap_dims=None, grid_vars_to_coords=True, geometry=&#x27;sphericalpolar&#x27;, calendar=&#x27;gregorian&#x27;, ref_date=None, delta_t=1, read_grid=True, prefix=None, iters=&#x27;all&#x27;, grid_dir=None, data_dir=&#x27;./global_oce_latlon/&#x27;)`</dd></dl></div></li></ul></div></div></div>
 </div>
-<div class="section" id="Creating-the-grid-object">
+<section id="Creating-the-grid-object">
 <h2>Creating the grid object<a class="headerlink" href="#Creating-the-grid-object" title="Permalink to this headline">¶</a></h2>
 <p>Next we create a <code class="docutils literal notranslate"><span class="pre">Grid</span></code> object from the dataset. We need to tell xgcm that the <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">Y</span></code> axes are periodic. (The other axes will be assumed to be non-periodic.)</p>
 <div class="nbinput docutils container">
@@ -1137,12 +1138,12 @@ Z Axis (not periodic, boundary=None):
 </pre></div></div>
 </div>
 <p>We see that xgcm identified five different axes: X (longitude), Y (latitude), Z (depth), T (time), and 1RHO (the axis generated by the output of the LAYERS package).</p>
-<div class="section" id="Velocity-Gradients">
+<section id="Velocity-Gradients">
 <h3>Velocity Gradients<a class="headerlink" href="#Velocity-Gradients" title="Permalink to this headline">¶</a></h3>
 <p>The gradients of the velocity field can be decomposed as divergence, vorticity, and strain. Below we use xgcm to compute the velocity gradients of the horizontal flow.</p>
-</div>
-</div>
-<div class="section" id="Divergence">
+</section>
+</section>
+<section id="Divergence">
 <h2>Divergence<a class="headerlink" href="#Divergence" title="Permalink to this headline">¶</a></h2>
 <p>The divergence of the horizontal flow is is expressed as</p>
 <div class="math notranslate nohighlight">
@@ -1234,8 +1235,8 @@ Z Axis (not periodic, boundary=None):
 <img alt="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_13_1.png" src="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_13_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Vorticity">
+</section>
+<section id="Vorticity">
 <h2>Vorticity<a class="headerlink" href="#Vorticity" title="Permalink to this headline">¶</a></h2>
 <p>The vertical component of the vorticity is a fundamental quantity of interest in ocean circulation theory. It is defined as</p>
 <div class="math notranslate nohighlight">
@@ -1778,8 +1779,8 @@ Coordinates:
 <img alt="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_19_1.png" src="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_19_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Strain">
+</section>
+<section id="Strain">
 <h2>Strain<a class="headerlink" href="#Strain" title="Permalink to this headline">¶</a></h2>
 <p>Another interesting quantity is the horizontal strain, defined as</p>
 <div class="math notranslate nohighlight">
@@ -1813,7 +1814,7 @@ Coordinates:
 <img alt="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_21_1.png" src="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_21_1.png" />
 </div>
 </div>
-<div class="section" id="Barotropic-Transport-Streamfunction">
+<section id="Barotropic-Transport-Streamfunction">
 <h3>Barotropic Transport Streamfunction<a class="headerlink" href="#Barotropic-Transport-Streamfunction" title="Permalink to this headline">¶</a></h3>
 <p>We can use the barotropic velocity to calcuate the barotropic transport streamfunction, defined via</p>
 <div class="math notranslate nohighlight">
@@ -2281,8 +2282,8 @@ Coordinates:
 <img alt="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_27_1.png" src="../../../_images/repos_xgcm_xgcm-examples_02_mitgcm_27_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Kinetic-Energy">
+</section>
+<section id="Kinetic-Energy">
 <h3>Kinetic Energy<a class="headerlink" href="#Kinetic-Energy" title="Permalink to this headline">¶</a></h3>
 <p>Finally, we plot the kinetic energy <span class="math notranslate nohighlight">\(1/2 (u^2 + v^2)\)</span> by interpoloting both quantities the cell center point.</p>
 <div class="nbinput docutils container">
@@ -2347,9 +2348,9 @@ Coordinates:
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
     </div>
@@ -2364,7 +2365,7 @@ Coordinates:
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

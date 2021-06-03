@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,11 +17,11 @@
       })();
     </script>
     <title>Contributor Guide &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
@@ -75,7 +76,7 @@
   <div class="row">
     <div class="body col-md-12 content" role="main">
       
-  <div class="section" id="contributor-guide">
+  <section id="contributor-guide">
 <h1>Contributor Guide<a class="headerlink" href="#contributor-guide" title="Permalink to this headline">¶</a></h1>
 <p>The site is organized into galleries, each containing one or more notebooks.
 Each gallery is stored in a standalone GitHub repository.
@@ -88,14 +89,14 @@ and saves the output to a dedicated branch within the repo.
 Each gallery contains a configuration file called <code class="docutils literal notranslate"><span class="pre">binder-gallery.yaml</span></code>,
 which specifies the details of the binder configuration.
 It also provides a basic description of the gallery contents.</p>
-<div class="section" id="contributing-to-an-existing-gallery">
+<section id="contributing-to-an-existing-gallery">
 <h2>Contributing to an Existing Gallery<a class="headerlink" href="#contributing-to-an-existing-gallery" title="Permalink to this headline">¶</a></h2>
 <p>You can contribute to an existing gallery by either modifying one of the
 existing notebooks or adding a new notebook.
 Since every gallery is a GitHub repository, you can contribute by
 <a class="reference external" href="https://opensource.com/article/19/7/create-pull-request-github">making a pull request</a>.</p>
-</div>
-<div class="section" id="creating-a-new-gallery">
+</section>
+<section id="creating-a-new-gallery">
 <h2>Creating a New Gallery<a class="headerlink" href="#creating-a-new-gallery" title="Permalink to this headline">¶</a></h2>
 <p>To create a new gallery, you will need to create a new repo following the
 <a class="reference external" href="https://github.com/pangeo-gallery/example-gallery">example gallery template</a>.</p>
@@ -123,7 +124,7 @@ notebook content and the action should automatically run again.</p>
 <li><p>Add a submodule via git and do the work yourself</p></li>
 <li><p>Add a submodule via a GitHub issue and let the CI system do the work</p></li>
 </ol>
-<div class="section" id="add-a-submodule-via-git">
+<section id="add-a-submodule-via-git">
 <h3>Add a submodule via git<a class="headerlink" href="#add-a-submodule-via-git" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p>Fork the gallery repo.</p></li>
@@ -138,8 +139,8 @@ notebook content and the action should automatically run again.</p>
 </li>
 <li><p>Commit and make a PR to the upstream gallery repo.</p></li>
 </ul>
-</div>
-<div class="section" id="add-a-submodule-via-a-github-issue">
+</section>
+<section id="add-a-submodule-via-a-github-issue">
 <h3>Add a submodule via a GitHub issue<a class="headerlink" href="#add-a-submodule-via-a-github-issue" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p>Go to the <a class="reference external" href="https://github.com/pangeo-gallery/pangeo-gallery">pangeo-gallery repo</a></p></li>
@@ -154,9 +155,9 @@ notebook content and the action should automatically run again.</p>
 <p>Sometimes, the GitHub Action to add your repo as a submodule will fail. We can work with
 you to identify and fix issues. Sometimes, making a new issue in the same way as above
 is necessary to correctly reload new settings from your gallery repo.</p>
-</div>
-</div>
-<div class="section" id="config-file-specification">
+</section>
+</section>
+<section id="config-file-specification">
 <h2>Config File Specification<a class="headerlink" href="#config-file-specification" title="Permalink to this headline">¶</a></h2>
 <p>All example galleries must contain a file called <code class="docutils literal notranslate"><span class="pre">binder-gallery.yaml</span></code>.
 An example file is shown below:</p>
@@ -213,8 +214,8 @@ not be changed.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
 
     </div>
@@ -229,7 +230,7 @@ not be changed.</p></td>
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

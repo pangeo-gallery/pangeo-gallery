@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,18 +17,18 @@
       })();
     </script>
     <title>Getting started with xgcm for MOM6 &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="NEMO Example" href="04_nemo_idealized.html" />
@@ -363,7 +364,7 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Getting-started-with-xgcm-for-MOM6">
+<section id="Getting-started-with-xgcm-for-MOM6">
 <h1>Getting started with xgcm for MOM6<a class="headerlink" href="#Getting-started-with-xgcm-for-MOM6" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>MOM6 variables are staggered according to the Arakawa C-grid</p></li>
@@ -484,7 +485,7 @@ Attributes:
     external_variables:              areacello
     DODS_EXTRA.Unlimited_Dimension:  time</pre></div>
 </div>
-<div class="section" id="xgcm-grid-definition">
+<section id="xgcm-grid-definition">
 <h2>xgcm grid definition<a class="headerlink" href="#xgcm-grid-definition" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p>The horizontal dimensions are a combination of (xh or xq) and (yh or yq) corresponding to the staggered point. In the vertical z_l refers to the depth of the center of the layer and z_i to the position of the interfaces, such as len(z_i) = len(z_l) +1.</p></li>
@@ -523,8 +524,8 @@ Attributes:
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="A-note-on-geographical-coordinates">
+</section>
+<section id="A-note-on-geographical-coordinates">
 <h2>A note on geographical coordinates<a class="headerlink" href="#A-note-on-geographical-coordinates" title="Permalink to this headline">¶</a></h2>
 <p>MOM6 uses land processor elimination, which creates blank holes in the produced geolon/geolat fields. This can result in problems while plotting. It is recommended to overwrite them by the full arrays that are produced by running the model for a few steps without land processor elimination. Here we copy one of these files.</p>
 <div class="nbinput docutils container">
@@ -677,8 +678,8 @@ Attributes:
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Vorticity-computation">
+</section>
+<section id="Vorticity-computation">
 <h2>Vorticity computation<a class="headerlink" href="#Vorticity-computation" title="Permalink to this headline">¶</a></h2>
 <p>We can borrow the expression for vorticity from the MITgcm example and adapt it for MOM6:</p>
 <div class="nbinput nblast docutils container">
@@ -724,8 +725,8 @@ Coordinates:
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Plotting">
+</section>
+<section id="Plotting">
 <h2>Plotting<a class="headerlink" href="#Plotting" title="Permalink to this headline">¶</a></h2>
 <p>Here we want to be careful and make sure we use the right set of coordinates (geolon_c/geolat_c). Since they are not present in the DataArray, we can add them easily with:</p>
 <div class="nbinput nblast docutils container">
@@ -801,8 +802,8 @@ Coordinates:
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
     </div>
@@ -817,7 +818,7 @@ Coordinates:
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

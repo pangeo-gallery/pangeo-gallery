@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,16 +17,18 @@
       })();
     </script>
     <title>ERDDAP Access &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Gallery for XGCM Examples and Usecases" href="../../xgcm/xgcm-examples/index.html" />
@@ -361,7 +364,7 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="ERDDAP-Access">
+<section id="ERDDAP-Access">
 <h1>ERDDAP Access<a class="headerlink" href="#ERDDAP-Access" title="Permalink to this headline">¶</a></h1>
 <p>Find OOI and IOOS salinity data in a specified time interval and bounding box using the ERDDAP advanced search and data access RESTful APIs</p>
 <p><em>Note: This Jupyter notebook originated from</em><a class="reference external" href="https://ioos.github.io/notebooks_demos/notebooks/2018-03-01-erddapy">an ERDDAPY notebook from the IOOS gallery</a></p>
@@ -1784,7 +1787,7 @@ if (window.Jupyter !== undefined) {
 <div class="output_area rendered_html docutils container">
 <!-- empty output --></div>
 </div>
-<div class="section" id="1.-Search-ERDDAP-“catalog”">
+<section id="1.-Search-ERDDAP-“catalog”">
 <h2>1. Search ERDDAP “catalog”<a class="headerlink" href="#1.-Search-ERDDAP-“catalog”" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
@@ -1959,8 +1962,8 @@ if (window.Jupyter !== undefined) {
 <p>63 rows × 3 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="2.-Read-data-from-one-dataset,-manually">
+</section>
+<section id="2.-Read-data-from-one-dataset,-manually">
 <h2>2. Read data from one dataset, manually<a class="headerlink" href="#2.-Read-data-from-one-dataset,-manually" title="Permalink to this headline">¶</a></h2>
 <p>Let’s inspect a specific <code class="docutils literal notranslate"><span class="pre">dataset_id</span></code>.</p>
 <div class="nbinput nblast docutils container">
@@ -2059,8 +2062,8 @@ http://erddap.dataexplorer.oceanobservatories.org/erddap/tabledap/ooi-ce01issm-s
   }
 })(window);</script></div>
 </div>
-</div>
-<div class="section" id="3.-Read-data-from-all-datasets,-automatically">
+</section>
+<section id="3.-Read-data-from-all-datasets,-automatically">
 <h2>3. Read data from all datasets, automatically<a class="headerlink" href="#3.-Read-data-from-all-datasets,-automatically" title="Permalink to this headline">¶</a></h2>
 <p>Let’s narrow this down by only taking the “CTDBP” data</p>
 <div class="nbinput docutils container">
@@ -2507,7 +2510,7 @@ ooi-ce07shsm-mfd37-03-ctdbpc000
   }
 })(window);</script></div>
 </div>
-<div class="section" id="Find-all-the-IOOS-salinity-data">
+<section id="Find-all-the-IOOS-salinity-data">
 <h3>Find all the IOOS salinity data<a class="headerlink" href="#Find-all-the-IOOS-salinity-data" title="Permalink to this headline">¶</a></h3>
 <p>Let’s do the same query for IOOS</p>
 <div class="nbinput nblast docutils container">
@@ -2913,9 +2916,9 @@ http://erddap.sensors.ioos.us/erddap/tabledap/allDatasets.csv?datasetID%2CminLon
 </div>
 <script type="application/vnd.jupyter.widget-state+json">
 {"state": {}, "version_major": 2, "version_minor": 0}
-</script></div>
-</div>
-</div>
+</script></section>
+</section>
+</section>
 
 
     </div>
@@ -2930,7 +2933,7 @@ http://erddap.sensors.ioos.us/erddap/tabledap/allDatasets.csv?datasetID%2CminLon
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

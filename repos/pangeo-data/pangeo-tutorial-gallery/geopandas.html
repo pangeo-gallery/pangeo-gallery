@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<script type="text/javascript">
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'G-XQVC88BYCT']);
@@ -16,16 +17,18 @@
       })();
     </script>
     <title>Geopandas Tutorial &#8212; Pangeo Gallery  documentation</title>
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pangeo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-style.css" />
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/pangeo-gallery.css" />
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Intake Tutorial" href="intake.html" />
@@ -360,9 +363,9 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Geopandas-Tutorial">
+<section id="Geopandas-Tutorial">
 <h1>Geopandas Tutorial<a class="headerlink" href="#Geopandas-Tutorial" title="Permalink to this headline">¶</a></h1>
-<div class="alert-info"><div class="section" id="Overview">
+<div class="alert-info"><section id="Overview">
 <h2>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>teaching:</strong> 30 minutes</p></li>
@@ -373,8 +376,8 @@ div.rendered_html tbody tr:hover {
 </ul>
 </li>
 </ul>
-</div></div>
-<div class="section" id="Table-of-contents">
+</div></section>
+<section id="Table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#Table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="#Pandas-and-Geopandas">Pandas and Geopandas</a></p></li>
@@ -382,7 +385,7 @@ div.rendered_html tbody tr:hover {
 <li><p><a class="reference external" href="#Vector-data-with-Geopandas">Vector data with Geopandas</a></p></li>
 <li><p><a class="reference external" href="#Visualization-with-holoviz">Visualization with holoviz</a></p></li>
 </ol>
-<div class="section" id="Pandas-and-Geopandas-primer">
+<section id="Pandas-and-Geopandas-primer">
 <h3>Pandas and Geopandas primer<a class="headerlink" href="#Pandas-and-Geopandas-primer" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://pandas.pydata.org">Pandas</a> is a core scientific Python library to work with “Panel Data” (PanDas). Basically if you have a spreadsheet or database you should be using Pandas. Pandas has many input/output (I/O) functions, and two core data structures - the “Series” and “DataFrame”. <a class="reference external" href="http://geopandas.org">Geopandas</a> extends Pandas to work efficently with collections of geographic Vector data - geometric shapes that are georeferenced to a position on Earth’s surface. Geopandas data
 objects are, you might have guessed, called “GeoSeries” and “GeoDataFrame”.</p>
@@ -408,9 +411,9 @@ Pandas version:  1.0.4
 Geopandas version:  0.7.0
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Tabular-data-with-Pandas">
+</section>
+</section>
+<section id="Tabular-data-with-Pandas">
 <h2>Tabular data with Pandas<a class="headerlink" href="#Tabular-data-with-Pandas" title="Permalink to this headline">¶</a></h2>
 <p>We’ll use the <a class="reference external" href="https://volcano.si.edu">Smithsonian Global Volcanism database</a>. This could be a local csv, excel file, sql database etc… or remote data or results from a server (<a class="reference external" href="https://volcano.si.edu/database/webservices.cfm">https://volcano.si.edu/database/webservices.cfm</a>)</p>
 <div class="nbinput docutils container">
@@ -1197,8 +1200,8 @@ array([&#39;Mediterranean and Western Asia&#39;, &#39;Africa and Red Sea&#39;,
 <li><p>Make a new plot!</p></li>
 <li><p>Change the query to get eruption information</p></li>
 </ul>
-</div>
-<div class="section" id="Vector-data-with-Geopandas">
+</section>
+<section id="Vector-data-with-Geopandas">
 <h2>Vector data with Geopandas<a class="headerlink" href="#Vector-data-with-Geopandas" title="Permalink to this headline">¶</a></h2>
 <p>Since the Volcano database has geolocation information we should consider visualizing information on a map!</p>
 <div class="nbinput docutils container">
@@ -2418,8 +2421,8 @@ dtype: float64
 <p>13 rows × 26 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="Visualization-with-holoviz">
+</section>
+<section id="Visualization-with-holoviz">
 <h2>Visualization with holoviz<a class="headerlink" href="#Visualization-with-holoviz" title="Permalink to this headline">¶</a></h2>
 <p>For geographic data on a map <a class="reference external" href="http://holoviz.org">holoviz</a> libraries are fantastic!</p>
 <div class="nbinput docutils container">
@@ -3992,8 +3995,8 @@ if (root.Bokeh !== undefined) {
 <ul class="simple">
 <li><p>Recreate bar and histogram plots with hvplot!</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
     </div>
@@ -4008,7 +4011,7 @@ if (root.Bokeh !== undefined) {
     </p>
     <p>
         &copy; Copyright 2020, Pangeo Developers.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>
