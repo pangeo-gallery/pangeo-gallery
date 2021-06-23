@@ -18,10 +18,10 @@
    "execution_count": 1,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:31.310113Z",
-     "iopub.status.busy": "2021-06-02T21:14:31.309383Z",
-     "iopub.status.idle": "2021-06-02T21:14:33.849582Z",
-     "shell.execute_reply": "2021-06-02T21:14:33.848850Z"
+     "iopub.execute_input": "2021-06-23T20:05:41.238997Z",
+     "iopub.status.busy": "2021-06-23T20:05:41.238384Z",
+     "iopub.status.idle": "2021-06-23T20:05:43.317407Z",
+     "shell.execute_reply": "2021-06-23T20:05:43.316807Z"
     }
    },
    "outputs": [],
@@ -45,10 +45,10 @@
    "execution_count": 2,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:33.856930Z",
-     "iopub.status.busy": "2021-06-02T21:14:33.855953Z",
-     "iopub.status.idle": "2021-06-02T21:14:36.803261Z",
-     "shell.execute_reply": "2021-06-02T21:14:36.803838Z"
+     "iopub.execute_input": "2021-06-23T20:05:43.322978Z",
+     "iopub.status.busy": "2021-06-23T20:05:43.322370Z",
+     "iopub.status.idle": "2021-06-23T20:05:47.940160Z",
+     "shell.execute_reply": "2021-06-23T20:05:47.940744Z"
     }
    },
    "outputs": [
@@ -445,9 +445,9 @@
        "    straight_vertical_longitude_from_pole:  [0.0]\n",
        "    version:                                05-Nov-2019 (v1.38)\n",
        "    xmin:                                   [-3333000]\n",
-       "    ymax:                                   [3333000]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-4dbceab2-f923-45fd-ba58-363532d427b7' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-4dbceab2-f923-45fd-ba58-363532d427b7' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 13333</li><li><span class='xr-has-index'>y</span>: 13333</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-ee85f356-4b30-40c6-880d-0533ee3274c0' class='xr-section-summary-in' type='checkbox'  checked><label for='section-ee85f356-4b30-40c6-880d-0533ee3274c0' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>-3333000 -3332500 ... 3333000</div><input id='attrs-5dcaf4c1-a8d5-4784-987f-892eed88401b' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-5dcaf4c1-a8d5-4784-987f-892eed88401b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5f492530-4d7d-40ae-976e-82937ad8a5be' class='xr-var-data-in' type='checkbox'><label for='data-5f492530-4d7d-40ae-976e-82937ad8a5be' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian x-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_x_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([-3333000, -3332500, -3332000, ...,  3332000,  3332500,  3333000],\n",
-       "      dtype=int32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>y</span></div><div class='xr-var-dims'>(y)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>3333000 3332500 ... -3333000</div><input id='attrs-db0db611-0977-497c-82e3-6294f0aa30cd' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-db0db611-0977-497c-82e3-6294f0aa30cd' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fc648111-6c7a-470d-8a01-9ee1b768b77b' class='xr-var-data-in' type='checkbox'><label for='data-fc648111-6c7a-470d-8a01-9ee1b768b77b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian y-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_y_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([ 3333000,  3332500,  3332000, ..., -3332000, -3332500, -3333000],\n",
-       "      dtype=int32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-9e269b9a-7cea-4415-b514-916bc4b0fd8e' class='xr-section-summary-in' type='checkbox'  checked><label for='section-9e269b9a-7cea-4415-b514-916bc4b0fd8e' class='xr-section-summary' >Data variables: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>bed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-5da9c533-9164-479e-b462-8711d903ddca' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-5da9c533-9164-479e-b462-8711d903ddca' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b2728d0a-09fb-42a4-ae70-b9ec34bbe1fb' class='xr-var-data-in' type='checkbox'><label for='data-b2728d0a-09fb-42a4-ae70-b9ec34bbe1fb' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography</dd><dt><span>source :</span></dt><dd>IBCSO and Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>bedrock_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "    ymax:                                   [3333000]</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-2e98dad4-be27-4d36-baa2-5bd48cb4ba65' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-2e98dad4-be27-4d36-baa2-5bd48cb4ba65' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span class='xr-has-index'>x</span>: 13333</li><li><span class='xr-has-index'>y</span>: 13333</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-8dd5e729-c1fb-4318-aebd-407240504c7e' class='xr-section-summary-in' type='checkbox'  checked><label for='section-8dd5e729-c1fb-4318-aebd-407240504c7e' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>-3333000 -3332500 ... 3333000</div><input id='attrs-676c9dad-ab36-4b38-84a0-5b648667567c' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-676c9dad-ab36-4b38-84a0-5b648667567c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b77b448f-a27f-4703-bc1f-2651ca2cec8e' class='xr-var-data-in' type='checkbox'><label for='data-b77b448f-a27f-4703-bc1f-2651ca2cec8e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian x-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_x_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([-3333000, -3332500, -3332000, ...,  3332000,  3332500,  3333000],\n",
+       "      dtype=int32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>y</span></div><div class='xr-var-dims'>(y)</div><div class='xr-var-dtype'>int32</div><div class='xr-var-preview xr-preview'>3333000 3332500 ... -3333000</div><input id='attrs-3ef45189-fadd-45fa-9102-b96f508d60e1' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-3ef45189-fadd-45fa-9102-b96f508d60e1' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-222f6256-3fd1-4088-ac82-60b1db28bb29' class='xr-var-data-in' type='checkbox'><label for='data-222f6256-3fd1-4088-ac82-60b1db28bb29' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>long_name :</span></dt><dd>Cartesian y-coordinate</dd><dt><span>standard_name :</span></dt><dd>projection_y_coordinate</dd><dt><span>units :</span></dt><dd>meter</dd></dl></div><div class='xr-var-data'><pre>array([ 3333000,  3332500,  3332000, ..., -3332000, -3332500, -3333000],\n",
+       "      dtype=int32)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-9d746a98-d5cd-4da9-981a-3a10162d9f1d' class='xr-section-summary-in' type='checkbox'  checked><label for='section-9d746a98-d5cd-4da9-981a-3a10162d9f1d' class='xr-section-summary' >Data variables: <span>(8)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>bed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-45ffa4ce-318f-4622-b575-2586133915a2' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-45ffa4ce-318f-4622-b575-2586133915a2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a34b87ac-50d9-4adb-9417-b49b9d069233' class='xr-var-data-in' type='checkbox'><label for='data-a34b87ac-50d9-4adb-9417-b49b9d069233' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography</dd><dt><span>source :</span></dt><dd>IBCSO and Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>bedrock_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -490,7 +490,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>errbed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-2e034d39-20a0-4439-a6fd-b632b26ecbba' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-2e034d39-20a0-4439-a6fd-b632b26ecbba' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c05fa203-294a-46a2-a06c-aa4862d03823' class='xr-var-data-in' type='checkbox'><label for='data-c05fa203-294a-46a2-a06c-aa4862d03823' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography/ice thickness error</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>errbed</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-2a14ff06-598f-468e-9742-b5f7dc8f0d61' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-2a14ff06-598f-468e-9742-b5f7dc8f0d61' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-bd590261-1906-4ef4-bec9-1c7bc9199fb1' class='xr-var-data-in' type='checkbox'><label for='data-bd590261-1906-4ef4-bec9-1c7bc9199fb1' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>bed topography/ice thickness error</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -533,7 +533,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>firn</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-33bec3fe-0804-4f36-a7fa-46afffaa0502' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-33bec3fe-0804-4f36-a7fa-46afffaa0502' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a753c776-ff4a-411e-93c0-c4751d55334d' class='xr-var-data-in' type='checkbox'><label for='data-a753c776-ff4a-411e-93c0-c4751d55334d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>firn air content</dd><dt><span>source :</span></dt><dd>FAC model from Ligtenberg et al., 2011, forced by RACMO2.3p2 (van Wessem et al., 2018)</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>firn</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-d8413905-d1ef-42bf-91ac-5d6fcd7c4bed' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-d8413905-d1ef-42bf-91ac-5d6fcd7c4bed' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1e1dd2a0-9c92-4c8f-b6e2-16306879b15d' class='xr-var-data-in' type='checkbox'><label for='data-1e1dd2a0-9c92-4c8f-b6e2-16306879b15d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>firn air content</dd><dt><span>source :</span></dt><dd>FAC model from Ligtenberg et al., 2011, forced by RACMO2.3p2 (van Wessem et al., 2018)</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -576,7 +576,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>geoid</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int16</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-f81f2d28-d555-42ff-befb-20934eda2006' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-f81f2d28-d555-42ff-befb-20934eda2006' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f5331179-7067-44e1-a66c-cf6a82ee6b4c' class='xr-var-data-in' type='checkbox'><label for='data-f5331179-7067-44e1-a66c-cf6a82ee6b4c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>geoid :</span></dt><dd>eigen-6c4 (Forste et al 2014)</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>EIGEN-EC4 Geoid - WGS84 Ellipsoid difference</dd><dt><span>standard_name :</span></dt><dd>geoid_height_above_reference_ellipsoid</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>geoid</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int16</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-c80f276c-ba12-4c1a-a6db-e9f60b9871d9' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-c80f276c-ba12-4c1a-a6db-e9f60b9871d9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7649337b-40a3-486d-ab2a-53d6f06f5f80' class='xr-var-data-in' type='checkbox'><label for='data-7649337b-40a3-486d-ab2a-53d6f06f5f80' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>geoid :</span></dt><dd>eigen-6c4 (Forste et al 2014)</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>EIGEN-EC4 Geoid - WGS84 Ellipsoid difference</dd><dt><span>standard_name :</span></dt><dd>geoid_height_above_reference_ellipsoid</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -619,7 +619,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>mask</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-ea5a06de-e098-4da4-bf69-d06a976bf0cc' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-ea5a06de-e098-4da4-bf69-d06a976bf0cc' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-901be459-ff2a-41e6-9a21-3327daa9117b' class='xr-var-data-in' type='checkbox'><label for='data-901be459-ff2a-41e6-9a21-3327daa9117b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>ocean ice_free_land grounded_ice floating_ice lake_vostok</dd><dt><span>flag_values :</span></dt><dd>[0, 1, 2, 3, 4]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>mask</dd><dt><span>source :</span></dt><dd>Antarctic Digital Database (rock outcrop) and Jeremie Mouginot (pers. comm., grounding lines)</dd><dt><span>valid_range :</span></dt><dd>[0, 4]</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>mask</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-d134e9b2-9996-4b53-99f5-22cf4ceb9176' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-d134e9b2-9996-4b53-99f5-22cf4ceb9176' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6d5d3baa-a7a0-4c17-b43a-a694e0e4504b' class='xr-var-data-in' type='checkbox'><label for='data-6d5d3baa-a7a0-4c17-b43a-a694e0e4504b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>ocean ice_free_land grounded_ice floating_ice lake_vostok</dd><dt><span>flag_values :</span></dt><dd>[0, 1, 2, 3, 4]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>mask</dd><dt><span>source :</span></dt><dd>Antarctic Digital Database (rock outcrop) and Jeremie Mouginot (pers. comm., grounding lines)</dd><dt><span>valid_range :</span></dt><dd>[0, 4]</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -662,7 +662,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>source</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-1264d2b6-482c-45ef-ac4e-8b06de3f727a' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-1264d2b6-482c-45ef-ac4e-8b06de3f727a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0891ecbf-12ac-495d-862d-79ccd55abbfb' class='xr-var-data-in' type='checkbox'><label for='data-0891ecbf-12ac-495d-862d-79ccd55abbfb' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>REMA_IBCSO mass_conservation interpolation hydrostatic streamline_diffusion gravity seismic multibeam</dd><dt><span>flag_values :</span></dt><dd>[1, 2, 3, 4, 5, 6, 7, 10]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>data source</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>valid_range :</span></dt><dd>[1, 10]</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>source</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>int8</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-aac5c9ab-740f-4391-9e13-ff5936b426dc' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-aac5c9ab-740f-4391-9e13-ff5936b426dc' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-32a6735d-9d51-4b42-a1b7-16cfbda4829b' class='xr-var-data-in' type='checkbox'><label for='data-32a6735d-9d51-4b42-a1b7-16cfbda4829b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>flag_meanings :</span></dt><dd>REMA_IBCSO mass_conservation interpolation hydrostatic streamline_diffusion gravity seismic multibeam</dd><dt><span>flag_values :</span></dt><dd>[1, 2, 3, 4, 5, 6, 7, 10]</dd><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>data source</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>valid_range :</span></dt><dd>[1, 10]</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -705,7 +705,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-6af5de17-4206-4847-8466-b0325c3d4d52' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-6af5de17-4206-4847-8466-b0325c3d4d52' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-d4081a26-7729-4051-96cd-ded870f07970' class='xr-var-data-in' type='checkbox'><label for='data-d4081a26-7729-4051-96cd-ded870f07970' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice surface elevation</dd><dt><span>source :</span></dt><dd>REMA (Byrd Polar and Climate Research Center and the Polar Geospatial Center)</dd><dt><span>standard_name :</span></dt><dd>surface_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>surface</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-cbf9087b-8eb9-4fd0-a757-69d30bc7f1ee' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-cbf9087b-8eb9-4fd0-a757-69d30bc7f1ee' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-18c1f96c-78f3-497c-b08e-c8365884d166' class='xr-var-data-in' type='checkbox'><label for='data-18c1f96c-78f3-497c-b08e-c8365884d166' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice surface elevation</dd><dt><span>source :</span></dt><dd>REMA (Byrd Polar and Climate Research Center and the Polar Geospatial Center)</dd><dt><span>standard_name :</span></dt><dd>surface_altitude</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -748,7 +748,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>thickness</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-e39bf8d2-2e36-47fb-8940-27faeb6425ca' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-e39bf8d2-2e36-47fb-8940-27faeb6425ca' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-277a3464-2421-4add-8e3d-830ad6563ca5' class='xr-var-data-in' type='checkbox'><label for='data-277a3464-2421-4add-8e3d-830ad6563ca5' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice thickness</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>land_ice_thickness</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
+       "</table></div></li><li class='xr-var-item'><div class='xr-var-name'><span>thickness</span></div><div class='xr-var-dims'>(y, x)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>dask.array&lt;chunksize=(3000, 3000), meta=np.ndarray&gt;</div><input id='attrs-a982575a-fae4-4725-9628-32449b5911cc' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-a982575a-fae4-4725-9628-32449b5911cc' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3952567f-b417-46b6-b65e-d019dd6ec58c' class='xr-var-data-in' type='checkbox'><label for='data-3952567f-b417-46b6-b65e-d019dd6ec58c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>grid_mapping :</span></dt><dd>mapping</dd><dt><span>long_name :</span></dt><dd>ice thickness</dd><dt><span>source :</span></dt><dd>Mathieu Morlighem</dd><dt><span>standard_name :</span></dt><dd>land_ice_thickness</dd><dt><span>units :</span></dt><dd>meters</dd></dl></div><div class='xr-var-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -791,7 +791,7 @@
        "</svg>\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></li></ul></div></li><li class='xr-section-item'><input id='section-dff9886e-5fb3-411a-b981-0b0e2ad5aa29' class='xr-section-summary-in' type='checkbox'  ><label for='section-dff9886e-5fb3-411a-b981-0b0e2ad5aa29' class='xr-section-summary' >Attributes: <span>(25)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Author :</span></dt><dd>Mathieu Morlighem</dd><dt><span>Conventions :</span></dt><dd>CF-1.7</dd><dt><span>Data_citation :</span></dt><dd>Morlighem M. et al., (2019), Deep glacial troughs and stabilizing ridges unveiled beneath the margins of the Antarctic ice sheet, Nature Geoscience (accepted)</dd><dt><span>Notes :</span></dt><dd>Data processed at the Department of Earth System Science, University of California, Irvine</dd><dt><span>Projection :</span></dt><dd>Polar Stereographic South (71S,0E)</dd><dt><span>Title :</span></dt><dd>BedMachine Antarctica</dd><dt><span>false_easting :</span></dt><dd>[0.0]</dd><dt><span>false_northing :</span></dt><dd>[0.0]</dd><dt><span>grid_mapping_name :</span></dt><dd>polar_stereographic</dd><dt><span>ice_density (kg m-3) :</span></dt><dd>[917.0]</dd><dt><span>inverse_flattening :</span></dt><dd>[298.2794050428205]</dd><dt><span>latitude_of_projection_origin :</span></dt><dd>[-90.0]</dd><dt><span>license :</span></dt><dd>No restrictions on access or use</dd><dt><span>no_data :</span></dt><dd>[-9999.0]</dd><dt><span>nx :</span></dt><dd>[13333.0]</dd><dt><span>ny :</span></dt><dd>[13333.0]</dd><dt><span>proj4 :</span></dt><dd>+init=epsg:3031</dd><dt><span>sea_water_density (kg m-3) :</span></dt><dd>[1027.0]</dd><dt><span>semi_major_axis :</span></dt><dd>[6378273.0]</dd><dt><span>spacing :</span></dt><dd>[500]</dd><dt><span>standard_parallel :</span></dt><dd>[-71.0]</dd><dt><span>straight_vertical_longitude_from_pole :</span></dt><dd>[0.0]</dd><dt><span>version :</span></dt><dd>05-Nov-2019 (v1.38)</dd><dt><span>xmin :</span></dt><dd>[-3333000]</dd><dt><span>ymax :</span></dt><dd>[3333000]</dd></dl></div></li></ul></div></div>"
+       "</table></div></li></ul></div></li><li class='xr-section-item'><input id='section-aa61a276-7bf6-4485-a695-8e4180caec7f' class='xr-section-summary-in' type='checkbox'  ><label for='section-aa61a276-7bf6-4485-a695-8e4180caec7f' class='xr-section-summary' >Attributes: <span>(25)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Author :</span></dt><dd>Mathieu Morlighem</dd><dt><span>Conventions :</span></dt><dd>CF-1.7</dd><dt><span>Data_citation :</span></dt><dd>Morlighem M. et al., (2019), Deep glacial troughs and stabilizing ridges unveiled beneath the margins of the Antarctic ice sheet, Nature Geoscience (accepted)</dd><dt><span>Notes :</span></dt><dd>Data processed at the Department of Earth System Science, University of California, Irvine</dd><dt><span>Projection :</span></dt><dd>Polar Stereographic South (71S,0E)</dd><dt><span>Title :</span></dt><dd>BedMachine Antarctica</dd><dt><span>false_easting :</span></dt><dd>[0.0]</dd><dt><span>false_northing :</span></dt><dd>[0.0]</dd><dt><span>grid_mapping_name :</span></dt><dd>polar_stereographic</dd><dt><span>ice_density (kg m-3) :</span></dt><dd>[917.0]</dd><dt><span>inverse_flattening :</span></dt><dd>[298.2794050428205]</dd><dt><span>latitude_of_projection_origin :</span></dt><dd>[-90.0]</dd><dt><span>license :</span></dt><dd>No restrictions on access or use</dd><dt><span>no_data :</span></dt><dd>[-9999.0]</dd><dt><span>nx :</span></dt><dd>[13333.0]</dd><dt><span>ny :</span></dt><dd>[13333.0]</dd><dt><span>proj4 :</span></dt><dd>+init=epsg:3031</dd><dt><span>sea_water_density (kg m-3) :</span></dt><dd>[1027.0]</dd><dt><span>semi_major_axis :</span></dt><dd>[6378273.0]</dd><dt><span>spacing :</span></dt><dd>[500]</dd><dt><span>standard_parallel :</span></dt><dd>[-71.0]</dd><dt><span>straight_vertical_longitude_from_pole :</span></dt><dd>[0.0]</dd><dt><span>version :</span></dt><dd>05-Nov-2019 (v1.38)</dd><dt><span>xmin :</span></dt><dd>[-3333000]</dd><dt><span>ymax :</span></dt><dd>[3333000]</dd></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.Dataset>\n",
@@ -860,10 +860,10 @@
    "execution_count": 3,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:36.810233Z",
-     "iopub.status.busy": "2021-06-02T21:14:36.809313Z",
-     "iopub.status.idle": "2021-06-02T21:14:36.813781Z",
-     "shell.execute_reply": "2021-06-02T21:14:36.813134Z"
+     "iopub.execute_input": "2021-06-23T20:05:47.945946Z",
+     "iopub.status.busy": "2021-06-23T20:05:47.945038Z",
+     "iopub.status.idle": "2021-06-23T20:05:47.948481Z",
+     "shell.execute_reply": "2021-06-23T20:05:47.948940Z"
     }
    },
    "outputs": [
@@ -895,17 +895,17 @@
    "execution_count": 4,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:36.824132Z",
-     "iopub.status.busy": "2021-06-02T21:14:36.823383Z",
-     "iopub.status.idle": "2021-06-02T21:14:38.332292Z",
-     "shell.execute_reply": "2021-06-02T21:14:38.332868Z"
+     "iopub.execute_input": "2021-06-23T20:05:47.955922Z",
+     "iopub.status.busy": "2021-06-23T20:05:47.955361Z",
+     "iopub.status.idle": "2021-06-23T20:05:49.529974Z",
+     "shell.execute_reply": "2021-06-23T20:05:49.530526Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7fc43f41d190>"
+       "<matplotlib.collections.QuadMesh at 0x7fe72ea968e0>"
       ]
      },
      "execution_count": 1,
@@ -941,10 +941,10 @@
    "execution_count": 5,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:38.338643Z",
-     "iopub.status.busy": "2021-06-02T21:14:38.337990Z",
-     "iopub.status.idle": "2021-06-02T21:14:51.815531Z",
-     "shell.execute_reply": "2021-06-02T21:14:51.814884Z"
+     "iopub.execute_input": "2021-06-23T20:05:49.534885Z",
+     "iopub.status.busy": "2021-06-23T20:05:49.534272Z",
+     "iopub.status.idle": "2021-06-23T20:06:47.532369Z",
+     "shell.execute_reply": "2021-06-23T20:06:47.531355Z"
     }
    },
    "outputs": [],
@@ -961,17 +961,17 @@
    "execution_count": 6,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:51.821411Z",
-     "iopub.status.busy": "2021-06-02T21:14:51.820794Z",
-     "iopub.status.idle": "2021-06-02T21:14:52.042312Z",
-     "shell.execute_reply": "2021-06-02T21:14:52.042905Z"
+     "iopub.execute_input": "2021-06-23T20:06:47.537509Z",
+     "iopub.status.busy": "2021-06-23T20:06:47.536928Z",
+     "iopub.status.idle": "2021-06-23T20:06:47.854156Z",
+     "shell.execute_reply": "2021-06-23T20:06:47.855014Z"
     }
    },
    "outputs": [
     {
      "data": {
       "application/vnd.jupyter.widget-view+json": {
-       "model_id": "75a47165bf0346d99ae8d948e8027846",
+       "model_id": "9f2809653c1e41bdbe91c5598916634c",
        "version_major": 2,
        "version_minor": 0
       },
@@ -1009,10 +1009,10 @@
    "execution_count": 7,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:52.058755Z",
-     "iopub.status.busy": "2021-06-02T21:14:52.058025Z",
-     "iopub.status.idle": "2021-06-02T21:14:52.061083Z",
-     "shell.execute_reply": "2021-06-02T21:14:52.060449Z"
+     "iopub.execute_input": "2021-06-23T20:06:47.870768Z",
+     "iopub.status.busy": "2021-06-23T20:06:47.869923Z",
+     "iopub.status.idle": "2021-06-23T20:06:47.872503Z",
+     "shell.execute_reply": "2021-06-23T20:06:47.873133Z"
     }
    },
    "outputs": [],
@@ -1036,10 +1036,10 @@
    "execution_count": 8,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:52.068496Z",
-     "iopub.status.busy": "2021-06-02T21:14:52.067944Z",
-     "iopub.status.idle": "2021-06-02T21:14:52.073142Z",
-     "shell.execute_reply": "2021-06-02T21:14:52.072571Z"
+     "iopub.execute_input": "2021-06-23T20:06:47.879575Z",
+     "iopub.status.busy": "2021-06-23T20:06:47.878911Z",
+     "iopub.status.idle": "2021-06-23T20:06:47.882865Z",
+     "shell.execute_reply": "2021-06-23T20:06:47.883329Z"
     }
    },
    "outputs": [
@@ -1398,7 +1398,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-f299e20c-04cd-4067-95cf-799f43410e49' class='xr-array-in' type='checkbox' checked><label for='section-f299e20c-04cd-4067-95cf-799f43410e49' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
+       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-0f16cc6c-46a7-4c0e-a2d2-71061de3a70f' class='xr-array-in' type='checkbox' checked><label for='section-0f16cc6c-46a7-4c0e-a2d2-71061de3a70f' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -1417,7 +1417,7 @@
        "\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></div></li><li class='xr-section-item'><input id='section-c1df5872-3750-439f-81e7-928d09af15f1' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c1df5872-3750-439f-81e7-928d09af15f1' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-a91a94f6-ffd3-4f6a-a064-1b64d48de05b' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a91a94f6-ffd3-4f6a-a064-1b64d48de05b' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "</table></div></div></li><li class='xr-section-item'><input id='section-b4679a76-42c8-4bcc-8a3b-94f83da1dc8b' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-b4679a76-42c8-4bcc-8a3b-94f83da1dc8b' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-14a102eb-d963-486f-b5c4-f443c34f397e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-14a102eb-d963-486f-b5c4-f443c34f397e' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1445,10 +1445,10 @@
    "execution_count": 9,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:52.078936Z",
-     "iopub.status.busy": "2021-06-02T21:14:52.078382Z",
-     "iopub.status.idle": "2021-06-02T21:14:52.082745Z",
-     "shell.execute_reply": "2021-06-02T21:14:52.083311Z"
+     "iopub.execute_input": "2021-06-23T20:06:47.888680Z",
+     "iopub.status.busy": "2021-06-23T20:06:47.887862Z",
+     "iopub.status.idle": "2021-06-23T20:06:47.892553Z",
+     "shell.execute_reply": "2021-06-23T20:06:47.891928Z"
     }
    },
    "outputs": [
@@ -1807,7 +1807,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-716a2508-b0b0-4167-bbe0-b1568ca00c27' class='xr-array-in' type='checkbox' checked><label for='section-716a2508-b0b0-4167-bbe0-b1568ca00c27' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
+       "dask.array&lt;mean_agg-aggregate, shape=(), dtype=float32, chunksize=(), chunktype=numpy.ndarray&gt;</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-6cd32f00-8e32-47a7-a22b-ed5fbd47df49' class='xr-array-in' type='checkbox' checked><label for='section-6cd32f00-8e32-47a7-a22b-ed5fbd47df49' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>dask.array&lt;chunksize=(), meta=np.ndarray&gt;</span></div><div class='xr-array-data'><table>\n",
        "<tr>\n",
        "<td>\n",
        "<table>\n",
@@ -1826,7 +1826,7 @@
        "\n",
        "</td>\n",
        "</tr>\n",
-       "</table></div></div></li><li class='xr-section-item'><input id='section-ccd651fd-9b4a-4e10-8dd8-4b7f00a0fd6b' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-ccd651fd-9b4a-4e10-8dd8-4b7f00a0fd6b' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-e0a59990-607c-483c-9dd2-26ed7d2e2dec' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-e0a59990-607c-483c-9dd2-26ed7d2e2dec' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "</table></div></div></li><li class='xr-section-item'><input id='section-c2c1d548-579e-4fd1-87e9-50673c491c92' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c2c1d548-579e-4fd1-87e9-50673c491c92' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-0f71b2a7-88c7-438a-988d-3d312341036a' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0f71b2a7-88c7-438a-988d-3d312341036a' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -1855,10 +1855,10 @@
    "execution_count": 10,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:14:52.100853Z",
-     "iopub.status.busy": "2021-06-02T21:14:52.100237Z",
-     "iopub.status.idle": "2021-06-02T21:15:06.213701Z",
-     "shell.execute_reply": "2021-06-02T21:15:06.214198Z"
+     "iopub.execute_input": "2021-06-23T20:06:47.910406Z",
+     "iopub.status.busy": "2021-06-23T20:06:47.906715Z",
+     "iopub.status.idle": "2021-06-23T20:09:47.830806Z",
+     "shell.execute_reply": "2021-06-23T20:09:47.831268Z"
     }
    },
    "outputs": [
@@ -1866,8 +1866,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 36.5 ms, sys: 7.29 ms, total: 43.8 ms\n",
-      "Wall time: 14.1 s\n"
+      "CPU times: user 155 ms, sys: 39.3 ms, total: 195 ms\n",
+      "Wall time: 2min 59s\n"
      ]
     },
     {
@@ -2225,7 +2225,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-6ddbaccf-823a-48bb-8722-318962be5dbb' class='xr-array-in' type='checkbox' checked><label for='section-6ddbaccf-823a-48bb-8722-318962be5dbb' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-b3ddd169-f7d1-4dc8-8810-8a9a2154e639' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-b3ddd169-f7d1-4dc8-8810-8a9a2154e639' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-1c2fa04e-95dc-4794-8e02-06f6e96e0126' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-1c2fa04e-95dc-4794-8e02-06f6e96e0126' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-f9d50fee-5c52-4e75-b593-02abc5324c37' class='xr-array-in' type='checkbox' checked><label for='section-f9d50fee-5c52-4e75-b593-02abc5324c37' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-5d44a669-9a3b-47f2-a723-85fb03cdfbac' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-5d44a669-9a3b-47f2-a723-85fb03cdfbac' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-d3d6de98-6cd1-483c-9a71-778a441ddc06' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-d3d6de98-6cd1-483c-9a71-778a441ddc06' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -2254,10 +2254,10 @@
    "execution_count": 11,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:15:06.222524Z",
-     "iopub.status.busy": "2021-06-02T21:15:06.221889Z",
-     "iopub.status.idle": "2021-06-02T21:15:06.226993Z",
-     "shell.execute_reply": "2021-06-02T21:15:06.227488Z"
+     "iopub.execute_input": "2021-06-23T20:09:47.841089Z",
+     "iopub.status.busy": "2021-06-23T20:09:47.840508Z",
+     "iopub.status.idle": "2021-06-23T20:09:47.846785Z",
+     "shell.execute_reply": "2021-06-23T20:09:47.845848Z"
     }
    },
    "outputs": [
@@ -2265,8 +2265,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 105 µs, sys: 20 µs, total: 125 µs\n",
-      "Wall time: 131 µs\n"
+      "CPU times: user 105 µs, sys: 24 µs, total: 129 µs\n",
+      "Wall time: 138 µs\n"
      ]
     },
     {
@@ -2624,7 +2624,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray ()&gt;\n",
-       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-513580cc-1de7-454c-980e-104d916c633f' class='xr-array-in' type='checkbox' checked><label for='section-513580cc-1de7-454c-980e-104d916c633f' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-a81d3621-4654-40aa-a791-48015f2ebd72' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a81d3621-4654-40aa-a791-48015f2ebd72' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-dd2f1ded-e0b5-4933-a54d-13f4a2f1be97' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-dd2f1ded-e0b5-4933-a54d-13f4a2f1be97' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(1944.0841, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'></div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-e1d07269-3b1e-40e1-9a0e-db60d56548b5' class='xr-array-in' type='checkbox' checked><label for='section-e1d07269-3b1e-40e1-9a0e-db60d56548b5' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.944e+03</span></div><div class='xr-array-data'><pre>array(1944.0841, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-9792ba6a-26c9-44a0-972a-969a3c0fa9a6' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-9792ba6a-26c9-44a0-972a-969a3c0fa9a6' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-167dc58d-d0e1-4c7b-a066-6bf4b1d77613' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-167dc58d-d0e1-4c7b-a066-6bf4b1d77613' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray ()>\n",
@@ -2653,10 +2653,10 @@
    "execution_count": 12,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:15:06.247495Z",
-     "iopub.status.busy": "2021-06-02T21:15:06.244144Z",
-     "iopub.status.idle": "2021-06-02T21:15:07.583604Z",
-     "shell.execute_reply": "2021-06-02T21:15:07.582969Z"
+     "iopub.execute_input": "2021-06-23T20:09:47.861941Z",
+     "iopub.status.busy": "2021-06-23T20:09:47.853323Z",
+     "iopub.status.idle": "2021-06-23T20:09:49.565028Z",
+     "shell.execute_reply": "2021-06-23T20:09:49.565911Z"
     }
    },
    "outputs": [
@@ -2664,8 +2664,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 21 ms, sys: 1.99 ms, total: 23 ms\n",
-      "Wall time: 1.34 s\n"
+      "CPU times: user 17.6 ms, sys: 3.13 ms, total: 20.7 ms\n",
+      "Wall time: 1.7 s\n"
      ]
     },
     {
@@ -3023,7 +3023,7 @@
        "  fill: currentColor;\n",
        "}\n",
        "</style><pre class='xr-text-repr-fallback'>&lt;xarray.DataArray &#x27;thickness&#x27; ()&gt;\n",
-       "array(1916.2861, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'thickness'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-f643b85b-4b57-4a71-82e3-e0db4ede0657' class='xr-array-in' type='checkbox' checked><label for='section-f643b85b-4b57-4a71-82e3-e0db4ede0657' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.916e+03</span></div><div class='xr-array-data'><pre>array(1916.2861, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-dff61636-0687-4bb0-b23e-1718f766c2d4' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-dff61636-0687-4bb0-b23e-1718f766c2d4' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-c56b478d-9474-437f-9104-9c54b58e4ce2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c56b478d-9474-437f-9104-9c54b58e4ce2' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
+       "array(1916.2861, dtype=float32)</pre><div class='xr-wrap' hidden><div class='xr-header'><div class='xr-obj-type'>xarray.DataArray</div><div class='xr-array-name'>'thickness'</div></div><ul class='xr-sections'><li class='xr-section-item'><div class='xr-array-wrap'><input id='section-528cfd16-9326-4e55-a1ef-dc713e75c6c8' class='xr-array-in' type='checkbox' checked><label for='section-528cfd16-9326-4e55-a1ef-dc713e75c6c8' title='Show/hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-array-preview xr-preview'><span>1.916e+03</span></div><div class='xr-array-data'><pre>array(1916.2861, dtype=float32)</pre></div></div></li><li class='xr-section-item'><input id='section-6b8909a8-35c2-4896-bbed-a6febc7d0284' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-6b8909a8-35c2-4896-bbed-a6febc7d0284' class='xr-section-summary'  title='Expand/collapse section'>Coordinates: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-0a2346f0-6ff3-491a-b1b4-9adbb80df8e4' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0a2346f0-6ff3-491a-b1b4-9adbb80df8e4' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>"
       ],
       "text/plain": [
        "<xarray.DataArray 'thickness' ()>\n",
@@ -3061,17 +3061,17 @@
    "execution_count": 13,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:15:07.614561Z",
-     "iopub.status.busy": "2021-06-02T21:15:07.613744Z",
-     "iopub.status.idle": "2021-06-02T21:15:10.582297Z",
-     "shell.execute_reply": "2021-06-02T21:15:10.581672Z"
+     "iopub.execute_input": "2021-06-23T20:09:49.576220Z",
+     "iopub.status.busy": "2021-06-23T20:09:49.574470Z",
+     "iopub.status.idle": "2021-06-23T20:09:52.636875Z",
+     "shell.execute_reply": "2021-06-23T20:09:52.636112Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7fc43f21fd60>"
+       "<matplotlib.collections.QuadMesh at 0x7fe72e9f68e0>"
       ]
      },
      "execution_count": 1,
@@ -3100,17 +3100,17 @@
    "execution_count": 14,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:15:10.614273Z",
-     "iopub.status.busy": "2021-06-02T21:15:10.613605Z",
-     "iopub.status.idle": "2021-06-02T21:15:12.025884Z",
-     "shell.execute_reply": "2021-06-02T21:15:12.025236Z"
+     "iopub.execute_input": "2021-06-23T20:09:52.655145Z",
+     "iopub.status.busy": "2021-06-23T20:09:52.647415Z",
+     "iopub.status.idle": "2021-06-23T20:09:54.140713Z",
+     "shell.execute_reply": "2021-06-23T20:09:54.139672Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7fc414573d60>"
+       "<matplotlib.collections.QuadMesh at 0x7fe705c10c40>"
       ]
      },
      "execution_count": 1,
@@ -3139,17 +3139,17 @@
    "execution_count": 15,
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2021-06-02T21:15:12.063305Z",
-     "iopub.status.busy": "2021-06-02T21:15:12.036341Z",
-     "iopub.status.idle": "2021-06-02T21:15:15.364396Z",
-     "shell.execute_reply": "2021-06-02T21:15:15.363719Z"
+     "iopub.execute_input": "2021-06-23T20:09:54.148324Z",
+     "iopub.status.busy": "2021-06-23T20:09:54.146002Z",
+     "iopub.status.idle": "2021-06-23T20:09:57.754829Z",
+     "shell.execute_reply": "2021-06-23T20:09:57.755616Z"
     }
    },
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "<matplotlib.collections.QuadMesh at 0x7fc4144cdaf0>"
+       "<matplotlib.collections.QuadMesh at 0x7fe705b56820>"
       ]
      },
      "execution_count": 1,
@@ -3196,381 +3196,7 @@
   "widgets": {
    "application/vnd.jupyter.widget-state+json": {
     "state": {
-     "0180cf2ae5c14f5f858f84d0ac89691e": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "2249b04134b14c669be640f40e12cb1b": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": "150px",
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "27679633a10b4aef977832276e89adba": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_61f473bb1dca4036be324dced99a30ac",
-        "IPY_MODEL_97255245cab14cf08b35944cc8750328",
-        "IPY_MODEL_f35c3a7818e34b349f51874c061bf460"
-       ],
-       "layout": "IPY_MODEL_d1b9bdbf3fbb46d69f765b8be9a4bb48"
-      }
-     },
-     "29a2a2a8b27f466a98c8631dd03d4676": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "2e01a7db9b7946989f5c92cb96018a5f": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "5720cbca8268471dafe987c87fa1e87b": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "5f670cf0233a47d4a06b92817746a084": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_d0be420891cd49c781ff3671b500a968",
-        "IPY_MODEL_7f6a7367c90e4029b36ff8924fa36f68"
-       ],
-       "layout": "IPY_MODEL_e4f72d46f6d7473bb445b045c146a7c1"
-      }
-     },
-     "61f473bb1dca4036be324dced99a30ac": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "IntTextModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "IntTextModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "IntTextView",
-       "continuous_update": false,
-       "description": "Minimum",
-       "description_tooltip": null,
-       "disabled": false,
-       "layout": "IPY_MODEL_6c2531e17c5f406ea8b2fab022cddc63",
-       "step": 1,
-       "style": "IPY_MODEL_912105d40481443698be688793ff5d21",
-       "value": 0
-      }
-     },
-     "6c2531e17c5f406ea8b2fab022cddc63": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": "150px"
-      }
-     },
-     "6edb7cc76cba4099b8d3ecb431b4597d": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "75a47165bf0346d99ae8d948e8027846": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "VBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "VBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "VBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_e4e1f3bf51784345bc8bcc268c0d3b8a",
-        "IPY_MODEL_d99d00af9bc04c1e8190f60424977611",
-        "IPY_MODEL_e6044da3b81c4f06bb133bddabe1e1b9",
-        "IPY_MODEL_8c8b7f52ae9d4e59a0b3dc436eb55ac6"
-       ],
-       "layout": "IPY_MODEL_7725fe80bd69406b88ac32bc3a30e99b"
-      }
-     },
-     "7725fe80bd69406b88ac32bc3a30e99b": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "7f6a7367c90e4029b36ff8924fa36f68": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "ButtonModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "ButtonModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "ButtonView",
-       "button_style": "",
-       "description": "Scale",
-       "disabled": false,
-       "icon": "",
-       "layout": "IPY_MODEL_6c2531e17c5f406ea8b2fab022cddc63",
-       "style": "IPY_MODEL_893a72131a8541b99373624843725612",
-       "tooltip": ""
-      }
-     },
-     "893a72131a8541b99373624843725612": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "ButtonStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "ButtonStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "button_color": null,
-       "font_weight": ""
-      }
-     },
-     "8c7c5bde1c374e22b82c210f9352ef55": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "ButtonStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "ButtonStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "button_color": null,
-       "font_weight": ""
-      }
-     },
-     "8c8b7f52ae9d4e59a0b3dc436eb55ac6": {
+     "0a75dc53e1604469af31cf1438c617d6": {
       "model_module": "@jupyter-widgets/controls",
       "model_module_version": "1.5.0",
       "model_name": "HTMLModel",
@@ -3585,196 +3211,13 @@
        "_view_name": "HTMLView",
        "description": "",
        "description_tooltip": null,
-       "layout": "IPY_MODEL_8dacb900ae3b4e07a8c4dcecd8798808",
+       "layout": "IPY_MODEL_7078ef8098e645d6ac6e038c8b39e5f9",
        "placeholder": "​",
-       "style": "IPY_MODEL_a9df76ec04214d8090a84506e42c3ec4",
-       "value": "<p><b>Dashboard: </b><a href=\"https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.505d43c3d4084991a5bef4fb83867955/status\" target=\"_blank\">https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.505d43c3d4084991a5bef4fb83867955/status</a></p>\n"
+       "style": "IPY_MODEL_8e55b26d99044db58fe918edc30b50e1",
+       "value": "<p><b>Dashboard: </b><a href=\"https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.0e419ed2d3e44897b3f8b8f4938cd2e3/status\" target=\"_blank\">https://hub.binder.pangeo.io/services/dask-gateway/clusters/prod.0e419ed2d3e44897b3f8b8f4938cd2e3/status</a></p>\n"
       }
      },
-     "8dacb900ae3b4e07a8c4dcecd8798808": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "912105d40481443698be688793ff5d21": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "97255245cab14cf08b35944cc8750328": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "IntTextModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "IntTextModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "IntTextView",
-       "continuous_update": false,
-       "description": "Maximum",
-       "description_tooltip": null,
-       "disabled": false,
-       "layout": "IPY_MODEL_6c2531e17c5f406ea8b2fab022cddc63",
-       "step": 1,
-       "style": "IPY_MODEL_6edb7cc76cba4099b8d3ecb431b4597d",
-       "value": 0
-      }
-     },
-     "99be9500f6f14f06beaf55568521dc98": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "a9df76ec04214d8090a84506e42c3ec4": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "DescriptionStyleModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "DescriptionStyleModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "StyleView",
-       "description_width": ""
-      }
-     },
-     "b0316c120f114e65a56eec6cae9e3657": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "AccordionModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "AccordionModel",
-       "_titles": {
-        "0": "Manual Scaling",
-        "1": "Adaptive Scaling"
-       },
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "AccordionView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_5f670cf0233a47d4a06b92817746a084",
-        "IPY_MODEL_27679633a10b4aef977832276e89adba"
-       ],
-       "layout": "IPY_MODEL_ce3d328013b348babe185cfa460050fb",
-       "selected_index": null
-      }
-     },
-     "ce3d328013b348babe185cfa460050fb": {
+     "18329b7b32f045a3bc99d243cbfde0d8": {
       "model_module": "@jupyter-widgets/base",
       "model_module_version": "1.2.0",
       "model_name": "LayoutModel",
@@ -3826,322 +3269,7 @@
        "width": null
       }
      },
-     "d0be420891cd49c781ff3671b500a968": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "IntTextModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "IntTextModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "IntTextView",
-       "continuous_update": false,
-       "description": "Workers",
-       "description_tooltip": null,
-       "disabled": false,
-       "layout": "IPY_MODEL_6c2531e17c5f406ea8b2fab022cddc63",
-       "step": 1,
-       "style": "IPY_MODEL_2e01a7db9b7946989f5c92cb96018a5f",
-       "value": 0
-      }
-     },
-     "d1b9bdbf3fbb46d69f765b8be9a4bb48": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "d761bfe299574039ae6f294431b4c889": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_tooltip": null,
-       "layout": "IPY_MODEL_2249b04134b14c669be640f40e12cb1b",
-       "placeholder": "​",
-       "style": "IPY_MODEL_0180cf2ae5c14f5f858f84d0ac89691e",
-       "value": "\n<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table style=\"text-align: right;\">\n    <tr><th>Workers</th> <td>4</td></tr>\n    <tr><th>Cores</th> <td>8</td></tr>\n    <tr><th>Memory</th> <td>17.18 GB</td></tr>\n</table>\n</div>\n"
-      }
-     },
-     "d836200584414aa294840b64d895a343": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "d99d00af9bc04c1e8190f60424977611": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HBoxModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HBoxModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HBoxView",
-       "box_style": "",
-       "children": [
-        "IPY_MODEL_d761bfe299574039ae6f294431b4c889",
-        "IPY_MODEL_b0316c120f114e65a56eec6cae9e3657"
-       ],
-       "layout": "IPY_MODEL_e6915eb2ad714c17be38245178da6010"
-      }
-     },
-     "e4e1f3bf51784345bc8bcc268c0d3b8a": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_tooltip": null,
-       "layout": "IPY_MODEL_99be9500f6f14f06beaf55568521dc98",
-       "placeholder": "​",
-       "style": "IPY_MODEL_5720cbca8268471dafe987c87fa1e87b",
-       "value": "<h2>GatewayCluster</h2>"
-      }
-     },
-     "e4f72d46f6d7473bb445b045c146a7c1": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "e6044da3b81c4f06bb133bddabe1e1b9": {
-      "model_module": "@jupyter-widgets/controls",
-      "model_module_version": "1.5.0",
-      "model_name": "HTMLModel",
-      "state": {
-       "_dom_classes": [],
-       "_model_module": "@jupyter-widgets/controls",
-       "_model_module_version": "1.5.0",
-       "_model_name": "HTMLModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/controls",
-       "_view_module_version": "1.5.0",
-       "_view_name": "HTMLView",
-       "description": "",
-       "description_tooltip": null,
-       "layout": "IPY_MODEL_d836200584414aa294840b64d895a343",
-       "placeholder": "​",
-       "style": "IPY_MODEL_29a2a2a8b27f466a98c8631dd03d4676",
-       "value": "<p><b>Name: </b>prod.505d43c3d4084991a5bef4fb83867955</p>"
-      }
-     },
-     "e6915eb2ad714c17be38245178da6010": {
-      "model_module": "@jupyter-widgets/base",
-      "model_module_version": "1.2.0",
-      "model_name": "LayoutModel",
-      "state": {
-       "_model_module": "@jupyter-widgets/base",
-       "_model_module_version": "1.2.0",
-       "_model_name": "LayoutModel",
-       "_view_count": null,
-       "_view_module": "@jupyter-widgets/base",
-       "_view_module_version": "1.2.0",
-       "_view_name": "LayoutView",
-       "align_content": null,
-       "align_items": null,
-       "align_self": null,
-       "border": null,
-       "bottom": null,
-       "display": null,
-       "flex": null,
-       "flex_flow": null,
-       "grid_area": null,
-       "grid_auto_columns": null,
-       "grid_auto_flow": null,
-       "grid_auto_rows": null,
-       "grid_column": null,
-       "grid_gap": null,
-       "grid_row": null,
-       "grid_template_areas": null,
-       "grid_template_columns": null,
-       "grid_template_rows": null,
-       "height": null,
-       "justify_content": null,
-       "justify_items": null,
-       "left": null,
-       "margin": null,
-       "max_height": null,
-       "max_width": null,
-       "min_height": null,
-       "min_width": null,
-       "object_fit": null,
-       "object_position": null,
-       "order": null,
-       "overflow": null,
-       "overflow_x": null,
-       "overflow_y": null,
-       "padding": null,
-       "right": null,
-       "top": null,
-       "visibility": null,
-       "width": null
-      }
-     },
-     "f35c3a7818e34b349f51874c061bf460": {
+     "1ed0c3b057024c82b3059236f7110de9": {
       "model_module": "@jupyter-widgets/controls",
       "model_module_version": "1.5.0",
       "model_name": "ButtonModel",
@@ -4158,9 +3286,881 @@
        "description": "Adapt",
        "disabled": false,
        "icon": "",
-       "layout": "IPY_MODEL_6c2531e17c5f406ea8b2fab022cddc63",
-       "style": "IPY_MODEL_8c7c5bde1c374e22b82c210f9352ef55",
+       "layout": "IPY_MODEL_69a493c51f89488a82244403f4194299",
+       "style": "IPY_MODEL_b2bd3768bcca4395a4a052c43432845a",
        "tooltip": ""
+      }
+     },
+     "22ee0fe7121541ad8f5c7223a64e5368": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HTMLModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HTMLModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HTMLView",
+       "description": "",
+       "description_tooltip": null,
+       "layout": "IPY_MODEL_863af2fe43834d22a4b67758444bc873",
+       "placeholder": "​",
+       "style": "IPY_MODEL_5fd35936aef6400ea27f1e85ffb88913",
+       "value": "<p><b>Name: </b>prod.0e419ed2d3e44897b3f8b8f4938cd2e3</p>"
+      }
+     },
+     "41f1fd395b9643538c79ea913119026c": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "42b5805773e44b61ba79dd90fdad4d2a": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "485063aeeb6a4fdc87371cc8640e9cd1": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "ButtonModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "ButtonModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "ButtonView",
+       "button_style": "",
+       "description": "Scale",
+       "disabled": false,
+       "icon": "",
+       "layout": "IPY_MODEL_69a493c51f89488a82244403f4194299",
+       "style": "IPY_MODEL_a848054e88184994a919828a02b3dda3",
+       "tooltip": ""
+      }
+     },
+     "48bcd544e1f2422a8469aea79ba234a2": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HBoxModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HBoxModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HBoxView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_d3d00c1a84db4f3bacd90316ca7e5649",
+        "IPY_MODEL_485063aeeb6a4fdc87371cc8640e9cd1"
+       ],
+       "layout": "IPY_MODEL_7ed16c345b364b528058e85674c5767b"
+      }
+     },
+     "58f8a70e7fa0482f99a699e0423c56e4": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "5d472380da05423cb93facb03a7e5961": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "5fd35936aef6400ea27f1e85ffb88913": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "639a1fcdbb0449b6904628d0f662974e": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "66c73c6b329347198b882bcfdfbad3b2": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "69a493c51f89488a82244403f4194299": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": "150px"
+      }
+     },
+     "7078ef8098e645d6ac6e038c8b39e5f9": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "7ed16c345b364b528058e85674c5767b": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "85a6316213744abdb99b201b256cda63": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HTMLModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HTMLModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HTMLView",
+       "description": "",
+       "description_tooltip": null,
+       "layout": "IPY_MODEL_58f8a70e7fa0482f99a699e0423c56e4",
+       "placeholder": "​",
+       "style": "IPY_MODEL_41f1fd395b9643538c79ea913119026c",
+       "value": "<h2>GatewayCluster</h2>"
+      }
+     },
+     "863af2fe43834d22a4b67758444bc873": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "8d75faaa1ec54fd5a81f5b0fd895b720": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "8e55b26d99044db58fe918edc30b50e1": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "8f836fd540914086b4cd9ea5a35702db": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "AccordionModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "AccordionModel",
+       "_titles": {
+        "0": "Manual Scaling",
+        "1": "Adaptive Scaling"
+       },
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "AccordionView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_48bcd544e1f2422a8469aea79ba234a2",
+        "IPY_MODEL_c7a35f52eea244e58e3c6898d9e57a3b"
+       ],
+       "layout": "IPY_MODEL_18329b7b32f045a3bc99d243cbfde0d8",
+       "selected_index": null
+      }
+     },
+     "9f2809653c1e41bdbe91c5598916634c": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "VBoxModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "VBoxModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "VBoxView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_85a6316213744abdb99b201b256cda63",
+        "IPY_MODEL_f27c0c23b4cc42ae9a1a21963d4b9c3b",
+        "IPY_MODEL_22ee0fe7121541ad8f5c7223a64e5368",
+        "IPY_MODEL_0a75dc53e1604469af31cf1438c617d6"
+       ],
+       "layout": "IPY_MODEL_5d472380da05423cb93facb03a7e5961"
+      }
+     },
+     "a3d215066b40480d8d941373bc2ca63e": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "DescriptionStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "DescriptionStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "description_width": ""
+      }
+     },
+     "a4f8a8c9e0e943e5a7110a408b9dcbad": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "IntTextModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "IntTextModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "IntTextView",
+       "continuous_update": false,
+       "description": "Minimum",
+       "description_tooltip": null,
+       "disabled": false,
+       "layout": "IPY_MODEL_69a493c51f89488a82244403f4194299",
+       "step": 1,
+       "style": "IPY_MODEL_66c73c6b329347198b882bcfdfbad3b2",
+       "value": 0
+      }
+     },
+     "a848054e88184994a919828a02b3dda3": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "ButtonStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "ButtonStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "button_color": null,
+       "font_weight": ""
+      }
+     },
+     "b2bd3768bcca4395a4a052c43432845a": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "ButtonStyleModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "ButtonStyleModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "StyleView",
+       "button_color": null,
+       "font_weight": ""
+      }
+     },
+     "b334428130644912b07e75acee2bb3ae": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": null,
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "bd1104f8ce354cc1b0ab0ea181f97d47": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HTMLModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HTMLModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HTMLView",
+       "description": "",
+       "description_tooltip": null,
+       "layout": "IPY_MODEL_c338de6204704d1c898a91145216f3ac",
+       "placeholder": "​",
+       "style": "IPY_MODEL_a3d215066b40480d8d941373bc2ca63e",
+       "value": "\n<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table style=\"text-align: right;\">\n    <tr><th>Workers</th> <td>4</td></tr>\n    <tr><th>Cores</th> <td>8</td></tr>\n    <tr><th>Memory</th> <td>17.18 GB</td></tr>\n</table>\n</div>\n"
+      }
+     },
+     "c338de6204704d1c898a91145216f3ac": {
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "model_name": "LayoutModel",
+      "state": {
+       "_model_module": "@jupyter-widgets/base",
+       "_model_module_version": "1.2.0",
+       "_model_name": "LayoutModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/base",
+       "_view_module_version": "1.2.0",
+       "_view_name": "LayoutView",
+       "align_content": null,
+       "align_items": null,
+       "align_self": null,
+       "border": null,
+       "bottom": null,
+       "display": null,
+       "flex": null,
+       "flex_flow": null,
+       "grid_area": null,
+       "grid_auto_columns": null,
+       "grid_auto_flow": null,
+       "grid_auto_rows": null,
+       "grid_column": null,
+       "grid_gap": null,
+       "grid_row": null,
+       "grid_template_areas": null,
+       "grid_template_columns": null,
+       "grid_template_rows": null,
+       "height": null,
+       "justify_content": null,
+       "justify_items": null,
+       "left": null,
+       "margin": null,
+       "max_height": null,
+       "max_width": null,
+       "min_height": null,
+       "min_width": "150px",
+       "object_fit": null,
+       "object_position": null,
+       "order": null,
+       "overflow": null,
+       "overflow_x": null,
+       "overflow_y": null,
+       "padding": null,
+       "right": null,
+       "top": null,
+       "visibility": null,
+       "width": null
+      }
+     },
+     "c7a35f52eea244e58e3c6898d9e57a3b": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HBoxModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HBoxModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HBoxView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_a4f8a8c9e0e943e5a7110a408b9dcbad",
+        "IPY_MODEL_fe7df760d805462fa010747089f200ff",
+        "IPY_MODEL_1ed0c3b057024c82b3059236f7110de9"
+       ],
+       "layout": "IPY_MODEL_42b5805773e44b61ba79dd90fdad4d2a"
+      }
+     },
+     "d3d00c1a84db4f3bacd90316ca7e5649": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "IntTextModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "IntTextModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "IntTextView",
+       "continuous_update": false,
+       "description": "Workers",
+       "description_tooltip": null,
+       "disabled": false,
+       "layout": "IPY_MODEL_69a493c51f89488a82244403f4194299",
+       "step": 1,
+       "style": "IPY_MODEL_8d75faaa1ec54fd5a81f5b0fd895b720",
+       "value": 0
+      }
+     },
+     "f27c0c23b4cc42ae9a1a21963d4b9c3b": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "HBoxModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "HBoxModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "HBoxView",
+       "box_style": "",
+       "children": [
+        "IPY_MODEL_bd1104f8ce354cc1b0ab0ea181f97d47",
+        "IPY_MODEL_8f836fd540914086b4cd9ea5a35702db"
+       ],
+       "layout": "IPY_MODEL_b334428130644912b07e75acee2bb3ae"
+      }
+     },
+     "fe7df760d805462fa010747089f200ff": {
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "model_name": "IntTextModel",
+      "state": {
+       "_dom_classes": [],
+       "_model_module": "@jupyter-widgets/controls",
+       "_model_module_version": "1.5.0",
+       "_model_name": "IntTextModel",
+       "_view_count": null,
+       "_view_module": "@jupyter-widgets/controls",
+       "_view_module_version": "1.5.0",
+       "_view_name": "IntTextView",
+       "continuous_update": false,
+       "description": "Maximum",
+       "description_tooltip": null,
+       "disabled": false,
+       "layout": "IPY_MODEL_69a493c51f89488a82244403f4194299",
+       "step": 1,
+       "style": "IPY_MODEL_639a1fcdbb0449b6904628d0f662974e",
+       "value": 0
       }
      }
     },
