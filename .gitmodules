@@ -47,3 +47,7 @@
 	path = repos/ldeo-glaciology/pangeo-glaciology-examples
 	url = https://github.com/ldeo-glaciology/pangeo-glaciology-examples.git
 	branch = binderbot-built
+[submodule "repos/cgentemann/pangeo_ccmp"]
+	path = repos/cgentemann/pangeo_ccmp
+	url = https://github.com/cgentemann/pangeo_ccmp.git
+	branch = binderbot-built
