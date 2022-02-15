@@ -55,3 +55,7 @@
 	path = repos/test-pangeo
 	url = https://github.com/acocac/test_pangeo
 	branch = binderbot-built
+[submodule "repos/test-pangeo2"]
+	path = repos/test-pangeo2
+	url = https://github.com/acocac/test_pangeo
+	branch = binderbot-built
