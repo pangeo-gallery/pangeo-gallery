@@ -51,3 +51,7 @@
 	path = repos/cgentemann/pangeo_ccmp
 	url = https://github.com/cgentemann/pangeo_ccmp.git
 	branch = binderbot-built
+[submodule "repos/test-pangeo"]
+	path = repos/test-pangeo
+	url = https://github.com/acocac/test_pangeo
+	branch = binderbot-built
