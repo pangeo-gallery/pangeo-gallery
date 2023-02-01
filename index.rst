@@ -8,6 +8,10 @@ Each gallery is hosted in a standalone GitHub repository.
 If you're interested in contributing a new gallery, please see the
 :doc:`contributing`.
 
+Note that some of this content has migrated over to the 
+`Project Pythia Cookbook Gallery <https://cookbooks.projectpythia.org>`_ 
+which is under active develpment.
+
 .. raw:: html
 
     <div class="row">
